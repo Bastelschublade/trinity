@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/basicCharacter.obj-02c9101ef0570f2c1956d37c91355f40.mesh"
+
+[deps]
+
+files=[ "res://.import/basicCharacter.obj-02c9101ef0570f2c1956d37c91355f40.mesh" ]
+
+source_file="res://assets/kenney/characters/Models/Non-rigged/basicCharacter.obj"
+dest_files=[ "res://.import/basicCharacter.obj-02c9101ef0570f2c1956d37c91355f40.mesh", "res://.import/basicCharacter.obj-02c9101ef0570f2c1956d37c91355f40.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
