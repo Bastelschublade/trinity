@@ -1,0 +1,159 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Rock_1 Model_1_positions",
+      "componentType": 5126,
+      "count": 36,
+      "min": [
+        0,
+        0,
+        -1.0219099521636963
+      ],
+      "max": [
+        1.1799999475479126,
+        0.6399999856948853,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Rock_1 Model_1_normals",
+      "componentType": 5126,
+      "count": 36,
+      "min": [
+        -0.8323299884796143,
+        -1,
+        -0.9610919952392578
+      ],
+      "max": [
+        0.8323299884796143,
+        1,
+        0.9610919952392578
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 432
+    },
+    {
+      "name": "Mesh1 Rock_1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 36,
+      "min": [
+        -46.45669937133789,
+        -39.23270034790039
+      ],
+      "max": [
+        40.649600982666016,
+        14.891799926757812
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Rock_1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 60,
+      "min": [
+        0
+      ],
+      "max": [
+        35
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_135",
+      "byteLength": 1272,
+      "uri": "data:application/octet-stream;base64,FmrNPgrXIz/RWzy+FmrNPgrXIz/xhFa/Y39ZPgrXIz/yzQK/cF9HPwrXIz/RWzy+PQqXPgAAAAC0E1ClcF9HPwrXIz/RWzy+FmrNPgrXIz/RWzy+XI9iPwAAAAAAAACAPQqXPgAAAAC0E1ClPQqXPgAAAADyzYK/XI9iPwAAAAAAAACAAAAAAAAAAADyzQK/FmrNPgrXIz/RWzy+AAAAAAAAAADyzQK/PQqXPgAAAAC0E1ClY39ZPgrXIz/yzQK/FmrNPgrXIz/xhFa/AAAAAAAAAADyzQK/Y39ZPgrXIz/yzQK/PQqXPgAAAADyzYK/FmrNPgrXIz/xhFa/XI9iPwAAAADyzYK/PQqXPgAAAADyzYK/cF9HPwrXIz/xhFa/cF9HPwrXIz/xhFa/orR3PwrXIz/yzQK/cF9HPwrXIz/RWzy+PQqXPwAAAADyzQK/orR3PwrXIz/yzQK/XI9iPwAAAAAAAACAXI9iPwAAAADyzYK/PQqXPwAAAADyzQK/cF9HPwrXIz/xhFa/PQqXPwAAAADyzQK/XI9iPwAAAADyzYK/orR3PwrXIz/yzQK/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAvINfpeNtjT4gCnY/vINfpeNtjT4gCnY/vINfpeNtjT4gCnY/vINfpeNtjT4gCnY/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAlBNVv+NtjT4gCvY+lBNVv+NtjT4gCvY+lBNVv+NtjT4gCvY+lBNVv+NtjT4gCvY+lBNVv+NtjT4gCva+lBNVv+NtjT4gCva+lBNVv+NtjT4gCva+lBNVv+NtjT4gCva+TYXaJeNtjT4gCna/TYXaJeNtjT4gCna/TYXaJeNtjT4gCna/TYXaJeNtjT4gCna/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAlBNVP+NtjT4gCvY+lBNVP+NtjT4gCvY+lBNVP+NtjT4gCvY+lBNVP+NtjT4gCvY+AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAlBNVP+NtjT4gCva+lBNVP+NtjT4gCva+lBNVP+NtjT4gCva+lBNVP+NtjT4gCva+jLl8QXu9x8CMuXxBKe3/wZLLBUEv7pjBjEr1QXu9x8DD0zlBAACAP4xK9UE2vMnBjLl8QTa8ycG4XgtCAACAP8PTOcEAAIA/w9M5wUnuHMK4XgvCAACAPwAAAAAv7pjBHSDQP2D238HTXovBTaHjv67TuUBNoeO/3NdTwWD238G+3xHCDIKzwdNei8Gm0HFAt9GswQyCs8ExmSLCptBxQIy5fMHwp2HBuF4LwuXQQUHD0znB5dBBQYxK9cHwp2HBjEr1QSnt/8HFYBhCL+6YwbfRrEHtDYfBMZkiQodcFUG+3xFC7Q2HwdNei0GHXBVBuF4LwknuHMKp0znCL+6YwdzXU0GcMzXBrtO5wNBEbkHTXotB0ERuQR0g0L+cMzXBAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcAAQADABgAGAADABkAGgAbABwAGwAaAB0ACgAeAB8ACgAJAB4AIAAhACIAIQAgACMA"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 864,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 288,
+      "byteOffset": 864,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 120,
+      "byteOffset": 1152,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Stone",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.72549,
+          0.752941,
+          0.788235,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Rock_1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Rock_1 Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

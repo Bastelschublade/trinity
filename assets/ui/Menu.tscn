@@ -1,0 +1,11 @@
+[gd_scene format=2]
+
+[node name="Menu" type="Node2D"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 435.0
+margin_top = 227.0
+margin_right = 685.0
+margin_bottom = 381.0
+mouse_default_cursor_shape = 2
+text = "Trinity"

@@ -1,0 +1,23 @@
+{
+	"1":{ 
+		"name": "Kürbis",
+		"icon": "res://assets/objects/graveyard/pumpkin/Pumpkin.png",
+		"tooltip": "Zum Verkaufen, als Helm oder zum Essen geeignet.",
+		"weight": 0.2,
+		"sell": true,
+		"price": 4,
+		"object": "res://assets/objects/graveyard/pumpkin/Pumpkin.tscn",
+		"food": {
+			"rations": 2,
+		}
+	},
+	"2":{
+		"name": "Kürbislaterne",
+		"icon": "res://assets/objects/graveyard/pumpkin/PumpkinCarved.png",
+		"tooltip": "Zum Verkaufen, als Helm oder zum Essen geeignet.",
+		"weight": 0.1,
+		"sell": true,
+		"price": 6,
+		"object": "res://assets/objects/graveyard/pumpkin/PumpkinCarved.tscn",
+	}
+}

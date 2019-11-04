@@ -1,0 +1,547 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Flower_Yellow Model_1_positions",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        0.26837000250816345,
+        0,
+        -0.2429630011320114
+      ],
+      "max": [
+        0.4859260022640228,
+        0.21087700128555298,
+        -0.2429630011320114
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Flower_Yellow Model_1_normals",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        0,
+        0,
+        -1
+      ],
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 1728
+    },
+    {
+      "name": "Mesh1 Flower_Yellow Model_1_texcoords",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        -19.13089942932129,
+        -7.302229881286621
+      ],
+      "max": [
+        -10.565699577331543,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Flower_Yellow Model_1_0_indices",
+      "componentType": 5123,
+      "count": 12,
+      "min": [
+        0
+      ],
+      "max": [
+        7
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh2 Flower_Yellow Model_1_positions",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        0.2429630011320114,
+        0,
+        -0.21755599975585938
+      ],
+      "max": [
+        0.2429630011320114,
+        0.21087700128555298,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 96
+    },
+    {
+      "name": "Mesh2 Flower_Yellow Model_1_normals",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        -1,
+        -1.9881099410765828e-16,
+        -1.4901200273698123e-8
+      ],
+      "max": [
+        1,
+        1.9881099410765828e-16,
+        1.4901200273698123e-8
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 1824
+    },
+    {
+      "name": "Mesh2 Flower_Yellow Model_1_texcoords",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        1.4253700442168338e-7,
+        -7.302229881286621
+      ],
+      "max": [
+        8.565199851989746,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 64
+    },
+    {
+      "name": "Mesh2 Flower_Yellow Model_1_0_indices",
+      "componentType": 5123,
+      "count": 12,
+      "min": [
+        0
+      ],
+      "max": [
+        7
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 24
+    },
+    {
+      "name": "Mesh3 Flower_Yellow Model_1_positions",
+      "componentType": 5126,
+      "count": 112,
+      "min": [
+        0.09750369936227798,
+        0,
+        -0.38842201232910156
+      ],
+      "max": [
+        0.38842201232910156,
+        0.4000000059604645,
+        -0.09750369936227798
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 192
+    },
+    {
+      "name": "Mesh3 Flower_Yellow Model_1_normals",
+      "componentType": 5126,
+      "count": 112,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 1920
+    },
+    {
+      "name": "Mesh3 Flower_Yellow Model_1_texcoords",
+      "componentType": 5126,
+      "count": 112,
+      "min": [
+        -15.292200088500977,
+        -18.986900329589844
+      ],
+      "max": [
+        15.292200088500977,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 128
+    },
+    {
+      "name": "Mesh3 Flower_Yellow Model_1_0_indices",
+      "componentType": 5123,
+      "count": 162,
+      "min": [
+        0
+      ],
+      "max": [
+        111
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 48
+    },
+    {
+      "name": "Mesh3 Flower_Yellow Model_1_1_indices",
+      "componentType": 5123,
+      "count": 54,
+      "min": [
+        40
+      ],
+      "max": [
+        103
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 372
+    },
+    {
+      "name": "Mesh4 Flower_Yellow Model_1_positions",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        0,
+        0,
+        -0.2429630011320114
+      ],
+      "max": [
+        0.21755599975585938,
+        0.21087700128555298,
+        -0.2429630011320114
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 1536
+    },
+    {
+      "name": "Mesh4 Flower_Yellow Model_1_normals",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        0,
+        0,
+        -1
+      ],
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 3264
+    },
+    {
+      "name": "Mesh4 Flower_Yellow Model_1_texcoords",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        -8.565199851989746,
+        -7.302229881286621
+      ],
+      "max": [
+        0,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 1024
+    },
+    {
+      "name": "Mesh4 Flower_Yellow Model_1_0_indices",
+      "componentType": 5123,
+      "count": 12,
+      "min": [
+        0
+      ],
+      "max": [
+        7
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 480
+    },
+    {
+      "name": "Mesh5 Flower_Yellow Model_1_positions",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        0.2429630011320114,
+        0,
+        -0.4859260022640228
+      ],
+      "max": [
+        0.2429630011320114,
+        0.21087700128555298,
+        -0.26837000250816345
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 1632
+    },
+    {
+      "name": "Mesh5 Flower_Yellow Model_1_normals",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        -1,
+        -2.0131699402166933e-16,
+        -1.4901200273698123e-8
+      ],
+      "max": [
+        1,
+        2.0131699402166933e-16,
+        1.4901200273698123e-8
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 3360
+    },
+    {
+      "name": "Mesh5 Flower_Yellow Model_1_texcoords",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        10.565699577331543,
+        -7.302229881286621
+      ],
+      "max": [
+        19.13089942932129,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 1088
+    },
+    {
+      "name": "Mesh5 Flower_Yellow Model_1_0_indices",
+      "componentType": 5123,
+      "count": 12,
+      "min": [
+        0
+      ],
+      "max": [
+        7
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 504
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_flat_009",
+      "byteLength": 5136,
+      "uri": "data:application/octet-stream;base64,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AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AACAP6Y2ZaUWAIAyAACAP6Y2ZaUWAIAyAACAP6Y2ZaUWAIAyAACAP6Y2ZaUWAIAyAACAv6Y2ZSUWAICyAACAv6Y2ZSUWAICyAACAv6Y2ZSUWAICyAACAv6Y2ZSUWAICyAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAAAAAAAAAAIC/AAAAgAAAAIAAAIA/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAA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"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 3456,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 1152,
+      "byteOffset": 3456,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 528,
+      "byteOffset": 4608,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Green_leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.298039,
+          0.529412,
+          0.427451,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Water",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.67451,
+          0.913725,
+          0.937255,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Flower_Yellow Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh2 Flower_Yellow Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh3 Flower_Yellow Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 12,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh4 Flower_Yellow Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 13,
+            "NORMAL": 14,
+            "TEXCOORD_0": 15
+          },
+          "indices": 16,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh5 Flower_Yellow Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 17,
+            "NORMAL": 18,
+            "TEXCOORD_0": 19
+          },
+          "indices": 20,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Flower_Yellow Model",
+      "mesh": 0
+    },
+    {
+      "name": "Mesh2 Flower_Yellow Model",
+      "mesh": 1
+    },
+    {
+      "name": "Mesh3 Flower_Yellow Model",
+      "mesh": 2
+    },
+    {
+      "name": "Mesh4 Flower_Yellow Model",
+      "mesh": 3
+    },
+    {
+      "name": "Mesh5 Flower_Yellow Model",
+      "mesh": 4
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ]
+}

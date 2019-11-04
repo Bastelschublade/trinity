@@ -1,0 +1,203 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Grey_Waterfall Model_1_positions",
+      "componentType": 5126,
+      "count": 78,
+      "min": [
+        0,
+        0,
+        -0.9200000166893005
+      ],
+      "max": [
+        3,
+        2.200000047683716,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Grey_Waterfall Model_1_normals",
+      "componentType": 5126,
+      "count": 78,
+      "min": [
+        -1,
+        -1,
+        -0.972711980342865
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 936
+    },
+    {
+      "name": "Mesh1 Grey_Waterfall Model_1_texcoords",
+      "componentType": 5126,
+      "count": 78,
+      "min": [
+        -122.01200103759766,
+        -85.61419677734375
+      ],
+      "max": [
+        118.11000061035156,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Grey_Waterfall Model_1_0_indices",
+      "componentType": 5123,
+      "count": 114,
+      "min": [
+        0
+      ],
+      "max": [
+        77
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Grey_Waterfall Model_1_1_indices",
+      "componentType": 5123,
+      "count": 30,
+      "min": [
+        48
+      ],
+      "max": [
+        75
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 228
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_143",
+      "byteLength": 2784,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 1872,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 624,
+      "byteOffset": 1872,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 288,
+      "byteOffset": 2496,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Stone",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.72549,
+          0.752941,
+          0.788235,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Water",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.67451,
+          0.913725,
+          0.937255,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Grey_Waterfall Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Grey_Waterfall Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

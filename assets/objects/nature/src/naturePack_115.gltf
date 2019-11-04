@@ -1,0 +1,203 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Brown_Cliff_Top_Corner Model_1_positions",
+      "componentType": 5126,
+      "count": 22,
+      "min": [
+        0,
+        0,
+        -0.9200000166893005
+      ],
+      "max": [
+        0.9200000166893005,
+        0.28999999165534973,
+        8.662939682550948e-15
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Brown_Cliff_Top_Corner Model_1_normals",
+      "componentType": 5126,
+      "count": 22,
+      "min": [
+        -0.6691910028457642,
+        -1,
+        -0.6691910028457642
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 264
+    },
+    {
+      "name": "Mesh1 Brown_Cliff_Top_Corner Model_1_texcoords",
+      "componentType": 5126,
+      "count": 22,
+      "min": [
+        -51.2234992980957,
+        -35.22050094604492
+      ],
+      "max": [
+        36.22050094604492,
+        2.2590999603271484
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Brown_Cliff_Top_Corner Model_1_0_indices",
+      "componentType": 5123,
+      "count": 3,
+      "min": [
+        0
+      ],
+      "max": [
+        2
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Brown_Cliff_Top_Corner Model_1_1_indices",
+      "componentType": 5123,
+      "count": 33,
+      "min": [
+        1
+      ],
+      "max": [
+        21
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 8
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_115",
+      "byteLength": 780,
+      "uri": "data:application/octet-stream;base64,H4VrP+F6lD4AAACAH4VrP+F6lD4IADa/PJ9RPuF6lD7CDhwoH4VrP+F6lD4AAACAH4VrPwAAAAAUrke/H4VrP+F6lD4IADa/H4VrPwAAAAAAAACAH4VrP+F6lD4AAACAKVwPPgAAAAAAAACAH4VrPwAAAAAAAACAAAAAAOF6lD7TusarPJ9RPuF6lD7CDhwoH4VrP+F6lD4fhWu/AAAAAOF6lD7TusarH4VrP+F6lD4fhWu/H4VrPwAAAAAUrke/AAAAAOF6lD7TusarH4VrP+F6lD4fhWu/KVwPPgAAAAAAAACAH4VrPwAAAAAAAACAKVwPPgAAAAAAAACAH4VrPwAAAAAUrke/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAACAP8x+IyrjlYOpAACAP8x+IyrjlYOpAACAP8x+IyrjlYOpAACAP8x+IyrjlYOpjhd7q8f9GywAAIA/jhd7q8f9GywAAIA/jhd7q8f9GywAAIA/jhd7q8f9GywAAIA/jhd7q8f9GywAAIA/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAACAP8x+IyrjlYOpGlArv9xnpb4aUCu/GlArv9xnpb4aUCu/GlArv9xnpb4aUCu/GlArv9xnpb4aUCu/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAy+EQQgAAgD/L4RBC6OrXwW3zAEEAAIA/vPAUrEOtJsFrq/VBAACAP+jq30FDrSbBvPAUrAAAgD/L4RBCQ60mwb9gsEAAAIA/y+EQQgAAgD/sz2+aQ60mwW3zAEFDrSbBy+EQQsvhDMIAAAAAAACAP8vhEEJDrSbB0009whiVEEB34yyuseEcwd3kTMKx4RzBqG95wBiVEEDL4RDCAACAP79gsMAAAIA/y+EQwmur7cEAAAEAAgAAAAMABAAFAAQAAwAGAAcACAAJAAgABwAKAAoACwAHAAIADAANAAwAAgABAAUABAAOAA8AEAARABAADwASABMAFAAVAAAA"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 528,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 176,
+      "byteOffset": 528,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 76,
+      "byteOffset": 704,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.270588,
+          0.407843,
+          0.4,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Wood",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.666667,
+          0.545098,
+          0.356863,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Brown_Cliff_Top_Corner Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Brown_Cliff_Top_Corner Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Rock_5 Model_1_positions",
+      "componentType": 5126,
+      "count": 42,
+      "min": [
+        0,
+        0,
+        -1
+      ],
+      "max": [
+        1,
+        0.49000000953674316,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Rock_5 Model_1_normals",
+      "componentType": 5126,
+      "count": 42,
+      "min": [
+        -0.8798159956932068,
+        -1,
+        -0.8798159956932068
+      ],
+      "max": [
+        0.8798159956932068,
+        1,
+        0.8798159956932068
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 504
+    },
+    {
+      "name": "Mesh1 Rock_5 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 42,
+      "min": [
+        -39.59389877319336,
+        -38.37009811401367
+      ],
+      "max": [
+        39.37009811401367,
+        21.569400787353516
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Rock_5 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 72,
+      "min": [
+        0
+      ],
+      "max": [
+        41
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_136",
+      "byteLength": 1488,
+      "uri": "data:application/octet-stream;base64,LsooP0jh+j5AiYe+QImHPkjh+j6ZueC+QImHPkjh+j6W58G+kYDRPkjh+j5gOzy/Cvf6Pkjh+j5gOzy/YDs8P0jh+j4BhdK+YDs8P0jh+j5AiYe+ezIfPwAAAAAAAACAYDs8P0jh+j5AiYe+LsooP0jh+j5AiYe+AACAPwAAAAAAAACAezIfPwAAAAAAAACAAACAPwAAAAAAAAC/AACAPwAAAAAAAACAezIfPwAAAAAAAIC/1ZN5PgAAAAAAAIC/AAAAAAAAAAAr9je+AAAAAAAAAAAAAAC/QImHPkjh+j6W58G+AAAAAAAAAAAAAAC/AAAAAAAAAAAr9je+QImHPkjh+j6ZueC+kYDRPkjh+j5gOzy/AAAAAAAAAAAAAAC/QImHPkjh+j6ZueC+1ZN5PgAAAAAAAIC/kYDRPkjh+j5gOzy/ezIfPwAAAAAAAIC/1ZN5PgAAAAAAAIC/Cvf6Pkjh+j5gOzy/Cvf6Pkjh+j5gOzy/AACAPwAAAAAAAAC/ezIfPwAAAAAAAIC/YDs8P0jh+j4BhdK+YDs8P0jh+j5AiYe+AACAPwAAAAAAAAC/YDs8P0jh+j4BhdK+AACAPwAAAAAAAACAAAAAAAAAAAAr9je+LsooP0jh+j5AiYe+QImHPkjh+j6W58G+ezIfPwAAAAAAAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACArff7vY479T66gV4/AAAAAH1c8z6fO2E/rff7vY479T66gV4/AAAAAH1c8z6fO2E/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAnzthv31c8z4L2HCknzthv31c8z4L2HCknzthv31c8z4L2HCknzthv31c8z4L2HCkzXVKv31c8z5wYcW+zXVKv31c8z5wYcW+zXVKv31c8z5wYcW+zXVKv31c8z5wYcW+6ByrI31c8z6fO2G/6ByrI31c8z6fO2G/6ByrI31c8z6fO2G/6ByrI31c8z6fO2G/16QzP31c8z4W3Ae/16QzP31c8z4W3Ae/16QzP31c8z4W3Ae/16QzP31c8z4W3Ae/nzthP31c8z4AAACAnzthP31c8z4AAACAnzthP31c8z4AAACAnzthP31c8z4AAACAogt6vn1c8z5fYlg/rff7vY479T66gV4/ogt6vn1c8z5fYlg/rff7vY479T66gV4/MKrPQYPAFsGDwCZB2T2CwYPAJkEukF7BduCAQbWV38EZYppBtZXfwbWV50E7AXPBtZXnQYPAFsHG3MNBAACAP7WV50GtaafBMKrPQa1pp8H7eh1CAACAP8bcw8EAAIA/+3odwuF6lcH7eh3CAACAP8bcw8H7ehnCdIcZwft6GcIAAAAAylTCwAAAAADhepXBLpBuwa1pp8Hhep3BAACAP8pU4sAAAIA/2T2Kwa1pp8HRUQTCSZ2Gwb+OjcFmMaNA+8ugwUmdhsEnYB7CZjGjQHbggMEFqA3AxtzDwaK0nUF0hxnBorSdQRlimsEFqA3APSw3Qevitr6pwQDBIo6sQQARhUEijqxBQZqRwOvitr6DwCZBBagNwOF6nUGitJ1BnYCBQQWoDcAAAAAAorSdQZZD+79jtA7AmF2wQRpAwcEB+7tAGkDBwQIrvEFjtA7AAAABAAIAAQAAAAMAAwAAAAQABAAAAAUABQAAAAYABwAIAAkACAAHAAoACwAMAA0ACwAOAAwACwAPAA4AEAAPAAsADwAQABEAEgATABQAEwASABUAFgAXABgAFwAWABkAGgAbABwAGwAaAB0AHgAfACAAHwAeACEAIgAjACQAIwAiACUAJgAnACgAJwAmACkA"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 1008,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 336,
+      "byteOffset": 1008,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 144,
+      "byteOffset": 1344,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Stone",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.72549,
+          0.752941,
+          0.788235,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Rock_5 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Rock_5 Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

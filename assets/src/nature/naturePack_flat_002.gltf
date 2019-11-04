@@ -1,0 +1,245 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Plant_1 Model_1_positions",
+      "componentType": 5126,
+      "count": 20,
+      "min": [
+        0,
+        0,
+        -0.2845749855041504
+      ],
+      "max": [
+        0.569150984287262,
+        0.5176290273666382,
+        -0.2845749855041504
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Plant_1 Model_1_normals",
+      "componentType": 5126,
+      "count": 20,
+      "min": [
+        0,
+        0,
+        -1
+      ],
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 480
+    },
+    {
+      "name": "Mesh1 Plant_1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 20,
+      "min": [
+        -22.407499313354492,
+        -19.379100799560547
+      ],
+      "max": [
+        0,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Plant_1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 48,
+      "min": [
+        0
+      ],
+      "max": [
+        19
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh2 Plant_1 Model_1_positions",
+      "componentType": 5126,
+      "count": 20,
+      "min": [
+        0.2845749855041504,
+        9.380919819279587e-32,
+        -0.569150984287262
+      ],
+      "max": [
+        0.2845749855041504,
+        0.6511899828910828,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 240
+    },
+    {
+      "name": "Mesh2 Plant_1 Model_1_normals",
+      "componentType": 5126,
+      "count": 20,
+      "min": [
+        -1,
+        -3.2404899758438366e-16,
+        -9.067479839891535e-13
+      ],
+      "max": [
+        1,
+        3.2404899758438366e-16,
+        9.067479839891535e-13
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 720
+    },
+    {
+      "name": "Mesh2 Plant_1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 20,
+      "min": [
+        -1.0159000377041316e-11,
+        -24.637399673461914
+      ],
+      "max": [
+        22.407499313354492,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 160
+    },
+    {
+      "name": "Mesh2 Plant_1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 48,
+      "min": [
+        0
+      ],
+      "max": [
+        19
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 96
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_flat_002",
+      "byteLength": 1472,
+      "uri": "data:application/octet-stream;base64,AAAAABkcVT7Qs5G+0LORPuiK8wvQs5G+O/wVPgAAAADQs5G+XmP3PUsALj7Qs5G+O/wVPgAAAADQs5G+0LORPuiK8wvQs5G+AAAAABkcVT7Qs5G+XmP3PUsALj7Qs5G+0LORPiar0j7Qs5G+NwCWPVaDBD/Qs5G+0LORPiar0j7Qs5G+yY7lPksALj7Qs5G+p+f9PlaDBD/Qs5G+yY7lPksALj7Qs5G+4bMRPxkcVT7Qs5G+g2nYPgAAAADQs5G+g2nYPgAAAADQs5G+4bMRPxkcVT7Qs5G+p+f9PlaDBD/Qs5G+NwCWPVaDBD/Qs5G+0LORPsaKcww7/BW+0LORPr3lWj5eY/e90LORPnwMhj4AAACA0LORPlaDBD/Qs5G+0LORPmO0Jj83AJa90LORPmO0Jj83AJa90LORPlaDBD/Qs5G+0LORPr3lWj5eY/e90LORPsaKcww7/BW+0LORPnwMhj4AAACA0LORPuiK8wvQs5G+0LORPuiK8wvQs5G+0LORPsaKcwyDadi+0LORPsaKcwyDadi+0LORPmO0Jj+n5/2+0LORPmO0Jj+n5/2+0LORPr3lWj7JjuW+0LORPr3lWj7JjuW+0LORPnwMhj7hsxG/0LORPnwMhj7hsxG/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAgAAAAIAAAIA/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAgAAAAIAAAIA/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AACAPzHNuiUUOn+rAACAPzHNuiUUOn+rAACAPzHNuiUUOn+rAACAPzHNuiUUOn+rAACAPzHNuiUUOn+rAACAvzHNuqUUOn8rAACAvzHNuqUUOn8rAACAvzHNuqUUOn8rAACAvzHNuqUUOn8rAACAvzHNuqUUOn8rAACAPzHNuiUUOn+rAACAvzHNuqUUOn8rAACAPzHNuiUUOn+rAACAvzHNuqUUOn8rAACAPzHNuiUUOn+rAACAvzHNuqUUOn8rAACAPzHNuiUUOn+rAACAvzHNuqUUOn8rAACAPzHNuiUUOn+rAACAvzHNuqUUOn8rAAAAACcx5sDEQjPBAACAP5SHuMAAAIA/3C6YwGoTtsCUh7jAAACAP8RCM8EAAIA/AAAAACcx5sDcLpjAahO2wMRCM8FVMHPBaYw4wGYIm8HEQjPBVTBzweM2jcFqE7bA8jCcwWYIm8HjNo3BahO2wI9Cs8EnMebAxSCFwQAAgD/FIIXBAACAP49Cs8EnMebA8jCcwWYIm8FpjDjAZgibwZSHuEAAAIA/3C6YQAlQ7cASuDKt7usUwcRCM0FmCJvBaYw4QGUZxcFpjDhAZRnFwcRCM0FmCJvB3C6YQAlQ7cCUh7hAAACAPxK4Mq3u6xTBxEIzQQAAgD/EQjNBAACAP8UghUEAAIA/xSCFQQAAgD/yMJxBZRnFwfIwnEFlGcXB4zaNQQlQ7cDjNo1BCVDtwI9Cs0Hu6xTBj0KzQe7rFMEAAAEAAgABAAAAAwAEAAUABgAHAAYABQADAAgAAQAIAAMACQAFAAoABwAIAAsAAQALAAgADAAFAA0ACgAOAAEACwABAA4ADwAQABEABQANAAUAEQASAAoADQATAAcACgAAAAEAAgADAAEAAAABAAMABAAFAAYABwAIAAcABgAJAAcACAADAAAACgALAAgABgADAAoADAANAAsABgADAAwADgAPAA0ABgAOAAwAEAARAA0ADwASABAADAANABEAEwA="
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 960,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 320,
+      "byteOffset": 960,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 192,
+      "byteOffset": 1280,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Green_leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.298039,
+          0.529412,
+          0.427451,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Plant_1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh2 Plant_1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Plant_1 Model",
+      "mesh": 0
+    },
+    {
+      "name": "Mesh2 Plant_1 Model",
+      "mesh": 1
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ]
+}

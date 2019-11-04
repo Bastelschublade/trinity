@@ -1,0 +1,933 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        0,
+        0,
+        -0.08540000021457672
+      ],
+      "max": [
+        0.08540000021457672,
+        0.23999999463558197,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 2880
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -3.3622000217437744,
+        -8.448820114135742
+      ],
+      "max": [
+        3.3622000217437744,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 36,
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh2 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -0.2199999988079071,
+        0,
+        -0.08540000021457672
+      ],
+      "max": [
+        -0.13459999859333038,
+        0.47999998927116394,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 288
+    },
+    {
+      "name": "Mesh2 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 3168
+    },
+    {
+      "name": "Mesh2 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -8.661419868469238,
+        -17.897600173950195
+      ],
+      "max": [
+        8.661419868469238,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 192
+    },
+    {
+      "name": "Mesh2 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 36,
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 72
+    },
+    {
+      "name": "Mesh3 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -0.11449799686670303,
+        3.5672901099711226e-16,
+        -0.289775013923645
+      ],
+      "max": [
+        -0.029097700491547585,
+        0.20000000298023224,
+        -0.2043749988079071
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 576
+    },
+    {
+      "name": "Mesh3 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 3456
+    },
+    {
+      "name": "Mesh3 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -11.408499717712402,
+        -10.408499717712402
+      ],
+      "max": [
+        11.408499717712402,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 384
+    },
+    {
+      "name": "Mesh3 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 36,
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 144
+    },
+    {
+      "name": "Mesh4 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        0.2394070029258728,
+        3.6096899323327127e-16,
+        -0.18183299899101257
+      ],
+      "max": [
+        0.32480698823928833,
+        0.1899999976158142,
+        -0.09643299877643585
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 864
+    },
+    {
+      "name": "Mesh4 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 3744
+    },
+    {
+      "name": "Mesh4 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -12.787699699401855,
+        -6.480309963226318
+      ],
+      "max": [
+        12.787699699401855,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 576
+    },
+    {
+      "name": "Mesh4 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 36,
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 216
+    },
+    {
+      "name": "Mesh5 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        0.12475000321865082,
+        3.6095499071986197e-16,
+        0.08275900036096573
+      ],
+      "max": [
+        0.21015000343322754,
+        0.47999998927116394,
+        0.16815899312496185
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 1152
+    },
+    {
+      "name": "Mesh5 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 4032
+    },
+    {
+      "name": "Mesh5 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -8.27361011505127,
+        -17.897600173950195
+      ],
+      "max": [
+        8.27361011505127,
+        7.620429992675781
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 768
+    },
+    {
+      "name": "Mesh5 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 36,
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 288
+    },
+    {
+      "name": "Mesh6 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        0.1428689956665039,
+        0,
+        -0.4506959915161133
+      ],
+      "max": [
+        0.22826899588108063,
+        0.09000000357627869,
+        -0.36529600620269775
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 1440
+    },
+    {
+      "name": "Mesh6 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 4320
+    },
+    {
+      "name": "Mesh6 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -17.743900299072266,
+        -16.743900299072266
+      ],
+      "max": [
+        17.743900299072266,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 960
+    },
+    {
+      "name": "Mesh6 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 36,
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 360
+    },
+    {
+      "name": "Mesh7 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        0.4393649995326996,
+        0,
+        0.16923099756240845
+      ],
+      "max": [
+        0.5247650146484375,
+        0.09000000357627869,
+        0.25463101267814636
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 1728
+    },
+    {
+      "name": "Mesh7 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 4608
+    },
+    {
+      "name": "Mesh7 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -20.65999984741211,
+        -2.5433099269866943
+      ],
+      "max": [
+        20.65999984741211,
+        11.024900436401367
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 1152
+    },
+    {
+      "name": "Mesh7 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 36,
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 432
+    },
+    {
+      "name": "Mesh8 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -0.049042098224163055,
+        0,
+        0.33606401085853577
+      ],
+      "max": [
+        0.03635789826512337,
+        0.14000000059604645,
+        0.4214639961719513
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 2016
+    },
+    {
+      "name": "Mesh8 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 4896
+    },
+    {
+      "name": "Mesh8 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -16.59309959411621,
+        -4.511809825897217
+      ],
+      "max": [
+        16.59309959411621,
+        17.59309959411621
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 1344
+    },
+    {
+      "name": "Mesh8 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 36,
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 504
+    },
+    {
+      "name": "Mesh9 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -0.38037601113319397,
+        0,
+        0.1441819965839386
+      ],
+      "max": [
+        -0.29497599601745605,
+        0.09000000357627869,
+        0.22958199679851532
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 2304
+    },
+    {
+      "name": "Mesh9 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 5184
+    },
+    {
+      "name": "Mesh9 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -14.9753999710083,
+        -2.5433099269866943
+      ],
+      "max": [
+        14.9753999710083,
+        10.038680076599121
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 1536
+    },
+    {
+      "name": "Mesh9 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 36,
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 576
+    },
+    {
+      "name": "Mesh10 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        0.5458430051803589,
+        0,
+        -0.16626299917697906
+      ],
+      "max": [
+        0.6312429904937744,
+        0.09000000357627869,
+        -0.08086349815130234
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 2592
+    },
+    {
+      "name": "Mesh10 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 5472
+    },
+    {
+      "name": "Mesh10 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 24,
+      "min": [
+        -24.852100372314453,
+        -5.545810222625732
+      ],
+      "max": [
+        24.852100372314453,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 1728
+    },
+    {
+      "name": "Mesh10 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 36,
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 648
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_041",
+      "byteLength": 8400,
+      "uri": "data:application/octet-stream;base64,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XrwLPwAAAADDm6W9XrwLPwAAAADZQCq+JJkhPwAAAADDm6W9JJkhP+xRuD3Dm6W9XrwLPwAAAADDm6W9JJkhPwAAAADDm6W9XrwLP+xRuD3Dm6W9JJkhP+xRuD3Dm6W9XrwLP+xRuD3ZQCq+XrwLP+xRuD3Dm6W9JJkhP+xRuD3ZQCq+XrwLP+xRuD3ZQCq+XrwLPwAAAADDm6W9XrwLP+xRuD3Dm6W9XrwLPwAAAADZQCq+AACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACASS5XwF4uB8EAAAAAAACAPwAAAABeLgfBSS5XwAAAgD8AAAAAXi4HwUkuV8AAAIA/AAAAAAAAgD9JLlfAXi4HwQAAAABJLhfASS5XQAAAgD9JLldASS4XwAAAAAAAAIA/AAAAAAAAgD9JLldAXi4HwQAAAABeLgfBSS5XQAAAgD8AAAAAAACAP0kuV8BJLhfASS5XwAAAgD8AAAAASS4XwEkuV0AAAIA/AAAAAF4uB8EAAAAAAACAP0kuV0BeLgfBSS5XwEkuj8EAAAAAAACAPwAAAABJLo/BSS5XwAAAgD8tlQpBSS6PwSGTqUAAAIA/LZUKQQAAgD8hk6lASS6PwS2VCsFJLhfAIZOpwAAAgD8hk6nASS4XwC2VCsEAAIA/LZUKwQAAgD8hk6nASS6PwS2VCsFJLo/BIZOpwAAAgD8tlQpBAACAPyGTqUBJLhfAIZOpQAAAgD8tlQpBSS4XwEkuV0AAAIA/AAAAAEkuj8EAAAAAAACAP0kuV0BJLo/BN4k2QQAAgD+GvQBB+ffbwIa9AEEAAIA/N4k2Qfn328BeopI/AACAP7w/kED599vAXqKSP/n328C8P5BAAACAP16ikj83iSbBvD+QQAt74cC8P5BAN4kmwV6ikj8Le+HAXqKSv/n328C8P5DAAACAP16ikr8AAIA/vD+QwPn328BeopK/C3vhwLw/kMA3iSbBvD+QwAt74cBeopK/N4kmwTeJNsH599vAhr0AwQAAgD+GvQDB+ffbwDeJNsEAAIA/uhTlQAAAgD8B+3JAs17PwAH7ckAAAIA/uhTlQLNez8BrmkzBAACAP7rOFsGzXs/Aa5pMwbNez8C6zhbBAACAP2uaTMG6FMXAus4WwQH7MsC6zhbBuhTFwGuaTMEB+zLAa5pMQbNez8C6zhZBAACAP2uaTEEAAIA/us4WQbNez8BrmkxBAfsywLrOFkG6FMXAus4WQQH7MsBrmkxBuhTFwLoU5cCzXs/AAftywAAAgD8B+3LAs17PwLoU5cAAAIA/14ZQwAAAgD+Q2tPASS6PwZDa08AAAIA/14ZQwEkuj8G1YATBAACAP0UqncBJLo/BtWAEwUkuj8FFKp3AAACAP7VgBMFsQ4hARSqdwJDa80BFKp3AbEOIQLVgBMGQ2vNAtWAEQUkuj8FFKp1AAACAP7VgBEEAAIA/RSqdQEkuj8G1YARBkNrzQEUqnUBsQ4hARSqdQJDa80C1YARBbEOIQNeGUEBJLo/BkNrTQAAAgD+Q2tNASS6PwdeGUEAAAIA/gvONQQAAgD9xG2ZBl8UiwHEbZkEAAIA/gvONQZfFIsCsyg/BAACAPzP+s8CXxSLArMoPwZfFIsAz/rPAAACAP6zKD8GC84XBM/6zwHEbVsEz/rPAgvOFwazKD8FxG1bBrMoPQZfFIsAz/rNAAACAP6zKD0EAAIA/M/6zQJfFIsCsyg9BcRtWwTP+s0CC84XBM/6zQHEbVsGsyg9BgvOFwYLzjcGXxSLAcRtmwQAAgD9xG2bBl8UiwILzjcEAAIA/bjTVwAAAgD/+ZSDBl8UiwP5lIMEAAIA/bjTVwJfFIsCuR6XBAACAP+VhisGXxSLArkelwZfFIsDlYYrBAACAP65HpcFuNPVA5WGKwf5lMEHlYYrBbjT1QK5HpcH+ZTBBrkelQZfFIsDlYYpBAACAP65HpUEAAIA/5WGKQZfFIsCuR6VB/mUwQeVhikFuNPVA5WGKQf5lMEGuR6VBbjT1QG401UCXxSLA/mUgQQAAgD/+ZSBBl8UiwG401UAAAIA/ICT3P79gkMBxOLe/AACAPyAk9z8AAIA/cTi3v79gkMAgJPe/xLFjQXE4tz+rvoxBcTi3P8SxY0EgJPe/q76MQcSxU0G/YJDAq76EQQAAgD+rvoRBv2CQwMSxU0EAAIA/cTi3v8SxY0EgJPc/q76MQSAk9z/EsWNBcTi3v6u+jEHEsVPBAACAP6u+hMG/YJDAq76EwQAAgD/EsVPBv2CQwHE4tz+/YJDAICT3vwAAgD9xOLc/AACAPyAk97+/YJDApKW1wAAAgD9vnhDBl8UiwG+eEMEAAIA/pKW1wJfFIsCrzzlBAACAPz2bb0GXxSLAq885QZfFIsA9m29BAACAP6vPOUGkpdVAPZtvQW+eIEE9m29BpKXVQKvPOUFvniBBq885wZfFIsA9m2/BAACAP6vPOcEAAIA/PZtvwZfFIsCrzznBb54gQT2bb8GkpdVAPZtvwW+eIEGrzznBpKXVQKSltUCXxSLAb54QQQAAgD9vnhBBl8UiwKSltUAAAIA/R3fRQAAAgD8awEtAl8UiwBrAS0AAAIA/R3fRQJfFIsAa0cbBAACAP1Hrq8GXxSLAGtHGwZfFIsBR66vBAACAPxrRxsFHd7HAUeurwRrAC8BR66vBR3exwBrRxsEawAvAGtHGQZfFIsBR66tBAACAPxrRxkEAAIA/UeurQZfFIsAa0cZBGsALwFHrq0FHd7HAUeurQRrAC8Aa0cZBR3exwEd30cCXxSLAGsBLwAAAgD8awEvAl8UiwEd30cAAAIA/AAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcAAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcAAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcAAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcAAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcAAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcAAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcAAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcAAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcAAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcA"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 5760,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 1920,
+      "byteOffset": 5760,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 720,
+      "byteOffset": 7680,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Green_leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.298039,
+          0.529412,
+          0.427451,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh2 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh3 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh4 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh5 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 16,
+            "NORMAL": 17,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh6 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 20,
+            "NORMAL": 21,
+            "TEXCOORD_0": 22
+          },
+          "indices": 23,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh7 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 24,
+            "NORMAL": 25,
+            "TEXCOORD_0": 26
+          },
+          "indices": 27,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh8 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 28,
+            "NORMAL": 29,
+            "TEXCOORD_0": 30
+          },
+          "indices": 31,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh9 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 32,
+            "NORMAL": 33,
+            "TEXCOORD_0": 34
+          },
+          "indices": 35,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh10 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 36,
+            "NORMAL": 37,
+            "TEXCOORD_0": 38
+          },
+          "indices": 39,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Group1 Model",
+      "mesh": 0
+    },
+    {
+      "name": "Mesh2 Group1 Model",
+      "mesh": 1
+    },
+    {
+      "name": "Mesh3 Group1 Model",
+      "mesh": 2
+    },
+    {
+      "name": "Mesh4 Group1 Model",
+      "mesh": 3
+    },
+    {
+      "name": "Mesh5 Group1 Model",
+      "mesh": 4
+    },
+    {
+      "name": "Mesh6 Group1 Model",
+      "mesh": 5
+    },
+    {
+      "name": "Mesh7 Group1 Model",
+      "mesh": 6
+    },
+    {
+      "name": "Mesh8 Group1 Model",
+      "mesh": 7
+    },
+    {
+      "name": "Mesh9 Group1 Model",
+      "mesh": 8
+    },
+    {
+      "name": "Mesh10 Group1 Model",
+      "mesh": 9
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ]
+}

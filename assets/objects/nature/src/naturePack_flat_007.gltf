@@ -1,0 +1,203 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Hanging_Moss Model_1_positions",
+      "componentType": 5126,
+      "count": 22,
+      "min": [
+        0,
+        0.06291429698467255,
+        -0.6299999952316284
+      ],
+      "max": [
+        0,
+        1.4299999475479126,
+        -0.17333300411701202
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Hanging_Moss Model_1_normals",
+      "componentType": 5126,
+      "count": 22,
+      "min": [
+        -1,
+        0,
+        0
+      ],
+      "max": [
+        1,
+        0,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 264
+    },
+    {
+      "name": "Mesh1 Hanging_Moss Model_1_texcoords",
+      "componentType": 5126,
+      "count": 22,
+      "min": [
+        -24.8031005859375,
+        -55.299198150634766
+      ],
+      "max": [
+        -6.824120044708252,
+        -1.4769400358200073
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Hanging_Moss Model_1_0_indices",
+      "componentType": 5123,
+      "count": 27,
+      "min": [
+        0
+      ],
+      "max": [
+        20
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Hanging_Moss Model_1_1_indices",
+      "componentType": 5123,
+      "count": 27,
+      "min": [
+        4
+      ],
+      "max": [
+        21
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 56
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_flat_007",
+      "byteLength": 816,
+      "uri": "data:application/octet-stream;base64,AAAAAD0Ktz+uRyG/AAAAAF2nlT81fjG+AAAAAD0Ktz81fjG+AAAAAMJpgT/gZnG+AAAAAD0Ktz81fjG+AAAAAF2nlT81fjG+AAAAAD0Ktz+uRyG/AAAAAMJpgT/gZnG+AAAAABlZYj7gZnG+AAAAABlZYj7gZnG+AAAAAPm+AD9ivMa+AAAAAPm+AD9ivMa+AAAAAMUfaT/wUgK/AAAAAMUfaT/wUgK/AAAAAIpXdT+uRyG/AAAAAIpXdT+uRyG/AAAAAM/2DD/wUgK/AAAAAM/2DD/wUgK/AAAAADbZgD3np5i+AAAAADbZgD3np5i+AAAAADbZgD1ivMa+AAAAADbZgD1ivMa+AACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAwGzGwWEyXcIxX9rAIR80wjFf2sBhMl3CCoAUwTg4G8IxX9rAYTJdwjFf2sAhHzTCwGzGwWEyXcIKgBTBODgbwgqAFMHhevbACoAUweF69sDYgXTB/mWWwdiBdMH+ZZbB1lagwXNoC8LWVqDBc2gLwsBsxsGL7BLCwGzGwYvsEsLWVqDBL26lwdZWoMEvbqXBfdA7wV8Mvb990DvBXwy9v9iBdMFfDL2/2IF0wV8Mvb8AAAEAAgABAAAAAwADAAAACAAIAAAACgAKAAAADAAMAAAADgAQAAoADAAIAAoAEgAUABIACgAAAAQABQAGAAcABgAFAAkABgAHAAsABgAJAA0ABgALAA8ABgANAA0ACwARABMACwAJAAsAEwAVAAAA"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 528,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 176,
+      "byteOffset": 528,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 112,
+      "byteOffset": 704,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Green_leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.298039,
+          0.529412,
+          0.427451,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "BackColor",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.917647,
+          0.439216,
+          0.305882,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Hanging_Moss Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Hanging_Moss Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

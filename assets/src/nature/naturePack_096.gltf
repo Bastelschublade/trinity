@@ -1,0 +1,203 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Grey_Cliff_Top Model_1_positions",
+      "componentType": 5126,
+      "count": 63,
+      "min": [
+        -0.41999998688697815,
+        -7.219109872913488e-16,
+        -3
+      ],
+      "max": [
+        0.5,
+        0.28999999165534973,
+        2.887650090154263e-15
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Grey_Cliff_Top Model_1_normals",
+      "componentType": 5126,
+      "count": 63,
+      "min": [
+        -0.8804680109024048,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 756
+    },
+    {
+      "name": "Mesh1 Grey_Cliff_Top Model_1_texcoords",
+      "componentType": 5126,
+      "count": 63,
+      "min": [
+        -118.7239990234375,
+        -117.11000061035156
+      ],
+      "max": [
+        118.11000061035156,
+        11.60890007019043
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Grey_Cliff_Top Model_1_0_indices",
+      "componentType": 5123,
+      "count": 117,
+      "min": [
+        0
+      ],
+      "max": [
+        62
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Grey_Cliff_Top Model_1_1_indices",
+      "componentType": 5123,
+      "count": 21,
+      "min": [
+        5
+      ],
+      "max": [
+        56
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 236
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_096",
+      "byteLength": 2296,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 1512,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 504,
+      "byteOffset": 1512,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 280,
+      "byteOffset": 2016,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Stone",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.72549,
+          0.752941,
+          0.788235,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.270588,
+          0.407843,
+          0.4,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Grey_Cliff_Top Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Grey_Cliff_Top Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

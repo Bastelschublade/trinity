@@ -1,0 +1,203 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 48,
+      "min": [
+        0,
+        0,
+        -0.9987429976463318
+      ],
+      "max": [
+        1.3037099838256836,
+        0.18000000715255737,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 48,
+      "min": [
+        -0.9485399723052979,
+        -1,
+        -0.9704189896583557
+      ],
+      "max": [
+        0.9134669899940491,
+        1,
+        0.9704189896583557
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 576
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 48,
+      "min": [
+        -51.32720184326172,
+        -38.32059860229492
+      ],
+      "max": [
+        51.32720184326172,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 18,
+      "min": [
+        0
+      ],
+      "max": [
+        39
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_1_indices",
+      "componentType": 5123,
+      "count": 66,
+      "min": [
+        4
+      ],
+      "max": [
+        47
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 36
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_013",
+      "byteLength": 1704,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 1152,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 384,
+      "byteOffset": 1152,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 168,
+      "byteOffset": 1536,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Green_leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.298039,
+          0.529412,
+          0.427451,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Wood",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.666667,
+          0.545098,
+          0.356863,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Group1 Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

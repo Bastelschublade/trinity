@@ -1,0 +1,417 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        0,
+        0,
+        -0.5825549960136414
+      ],
+      "max": [
+        0.517536997795105,
+        0.41499999165534973,
+        -0.16255499422550201
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        -0.591713011264801,
+        -0.7379109859466553,
+        -0.32459700107574463
+      ],
+      "max": [
+        0.591713011264801,
+        0.7379109859466553,
+        0.32459700107574463
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 576
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        -27.79680061340332,
+        -15.232399940490723
+      ],
+      "max": [
+        2.0775299072265625,
+        19.38759994506836
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 12,
+      "min": [
+        0
+      ],
+      "max": [
+        11
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh2 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        0.517536997795105,
+        0,
+        -0.5825549960136414
+      ],
+      "max": [
+        1.0350699424743652,
+        0.41499999165534973,
+        -0.16255499422550201
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 144
+    },
+    {
+      "name": "Mesh2 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        -0.591713011264801,
+        -0.7379109859466553,
+        -0.32459700107574463
+      ],
+      "max": [
+        0.591713011264801,
+        0.7379109859466553,
+        0.32459700107574463
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 720
+    },
+    {
+      "name": "Mesh2 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        -6.739789962768555,
+        -41.59659957885742
+      ],
+      "max": [
+        32.45909881591797,
+        -6.976550102233887
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 96
+    },
+    {
+      "name": "Mesh2 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 12,
+      "min": [
+        0
+      ],
+      "max": [
+        11
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 24
+    },
+    {
+      "name": "Mesh3 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        0.3075369894504547,
+        0,
+        -0.3725549876689911
+      ],
+      "max": [
+        0.7275369763374329,
+        0.5602499842643738,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 288
+    },
+    {
+      "name": "Mesh3 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        -0.3123739957809448,
+        -0.5260180234909058,
+        -0.7910289764404297
+      ],
+      "max": [
+        0.3123739957809448,
+        0.5260180234909058,
+        0.7910289764404297
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 864
+    },
+    {
+      "name": "Mesh3 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        7.034800052642822,
+        -21.695600509643555
+      ],
+      "max": [
+        30.867799758911133,
+        12.112700462341309
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 192
+    },
+    {
+      "name": "Mesh3 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 12,
+      "min": [
+        0
+      ],
+      "max": [
+        11
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 48
+    },
+    {
+      "name": "Mesh4 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        0.3075369894504547,
+        0,
+        -0.7451090216636658
+      ],
+      "max": [
+        0.7275369763374329,
+        0.5602499842643738,
+        -0.3725549876689911
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 432
+    },
+    {
+      "name": "Mesh4 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        -0.3123739957809448,
+        -0.5260180234909058,
+        -0.7910289764404297
+      ],
+      "max": [
+        0.3123739957809448,
+        0.5260180234909058,
+        0.7910289764404297
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 1008
+    },
+    {
+      "name": "Mesh4 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        -29.725900650024414,
+        -36.04779815673828
+      ],
+      "max": [
+        -8.176750183105469,
+        -2.239500045776367
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 288
+    },
+    {
+      "name": "Mesh4 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 12,
+      "min": [
+        0
+      ],
+      "max": [
+        11
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 72
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_flat_012",
+      "byteLength": 1632,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 1152,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 384,
+      "byteOffset": 1152,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 96,
+      "byteOffset": 1536,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Green_leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.298039,
+          0.529412,
+          0.427451,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh2 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh3 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh4 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Group1 Model",
+      "mesh": 0
+    },
+    {
+      "name": "Mesh2 Group1 Model",
+      "mesh": 1
+    },
+    {
+      "name": "Mesh3 Group1 Model",
+      "mesh": 2
+    },
+    {
+      "name": "Mesh4 Group1 Model",
+      "mesh": 3
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}

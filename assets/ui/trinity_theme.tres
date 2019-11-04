@@ -1,0 +1,50 @@
+[gd_resource type="Theme" load_steps=7 format=2]
+
+[ext_resource path="res://assets/ui/rpg/png/panel_brown.png" type="Texture" id=1]
+[ext_resource path="res://assets/ui/rpg/png/buttonLong_blue.png" type="Texture" id=2]
+[ext_resource path="res://assets/ui/rpg/png/buttonLong_brown_cutoff.png" type="Texture" id=3]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 100, 100 )
+margin_left = 59.0
+margin_right = 14.0
+margin_top = 32.0
+margin_bottom = 37.0
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 190, 36 )
+margin_left = 9.89508
+margin_right = 9.53573
+margin_top = 9.0
+margin_bottom = 0.662175
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 190, 37 )
+margin_left = 13.8426
+margin_right = 12.8963
+margin_top = 8.0
+margin_bottom = 5.0
+
+[resource]
+TabContainer/colors/font_color_bg = Color( 0.341176, 0.270588, 0.219608, 1 )
+TabContainer/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+TabContainer/colors/font_color_fg = Color( 0.941176, 0.941176, 0.941176, 1 )
+TabContainer/constants/hseparation = 4
+TabContainer/constants/label_valign_bg = 2
+TabContainer/constants/label_valign_fg = 0
+TabContainer/constants/side_margin = 8
+TabContainer/constants/top_margin = 24
+TabContainer/fonts/font = null
+TabContainer/icons/decrement = null
+TabContainer/icons/decrement_highlight = null
+TabContainer/icons/increment = null
+TabContainer/icons/increment_highlight = null
+TabContainer/icons/menu = null
+TabContainer/icons/menu_highlight = null
+TabContainer/styles/panel = SubResource( 1 )
+TabContainer/styles/tab_bg = SubResource( 2 )
+TabContainer/styles/tab_disabled = null
+TabContainer/styles/tab_fg = SubResource( 3 )

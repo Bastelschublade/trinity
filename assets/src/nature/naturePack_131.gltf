@@ -1,0 +1,159 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Rock_6 Model_1_positions",
+      "componentType": 5126,
+      "count": 30,
+      "min": [
+        0,
+        0,
+        -1
+      ],
+      "max": [
+        1,
+        0.3400000035762787,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Rock_6 Model_1_normals",
+      "componentType": 5126,
+      "count": 30,
+      "min": [
+        -0.6576390266418457,
+        -1,
+        -0.7626209855079651
+      ],
+      "max": [
+        0.7098940014839172,
+        1,
+        0.5723850131034851
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 360
+    },
+    {
+      "name": "Mesh1 Rock_6 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 30,
+      "min": [
+        -39.37009811401367,
+        -38.37009811401367
+      ],
+      "max": [
+        41.75830078125,
+        26.82659912109375
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Rock_6 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 48,
+      "min": [
+        0
+      ],
+      "max": [
+        29
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_131",
+      "byteLength": 1056,
+      "uri": "data:application/octet-stream;base64,PEsEP3sUrj7YKLu+AAAAAAAAAAAp7Rm/AAAAPwAAAAAAAACA0H+fPnsUrj5IxBy/PEsEP3sUrj7YKLu+HLLBPnsUrj5ClzS/0H+fPnsUrj5IxBy/aVMpP3sUrj4dzBq/EeMxP3sUrj5BLAu/PEsEP3sUrj7YKLu+AACAPwAAAAAAAAC/EeMxP3sUrj5BLAu/AAAAPwAAAAAAAACAAAAAPwAAAAAAAACAWyRVPwAAAAC9N06/AACAPwAAAAAAAAC/TYOSPgAAAAAAAIC/AAAAAAAAAAAp7Rm/0H+fPnsUrj5IxBy/TYOSPgAAAAAAAIC/AAAAAAAAAAAp7Rm/HLLBPnsUrj5ClzS/HLLBPnsUrj5ClzS/WyRVPwAAAAC9N06/TYOSPgAAAAAAAIC/aVMpP3sUrj4dzBq/EeMxP3sUrj5BLAu/WyRVPwAAAAC9N06/aVMpP3sUrj4dzBq/AACAPwAAAAAAAAC/WFUfv8pPFj8TfwQ/WFUfv8pPFj8TfwQ/WFUfv8pPFj8TfwQ/WFUfv8pPFj8TfwQ/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACA04cSP8pPFj/ThxI/04cSP8pPFj/ThxI/04cSP8pPFj/ThxI/04cSP8pPFj/ThxI/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACACFsov8pPFj+1pvG+CFsov8pPFj+1pvG+CFsov8pPFj+1pvG+CFsov8pPFj+1pvG+EvWKPspPFj8hO0O/EvWKPspPFj8hO0O/EvWKPspPFj8hO0O/EvWKPspPFj8hO0O/nbs1P8pPFj94J8e+nbs1P8pPFj94J8e+nbs1P8pPFj94J8e+nbs1P8pPFj94J8e+QrL4PyBjw8FDnJHB5WH8wHxhSUHlYfzAXCArwSBjw8Fhw6JB/kNWwaVObkHmLtbBNjxEQXDfuMHyUtBBGXO2wVfb2kH1OaPBaYDEQXOi68CACCdCCcQSQUvqCUJzouvA3bVeQQnEEkHhep3BAACAP7IdA8J6tvXB+3odwuF6lcGJQTTB+3oZwgAAAADfYLXBOOfVwSjV7cBmNxrCrqoRQSPbmcGuqhFBSvv5wSjV7cAbDZfAGFsHQSL9ocE4+MdB2IElQDj4x0F5aYTBGFsHQfz7s0BqpCRB5/tAQeCc1kGq1AVBaqQkQb/U07/gnNZBAAABAAIAAQAAAAMABAAFAAYABQAEAAcABwAEAAgACQAKAAsACgAJAAwADQAOAA8ADQAQAA4AEAANABEAEgATABQAEwASABUAFgAXABgAFwAWABkAGgAbABwAGwAaAB0A"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 720,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 240,
+      "byteOffset": 720,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 96,
+      "byteOffset": 960,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Stone",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.72549,
+          0.752941,
+          0.788235,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Rock_6 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Rock_6 Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Water_lily Model_1_positions",
+      "componentType": 5126,
+      "count": 42,
+      "min": [
+        0,
+        0,
+        -0.6174489855766296
+      ],
+      "max": [
+        0.5628190040588379,
+        0.10000000149011612,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Water_lily Model_1_normals",
+      "componentType": 5126,
+      "count": 42,
+      "min": [
+        -0.5764229893684387,
+        -1,
+        -0.9077720046043396
+      ],
+      "max": [
+        0.9958850145339966,
+        1,
+        0.9077720046043396
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 504
+    },
+    {
+      "name": "Mesh1 Water_lily Model_1_texcoords",
+      "componentType": 5126,
+      "count": 42,
+      "min": [
+        -22.158199310302734,
+        -23.30900001525879
+      ],
+      "max": [
+        22.158199310302734,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Water_lily Model_1_0_indices",
+      "componentType": 5123,
+      "count": 72,
+      "min": [
+        0
+      ],
+      "max": [
+        41
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_110",
+      "byteLength": 1488,
+      "uri": "data:application/octet-stream;base64,xLKBPs3MzD0AAACA1xSQPs3MzD0SEZ6+AAAAAM3MzD3G+ja+3uMIP83MzD2iJwW+xLKBPgAAAAAAAACA3uMIP83MzD2iJwW+xLKBPs3MzD0AAACA3uMIPwAAAACiJwW+xLKBPgAAAAAAAACA1xSQPgAAAAASEZ6+3uMIPwAAAACiJwW+AAAAAAAAAADG+ja+xLKBPs3MzD0AAACAAAAAAAAAAADG+ja+xLKBPgAAAAAAAACAAAAAAM3MzD3G+ja+AAAAAM3MzD3G+ja+1xSQPgAAAAASEZ6+AAAAAAAAAADG+ja+1xSQPs3MzD0SEZ6+1xSQPs3MzD0SEZ6+CCLmPAAAAAB1jvm+1xSQPgAAAAASEZ6+CCLmPM3MzD11jvm+DHeePs3MzD0jER6/CCLmPM3MzD11jvm+DHeePgAAAAAjER6/CCLmPM3MzD11jvm+DHeePs3MzD0jER6/CCLmPAAAAAB1jvm+DHeePgAAAAAjER6/CCLmPAAAAAB1jvm+6BQQPwAAAADjpOC+DHeePs3MzD0jER6/6BQQPwAAAADjpOC+DHeePgAAAAAjER6/6BQQP83MzD3jpOC+6BQQP83MzD3jpOC+3uMIP83MzD2iJwW+6BQQPwAAAADjpOC+6BQQP83MzD3jpOC+3uMIPwAAAACiJwW+AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACA28PWPgAAAAC/Y2g/28PWPgAAAAC/Y2g/28PWPgAAAAC/Y2g/28PWPgAAAAC/Y2g/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAdZATvwAAAADgMFE/dZATvwAAAADgMFE/dZATvwAAAADgMFE/dZATvwAAAADgMFE/28PWvgAAAAC/Y2i/28PWvgAAAAC/Y2i/28PWvgAAAAC/Y2i/28PWvgAAAAC/Y2i/dZATvwAAAADgMFE/dZATvwAAAADgMFE/dZATvwAAAADgMFE/dZATvwAAAADgMFE/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACA28PWvgAAAAC/Y2i/28PWvgAAAAC/Y2i/28PWvgAAAAC/Y2i/28PWvgAAAAC/Y2i/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAdZATPwAAAADgMFG/dZATPwAAAADgMFG/dZATPwAAAADgMFG/dZATPwAAAADgMFG/AAAAAAAAgD8AAACAUvJ+PwAAAABYl7k9UvJ+PwAAAABYl7k9UvJ+PwAAAABYl7k9UvJ+PwAAAABYl7k93JEfQQAAgD/+QzFB1XgywQAAAABgH8HA6GqoQV/Sg8Bm2hBBAACAP2IQqkH59zvAZtoQQfn3O8BiEKpBAACAP9yRH8EAAIA//kMxwdV4MsHoaqjBX9KDwAAAAABgH8HAj2QCQfn3O8AJxIHAAACAP49kAkEAAIA/CcSBwPn3O8Bd3DzA+fc7wL99csEAAIA/Xdw8wAAAgD+/fXLB+fc7wP8EA0D59zvAH4UiwQAAgD//BANAAACAPx+FIsH59zvAK/ZCQdV4usFokY0/TYSRwWIQqsEAAIA/ZtoQwfn3O8BiEKrB+fc7wGbaEMEAAIA/K/ZCwdV4usFokY2/TYSRwf5DscHyMILBCcSBQPn3O8CPZALBAACAPwnEgUAAAIA/j2QCwfn3O8D+Q7FB8jCCwTgy4ED59zvA7K+ZQQAAgD/sr5lB+fc7wDgy4EAAAIA/AAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcAGAAZAAEAGgAbABwAGwAaAB0AHgAJAB8ACgAJAB4ACgAeACAAIQAiACMAIgAhACQAGAADACUAAQADABgAJgAnACgAJwAmACkA"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 1008,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 336,
+      "byteOffset": 1008,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 144,
+      "byteOffset": 1344,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Green_leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.298039,
+          0.529412,
+          0.427451,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Water_lily Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Water_lily Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

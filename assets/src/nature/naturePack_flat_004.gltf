@@ -1,0 +1,245 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Grass Model_1_positions",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        0,
+        1.1279899377405095e-16,
+        -0.36250001192092896
+      ],
+      "max": [
+        0.7250000238418579,
+        0.39500001072883606,
+        -0.36250001192092896
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Grass Model_1_normals",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        0,
+        0,
+        -1
+      ],
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 240
+    },
+    {
+      "name": "Mesh1 Grass Model_1_texcoords",
+      "componentType": 5126,
+      "count": 8,
+      "min": [
+        0,
+        -14.551199913024902
+      ],
+      "max": [
+        28.54330062866211,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Grass Model_1_0_indices",
+      "componentType": 5123,
+      "count": 12,
+      "min": [
+        0
+      ],
+      "max": [
+        7
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh2 Grass Model_1_positions",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        0.36250001192092896,
+        0,
+        -0.7250000238418579
+      ],
+      "max": [
+        0.36250001192092896,
+        0.19750000536441803,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 96
+    },
+    {
+      "name": "Mesh2 Grass Model_1_normals",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        -1,
+        -1.827619908642791e-15,
+        -4.0725799468899204e-13
+      ],
+      "max": [
+        1,
+        1.827619908642791e-15,
+        4.0725799468899204e-13
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 336
+    },
+    {
+      "name": "Mesh2 Grass Model_1_texcoords",
+      "componentType": 5126,
+      "count": 12,
+      "min": [
+        -28.54330062866211,
+        -6.775589942932129
+      ],
+      "max": [
+        5.7980300248450245e-12,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 64
+    },
+    {
+      "name": "Mesh2 Grass Model_1_0_indices",
+      "componentType": 5123,
+      "count": 12,
+      "min": [
+        0
+      ],
+      "max": [
+        11
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 24
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_flat_004",
+      "byteLength": 688,
+      "uri": "data:application/octet-stream;base64,mpk5PysRNiWambm+AAAAACsRNiWambm+mpm5PmMMAiWambm+mpm5PnE9yj6ambm+mpm5PmMMAiWambm+AAAAACsRNiWambm+mpk5PysRNiWambm+mpm5PnE9yj6ambm+mpm5PgAAAACamTm/mpm5PmMMAiWambm+mpm5PnE9Sj6ambm+mpm5PnE9Sj6ambm+mpm5PmMMAiWambm+mpm5PgAAAACamTm/mpm5PmMMAiWambm+mpm5PqEOHCUAAACAmpm5PnE9Sj6ambm+mpm5PnE9Sj6ambm+mpm5PqEOHCUAAACAmpm5PmMMAiWambm+AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AACAv6OxA6cQROUqAACAv6OxA6cQROUqAACAv6OxA6cQROUqAACAP6OxAycQROWqAACAP6OxAycQROWqAACAP6OxAycQROWqAACAv6OxA6eGtOQqAACAv6OxA6eGtOQqAACAv6OxA6eGtOQqAACAP6OxAyeGtOSqAACAP6OxAyeGtOSqAACAP6OxAyeGtOSqrljkQQAAgD8AAAAAAACAP+JYZEEAAIA/4lhkQbfRaMHiWGRBAACAPwAAAAAAAIA/rljkQQAAgD/iWGRBt9Fowa5Y5MEAAIA/4lhkwQAAgD/iWGTBotHYwOJYZMGi0djA4lhkwQAAgD+uWOTBAACAP+JYZMEAAIA/AwDMLAAAgD/iWGTBotHYwOJYZMGi0djAAwDMLAAAgD/iWGTBAACAPwAAAQACAAEAAAADAAQABQAGAAcABgAFAAAAAQACAAMABAAFAAYABwAIAAkACgALAA=="
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 480,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 160,
+      "byteOffset": 480,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 48,
+      "byteOffset": 640,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Green_leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.298039,
+          0.529412,
+          0.427451,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Grass Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh2 Grass Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Grass Model",
+      "mesh": 0
+    },
+    {
+      "name": "Mesh2 Grass Model",
+      "mesh": 1
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ]
+}

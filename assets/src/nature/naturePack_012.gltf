@@ -1,0 +1,203 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Group1 Model_1_positions",
+      "componentType": 5126,
+      "count": 30,
+      "min": [
+        0,
+        0,
+        -1.1151700019836426
+      ],
+      "max": [
+        1.1904300451278687,
+        0.18000000715255737,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_normals",
+      "componentType": 5126,
+      "count": 30,
+      "min": [
+        -0.9511070251464844,
+        -1,
+        -0.9932739734649658
+      ],
+      "max": [
+        0.8787339925765991,
+        1,
+        0.9445809721946716
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 360
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 30,
+      "min": [
+        -46.867401123046875,
+        -42.904300689697266
+      ],
+      "max": [
+        46.867401123046875,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 39,
+      "min": [
+        0
+      ],
+      "max": [
+        28
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Model_1_1_indices",
+      "componentType": 5123,
+      "count": 9,
+      "min": [
+        21
+      ],
+      "max": [
+        29
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 80
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_012",
+      "byteLength": 1060,
+      "uri": "data:application/octet-stream;base64,A2CYPwAAAAAS9sW+evx6P+xROD4AAACAevx6PwAAAAAAAACAA2CYP+xROD4S9sW+f2f7PgAAAADkvY6/A2CYP+xROD4S9sW+A2CYPwAAAAAS9sW+f2f7PuxROD7kvY6/f2f7PgAAAADkvY6/AAAAAOxROD5Aaoe/f2f7PuxROD7kvY6/AAAAAAAAAABAaoe/f2f7PgAAAADkvY6/22qGPgAAAACSen++AAAAAAAAAABAaoe/evx6PwAAAAAAAACAA2CYPwAAAAAS9sW+evx6P+xROD4AAACA22qGPgAAAACSen++evx6PwAAAAAAAACA22qGPuxROD6Sen++f2f7PuxROD7kvY6/22qGPuxROD6Sen++evx6P+xROD4AAACAAAAAAOxROD5Aaoe/AAAAAOxROD5Aaoe/22qGPgAAAACSen++22qGPuxROD6Sen++AAAAAAAAAABAaoe/A2CYP+xROD4S9sW+tvRgPwAAAAAbYvQ+tvRgPwAAAAAbYvQ+tvRgPwAAAAAbYvQ+tvRgPwAAAAAbYvQ+Gaw4PwAAAACASjG/Gaw4PwAAAACASjG/Gaw4PwAAAACASjG/Gaw4PwAAAACASjG/sCDtvQAAAAA0R36/sCDtvQAAAAA0R36/sCDtvQAAAAA0R36/sCDtvQAAAAA0R36/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACA7BOovgAAAAAP0HE/7BOovgAAAAAP0HE/7BOovgAAAAAP0HE/7BOovgAAAAAP0HE/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAwHtzvwAAAABLI54+wHtzvwAAAABLI54+wHtzvwAAAABLI54+wHtzvwAAAABLI54+AAAAAAAAgD8AAACAhfwOQgAAgD+9Y5NBgsXCwL1jk0EAAIA/hfwOQoLFwsCcRJJBAACAP33Qq8GCxcLAfdCrwQAAgD+cRJJBgsXCwONHwsEAAIA/VFKawILFwsDjR8LBgsXCwFRSmsAAAIA/UqeawQGeK8JCYCXB1igNwQAAAABrmiLCYGUawgAAgD84eDvCIo5jwfDWEUKCxcLAyTzRQAAAgD/w1hFCAACAP8k80UCCxcLAUqeaQQGeK8JCYCVB1igNwWBlGkIAAIA/AAAAAGuaIsIldR7CgsXCwFPLxMAAAIA/U8vEwILFwsAldR7CAACAPzh4O0IijmPBAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8ADwAMABAAEQASABMAEgARABQAGQAaABsAGgAZABwAAAAVABYAFwAWABUAGAAVABcAHQAAAA=="
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 720,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 240,
+      "byteOffset": 720,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 100,
+      "byteOffset": 960,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Wood",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.666667,
+          0.545098,
+          0.356863,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Green_leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.298039,
+          0.529412,
+          0.427451,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Group1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Group1 Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

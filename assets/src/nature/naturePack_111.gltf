@@ -1,0 +1,203 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Mushroom_Red Model_1_positions",
+      "componentType": 5126,
+      "count": 48,
+      "min": [
+        0,
+        0,
+        -0.5022000074386597
+      ],
+      "max": [
+        0.43491798639297485,
+        0.5669999718666077,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Mushroom_Red Model_1_normals",
+      "componentType": 5126,
+      "count": 48,
+      "min": [
+        -0.9925569891929626,
+        -1,
+        -0.9925569891929626
+      ],
+      "max": [
+        0.9925569891929626,
+        0.6546540260314941,
+        0.9925569891929626
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 576
+    },
+    {
+      "name": "Mesh1 Mushroom_Red Model_1_texcoords",
+      "componentType": 5126,
+      "count": 48,
+      "min": [
+        -17.300199508666992,
+        -24.281600952148438
+      ],
+      "max": [
+        17.300199508666992,
+        5.610350131988525
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Mushroom_Red Model_1_0_indices",
+      "componentType": 5123,
+      "count": 30,
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Mushroom_Red Model_1_1_indices",
+      "componentType": 5123,
+      "count": 54,
+      "min": [
+        4
+      ],
+      "max": [
+        47
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 60
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_111",
+      "byteLength": 1704,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 1152,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 384,
+      "byteOffset": 1152,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 168,
+      "byteOffset": 1536,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "FrontColor",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Mushroom_Red",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.827451,
+          0.313725,
+          0.254902,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Mushroom_Red Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Mushroom_Red Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

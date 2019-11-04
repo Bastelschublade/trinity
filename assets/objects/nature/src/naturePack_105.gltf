@@ -1,0 +1,159 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Grey_Cliff_Corner Model_1_positions",
+      "componentType": 5126,
+      "count": 18,
+      "min": [
+        0,
+        0,
+        -0.7799999713897705
+      ],
+      "max": [
+        0.7799999713897705,
+        2.200000047683716,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Grey_Cliff_Corner Model_1_normals",
+      "componentType": 5126,
+      "count": 18,
+      "min": [
+        -0.7071070075035095,
+        -1,
+        -0.7071070075035095
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 216
+    },
+    {
+      "name": "Mesh1 Grey_Cliff_Corner Model_1_texcoords",
+      "componentType": 5126,
+      "count": 18,
+      "min": [
+        -43.4286003112793,
+        -85.61419677734375
+      ],
+      "max": [
+        30.70870018005371,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Grey_Cliff_Corner Model_1_0_indices",
+      "componentType": 5123,
+      "count": 24,
+      "min": [
+        0
+      ],
+      "max": [
+        17
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_105",
+      "byteLength": 624,
+      "uri": "data:application/octet-stream;base64,FK5HPwAAAAAAAACAAAAAAAAAAAAAAACAFK5HPwAAAAAUrke/FK5HP83MDEAAAACAAAAAAAAAAAAAAACAFK5HPwAAAAAAAACAAAAAAM3MDEAAAACAFK5HP83MDEAUrke/AAAAAM3MDEAAAACAFK5HP83MDEAAAACAFK5HP83MDEAUrke/AAAAAAAAAAAAAACAAAAAAM3MDEAAAACAFK5HPwAAAAAUrke/FK5HP83MDEAAAACAFK5HPwAAAAAUrke/FK5HP83MDEAUrke/FK5HPwAAAAAAAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACA9wQ1vwAAAAD3BDW/9wQ1vwAAAAD3BDW/9wQ1vwAAAAD3BDW/9wQ1vwAAAAD3BDW/AACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAa6v1wQAAgD8AAAAAAACAP2ur9cFrq+3Ba6v1QXg6q8IAAAAAAACAP2ur9UEAAIA/AAAAAHg6q8Jrq/VBa6vtwQAAAAAAAIA/a6v1QQAAgD/jti3CeDqrwgAAAAAAAIA/AAAAAHg6q8Ljti3CAACAPwAAAAB4OqvCa6v1QQAAgD9rq/VBeDqrwgAAAAAAAIA/AAABAAIAAwAEAAUABAADAAYABwAIAAkACgALAAwACwAKAA0ADgAPABAADwAOABEA"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 432,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 144,
+      "byteOffset": 432,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 48,
+      "byteOffset": 576,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Stone",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.72549,
+          0.752941,
+          0.788235,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Grey_Cliff_Corner Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Grey_Cliff_Corner Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

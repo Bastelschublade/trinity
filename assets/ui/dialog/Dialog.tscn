@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/ui/dialog/Dialog.gd" type="Script" id=1]
+[ext_resource path="res://assets/ui/rpg/png/panel_brown.png" type="Texture" id=2]
+[ext_resource path="res://assets/ui/rpg/png/panelInset_beige.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui/rpg/png/buttonRound_brown.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui/rpg/png/iconCross_beige.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui/rpg/png/iconCross_grey.png" type="Texture" id=6]
+
+[node name="Dialog" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="DialogWindow" type="NinePatchRect" parent="."]
+margin_left = 10.7076
+margin_top = 146.259
+margin_right = 280.708
+margin_bottom = 513.259
+texture = ExtResource( 2 )
+patch_margin_left = 80
+patch_margin_top = 50
+patch_margin_right = 40
+patch_margin_bottom = 50
+
+[node name="TextBox" type="NinePatchRect" parent="DialogWindow"]
+margin_left = 15.0
+margin_top = 13.0
+margin_right = 254.0
+margin_bottom = 268.0
+texture = ExtResource( 3 )
+patch_margin_left = 30
+patch_margin_top = 30
+patch_margin_right = 60
+patch_margin_bottom = 30
+
+[node name="TextLabel" type="RichTextLabel" parent="DialogWindow/TextBox"]
+margin_left = 9.0
+margin_top = 9.0
+margin_right = 228.0
+margin_bottom = 247.0
+custom_colors/default_color = Color( 0.286275, 0.145098, 0, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+
+[node name="buttonRound_brown" type="Sprite" parent="DialogWindow"]
+position = Vector2( 262.209, 6.00793 )
+texture = ExtResource( 4 )
+
+[node name="TextureButton" type="TextureButton" parent="DialogWindow"]
+margin_left = 255.0
+margin_top = -3.25035
+margin_right = 272.0
+margin_bottom = 13.7496
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+
+[node name="AnswerBox" type="MarginContainer" parent="DialogWindow"]
+margin_left = 20.0
+margin_top = 280.0
+margin_right = 256.0
+margin_bottom = 355.0
+
+[node name="MarginContainer" type="VBoxContainer" parent="DialogWindow/AnswerBox"]
+margin_right = 236.0
+margin_bottom = 75.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.01
+autostart = true
+[connection signal="pressed" from="DialogWindow/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

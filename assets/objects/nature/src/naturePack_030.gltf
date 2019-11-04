@@ -1,0 +1,159 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Tall_Rock_2 Model_1_positions",
+      "componentType": 5126,
+      "count": 92,
+      "min": [
+        0,
+        0,
+        -1.3600000143051147
+      ],
+      "max": [
+        1.1777900457382202,
+        2.1700000762939453,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Tall_Rock_2 Model_1_normals",
+      "componentType": 5126,
+      "count": 92,
+      "min": [
+        -0.9969890117645264,
+        -1,
+        -0.9554169774055481
+      ],
+      "max": [
+        0.9969890117645264,
+        1,
+        0.8647540211677551
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 1104
+    },
+    {
+      "name": "Mesh1 Tall_Rock_2 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 92,
+      "min": [
+        -46.850399017333984,
+        -85.7135009765625
+      ],
+      "max": [
+        46.850399017333984,
+        5.4946699142456055
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Tall_Rock_2 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 150,
+      "min": [
+        0
+      ],
+      "max": [
+        91
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_030",
+      "byteLength": 3244,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 2208,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 736,
+      "byteOffset": 2208,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 300,
+      "byteOffset": 2944,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Stone",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.72549,
+          0.752941,
+          0.788235,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Tall_Rock_2 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Tall_Rock_2 Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

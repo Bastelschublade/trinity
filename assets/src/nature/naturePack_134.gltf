@@ -1,0 +1,159 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Rock_4 Model_1_positions",
+      "componentType": 5126,
+      "count": 30,
+      "min": [
+        0,
+        0,
+        -1
+      ],
+      "max": [
+        1,
+        0.5299999713897705,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Rock_4 Model_1_normals",
+      "componentType": 5126,
+      "count": 30,
+      "min": [
+        -0.8500419855117798,
+        -1,
+        -0.7197589874267578
+      ],
+      "max": [
+        0.8518149852752686,
+        1,
+        0.8858810067176819
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 360
+    },
+    {
+      "name": "Mesh1 Rock_4 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 30,
+      "min": [
+        -41.75830078125,
+        -38.37009811401367
+      ],
+      "max": [
+        35.08720016479492,
+        21.163299560546875
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Rock_4 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 48,
+      "min": [
+        0
+      ],
+      "max": [
+        29
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_134",
+      "byteLength": 1056,
+      "uri": "data:application/octet-stream;base64,CoS1PhSuBz+kGo6+AAAAAAAAAAAAAAC/dTwWPgAAAAAAAACA8BagPhSuBz/eH9e+CoS1PhSuBz+kGo6+W5YHPxSuBz/SGiO/8BagPhSuBz/eH9e+jIMbPxSuBz+kGo6+dTwWPgAAAAAAAACAjIMbPxSuBz+kGo6+CoS1PhSuBz+kGo6+0hxRPwAAAAAAAACAdTwWPgAAAAAAAACAAAAAPwAAAAAAAIC/0hxRPwAAAAAAAACAAAAAAAAAAAAAAAC/8BagPhSuBz/eH9e+AAAAPwAAAAAAAIC/AAAAAAAAAAAAAAC/W5YHPxSuBz/SGiO/W5YHPxSuBz/SGiO/AACAPwAAAABjJyS/AAAAPwAAAAAAAIC/AvItPxSuBz/IlAe/AvItPxSuBz/IlAe/jIMbPxSuBz+kGo6+AACAPwAAAABjJyS/AvItPxSuBz/IlAe/0hxRPwAAAAAAAACAAACAPwAAAABjJyS/WpxZv+CF7T4Oan8+WpxZv+CF7T4Oan8+WpxZv+CF7T4Oan8+WpxZv+CF7T4Oan8+AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACASuWUI+CF7T4ZyWI/SuWUI+CF7T4ZyWI/SuWUI+CF7T4ZyWI/SuWUI+CF7T4ZyWI/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAmlwgv+CF7T6aXCC/mlwgv+CF7T6aXCC/mlwgv+CF7T6aXCC/mlwgv+CF7T6aXCC/2zYEP+CF7T4gQji/2zYEP+CF7T4gQji/2zYEP+CF7T4gQji/2zYEP+CF7T4gQji/AAAAAAAAgD8AAACAjBBaP+CF7T6vJHk+jBBaP+CF7T6vJHk+jBBaP+CF7T6vJHk+jBBaP+CF7T6vJHk+AAAAAAAAgL8AAACAIsPRwJ0AycEPHJfBZB7Jv+kr0D9kHsm/2IFGwZ0AycFUUl9B/tQewbHQpkGfq8DBw/VEQZ+reMHKVL9B/tQewYzWuEAAAIA/ylS/QcxutMFUUl9BzG60wSCjAEIAAIA/jNa4wAAAgD/hep3B+3oZwiCjAMIAAIA/AAAAAOF6lcERNqPBC8aAwYAIJ8Lwou5A3bVewfCi7kD07AHCC8aAwUJbFMCwAxnAJCiKwXBOqUFTrt5AcE6pQQdCGcGwAxnA2AHWQaXOnsFrmohB9VYDwUtZDELChnVBayvbQfVWA8GtUQ1BwoZ1Qft6HcL39cHBAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACQAIAAsADAANAA4ADQAMAA8AEAARABIAEQAQABMAFAAVABYAFQAUABcABQAHABgAGQAaABsAGgAZABwADgANAB0A"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 720,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 240,
+      "byteOffset": 720,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 96,
+      "byteOffset": 960,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Stone",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.72549,
+          0.752941,
+          0.788235,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Rock_4 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Rock_4 Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

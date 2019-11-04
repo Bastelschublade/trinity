@@ -1,0 +1,159 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Brown_Cliff_Bottom_Corner Model_1_positions",
+      "componentType": 5126,
+      "count": 18,
+      "min": [
+        0,
+        0,
+        -1.1399999856948853
+      ],
+      "max": [
+        1.1399999856948853,
+        2.200000047683716,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Brown_Cliff_Bottom_Corner Model_1_normals",
+      "componentType": 5126,
+      "count": 18,
+      "min": [
+        -0.7024199962615967,
+        -1,
+        -0.7024199962615967
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 216
+    },
+    {
+      "name": "Mesh1 Brown_Cliff_Bottom_Corner Model_1_texcoords",
+      "componentType": 5126,
+      "count": 18,
+      "min": [
+        -63.472599029541016,
+        -86.19210052490234
+      ],
+      "max": [
+        44.881900787353516,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Brown_Cliff_Bottom_Corner Model_1_0_indices",
+      "componentType": 5123,
+      "count": 24,
+      "min": [
+        0
+      ],
+      "max": [
+        17
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_123",
+      "byteLength": 624,
+      "uri": "data:application/octet-stream;base64,heuRPwAAAAAAAACAAAAAANu99SEAAACAheuRPwAAAACF65G/heuRP83MDEAAAACAAAAAANu99SEAAACAheuRPwAAAAAAAACA7FG4Ps3MDEDUp6irheuRP83MDEAAAACAheuRP83MDEAUrke/7FG4Ps3MDEDUp6irheuRP83MDEAAAACAheuRPwAAAACF65G/heuRP83MDEAUrke/heuRPwAAAAAAAACAAAAAANu99SEAAACAheuRP83MDEAUrke/heuRPwAAAACF65G/7FG4Ps3MDEDUp6irEJDXoQAAgL8zdsYHEJDXoQAAgL8zdsYHEJDXoQAAgL8zdsYHFuUJq1njryoAAIA/FuUJq1njryoAAIA/FuUJq1njryoAAIA/FuUJq1njryoAAIA/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAACAP+SJgim6rsypAACAP+SJgim6rsypAACAP+SJgim6rsypAACAP+SJgim6rsypzNEzvzBm6z3M0TO/zNEzvzBm6z3M0TO/zNEzvzBm6z3M0TO/zNEzvzBm6z3M0TO/EYczwgAAgD8glf4GAACAPxGHM8IRhy/CEYczQng6q8IAAAAAAACAPxGHM0IAAIA/bcViQXg6q8IRhzNCAACAPxGHM0Jrq+3BbcViQQAAgD8hio+seDqrwhGHM0IAAIA/a6v1QXg6q8Ihio+sAACAPwAAAAAAAIA/as1VwltirMLx433CAACAPx1aIMFbYqzCAAABAAIAAwAEAAUABAADAAYABwAIAAkACgALAAwACwAKAA0ADgAPABAADwAOABEA"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 432,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 144,
+      "byteOffset": 432,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 48,
+      "byteOffset": 576,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Wood",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.666667,
+          0.545098,
+          0.356863,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Brown_Cliff_Bottom_Corner Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Brown_Cliff_Bottom_Corner Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

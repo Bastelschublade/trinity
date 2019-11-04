@@ -1,0 +1,203 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Trunk Model_1_positions",
+      "componentType": 5126,
+      "count": 64,
+      "min": [
+        0,
+        0,
+        -0.8036900162696838
+      ],
+      "max": [
+        0.8036900162696838,
+        0.8299999833106995,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Trunk Model_1_normals",
+      "componentType": 5126,
+      "count": 64,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 768
+    },
+    {
+      "name": "Mesh1 Trunk Model_1_texcoords",
+      "componentType": 5126,
+      "count": 64,
+      "min": [
+        -31.641300201416016,
+        -32.166500091552734
+      ],
+      "max": [
+        31.641300201416016,
+        13.8233003616333
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Trunk Model_1_0_indices",
+      "componentType": 5123,
+      "count": 84,
+      "min": [
+        0
+      ],
+      "max": [
+        63
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Trunk Model_1_1_indices",
+      "componentType": 5123,
+      "count": 24,
+      "min": [
+        20
+      ],
+      "max": [
+        43
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 168
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_108",
+      "byteLength": 2264,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 1536,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 512,
+      "byteOffset": 1536,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 216,
+      "byteOffset": 2048,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Wood",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.666667,
+          0.545098,
+          0.356863,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Light_Wood",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.937255,
+          0.764706,
+          0.501961,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Trunk Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Trunk Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

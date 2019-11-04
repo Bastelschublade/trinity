@@ -1,0 +1,203 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Large_Oak_Dark Model_1_positions",
+      "componentType": 5126,
+      "count": 96,
+      "min": [
+        0,
+        0,
+        -2.6154000759124756
+      ],
+      "max": [
+        3.0199999809265137,
+        4.601550102233887,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Large_Oak_Dark Model_1_normals",
+      "componentType": 5126,
+      "count": 96,
+      "min": [
+        -0.9946939945220947,
+        -1,
+        -0.9946939945220947
+      ],
+      "max": [
+        0.9946939945220947,
+        0.7716420292854309,
+        0.9946939945220947
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 1152
+    },
+    {
+      "name": "Mesh1 Large_Oak_Dark Model_1_texcoords",
+      "componentType": 5126,
+      "count": 96,
+      "min": [
+        -105.81900024414062,
+        -173.8209991455078
+      ],
+      "max": [
+        104.03500366210938,
+        8.230850219726562
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Large_Oak_Dark Model_1_0_indices",
+      "componentType": 5123,
+      "count": 30,
+      "min": [
+        0
+      ],
+      "max": [
+        41
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Large_Oak_Dark Model_1_1_indices",
+      "componentType": 5123,
+      "count": 120,
+      "min": [
+        4
+      ],
+      "max": [
+        95
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 60
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_071",
+      "byteLength": 3372,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 2304,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 768,
+      "byteOffset": 2304,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 300,
+      "byteOffset": 3072,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Wood",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.666667,
+          0.545098,
+          0.356863,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.270588,
+          0.407843,
+          0.4,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Large_Oak_Dark Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Large_Oak_Dark Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

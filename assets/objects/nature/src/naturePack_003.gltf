@@ -1,0 +1,203 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Plate_Grass Model_1_positions",
+      "componentType": 5126,
+      "count": 32,
+      "min": [
+        0,
+        0,
+        -3
+      ],
+      "max": [
+        3,
+        0.30000001192092896,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Plate_Grass Model_1_normals",
+      "componentType": 5126,
+      "count": 32,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        0.994359016418457,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 384
+    },
+    {
+      "name": "Mesh1 Plate_Grass Model_1_texcoords",
+      "componentType": 5126,
+      "count": 32,
+      "min": [
+        -118.11000061035156,
+        -117.6969985961914
+      ],
+      "max": [
+        118.11000061035156,
+        59.13740158081055
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Plate_Grass Model_1_0_indices",
+      "componentType": 5123,
+      "count": 30,
+      "min": [
+        0
+      ],
+      "max": [
+        28
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Plate_Grass Model_1_1_indices",
+      "componentType": 5123,
+      "count": 12,
+      "min": [
+        4
+      ],
+      "max": [
+        31
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 60
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "naturePack_003",
+      "byteLength": 1108,
+      "uri": "data:application/octet-stream;base64,AABAQJqZmT4AAACAAAAAAAAAAAAAAACAAABAQAAAAAAAAACAAAAAAJqZmT4AAACAAABAQJqZmT4AAACAAADAPylcDz4AAMC/AAAAAJqZmT4AAACAAABAQJqZmT4AAEDAAADAPylcDz4AAMC/AABAQJqZmT4AAACAAABAQJqZmT4AAEDAAAAAAJqZmT4AAEDAAADAPylcDz4AAMC/AABAQAAAAAAAAEDAAAAAAJqZmT4AAEDAAABAQJqZmT4AAEDAAAAAAAAAAAAAAEDAAABAQAAAAAAAAEDAAAAAAAAAAAAAAACAAAAAAAAAAAAAAEDAAABAQAAAAAAAAACAAABAQAAAAAAAAEDAAABAQJqZmT4AAACAAABAQAAAAAAAAACAAABAQJqZmT4AAEDAAAAAAAAAAAAAAACAAAAAAJqZmT4AAEDAAAAAAAAAAAAAAEDAAAAAAJqZmT4AAACAAADAPylcDz4AAMC/AAAAAJqZmT4AAEDAAAAAAJqZmT4AAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/BFk9olCOfj+bONm9BFk9olCOfj+bONm9BFk9olCOfj+bONm9mzjZvVCOfj8AAACAmzjZvVCOfj8AAACAmzjZvVCOfj8AAACAB4yDIVCOfj+bONk9B4yDIVCOfj+bONk9B4yDIVCOfj+bONk9AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAmzjZPVCOfj8AAACAmzjZPVCOfj8AAACAmzjZPVCOfj8AAACAUjjsQtv5LMEAAAAAAACAP1I47EIAAIA/AAAAANv5LMFSOOzCI2eBvmw4bMKzjGxCBgAACiNngb5SOOzC3WTrwmw4bML1OWnCAAAAAN1k68JSOOxC3WTrwoINjybdZOvCbDhsQvU5acJSOOzCAACAPwAAAADb+SzBUjjswtv5LMEAAAAAAACAP1I47MJSOOrCAAAAAAAAgD8AAAAAUjjqwlI47MIAAIA/UjjsQgAAgD8AAAAA2/kswQAAAAAAAIA/UjjsQtv5LMEAAAAAAACAP1I47MLb+SzBUjjswgAAgD8AAAAA2/kswWw4bEKzjGxCUjjsQiNngb4AAAAAI2eBvgAAAQACAAEAAAADAA0ADgAPAA4ADQAQABEAEgATABIAEQAUABUAFgAXABYAFQAYABkAGgAbABoAGQAcAAQABQAGAAcACAAJAAoACwAMAB0AHgAfAA=="
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 768,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 256,
+      "byteOffset": 768,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 84,
+      "byteOffset": 1024,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Wood",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.666667,
+          0.545098,
+          0.356863,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Leafs",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.270588,
+          0.407843,
+          0.4,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Plate_Grass Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Plate_Grass Model",
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
