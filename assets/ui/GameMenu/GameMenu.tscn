@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/ui/GameMenu/GameMenuWindow.gd" type="Script" id=1]
 [ext_resource path="res://assets/ui/rpg/png/panel_brown.png" type="Texture" id=2]
@@ -6,10 +6,11 @@
 [ext_resource path="res://assets/ui/rpg/png/panelInset_beige.png" type="Texture" id=4]
 [ext_resource path="res://assets/ui/rpg/png/buttonLong_brown.png" type="Texture" id=5]
 [ext_resource path="res://assets/ui/rpg/png/buttonLong_brown_pressed.png" type="Texture" id=6]
-[ext_resource path="res://assets/ui/inventory/Inventory.tscn" type="PackedScene" id=7]
-[ext_resource path="res://assets/ui/rpg/png/buttonRound_brown.png" type="Texture" id=8]
-[ext_resource path="res://assets/ui/rpg/png/iconCross_beige.png" type="Texture" id=9]
-[ext_resource path="res://assets/ui/rpg/png/iconCross_grey.png" type="Texture" id=10]
+[ext_resource path="res://assets/ui/rpg/png/buttonLong_blue.png" type="Texture" id=7]
+[ext_resource path="res://assets/ui/inventory/Inventory.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/ui/rpg/png/buttonRound_brown.png" type="Texture" id=9]
+[ext_resource path="res://assets/ui/rpg/png/iconCross_beige.png" type="Texture" id=10]
+[ext_resource path="res://assets/ui/rpg/png/iconCross_grey.png" type="Texture" id=11]
 
 [node name="GameMenu" type="Control"]
 anchor_right = 1.0
@@ -71,6 +72,7 @@ custom_constants/margin_left = 10
 custom_constants/margin_bottom = 10
 
 [node name="Background" type="NinePatchRect" parent="TabContainer/Menü/HBoxContainer/LeftPanel"]
+visible = false
 margin_left = 10.0
 margin_top = 10.0
 margin_right = 250.0
@@ -83,13 +85,13 @@ patch_margin_right = 58
 patch_margin_bottom = 34
 
 [node name="TextureRect" type="TextureRect" parent="TabContainer/Menü/HBoxContainer/LeftPanel"]
+visible = false
 margin_left = 10.0
 margin_top = 10.0
 margin_right = 250.0
 margin_bottom = 380.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Menü/HBoxContainer/LeftPanel"]
-editor/display_folded = true
 margin_left = 35.0
 margin_top = 91.0
 margin_right = 225.0
@@ -103,6 +105,14 @@ margin_right = 190.0
 margin_bottom = 49.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
+texture_disabled = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Pause"
+align = 1
+valign = 1
 
 [node name="Button2" type="TextureButton" parent="TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer"]
 margin_top = 53.0
@@ -111,6 +121,13 @@ margin_bottom = 102.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 
+[node name="Label" type="Label" parent="TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer/Button2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Speichern"
+align = 1
+valign = 1
+
 [node name="Button3" type="TextureButton" parent="TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer"]
 margin_top = 106.0
 margin_right = 190.0
@@ -118,12 +135,26 @@ margin_bottom = 155.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
 
+[node name="Label" type="Label" parent="TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer/Button3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Laden"
+align = 1
+valign = 1
+
 [node name="Button4" type="TextureButton" parent="TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer"]
 margin_top = 159.0
 margin_right = 190.0
 margin_bottom = 208.0
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer/Button4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Beenden"
+align = 1
+valign = 1
 
 [node name="RightPanel" type="MarginContainer" parent="TabContainer/Menü/HBoxContainer"]
 editor/display_folded = true
@@ -165,7 +196,7 @@ margin_right = -14.0
 margin_bottom = -37.0
 scrolling_enabled = false
 
-[node name="Inventory" parent="TabContainer/Inventar" instance=ExtResource( 7 )]
+[node name="Inventory" parent="TabContainer/Inventar" instance=ExtResource( 8 )]
 
 [node name="Karte" type="Tabs" parent="TabContainer"]
 visible = false
@@ -298,15 +329,15 @@ margin_left = 0.556564
 margin_top = 1.02369
 margin_right = 38.5566
 margin_bottom = 39.0237
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
 expand = true
 
 [node name="TextureButton" type="TextureButton" parent="CloseButton"]
-margin_left = 5.66515
-margin_top = 4.14175
-margin_right = 35.6651
-margin_bottom = 34.1417
-texture_normal = ExtResource( 9 )
-texture_hover = ExtResource( 10 )
+margin_left = 11.361
+margin_top = 8.07318
+margin_right = 30.361
+margin_bottom = 27.0732
+texture_normal = ExtResource( 10 )
+texture_hover = ExtResource( 11 )
 expand = true
 [connection signal="pressed" from="CloseButton/TextureButton" to="." method="_on_TextureButton_pressed"]

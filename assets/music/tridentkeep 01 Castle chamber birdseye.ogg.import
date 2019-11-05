@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tridentkeep 01 Castle chamber birdseye.ogg-238245b1c0067c4dc8b2e79a23e85b8f.oggstr"
+
+[deps]
+
+source_file="res://assets/music/tridentkeep 01 Castle chamber birdseye.ogg"
+dest_files=[ "res://.import/tridentkeep 01 Castle chamber birdseye.ogg-238245b1c0067c4dc8b2e79a23e85b8f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

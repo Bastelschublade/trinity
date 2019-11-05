@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/randommind Loop_Rejoicing.ogg-35a84ad6d275f246554ee90030a9391b.oggstr"
+
+[deps]
+
+source_file="res://assets/music/randommind Loop_Rejoicing.ogg"
+dest_files=[ "res://.import/randommind Loop_Rejoicing.ogg-35a84ad6d275f246554ee90030a9391b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

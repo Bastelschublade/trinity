@@ -23,11 +23,7 @@ func _ready():
 
 func _physics_process(delta):
 	player_pos = player.get_global_transform().origin
-	
-	#input
-	var menu_window = get_node('Ui/GameMenu')
-	if Input.is_action_just_pressed('menu'):
-		menu_window.set_visible(!menu_window.is_visible())
+
 		
 		
 	

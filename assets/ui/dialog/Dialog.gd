@@ -24,8 +24,8 @@ func setup_view(view):
 	for choice in answerbox.get_children():
 		choice.queue_free()
 	choices = view['choices']
-	
-	
+
+
 func answer(choice):
 	if 'view' in choice:
 		setup_view(views[choice['view']])
@@ -55,7 +55,7 @@ func check_conditions(conditions):
 		if fulfill_all:
 			fulfill = true
 	return fulfill
-	
+
 
 func finish_talk():
 	for ans in choices:
@@ -95,7 +95,6 @@ func _on_Timer_timeout():
 	if visible >= len(label.text):
 		finish_talk()
 		typing = false
-	
 
 
 func _on_TextureButton_pressed():

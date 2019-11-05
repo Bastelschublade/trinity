@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Level.gd" type="Script" id=1]
 [ext_resource path="res://assets/map/Map.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/character/Character.gd" type="Script" id=4]
 [ext_resource path="res://assets/npc/gustav/Gustav.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/ui/Ui.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/music/randommind Loop_Rejoicing.ogg" type="AudioStream" id=7]
 
 [node name="Level" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15605, 0.295441, 0.995201 )
@@ -21,10 +22,10 @@ shadow_enabled = true
 directional_shadow_max_distance = 380.7
 
 [node name="Map" parent="." instance=ExtResource( 2 )]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.22192, 0, 0 )
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
 
 [node name="Character" parent="." instance=ExtResource( 3 )]
-transform = Transform( 0.867703, 0, 0.497082, 0, 1, 0, -0.497082, 0, 0.867703, -7.77499, -0.161743, 1.70325 )
+transform = Transform( 0.867703, 0, 0.497082, 0, 1, 0, -0.497082, 0, 0.867703, -18.2464, -0.161743, 23.3818 )
 script = ExtResource( 4 )
 
 [node name="NPCs" type="Spatial" parent="."]
@@ -37,3 +38,9 @@ npc_max_health = 30.0
 npc_can_talk = true
 
 [node name="Ui" parent="." instance=ExtResource( 6 )]
+
+[node name="Music" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 7 )
+autoplay = true

@@ -45,6 +45,10 @@ func update_cursor(object):
 		self.sprite.texture = collect
 		self.tooltip.set_text(object.go_tooltip)
 		self.tooltip.set('visible', true)
+	elif object is Animal:
+		self.sprite.texture = attack
+		self.tooltip.set_text(object.animal_name)
+		self.tooltip.set('visible', true)
 
 
 func process_click(object, distance):
@@ -52,6 +56,8 @@ func process_click(object, distance):
 		collect_object(object)
 	elif object is NPC and distance < TALK_RANGE:
 		object.start_dialog()
+	elif object is Animal and distance < TALK_RANGE:
+		object.on_click()
 
 
 # -------------------------------------- #
