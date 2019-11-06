@@ -1,0 +1,47 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=1]
+resource_name = "Shader Nodetree"
+code = "shader_type spatial;
+render_mode blend_mix, depth_draw_always, cull_back, diffuse_burley, specular_schlick_ggx;
+
+
+
+void node_bsdf_diffuse(vec4 color, float roughness, out vec3 albedo,
+        out float specular_out, out float oren_nayar_roughness_out) {
+    albedo = color.rgb;
+    specular_out = 0.5;
+    oren_nayar_roughness_out = roughness;
+}
+
+void vertex () {
+}
+
+void fragment () {
+	
+	// node: 'Diffuse BSDF'
+	// type: 'ShaderNodeBsdfDiffuse'
+	// input sockets handling
+	vec4 node0_in0_color = vec4(0.8000000715255737, 0.41419506072998047,
+		0.16755585372447968, 1.0);
+	float node0_in1_roughness = float(0.0);
+	vec3 node0_in2_normal = NORMAL;
+	// output sockets definitions
+	vec3 node0_bsdf_out0_albedo;
+	float node0_bsdf_out1_specular;
+	float node0_bsdf_out2_oren_nayar_roughness;
+	
+	node_bsdf_diffuse(node0_in0_color, node0_in1_roughness, node0_bsdf_out0_albedo,
+		node0_bsdf_out1_specular, node0_bsdf_out2_oren_nayar_roughness);
+	
+	
+	ALBEDO = node0_bsdf_out0_albedo;
+	SPECULAR = node0_bsdf_out1_specular;
+	NORMAL = node0_in2_normal;
+	// uncomment it only when you set diffuse mode to oren nayar
+	// ROUGHNESS = node0_bsdf_out2_oren_nayar_roughness;
+}
+"
+
+[resource]
+shader = SubResource( 1 )

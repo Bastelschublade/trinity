@@ -4,7 +4,13 @@ class_name Animal
 export(float) var animal_respawn = 5
 export(float) var animal_walk_speed = 0.2
 export(float) var animal_run_speed = 4
-export(String) var animal_name = "Nutztier"
+export(float) var animal_walk_speed_scale = 1
+export(String) var animal_name = "Tier"
+#export(bool) var animal_can_eat = true
+#export(Dictionary) var animal_food = {}
+#export(bool) var animal_stick_to_spawn = true
+#export(float) var animal_browse_radius = 10
+
 
 #var direction = Vector3(0,0,0)
 var dead = false
@@ -14,10 +20,14 @@ var speed = 0
 var task = 'browse'
 var walking = false
 var velocity = Vector3(0,0,0)
+#var spawn
+#var age = 0
 onready var anim_player = get_node('AnimationPlayer')
 
+
 func _ready():
-	var looped_anims = ['Idle', 'Walk', 'WalkSlow']
+	#self.spawn = self.position
+	var looped_anims = ['Idle', 'Walk', 'Run']
 	for anim_name in anim_player.get_animation_list():
 		if anim_name in looped_anims:
 			anim_player.get_animation(anim_name).loop = true
@@ -25,7 +35,7 @@ func _ready():
 	print(anim_player.is_playing())
 	var motion_timer = Timer.new()
 	motion_timer.connect("timeout", self, "_on_motion_timer_timeout")
-	motion_timer.start(4)
+	motion_timer.start(rand_range(3,5))
 	self.add_child(motion_timer)
 
 # find direction to obj
@@ -41,10 +51,6 @@ func _physics_process(delta):
 
 
 func on_click():
-	print('animal clicked')
-	print('speed: ', speed)
-	print('name: ', animal_name)
-	print('anim: ', anim_player.current_animation, anim_player.is_playing())
 	
 	var menu_scene = preload('res://assets/ui/CursorMenu.tscn')
 	var c_menu = menu_scene.instance()
@@ -69,4 +75,4 @@ func _on_motion_timer_timeout():
 		if speed == 0:
 			anim_player.current_animation = "Idle"
 		else:
-			anim_player.current_animation = "WalkSlow"
+			anim_player.current_animation = "Walk"

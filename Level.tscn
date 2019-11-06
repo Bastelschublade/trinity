@@ -43,4 +43,3 @@ npc_can_talk = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Music"]
 stream = ExtResource( 7 )
-autoplay = true
