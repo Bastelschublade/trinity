@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://assets/map/Graveyard.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/objects/Coin.tscn" type="PackedScene" id=2]
@@ -36,6 +36,7 @@
 [ext_resource path="res://assets/objects/animals/wolf/Wolf.tscn" type="PackedScene" id=34]
 [ext_resource path="res://assets/objects/nature/buildings/046Fence.tscn" type="PackedScene" id=35]
 [ext_resource path="res://assets/objects/nature/buildings/047Fence.tscn" type="PackedScene" id=36]
+[ext_resource path="res://assets/scenes/Castle.tscn" type="PackedScene" id=37]
 
 [node name="Map" type="Spatial"]
 
@@ -4650,12 +4651,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9 )
 [node name="Tile037" parent="Ground/Chunk024" instance=ExtResource( 23 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12 )
 
-[node name="Tile065" parent="Ground/Chunk024" instance=ExtResource( 23 )]
-transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -0.189114, 0, 17.8188 )
-
-[node name="Tile066" parent="Ground/Chunk024" instance=ExtResource( 23 )]
-transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -5.80429, 0, 17.8188 )
-
 [node name="Tile041" parent="Ground/Chunk024" instance=ExtResource( 23 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15 )
 
@@ -4993,7 +4988,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 6 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 9 )
 
 [node name="Tile033" parent="Ground/Chunk025" instance=ExtResource( 23 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.9875, 0, 12 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 12 )
 
 [node name="Tile044" parent="Ground/Chunk025" instance=ExtResource( 23 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 15 )
@@ -5026,6 +5021,981 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 15 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 18 )
 
 [node name="Tile060" parent="Ground/Chunk025" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 21 )
+
+[node name="Chunk026" type="Spatial" parent="Ground"]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -72, 0, 48 )
+
+[node name="Tile001" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+
+[node name="Tile014" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
+
+[node name="Tile023" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6 )
+
+[node name="Tile032" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9 )
+
+[node name="Tile037" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12 )
+
+[node name="Tile041" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15 )
+
+[node name="Tile049" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18 )
+
+[node name="Tile064" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21 )
+
+[node name="Tile002" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0 )
+
+[node name="Tile011" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3 )
+
+[node name="Tile021" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6 )
+
+[node name="Tile031" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 9 )
+
+[node name="Tile034" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 12 )
+
+[node name="Tile047" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 15 )
+
+[node name="Tile054" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 18 )
+
+[node name="Tile058" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 21 )
+
+[node name="Tile003" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+
+[node name="Tile016" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3 )
+
+[node name="Tile024" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6 )
+
+[node name="Tile029" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 9 )
+
+[node name="Tile040" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 12 )
+
+[node name="Tile046" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 15 )
+
+[node name="Tile052" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 18 )
+
+[node name="Tile063" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 21 )
+
+[node name="Tile004" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0 )
+
+[node name="Tile009" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 3 )
+
+[node name="Tile022" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 6 )
+
+[node name="Tile030" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 9 )
+
+[node name="Tile039" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 12 )
+
+[node name="Tile048" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 15 )
+
+[node name="Tile056" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 18 )
+
+[node name="Tile057" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 21 )
+
+[node name="Tile005" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0 )
+
+[node name="Tile012" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 3 )
+
+[node name="Tile020" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 6 )
+
+[node name="Tile025" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 9 )
+
+[node name="Tile036" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 12 )
+
+[node name="Tile045" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 15 )
+
+[node name="Tile055" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 18 )
+
+[node name="Tile059" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 21 )
+
+[node name="Tile006" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0 )
+
+[node name="Tile013" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 3 )
+
+[node name="Tile019" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 6 )
+
+[node name="Tile028" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 9 )
+
+[node name="Tile035" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 12 )
+
+[node name="Tile042" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 15 )
+
+[node name="Tile053" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 18 )
+
+[node name="Tile061" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 21 )
+
+[node name="Tile007" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0 )
+
+[node name="Tile015" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 3 )
+
+[node name="Tile017" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 6 )
+
+[node name="Tile026" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 9 )
+
+[node name="Tile033" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 12 )
+
+[node name="Tile044" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 15 )
+
+[node name="Tile051" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 18 )
+
+[node name="Tile062" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 21 )
+
+[node name="Tile008" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 0 )
+
+[node name="Tile010" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 3 )
+
+[node name="Tile018" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 6 )
+
+[node name="Tile027" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 9 )
+
+[node name="Tile038" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 12 )
+
+[node name="Tile043" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 15 )
+
+[node name="Tile050" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 18 )
+
+[node name="Tile060" parent="Ground/Chunk026" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 21 )
+
+[node name="Chunk027" type="Spatial" parent="Ground"]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -72, 0, 24 )
+
+[node name="Tile001" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+
+[node name="Tile014" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
+
+[node name="Tile023" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6 )
+
+[node name="Tile032" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9 )
+
+[node name="Tile037" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12 )
+
+[node name="Tile041" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15 )
+
+[node name="Tile049" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18 )
+
+[node name="Tile064" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21 )
+
+[node name="Tile002" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0 )
+
+[node name="Tile011" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3 )
+
+[node name="Tile021" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6 )
+
+[node name="Tile031" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 9 )
+
+[node name="Tile034" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 12 )
+
+[node name="Tile047" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 15 )
+
+[node name="Tile054" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 18 )
+
+[node name="Tile058" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 21 )
+
+[node name="Tile003" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+
+[node name="Tile016" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3 )
+
+[node name="Tile024" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6 )
+
+[node name="Tile029" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 9 )
+
+[node name="Tile040" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 12 )
+
+[node name="Tile046" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 15 )
+
+[node name="Tile052" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 18 )
+
+[node name="Tile063" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 21 )
+
+[node name="Tile004" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0 )
+
+[node name="Tile009" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 3 )
+
+[node name="Tile022" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 6 )
+
+[node name="Tile030" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 9 )
+
+[node name="Tile039" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 12 )
+
+[node name="Tile048" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 15 )
+
+[node name="Tile056" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 18 )
+
+[node name="Tile057" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 21 )
+
+[node name="Tile005" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0 )
+
+[node name="Tile012" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 3 )
+
+[node name="Tile020" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 6 )
+
+[node name="Tile025" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 9 )
+
+[node name="Tile036" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 12 )
+
+[node name="Tile045" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 15 )
+
+[node name="Tile055" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 18 )
+
+[node name="Tile059" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 21 )
+
+[node name="Tile006" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0 )
+
+[node name="Tile013" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 3 )
+
+[node name="Tile019" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 6 )
+
+[node name="Tile028" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 9 )
+
+[node name="Tile035" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 12 )
+
+[node name="Tile042" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 15 )
+
+[node name="Tile053" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 18 )
+
+[node name="Tile061" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 21 )
+
+[node name="Tile007" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0 )
+
+[node name="Tile015" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 3 )
+
+[node name="Tile017" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 6 )
+
+[node name="Tile026" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 9 )
+
+[node name="Tile033" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 12 )
+
+[node name="Tile044" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 15 )
+
+[node name="Tile051" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 18 )
+
+[node name="Tile062" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 21 )
+
+[node name="Tile008" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 0 )
+
+[node name="Tile010" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 3 )
+
+[node name="Tile018" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 6 )
+
+[node name="Tile027" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 9 )
+
+[node name="Tile038" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 12 )
+
+[node name="Tile043" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 15 )
+
+[node name="Tile050" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 18 )
+
+[node name="Tile060" parent="Ground/Chunk027" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 21 )
+
+[node name="Chunk028" type="Spatial" parent="Ground"]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -72, 0, 0 )
+
+[node name="Tile001" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+
+[node name="Tile014" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
+
+[node name="Tile023" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6 )
+
+[node name="Tile032" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9 )
+
+[node name="Tile037" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12 )
+
+[node name="Tile041" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15 )
+
+[node name="Tile049" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18 )
+
+[node name="Tile064" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21 )
+
+[node name="Tile002" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0 )
+
+[node name="Tile011" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3 )
+
+[node name="Tile021" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6 )
+
+[node name="Tile031" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 9 )
+
+[node name="Tile034" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 12 )
+
+[node name="Tile047" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 15 )
+
+[node name="Tile054" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 18 )
+
+[node name="Tile058" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 21 )
+
+[node name="Tile003" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+
+[node name="Tile016" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3 )
+
+[node name="Tile024" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6 )
+
+[node name="Tile029" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 9 )
+
+[node name="Tile040" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 12 )
+
+[node name="Tile046" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 15 )
+
+[node name="Tile052" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 18 )
+
+[node name="Tile063" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 21 )
+
+[node name="Tile004" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0 )
+
+[node name="Tile009" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 3 )
+
+[node name="Tile022" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 6 )
+
+[node name="Tile030" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 9 )
+
+[node name="Tile039" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 12 )
+
+[node name="Tile048" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 15 )
+
+[node name="Tile056" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 18 )
+
+[node name="Tile057" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 21 )
+
+[node name="Tile005" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0 )
+
+[node name="Tile012" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 3 )
+
+[node name="Tile020" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 6 )
+
+[node name="Tile025" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 9 )
+
+[node name="Tile036" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 12 )
+
+[node name="Tile045" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 15 )
+
+[node name="Tile055" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 18 )
+
+[node name="Tile059" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 21 )
+
+[node name="Tile006" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0 )
+
+[node name="Tile013" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 3 )
+
+[node name="Tile019" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 6 )
+
+[node name="Tile028" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 9 )
+
+[node name="Tile035" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 12 )
+
+[node name="Tile042" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 15 )
+
+[node name="Tile053" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 18 )
+
+[node name="Tile061" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 21 )
+
+[node name="Tile007" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0 )
+
+[node name="Tile015" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 3 )
+
+[node name="Tile017" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 6 )
+
+[node name="Tile026" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 9 )
+
+[node name="Tile033" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 12 )
+
+[node name="Tile044" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 15 )
+
+[node name="Tile051" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 18 )
+
+[node name="Tile062" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 21 )
+
+[node name="Tile008" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 0 )
+
+[node name="Tile010" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 3 )
+
+[node name="Tile018" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 6 )
+
+[node name="Tile027" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 9 )
+
+[node name="Tile038" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 12 )
+
+[node name="Tile043" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 15 )
+
+[node name="Tile050" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 18 )
+
+[node name="Tile060" parent="Ground/Chunk028" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 21 )
+
+[node name="Chunk029" type="Spatial" parent="Ground"]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -72, 0, -24 )
+
+[node name="Tile001" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+
+[node name="Tile014" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
+
+[node name="Tile023" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6 )
+
+[node name="Tile032" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9 )
+
+[node name="Tile037" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12 )
+
+[node name="Tile041" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15 )
+
+[node name="Tile049" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18 )
+
+[node name="Tile064" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21 )
+
+[node name="Tile002" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0 )
+
+[node name="Tile011" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3 )
+
+[node name="Tile021" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6 )
+
+[node name="Tile031" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 9 )
+
+[node name="Tile034" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 12 )
+
+[node name="Tile047" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 15 )
+
+[node name="Tile054" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 18 )
+
+[node name="Tile058" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 21 )
+
+[node name="Tile003" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+
+[node name="Tile016" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3 )
+
+[node name="Tile024" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6 )
+
+[node name="Tile029" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 9 )
+
+[node name="Tile040" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 12 )
+
+[node name="Tile046" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 15 )
+
+[node name="Tile052" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 18 )
+
+[node name="Tile063" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 21 )
+
+[node name="Tile004" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0 )
+
+[node name="Tile009" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 3 )
+
+[node name="Tile022" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 6 )
+
+[node name="Tile030" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 9 )
+
+[node name="Tile039" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 12 )
+
+[node name="Tile048" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 15 )
+
+[node name="Tile056" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 18 )
+
+[node name="Tile057" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 21 )
+
+[node name="Tile005" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0 )
+
+[node name="Tile012" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 3 )
+
+[node name="Tile020" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 6 )
+
+[node name="Tile025" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 9 )
+
+[node name="Tile036" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 12 )
+
+[node name="Tile045" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 15 )
+
+[node name="Tile055" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 18 )
+
+[node name="Tile059" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 21 )
+
+[node name="Tile006" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0 )
+
+[node name="Tile013" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 3 )
+
+[node name="Tile019" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 6 )
+
+[node name="Tile028" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 9 )
+
+[node name="Tile035" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 12 )
+
+[node name="Tile042" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 15 )
+
+[node name="Tile053" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 18 )
+
+[node name="Tile061" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 21 )
+
+[node name="Tile007" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0 )
+
+[node name="Tile015" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 3 )
+
+[node name="Tile017" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 6 )
+
+[node name="Tile026" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 9 )
+
+[node name="Tile033" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 12 )
+
+[node name="Tile044" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 15 )
+
+[node name="Tile051" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 18 )
+
+[node name="Tile062" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 21 )
+
+[node name="Tile008" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 0 )
+
+[node name="Tile010" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 3 )
+
+[node name="Tile018" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 6 )
+
+[node name="Tile027" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 9 )
+
+[node name="Tile038" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 12 )
+
+[node name="Tile043" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 15 )
+
+[node name="Tile050" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 18 )
+
+[node name="Tile060" parent="Ground/Chunk029" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 21 )
+
+[node name="Chunk030" type="Spatial" parent="Ground"]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -72, 0, -48 )
+
+[node name="Tile001" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+
+[node name="Tile014" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
+
+[node name="Tile023" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6 )
+
+[node name="Tile032" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9 )
+
+[node name="Tile037" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12 )
+
+[node name="Tile041" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15 )
+
+[node name="Tile049" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18 )
+
+[node name="Tile064" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21 )
+
+[node name="Tile002" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0 )
+
+[node name="Tile011" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3 )
+
+[node name="Tile021" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6 )
+
+[node name="Tile031" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 9 )
+
+[node name="Tile034" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 12 )
+
+[node name="Tile047" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 15 )
+
+[node name="Tile054" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 18 )
+
+[node name="Tile058" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 21 )
+
+[node name="Tile003" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+
+[node name="Tile016" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3 )
+
+[node name="Tile024" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6 )
+
+[node name="Tile029" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 9 )
+
+[node name="Tile040" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 12 )
+
+[node name="Tile046" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 15 )
+
+[node name="Tile052" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 18 )
+
+[node name="Tile063" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 21 )
+
+[node name="Tile004" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0 )
+
+[node name="Tile009" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 3 )
+
+[node name="Tile022" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 6 )
+
+[node name="Tile030" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 9 )
+
+[node name="Tile039" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 12 )
+
+[node name="Tile048" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 15 )
+
+[node name="Tile056" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 18 )
+
+[node name="Tile057" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 21 )
+
+[node name="Tile005" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0 )
+
+[node name="Tile012" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 3 )
+
+[node name="Tile020" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 6 )
+
+[node name="Tile025" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 9 )
+
+[node name="Tile036" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 12 )
+
+[node name="Tile045" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 15 )
+
+[node name="Tile055" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 18 )
+
+[node name="Tile059" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 21 )
+
+[node name="Tile006" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0 )
+
+[node name="Tile013" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 3 )
+
+[node name="Tile019" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 6 )
+
+[node name="Tile028" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 9 )
+
+[node name="Tile035" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 12 )
+
+[node name="Tile042" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 15 )
+
+[node name="Tile053" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 18 )
+
+[node name="Tile061" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 21 )
+
+[node name="Tile007" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0 )
+
+[node name="Tile015" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 3 )
+
+[node name="Tile017" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 6 )
+
+[node name="Tile026" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 9 )
+
+[node name="Tile033" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 12 )
+
+[node name="Tile044" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 15 )
+
+[node name="Tile051" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 18 )
+
+[node name="Tile062" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 21 )
+
+[node name="Tile008" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 0 )
+
+[node name="Tile010" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 3 )
+
+[node name="Tile018" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 6 )
+
+[node name="Tile027" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 9 )
+
+[node name="Tile038" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 12 )
+
+[node name="Tile043" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 15 )
+
+[node name="Tile050" parent="Ground/Chunk030" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 18 )
+
+[node name="Tile060" parent="Ground/Chunk030" instance=ExtResource( 23 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 21 )
 
 [node name="Farm" type="Spatial" parent="."]
@@ -5116,5 +6086,8 @@ transform = Transform( 1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 5.61718, 
 [node name="Fence9" parent="Farm/Fences" instance=ExtResource( 36 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.77516, 0.0076474, 11.0479 )
 
-[node name="Spatial" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32.3967, 0, -32.7582 )
+[node name="Castle" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48.3967, 0, -32.7582 )
+
+[node name="Spatial" parent="." instance=ExtResource( 37 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, -110 )

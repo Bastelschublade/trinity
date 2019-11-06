@@ -1,0 +1,83 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/objects/nature/rocks/007Rock.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/objects/buildingparts/WallEntrance.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/objects/buildingparts/Wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/objects/buildingparts/SimpleTower.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/objects/buildingparts/WallBricks.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/objects/buildingparts/SmallTower.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/objects/buildingparts/WatchTowerWRoof.tscn" type="PackedScene" id=7]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Rock" parent="." instance=ExtResource( 1 )]
+transform = Transform( 24.5983, 0, 0, 0, 2.96359, 0, 0, 0, 37.8005, 0, -1, 0 )
+
+[node name="WallEntrance" parent="." instance=ExtResource( 2 )]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 2, 0 )
+
+[node name="Wall" parent="." instance=ExtResource( 3 )]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, 6.12241, 1.99126, -0.606556 )
+
+[node name="Wall2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, -6.11081, 1.99126, -0.616227 )
+
+[node name="SimpleTower" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0028, 2.66214, 0.923412 )
+
+[node name="SimpleTower2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.94803, 2.66214, 0.902126 )
+
+[node name="WallBricks" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -12.4875, 2, -2.58801 )
+
+[node name="WallBricks2" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -16.7301, 2, -6.83065 )
+
+[node name="WallBricks3" parent="." instance=ExtResource( 5 )]
+transform = Transform( -0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, -16.7301, 2, -12.0604 )
+
+[node name="WallBricks4" parent="." instance=ExtResource( 5 )]
+transform = Transform( -0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, -12.4875, 2, -16.303 )
+
+[node name="WallBricks5" parent="." instance=ExtResource( 5 )]
+transform = Transform( -0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, -8.24486, 2, -20.5456 )
+
+[node name="SmallTower" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.7878, 2.81156, -9.41737 )
+
+[node name="SmallTower2" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.78464, 2.81156, -23.2502 )
+
+[node name="BackWall" type="Spatial" parent="."]
+transform = Transform( -0.998914, 0, -0.0465981, 0, 1, 0, 0.0465981, 0, -0.998914, 3.81503, 2, -23.304 )
+
+[node name="WallBricks6" parent="BackWall" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 6, 0, 0 )
+
+[node name="WallBricks7" parent="BackWall" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0, 0, 0 )
+
+[node name="WallBricks8" parent="BackWall" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, -6, 0, 0 )
+
+[node name="RightWall" type="Spatial" parent="."]
+transform = Transform( 0.982251, 0, -0.187574, 0, 1, 0, 0.187574, 0, 0.982251, 2.49946, 0, -2.38423 )
+
+[node name="SmallTower3" parent="RightWall" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.78796, 2.81156, -23.2502 )
+
+[node name="WallBricks8" parent="RightWall" instance=ExtResource( 5 )]
+transform = Transform( -0.0230151, 0, 0.999735, 0, 1, 0, -0.999735, 0, -0.0230151, 6.78937, 2, -19.3881 )
+
+[node name="WallBricks9" parent="RightWall" instance=ExtResource( 5 )]
+transform = Transform( -0.0230151, 0, 0.999735, 0, 1, 0, -0.999735, 0, -0.0230151, 6.92746, 2, -13.3897 )
+
+[node name="WallBricks10" parent="RightWall" instance=ExtResource( 5 )]
+transform = Transform( -0.0230151, 0, 0.999735, 0, 1, 0, -0.999735, 0, -0.0230151, 7.06555, 2, -7.39125 )
+
+[node name="WallBricks11" parent="RightWall" instance=ExtResource( 5 )]
+transform = Transform( -0.0230151, 0, 0.999735, 0, 1, 0, -0.999735, 0, -0.0230151, 7.20364, 2, -1.39284 )
+
+[node name="WatchTowerWRoof" parent="." instance=ExtResource( 7 )]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, 25, 1.20481, -16 )
