@@ -24,7 +24,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://assets/objects/GameObject.gd"
 }, {
-"base": "Node",
+"base": "Spatial",
 "class": "Item",
 "language": "GDScript",
 "path": "res://assets/item/Item.gd"
@@ -38,6 +38,16 @@ _global_script_classes=[ {
 "class": "NPC",
 "language": "GDScript",
 "path": "res://assets/npc/NPC.gd"
+}, {
+"base": "Item",
+"class": "Stuff",
+"language": "GDScript",
+"path": "res://assets/item/stuff/Stuff.gd"
+}, {
+"base": "Item",
+"class": "Weapon",
+"language": "GDScript",
+"path": "res://assets/item/weapon/Weapon.gd"
 } ]
 _global_script_class_icons={
 "Animal": "",
@@ -45,14 +55,21 @@ _global_script_class_icons={
 "GameObject": "",
 "Item": "",
 "LootTable": "",
-"NPC": ""
+"NPC": "",
+"Stuff": "",
+"Weapon": ""
 }
 
 [application]
 
 config/name="trinity"
-run/main_scene="res://Level.tscn"
+run/main_scene="res://MainMenu.tscn"
+boot_splash/bg_color=Color( 0, 0.309804, 0.0117647, 1 )
 config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://Global.gd"
 
 [input]
 

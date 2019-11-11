@@ -1,15 +1,17 @@
-extends Node
+extends Spatial
 class_name Item
 
-export(int) var item_id
-export(String) var item_name
-export(String, FILE, "*.png") var item_icon
-export(String) var item_tooltip
-export(float) var item_weight
-export(bool) var item_saleable
-export(float) var item_price
+export(String) var item_id
 
-var icon
+var list_item
+var item_details
+var body
+var data
 
 func _ready():
-	icon = load(item_icon)
+	var item_db = get_node('/root/Global').item_db
+
+
+func create_body():
+	var body_res = load('res://assets/item/' + data['type'] + data['fname'] + 'body.tscn')
+	body = body_res.instance()

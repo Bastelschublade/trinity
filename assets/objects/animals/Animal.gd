@@ -60,14 +60,14 @@ func on_click():
 	
 	
 func _on_motion_timer_timeout():
-	print('local translation', self.get_translation())
-	print('randomize motion')
+	#print('local translation', self.get_translation())
+	#print('randomize motion')
 	if task == 'browse':
 		var new_speed = randi()%2 * animal_walk_speed
 		if new_speed == speed: # either motion or angle change
 			turn_angle = rand_range(-0.5, 0.5)
 			var rot = self.get_rotation()
-			print(rot)
+			#print(rot)
 			rot.y = rot.y + turn_angle
 			self.set_rotation(rot)
 		else:

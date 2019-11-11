@@ -214,6 +214,7 @@ tracks/19/keys = PoolRealArray( 0, 1, 2.0205e-10, -1.18504e-07, -8.83203e-08, 1.
 [sub_resource type="Animation" id=6]
 resource_name = "Idle"
 length = 0.001
+loop = true
 tracks/0/type = "transform"
 tracks/0/path = NodePath("DogArmature")
 tracks/0/interp = 1
@@ -367,13 +368,13 @@ resource_name = "Idle2"
 length = 0.001
 
 [sub_resource type="Animation" id=8]
-resource_name = "Walking"
+resource_name = "Walk"
 length = 0.001
+loop = true
 
 [sub_resource type="BoxShape" id=9]
 
 [node name="Dog" type="KinematicBody"]
-editor/display_folded = true
 transform = Transform( 0.18, 0, 0, 0, 0.18, 0, 0, 0, 0.18, 0, 0, 0 )
 script = ExtResource( 1 )
 
@@ -487,11 +488,12 @@ mesh = SubResource( 3 )
 material/0 = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Idle"
 anims/Death = SubResource( 4 )
 anims/DogArmatureAction = SubResource( 5 )
 anims/Idle = SubResource( 6 )
 anims/Idle2 = SubResource( 7 )
-anims/Walking = SubResource( 8 )
+anims/Walk = SubResource( 8 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1.41167, 0, 0, 0, 1.91779, 0.202343, 1.41308, -0.267575 )

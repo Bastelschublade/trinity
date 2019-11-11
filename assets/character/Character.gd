@@ -8,7 +8,7 @@ var anim_player
 var character
 var raycast
 
-var RUN_SPEED = 3
+var RUN_SPEED = 13
 var WALK_SPEED = 1.5
 var JUMP_SPEED = 2
 var ACCELERATION = 1.5
@@ -23,6 +23,7 @@ func _ready():
 	character = get_node('.')
 	raycast = get_node('RayCast')
 	anim_player = get_node('Armature/AnimationPlayer')
+	equip_test()
 	#print(anim_player)
 
 
@@ -90,22 +91,36 @@ func _physics_process(delta):
 		#if anim_player.current_animation != "Run":
 		#	print('play run animation')
 		if is_fast:
-			anim_player.current_animation = "walk"
+			anim_player.current_animation = "Walk"
 			anim_player.set_speed_scale(7)
 			#print('running')
 		else:
-			anim_player.current_animation = "walk"
+			anim_player.current_animation = "Walk"
 			anim_player.set_speed_scale(4)
 			#print('walking')
 	elif not is_grounded:
-		anim_player.current_animation = "idle"
-		anim_player.set_speed_scale(2)
+		anim_player.current_animation = "Idle"
+		#anim_player.set_speed_scale(2)
 		#print('falling')
 	else:
-		anim_player.current_animation = "idle"
-		anim_player.set_speed_scale(2)
+		anim_player.current_animation = "Idle"
+		#anim_player.set_speed_scale(2)
 		#print('idle')
 		
 	#print('current: ', anim_player.current_animation)
 	#print('prog: ', anim_player.current_animation_position, '/', anim_player.current_animation_length)
 	
+	
+func equip_test():
+	var arma = get_node('Armature')
+	var kit = BoneAttachment.new()
+	arma.add_child(kit)
+	kit.set_bone_name('HandR1')
+	var club_res = load("res://assets/item/weapon/club/Club.tscn")
+	var club = club_res.instance()
+	#var mesh = club.get_node('Club')
+	club.scale = Vector3(15, 15, 15)
+	club.set('translation', Vector3(+1, 0,0))
+	kit.add_child(club)
+	#print(kit)
+	#print(mesh.scale)

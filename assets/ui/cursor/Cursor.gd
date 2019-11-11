@@ -6,7 +6,7 @@ onready var collect    = preload('res://assets/ui/cursor/sprites/cursorGauntlet_
 onready var talk       = preload('res://assets/ui/cursor/sprites/cursorGauntlet_bronze.png')
 onready var attack     = preload('res://assets/ui/cursor/sprites/cursorSword_bronze.png')
 onready var sprite     = get_node('Sprite')
-onready var tooltip    = get_node('Sprite/Tooltip')
+onready var tooltip    = get_node('Tooltip')
 onready var camera     = get_viewport().get_camera()
 
 
@@ -23,13 +23,10 @@ func get_object_under_mouse():
 	return selection
 
 
-func collect_object(object):
+func collect_item(item_body):
 	var inventory = get_parent().get_node('GameMenu/TabContainer/Inventar/Inventory')
-	var loot_table = object.get_node('LootTable').loot
-	for item_id in loot_table:
-		#var item = get_node('/root/Level/Data/ItemDB').get_child(item_id).duplicate()
-		inventory.add_item(item_id)
-	object.queue_free()
+	inventory.add_item(item_body.get_parent().item_id)
+	item_body.get_parent().queue_free()
 
 
 
@@ -43,7 +40,9 @@ func update_cursor(object):
 		self.tooltip.set('visible', true)
 	elif object is GameObject:
 		self.sprite.texture = collect
-		self.tooltip.set_text(object.go_tooltip)
+		var item_id = object.get_parent().item_id
+		var data = get_node("/root/Global").item_db[item_id]
+		self.tooltip.set_text(data['name'])
 		self.tooltip.set('visible', true)
 	elif object is Animal:
 		self.sprite.texture = attack
@@ -53,7 +52,7 @@ func update_cursor(object):
 
 func process_click(object, distance):
 	if object is GameObject:
-		collect_object(object)
+		collect_item(object)
 	elif object is NPC and distance < TALK_RANGE:
 		object.start_dialog()
 	elif object is Animal and distance < TALK_RANGE:

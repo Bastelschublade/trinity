@@ -1,45 +1,44 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Level.gd" type="Script" id=1]
 [ext_resource path="res://assets/map/Map.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/character/Character.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/character/Character.gd" type="Script" id=4]
-[ext_resource path="res://assets/npc/gustav/Gustav.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/ui/Ui.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/music/randommind Loop_Rejoicing.ogg" type="AudioStream" id=7]
+[ext_resource path="res://assets/npc/gustav/Gustav.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/ui/Ui.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/music/randommind Loop_Rejoicing.ogg" type="AudioStream" id=6]
 
 [node name="Level" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15605, 0.295441, 0.995201 )
 script = ExtResource( 1 )
 
 [node name="Sun" type="DirectionalLight" parent="."]
-transform = Transform( 0.603548, 0.187154, 0.775051, -0.409724, -0.7611, 0.502846, 0.684, -0.621048, -0.382679, 39.3204, 139.294, -164.261 )
+transform = Transform( 0.992623, 0.101473, 0.0663553, 0.00719244, -0.595614, 0.803239, 0.121029, -0.796836, -0.59195, -11.3141, -34.0128, -63.8895 )
 light_color = Color( 1, 0.882353, 0.356863, 1 )
 light_energy = 1.1
 light_indirect_energy = 0.3
 light_specular = 0.0
-shadow_enabled = true
+light_bake_mode = 0
+shadow_contact = 0.5
 directional_shadow_max_distance = 380.7
 
 [node name="Map" parent="." instance=ExtResource( 2 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
 
 [node name="Character" parent="." instance=ExtResource( 3 )]
-transform = Transform( -0.987053, 0, 0.160388, 0, 1, 0, -0.160389, 0, -0.987053, -2.68894, -0.161743, -5.25838 )
-script = ExtResource( 4 )
+transform = Transform( 0.232393, 0, 0.972621, 0, 1, 0, -0.972621, 0, 0.232393, 10.4892, -0.161743, -11.7054 )
 
 [node name="NPCs" type="Spatial" parent="."]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.22192, 0, 0 )
 
-[node name="Gustav" parent="NPCs" instance=ExtResource( 5 )]
+[node name="Gustav" parent="NPCs" instance=ExtResource( 4 )]
 transform = Transform( -1.74448, 0, 0.978158, 0, 2, 0, -0.978158, 0, -1.74448, 30.896, 0, -12.1921 )
 npc_desc = "Er steht schon eine Weile dort und kann sich nicht bewegen..."
 npc_max_health = 30.0
 npc_can_talk = true
 
-[node name="Ui" parent="." instance=ExtResource( 6 )]
+[node name="Ui" parent="." instance=ExtResource( 5 )]
 
 [node name="Music" type="Node" parent="."]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Music"]
-stream = ExtResource( 7 )
+stream = ExtResource( 6 )

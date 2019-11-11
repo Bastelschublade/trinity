@@ -209,6 +209,7 @@ tracks/23/keys = PoolRealArray( 0, 1, -1.30385e-08, -4.10713e-07, -3.21306e-07, 
 [sub_resource type="Animation" id=5]
 resource_name = "Idle"
 length = 6.20833
+loop = true
 tracks/0/type = "transform"
 tracks/0/path = NodePath("Armature:root")
 tracks/0/interp = 1
@@ -553,6 +554,7 @@ tracks/23/keys = PoolRealArray( 0, 1, 1.52737e-07, -9.40636e-08, -2.51457e-08, -
 [sub_resource type="Animation" id=7]
 resource_name = "Run"
 length = 1.29167
+loop = true
 tracks/0/type = "transform"
 tracks/0/path = NodePath("Armature:root")
 tracks/0/interp = 1
@@ -725,6 +727,7 @@ tracks/23/keys = PoolRealArray( 0, 1, 4.47035e-08, -4.73112e-07, -6.44475e-07, -
 [sub_resource type="Animation" id=8]
 resource_name = "Walk"
 length = 1.95833
+loop = true
 tracks/0/type = "transform"
 tracks/0/path = NodePath("Armature:root")
 tracks/0/interp = 1
@@ -1030,6 +1033,7 @@ material/0 = null
 material/1 = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Idle"
 anims/Death = SubResource( 4 )
 anims/Idle = SubResource( 5 )
 anims/Jump = SubResource( 6 )

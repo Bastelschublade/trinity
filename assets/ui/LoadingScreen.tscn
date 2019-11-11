@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/ui/rpg/png/barBack_horizontal.png" type="Texture" id=1]
+[ext_resource path="res://assets/ui/rpg/png/barGreen_horizontal.png" type="Texture" id=2]
+
+[node name="LoadingScreen" type="Node2D"]
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1024.0
+margin_bottom = 598.0
+
+[node name="Progress" type="TextureProgress" parent="CenterContainer"]
+margin_left = 112.0
+margin_top = 281.0
+margin_right = 912.0
+margin_bottom = 317.0
+rect_min_size = Vector2( 800, 36 )
+texture_under = ExtResource( 1 )
+texture_progress = ExtResource( 2 )
+nine_patch_stretch = true
+stretch_margin_left = 9
+stretch_margin_right = 9

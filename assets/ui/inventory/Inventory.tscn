@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/ui/inventory/Inventory.gd" type="Script" id=1]
 [ext_resource path="res://assets/ui/rpg/png/panelInset_beige.png" type="Texture" id=2]
+[ext_resource path="res://assets/item/food/pumpkin/icon.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui/rpg/png/iconCross_beige.png" type="Texture" id=4]
 
 [node name="Inventory" type="HBoxContainer"]
 anchor_right = 1.0
@@ -89,3 +91,129 @@ patch_margin_left = 22
 patch_margin_top = 22
 patch_margin_right = 58
 patch_margin_bottom = 34
+
+[node name="Details" type="Control" parent="ItemInspect"]
+margin_top = 10.0
+margin_right = 240.0
+margin_bottom = 380.0
+
+[node name="ItemDetails" type="VBoxContainer" parent="ItemInspect/Details"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MarginTop" type="Label" parent="ItemInspect/Details/ItemDetails"]
+margin_right = 240.0
+margin_bottom = 14.0
+
+[node name="IconLarge" type="TextureRect" parent="ItemInspect/Details/ItemDetails"]
+margin_left = 70.0
+margin_top = 18.0
+margin_right = 170.0
+margin_bottom = 118.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 1
+
+[node name="ItemName" type="Label" parent="ItemInspect/Details/ItemDetails"]
+margin_top = 122.0
+margin_right = 240.0
+margin_bottom = 136.0
+text = "Item Name"
+align = 1
+
+[node name="ItemDesc" type="Label" parent="ItemInspect/Details/ItemDetails"]
+margin_top = 140.0
+margin_right = 240.0
+margin_bottom = 171.0
+text = "Was dieses Item so beschreibt.
+Oder sonstige Infos als Text."
+align = 1
+autowrap = true
+
+[node name="Spacer" type="Label" parent="ItemInspect/Details/ItemDetails"]
+margin_top = 175.0
+margin_right = 240.0
+margin_bottom = 189.0
+
+[node name="ItemStats" type="VBoxContainer" parent="ItemInspect/Details/ItemDetails"]
+editor/display_folded = true
+margin_top = 193.0
+margin_right = 240.0
+margin_bottom = 225.0
+
+[node name="Stat" type="HBoxContainer" parent="ItemInspect/Details/ItemDetails/ItemStats"]
+editor/display_folded = true
+margin_right = 240.0
+margin_bottom = 14.0
+custom_constants/separation = 8
+alignment = 1
+
+[node name="StatKey" type="Label" parent="ItemInspect/Details/ItemDetails/ItemStats/Stat"]
+margin_left = 16.0
+margin_right = 116.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 100, 0 )
+text = "Schaden"
+align = 2
+
+[node name="StatValue" type="Label" parent="ItemInspect/Details/ItemDetails/ItemStats/Stat"]
+margin_left = 124.0
+margin_right = 224.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 100, 0 )
+text = "1W4"
+
+[node name="Stat2" type="HBoxContainer" parent="ItemInspect/Details/ItemDetails/ItemStats"]
+editor/display_folded = true
+margin_top = 18.0
+margin_right = 240.0
+margin_bottom = 32.0
+custom_constants/separation = 8
+alignment = 1
+
+[node name="StatKey" type="Label" parent="ItemInspect/Details/ItemDetails/ItemStats/Stat2"]
+margin_left = 16.0
+margin_right = 116.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 100, 0 )
+text = "Reichweite"
+align = 2
+
+[node name="StatValue" type="Label" parent="ItemInspect/Details/ItemDetails/ItemStats/Stat2"]
+margin_left = 124.0
+margin_right = 224.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 100, 0 )
+text = "Nahkampf"
+
+[node name="spacer" type="Control" parent="ItemInspect/Details/ItemDetails"]
+margin_top = 229.0
+margin_right = 240.0
+margin_bottom = 316.0
+size_flags_vertical = 3
+
+[node name="ItemButtons" type="HBoxContainer" parent="ItemInspect/Details/ItemDetails"]
+margin_top = 320.0
+margin_right = 240.0
+margin_bottom = 370.0
+alignment = 2
+
+[node name="TextureButton" type="TextureButton" parent="ItemInspect/Details/ItemDetails/ItemButtons"]
+margin_left = 186.0
+margin_right = 226.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource( 4 )
+expand = true
+
+[node name="margin" type="Label" parent="ItemInspect/Details/ItemDetails/ItemButtons"]
+margin_left = 230.0
+margin_right = 240.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 10, 50 )
