@@ -8,14 +8,14 @@ export(float) var npc_max_health
 export(String) var npc_gang
 export(float) var npc_reputation
 export(bool) var npc_can_talk
+export(String) var npc_next_view = "start"
 # auto load from resource
 export(String, FILE, '*.png') var npc_skin_file
 export(String, FILE, '*.json') var npc_dialog_file
 
 # variables maintained by script
-var npc_dialog
-var npc_next_view = "start"
-var npc_health
+var dialog
+var health
 
 
 func start_dialog():
@@ -23,7 +23,7 @@ func start_dialog():
 	var dialog = dialog_scene.instance()
 	# assign the json dialog to the dialog obj
 	#print(object.npc_dialog)
-	dialog.views = self.npc_dialog
+	dialog.views = self.dialog
 	dialog.start_pos = self.get_global_transform().origin
 	dialog.quit_distance = 5
 	dialog.npc = self
@@ -43,7 +43,7 @@ func load_dialog():
 
 
 func _ready():
-	npc_health = npc_max_health
+	health = npc_max_health
 	if npc_dialog_file:
-		npc_dialog = load_dialog()
+		dialog = load_dialog()
 	#print(npc_name, ' spawned')

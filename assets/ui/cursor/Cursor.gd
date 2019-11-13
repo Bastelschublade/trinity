@@ -51,12 +51,17 @@ func update_cursor(object):
 
 
 func process_click(object, distance):
+	var target
 	if object is GameObject:
 		collect_item(object)
 	elif object is NPC and distance < TALK_RANGE:
 		object.start_dialog()
 	elif object is Animal and distance < TALK_RANGE:
 		object.on_click()
+		
+	if object is NPC or Animal:
+		target = object
+	get_node('/root/Level/Ui').update_target(target)
 
 
 # -------------------------------------- #
@@ -84,7 +89,7 @@ func _physics_process(delta):
 	var object_pos = object.get_global_transform().origin
 	var distance = object_pos.distance_to(get_node('/root/Level').player_pos)  # player_pos is exported
 	update_cursor(object)
-	if Input.is_action_just_pressed('grab'):
+	if Input.is_action_just_pressed('select'):
 		process_click(object, distance)
 	
 

@@ -1,31 +1,26 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://assets/ui/Ui.gd" type="Script" id=1]
-[ext_resource path="res://assets/ui/rpg/png/panel_blue.png" type="Texture" id=2]
-[ext_resource path="res://assets/ui/rpg/png/barBack_horizontalLeft.png" type="Texture" id=3]
-[ext_resource path="res://assets/ui/rpg/png/barBack_horizontalMid.png" type="Texture" id=4]
-[ext_resource path="res://assets/ui/rpg/png/barBack_horizontalRight.png" type="Texture" id=5]
-[ext_resource path="res://assets/ui/rpg/png/barGreen_horizontalLeft.png" type="Texture" id=6]
-[ext_resource path="res://assets/ui/rpg/png/barGreen_horizontalMid.png" type="Texture" id=7]
-[ext_resource path="res://assets/ui/rpg/png/barGreen_horizontalRight.png" type="Texture" id=8]
-[ext_resource path="res://assets/ui/rpg/png/barBlue_horizontalLeft.png" type="Texture" id=9]
-[ext_resource path="res://assets/ui/rpg/png/barBlue_horizontalBlue.png" type="Texture" id=10]
-[ext_resource path="res://assets/ui/rpg/png/barBlue_horizontalRight.png" type="Texture" id=11]
-[ext_resource path="res://assets/ui/rpg/png/buttonSquare_brown.png" type="Texture" id=12]
-[ext_resource path="res://assets/ui/rpg/png/buttonSquare_brown_pressed.png" type="Texture" id=13]
-[ext_resource path="res://assets/ui/GameMenu/GameMenuWindow.gd" type="Script" id=14]
-[ext_resource path="res://assets/ui/rpg/png/panel_brown.png" type="Texture" id=15]
-[ext_resource path="res://assets/ui/trinity_theme.tres" type="Theme" id=16]
-[ext_resource path="res://assets/ui/rpg/png/panelInset_beige.png" type="Texture" id=17]
-[ext_resource path="res://assets/ui/rpg/png/buttonLong_brown.png" type="Texture" id=18]
-[ext_resource path="res://assets/ui/rpg/png/buttonLong_brown_pressed.png" type="Texture" id=19]
-[ext_resource path="res://assets/ui/rpg/png/buttonLong_blue.png" type="Texture" id=20]
-[ext_resource path="res://assets/ui/inventory/Inventory.tscn" type="PackedScene" id=21]
-[ext_resource path="res://assets/ui/rpg/png/buttonRound_brown.png" type="Texture" id=22]
-[ext_resource path="res://assets/ui/rpg/png/iconCross_beige.png" type="Texture" id=23]
-[ext_resource path="res://assets/ui/rpg/png/iconCross_grey.png" type="Texture" id=24]
-[ext_resource path="res://assets/ui/cursor/Cursor.gd" type="Script" id=25]
-[ext_resource path="res://assets/ui/cursor/sprites/cursorGauntlet_blue.png" type="Texture" id=26]
+[ext_resource path="res://assets/ui/rpg/png/panel_brown.png" type="Texture" id=2]
+[ext_resource path="res://assets/ui/rpg/png/barBack_horizontal.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui/rpg/png/barGreen_horizontal.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui/rpg/png/barBlue_horizontal.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui/Notification.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/ui/rpg/png/buttonSquare_brown_pressed.png" type="Texture" id=7]
+[ext_resource path="res://assets/item/weapon/club/icon.png" type="Texture" id=8]
+[ext_resource path="res://assets/item/weapon/shield/icon.png" type="Texture" id=9]
+[ext_resource path="res://assets/ui/GameMenu/GameMenuWindow.gd" type="Script" id=10]
+[ext_resource path="res://assets/ui/trinity_theme.tres" type="Theme" id=11]
+[ext_resource path="res://assets/ui/rpg/png/panelInset_beige.png" type="Texture" id=12]
+[ext_resource path="res://assets/ui/rpg/png/buttonLong_brown.png" type="Texture" id=13]
+[ext_resource path="res://assets/ui/rpg/png/buttonLong_brown_pressed.png" type="Texture" id=14]
+[ext_resource path="res://assets/ui/rpg/png/buttonLong_blue.png" type="Texture" id=15]
+[ext_resource path="res://assets/ui/inventory/Inventory.tscn" type="PackedScene" id=16]
+[ext_resource path="res://assets/ui/rpg/png/buttonRound_brown.png" type="Texture" id=17]
+[ext_resource path="res://assets/ui/rpg/png/iconCross_beige.png" type="Texture" id=18]
+[ext_resource path="res://assets/ui/rpg/png/iconCross_grey.png" type="Texture" id=19]
+[ext_resource path="res://assets/ui/cursor/Cursor.gd" type="Script" id=20]
+[ext_resource path="res://assets/ui/cursor/sprites/cursorGauntlet_blue.png" type="Texture" id=21]
 
 [sub_resource type="StyleBoxFlat" id=1]
 content_margin_left = 8.0
@@ -53,7 +48,6 @@ margin_bottom = 1.08179
 script = ExtResource( 1 )
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 
@@ -64,159 +58,231 @@ alignment = 1
 
 [node name="TopContainer" type="HBoxContainer" parent="MarginContainer/MainContainer"]
 margin_right = 1024.0
-margin_bottom = 100.0
-
-[node name="Playerframe" type="Control" parent="MarginContainer/MainContainer/TopContainer"]
-margin_right = 300.0
-margin_bottom = 100.0
-rect_min_size = Vector2( 300, 100 )
-
-[node name="playerframe" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe"]
-position = Vector2( 103.643, 53.0564 )
-scale = Vector2( 1.3554, 0.782577 )
-texture = ExtResource( 2 )
-
-[node name="playername" type="Label" parent="MarginContainer/MainContainer/TopContainer/Playerframe"]
-margin_left = 45.3606
-margin_top = 26.9275
-margin_right = 184.361
-margin_bottom = 51.9275
-text = "PlayerName"
-
-[node name="hpbar" type="Control" parent="MarginContainer/MainContainer/TopContainer/Playerframe"]
-editor/display_folded = true
-margin_left = 40.8728
-margin_top = 41.9275
-margin_right = 162.873
-margin_bottom = 62.9275
-
-[node name="back_left" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe/hpbar"]
-position = Vector2( 7.02737, 10.6563 )
-texture = ExtResource( 3 )
-
-[node name="back_mid" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe/hpbar"]
-position = Vector2( 61.9096, 10.5872 )
-scale = Vector2( 5.59788, 1 )
-texture = ExtResource( 4 )
-
-[node name="back_right" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe/hpbar"]
-position = Vector2( 116.806, 10.5877 )
-texture = ExtResource( 5 )
-
-[node name="bar_left" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe/hpbar"]
-position = Vector2( 7.02737, 10.6563 )
-texture = ExtResource( 6 )
-
-[node name="bar_mid" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe/hpbar"]
-position = Vector2( 61.9096, 10.5872 )
-scale = Vector2( 5.59788, 1 )
-texture = ExtResource( 7 )
-
-[node name="bar_right" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe/hpbar"]
-position = Vector2( 116.806, 10.5877 )
-texture = ExtResource( 8 )
-
-[node name="powerbar" type="Control" parent="MarginContainer/MainContainer/TopContainer/Playerframe"]
-editor/display_folded = true
-margin_left = 40.5351
-margin_top = 64.1548
-margin_right = 164.535
-margin_bottom = 85.1548
-
-[node name="back_left" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe/powerbar"]
-position = Vector2( 7.02737, 10.6563 )
-texture = ExtResource( 3 )
-
-[node name="back_mid" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe/powerbar"]
-position = Vector2( 61.9096, 10.5872 )
-scale = Vector2( 5.59788, 1 )
-texture = ExtResource( 4 )
-
-[node name="back_right" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe/powerbar"]
-position = Vector2( 116.806, 10.5877 )
-texture = ExtResource( 5 )
-
-[node name="bar_left" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe/powerbar"]
-position = Vector2( 7.02737, 10.6563 )
-texture = ExtResource( 9 )
-
-[node name="bar_mid" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe/powerbar"]
-position = Vector2( 61.9096, 10.5872 )
-scale = Vector2( 5.59788, 1 )
-texture = ExtResource( 10 )
-
-[node name="bar_right" type="Sprite" parent="MarginContainer/MainContainer/TopContainer/Playerframe/powerbar"]
-position = Vector2( 116.806, 10.5877 )
-texture = ExtResource( 11 )
-
-[node name="Container" type="Container" parent="MarginContainer/MainContainer"]
-margin_top = 104.0
-margin_right = 1024.0
-margin_bottom = 104.0
-size_flags_vertical = 2
-
-[node name="BotContainer" type="HBoxContainer" parent="MarginContainer/MainContainer"]
-margin_top = 540.0
-margin_right = 1024.0
-margin_bottom = 600.0
+margin_bottom = 102.0
 size_flags_horizontal = 3
 alignment = 1
 
-[node name="Actionbar" type="GridContainer" parent="MarginContainer/MainContainer/BotContainer"]
-margin_left = 332.0
-margin_right = 692.0
-margin_bottom = 60.0
+[node name="PlayerFrame" type="MarginContainer" parent="MarginContainer/MainContainer/TopContainer"]
+editor/display_folded = true
+margin_right = 160.0
+margin_bottom = 102.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 10
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 10
+
+[node name="Background" type="TextureRect" parent="MarginContainer/MainContainer/TopContainer/PlayerFrame"]
+margin_left = 20.0
+margin_top = 10.0
+margin_right = 140.0
+margin_bottom = 92.0
+size_flags_vertical = 3
+texture = ExtResource( 2 )
+expand = true
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MainContainer/TopContainer/PlayerFrame"]
+margin_left = 20.0
+margin_top = 10.0
+margin_right = 140.0
+margin_bottom = 92.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MainContainer/TopContainer/PlayerFrame/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 110.0
+margin_bottom = 72.0
+size_flags_vertical = 0
+
+[node name="Name" type="Label" parent="MarginContainer/MainContainer/TopContainer/PlayerFrame/MarginContainer/VBoxContainer"]
+margin_right = 100.0
+margin_bottom = 14.0
+text = "PlayerName"
+
+[node name="HealthBar" type="TextureProgress" parent="MarginContainer/MainContainer/TopContainer/PlayerFrame/MarginContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 100.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 100, 20 )
+value = 95.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+nine_patch_stretch = true
+stretch_margin_left = 9
+stretch_margin_right = 9
+
+[node name="PowerBar" type="TextureProgress" parent="MarginContainer/MainContainer/TopContainer/PlayerFrame/MarginContainer/VBoxContainer"]
+margin_top = 42.0
+margin_right = 100.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 100, 20 )
+value = 45.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 5 )
+nine_patch_stretch = true
+stretch_margin_left = 9
+stretch_margin_right = 9
+
+[node name="NotificationFrame" type="ScrollContainer" parent="MarginContainer/MainContainer/TopContainer"]
+margin_left = 164.0
+margin_right = 860.0
+margin_bottom = 102.0
+size_flags_horizontal = 3
+
+[node name="List" type="VBoxContainer" parent="MarginContainer/MainContainer/TopContainer/NotificationFrame"]
+margin_right = 696.0
+margin_bottom = 102.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Note" parent="MarginContainer/MainContainer/TopContainer/NotificationFrame/List" instance=ExtResource( 6 )]
+
+[node name="TargetFrame" type="MarginContainer" parent="MarginContainer/MainContainer/TopContainer"]
+margin_left = 864.0
+margin_right = 1024.0
+margin_bottom = 102.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 10
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 10
+
+[node name="Background" type="TextureRect" parent="MarginContainer/MainContainer/TopContainer/TargetFrame"]
+margin_left = 20.0
+margin_top = 10.0
+margin_right = 140.0
+margin_bottom = 92.0
+size_flags_vertical = 3
+texture = ExtResource( 2 )
+expand = true
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MainContainer/TopContainer/TargetFrame"]
+margin_left = 20.0
+margin_top = 10.0
+margin_right = 140.0
+margin_bottom = 92.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MainContainer/TopContainer/TargetFrame/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 110.0
+margin_bottom = 72.0
+size_flags_vertical = 0
+
+[node name="Name" type="Label" parent="MarginContainer/MainContainer/TopContainer/TargetFrame/MarginContainer/VBoxContainer"]
+margin_right = 100.0
+margin_bottom = 14.0
+text = "PlayerName"
+
+[node name="HealthBar" type="TextureProgress" parent="MarginContainer/MainContainer/TopContainer/TargetFrame/MarginContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 100.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 100, 20 )
+value = 95.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+nine_patch_stretch = true
+stretch_margin_left = 9
+stretch_margin_right = 9
+
+[node name="PowerBar" type="TextureProgress" parent="MarginContainer/MainContainer/TopContainer/TargetFrame/MarginContainer/VBoxContainer"]
+margin_top = 42.0
+margin_right = 100.0
+margin_bottom = 62.0
+rect_min_size = Vector2( 100, 20 )
+value = 45.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 5 )
+nine_patch_stretch = true
+stretch_margin_left = 9
+stretch_margin_right = 9
+
+[node name="Container" type="Container" parent="MarginContainer/MainContainer"]
+margin_top = 106.0
+margin_right = 1024.0
+margin_bottom = 106.0
+size_flags_vertical = 2
+
+[node name="Actionbar" type="HBoxContainer" parent="MarginContainer/MainContainer"]
+margin_top = 540.0
+margin_right = 1024.0
+margin_bottom = 600.0
 rect_min_size = Vector2( 360, 60 )
 mouse_default_cursor_shape = 1
-columns = 7
+size_flags_horizontal = 3
+alignment = 1
 
-[node name="buttonSquare_blue" type="TextureButton" parent="MarginContainer/MainContainer/BotContainer/Actionbar"]
-margin_right = 45.0
-margin_bottom = 49.0
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 13 )
+[node name="space_left" type="Control" parent="MarginContainer/MainContainer/Actionbar"]
+margin_right = 461.0
+margin_bottom = 60.0
+size_flags_horizontal = 3
 
-[node name="buttonSquare_blue6" type="TextureButton" parent="MarginContainer/MainContainer/BotContainer/Actionbar"]
-margin_left = 49.0
-margin_right = 94.0
-margin_bottom = 49.0
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 13 )
+[node name="button_01" type="TextureButton" parent="MarginContainer/MainContainer/Actionbar"]
+editor/display_folded = true
+margin_left = 465.0
+margin_right = 510.0
+margin_bottom = 45.0
+size_flags_vertical = 0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 7 )
 
-[node name="buttonSquare_blue2" type="TextureButton" parent="MarginContainer/MainContainer/BotContainer/Actionbar"]
-margin_left = 98.0
-margin_right = 143.0
-margin_bottom = 49.0
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 13 )
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MainContainer/Actionbar/button_01"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 4
+custom_constants/margin_top = 4
+custom_constants/margin_left = 4
+custom_constants/margin_bottom = 8
 
-[node name="buttonSquare_blue3" type="TextureButton" parent="MarginContainer/MainContainer/BotContainer/Actionbar"]
-margin_left = 147.0
-margin_right = 192.0
-margin_bottom = 49.0
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 13 )
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/MainContainer/Actionbar/button_01/MarginContainer"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 41.0
+margin_bottom = 37.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 8 )
+expand = true
 
-[node name="buttonSquare_blue4" type="TextureButton" parent="MarginContainer/MainContainer/BotContainer/Actionbar"]
-margin_left = 196.0
-margin_right = 241.0
-margin_bottom = 49.0
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 13 )
+[node name="button_02" type="TextureButton" parent="MarginContainer/MainContainer/Actionbar"]
+margin_left = 514.0
+margin_right = 559.0
+margin_bottom = 45.0
+size_flags_vertical = 0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 7 )
 
-[node name="buttonSquare_blue5" type="TextureButton" parent="MarginContainer/MainContainer/BotContainer/Actionbar"]
-margin_left = 245.0
-margin_right = 290.0
-margin_bottom = 49.0
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 13 )
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MainContainer/Actionbar/button_02"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 4
+custom_constants/margin_top = 4
+custom_constants/margin_left = 4
+custom_constants/margin_bottom = 8
 
-[node name="bag" type="TextureButton" parent="MarginContainer/MainContainer/BotContainer/Actionbar"]
-margin_left = 294.0
-margin_right = 339.0
-margin_bottom = 49.0
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 13 )
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/MainContainer/Actionbar/button_02/MarginContainer"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 41.0
+margin_bottom = 37.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 9 )
+expand = true
+
+[node name="space_right" type="Control" parent="MarginContainer/MainContainer/Actionbar"]
+margin_left = 563.0
+margin_right = 1024.0
+margin_bottom = 60.0
+size_flags_horizontal = 3
 
 [node name="Dialog" type="Control" parent="."]
 margin_right = 40.0
@@ -227,10 +293,11 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="GameMenu" type="Control" parent="."]
+editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 14 )
+script = ExtResource( 10 )
 
 [node name="Background" type="NinePatchRect" parent="GameMenu"]
 visible = false
@@ -238,7 +305,7 @@ margin_left = 200.0
 margin_top = 64.0
 margin_right = 824.0
 margin_bottom = 536.0
-texture = ExtResource( 15 )
+texture = ExtResource( 2 )
 region_rect = Rect2( 0, 0, 100, 100 )
 patch_margin_left = 7
 patch_margin_top = 10
@@ -251,7 +318,7 @@ margin_top = 64.0
 margin_right = 750.0
 margin_bottom = 514.0
 rect_min_size = Vector2( 550, 450 )
-theme = ExtResource( 16 )
+theme = ExtResource( 11 )
 tab_align = 0
 
 [node name="Menü" type="Tabs" parent="GameMenu/TabContainer"]
@@ -292,7 +359,7 @@ margin_left = 10.0
 margin_top = 10.0
 margin_right = 250.0
 margin_bottom = 380.0
-texture = ExtResource( 17 )
+texture = ExtResource( 12 )
 region_rect = Rect2( 1, 2, 92, 94 )
 patch_margin_left = 22
 patch_margin_top = 22
@@ -318,9 +385,9 @@ alignment = 1
 [node name="PauseButton" type="TextureButton" parent="GameMenu/TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer"]
 margin_right = 190.0
 margin_bottom = 49.0
-texture_normal = ExtResource( 18 )
-texture_pressed = ExtResource( 19 )
-texture_disabled = ExtResource( 20 )
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 14 )
+texture_disabled = ExtResource( 15 )
 
 [node name="Label" type="Label" parent="GameMenu/TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer/PauseButton"]
 anchor_right = 1.0
@@ -333,8 +400,8 @@ valign = 1
 margin_top = 53.0
 margin_right = 190.0
 margin_bottom = 102.0
-texture_normal = ExtResource( 18 )
-texture_pressed = ExtResource( 19 )
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 14 )
 
 [node name="Label" type="Label" parent="GameMenu/TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer/SaveButton"]
 anchor_right = 1.0
@@ -347,8 +414,8 @@ valign = 1
 margin_top = 106.0
 margin_right = 190.0
 margin_bottom = 155.0
-texture_normal = ExtResource( 18 )
-texture_pressed = ExtResource( 19 )
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 14 )
 
 [node name="Label" type="Label" parent="GameMenu/TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer/LoadButton"]
 anchor_right = 1.0
@@ -361,8 +428,8 @@ valign = 1
 margin_top = 159.0
 margin_right = 190.0
 margin_bottom = 208.0
-texture_normal = ExtResource( 18 )
-texture_pressed = ExtResource( 19 )
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 14 )
 
 [node name="Label" type="Label" parent="GameMenu/TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer/QuitButton"]
 anchor_right = 1.0
@@ -393,7 +460,7 @@ margin_bottom = 380.0
 margin_top = 10.0
 margin_right = 240.0
 margin_bottom = 380.0
-texture = ExtResource( 17 )
+texture = ExtResource( 12 )
 region_rect = Rect2( 1, 2, 92, 94 )
 patch_margin_left = 22
 patch_margin_top = 22
@@ -410,7 +477,7 @@ margin_right = -14.0
 margin_bottom = -37.0
 scrolling_enabled = false
 
-[node name="Inventory" parent="GameMenu/TabContainer/Inventar" instance=ExtResource( 21 )]
+[node name="Inventory" parent="GameMenu/TabContainer/Inventar" instance=ExtResource( 16 )]
 
 [node name="Karte" type="Tabs" parent="GameMenu/TabContainer"]
 visible = false
@@ -468,7 +535,7 @@ margin_left = 10.0
 margin_top = 10.0
 margin_right = 250.0
 margin_bottom = 380.0
-texture = ExtResource( 17 )
+texture = ExtResource( 12 )
 region_rect = Rect2( 1, 2, 92, 94 )
 patch_margin_left = 22
 patch_margin_top = 22
@@ -524,7 +591,7 @@ custom_constants/margin_bottom = 10
 margin_top = 10.0
 margin_right = 240.0
 margin_bottom = 380.0
-texture = ExtResource( 17 )
+texture = ExtResource( 12 )
 region_rect = Rect2( 1, 2, 92, 94 )
 patch_margin_left = 22
 patch_margin_top = 22
@@ -543,7 +610,7 @@ margin_left = 0.556564
 margin_top = 1.02369
 margin_right = 38.5566
 margin_bottom = 39.0237
-texture = ExtResource( 22 )
+texture = ExtResource( 17 )
 expand = true
 
 [node name="TextureButton" type="TextureButton" parent="GameMenu/CloseButton"]
@@ -551,8 +618,8 @@ margin_left = 11.361
 margin_top = 8.07318
 margin_right = 30.361
 margin_bottom = 27.0732
-texture_normal = ExtResource( 23 )
-texture_hover = ExtResource( 24 )
+texture_normal = ExtResource( 18 )
+texture_hover = ExtResource( 19 )
 expand = true
 
 [node name="FPS" type="Label" parent="."]
@@ -561,11 +628,12 @@ margin_bottom = 14.0
 align = 2
 
 [node name="Cursor" type="Node2D" parent="."]
-script = ExtResource( 25 )
+position = Vector2( 55.0839, -140.703 )
+script = ExtResource( 20 )
 
 [node name="Sprite" type="Sprite" parent="Cursor"]
 position = Vector2( -0.107193, 0.114799 )
-texture = ExtResource( 26 )
+texture = ExtResource( 21 )
 offset = Vector2( 11.6863, 11.4643 )
 
 [node name="Tooltip" type="Label" parent="Cursor"]
@@ -579,4 +647,6 @@ custom_styles/normal = SubResource( 1 )
 custom_colors/font_color = Color( 0.976471, 0.921569, 0.803922, 1 )
 text = "Info
 Subinfo"
+[connection signal="pressed" from="MarginContainer/MainContainer/Actionbar/button_01" to="." method="_on_button_01_pressed"]
+[connection signal="pressed" from="MarginContainer/MainContainer/Actionbar/button_02" to="." method="_on_button_02_pressed"]
 [connection signal="pressed" from="GameMenu/CloseButton/TextureButton" to="GameMenu" method="_on_TextureButton_pressed"]

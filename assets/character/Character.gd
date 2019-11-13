@@ -7,6 +7,7 @@ var camera
 var anim_player
 var character
 var raycast
+var target
 
 var RUN_SPEED = 13
 var WALK_SPEED = 1.5
@@ -14,8 +15,12 @@ var JUMP_SPEED = 2
 var ACCELERATION = 1.5
 var DE_ACCELERATION = 5
 
-onready var inventory = get_node('/root/Level/Ui/GameMenu/TabContainer/Inventar/Inventory')
+var equip = []
+var weapon = [null, null]
 
+
+onready var ui = get_node('/root/Level/Ui')
+onready var inventory = ui.get_node('GameMenu/TabContainer/Inventar/Inventory')
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -118,9 +123,25 @@ func equip_test():
 	kit.set_bone_name('HandR1')
 	var club_res = load("res://assets/item/weapon/club/Club.tscn")
 	var club = club_res.instance()
-	#var mesh = club.get_node('Club')
 	club.scale = Vector3(15, 15, 15)
 	club.set('translation', Vector3(+1, 0,0))
 	kit.add_child(club)
+	weapon[0] = club
 	#print(kit)
 	#print(mesh.scale)
+
+	
+func attack():
+	#var hit = false
+	if not target or not is_instance_valid(target):
+		ui.notify('Kein Ziel zum Angreifen!')
+		return
+	if randf() < weapon[0].hit:
+		#hit = true
+		var dmg = int(rand_range(weapon[0].damage-weapon[0].noise, weapon[0].damage+weapon[0].noise))
+		ui.notify(String(dmg) + ' Schaden')
+		target.get_hit(dmg)
+		ui.update_target(target)
+		
+	else:
+		ui.notify('Verfehlt.')

@@ -9,6 +9,7 @@ var loader
 var wait_frames
 var time_max = 1000 # msec
 var item_db
+var settings
 
 
 func _ready():
@@ -27,6 +28,9 @@ func _ready():
 	file.open(item_db_res, file.READ)
 	print(validate_json(file.get_as_text()))
 	item_db = parse_json(file.get_as_text())
+	
+	#load settings
+	settings = {'debug': true}
 
 
 func goto_scene(path):

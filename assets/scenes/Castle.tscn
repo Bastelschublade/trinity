@@ -80,4 +80,4 @@ transform = Transform( -0.0230151, 0, 0.999735, 0, 1, 0, -0.999735, 0, -0.023015
 transform = Transform( -0.0230151, 0, 0.999735, 0, 1, 0, -0.999735, 0, -0.0230151, 7.20364, 2, -1.39284 )
 
 [node name="WatchTowerWRoof" parent="." instance=ExtResource( 7 )]
-transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, 25, 1.20481, -16 )
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 25, 1.20481, -16 )

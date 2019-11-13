@@ -6,6 +6,7 @@ export(float) var animal_walk_speed = 0.2
 export(float) var animal_run_speed = 4
 export(float) var animal_walk_speed_scale = 1
 export(String) var animal_name = "Tier"
+export(float) var animal_max_health = 15
 #export(bool) var animal_can_eat = true
 #export(Dictionary) var animal_food = {}
 #export(bool) var animal_stick_to_spawn = true
@@ -20,6 +21,7 @@ var speed = 0
 var task = 'browse'
 var walking = false
 var velocity = Vector3(0,0,0)
+var health
 #var spawn
 #var age = 0
 onready var anim_player = get_node('AnimationPlayer')
@@ -27,6 +29,7 @@ onready var anim_player = get_node('AnimationPlayer')
 
 func _ready():
 	#self.spawn = self.position
+	health = animal_max_health
 	var looped_anims = ['Idle', 'Walk', 'Run']
 	for anim_name in anim_player.get_animation_list():
 		if anim_name in looped_anims:
@@ -76,3 +79,22 @@ func _on_motion_timer_timeout():
 			anim_player.current_animation = "Idle"
 		else:
 			anim_player.current_animation = "Walk"
+
+
+func rel_health():
+	# move to creature class
+	return health/animal_max_health*100
+	
+	
+func get_hit(dmg):
+	# move to creature class
+	health -= dmg
+	if health < 0:
+		die()
+	# TODO: armor, block dmg type, animation
+	
+
+func die():
+	# move to creature class
+	#add loot and animation
+	self.queue_free()

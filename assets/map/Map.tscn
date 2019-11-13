@@ -159,7 +159,6 @@ transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -58.4824, 0, 10.2109 )
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -62.4424, 0, 8.48242 )
 
 [node name="Camp" type="Spatial" parent="."]
-editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.1443, 0, -17.1658 )
 
 [node name="Fire" parent="Camp" instance=ExtResource( 26 )]
@@ -6129,6 +6128,7 @@ transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.7751
 transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -9, 0, 4 )
 
 [node name="Castle" type="Spatial" parent="."]
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48.3967, 0, -32.7582 )
 
 [node name="Tree5" parent="Castle" instance=ExtResource( 16 )]

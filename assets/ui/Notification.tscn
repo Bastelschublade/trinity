@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/ui/Notification.gd" type="Script" id=1]
+
+[node name="Note" type="Label"]
+margin_top = 44.0
+margin_right = 696.0
+margin_bottom = 58.0
+text = "Spiel gestartet..."
+align = 1
+script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
