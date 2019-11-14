@@ -79,6 +79,8 @@ func update_details(id):
 	this_details.get_node('IconLarge').set('rect_size', Vector2(100,100))
 	this_details.get_node('ItemName').set_text(String(data['name']))
 	this_details.get_node('ItemDesc').set_text(String(data.get('text', "")))
+	if data['type'] == 'weapon':
+		print('add equip button')
 	
 	
 func update_list():

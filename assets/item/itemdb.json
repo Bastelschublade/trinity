@@ -1,5 +1,5 @@
 {
-	"1":{ 
+	"1":{
 		"name": "Kürbis",
 		"type": "food",
 		"fname": "pumpkin",
@@ -29,5 +29,20 @@
 		"weight": 1,
 		"sell": true,
 		"price": 5,
+	},
+	"4":{
+		"name": "Schwert",
+		"type": "weapon",
+		"fname": "sword",
+		"tooltip": "Eine feine Waffe",
+		"text": "Ein gut geschmiedetes Schwert mit verziertem Griff und scharfer Klinge.",
+		"weight": 1,
+		"sell": true,
+		"price": 12,
+		"damage": 8,
+		"noise": 2,
+		"speed": 4,
+		"parry": 2,
+		"stats": {"Trefferwertung": 2}
 	}
 }

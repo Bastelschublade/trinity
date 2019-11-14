@@ -30,17 +30,15 @@ func collect_item(item_body):
 
 
 
-
-
 func update_cursor(object):
 	self.sprite.texture = default
 	if object is NPC:
-		self.sprite.texture = attack
+		self.sprite.texture = talk
 		self.tooltip.set_text(object.npc_name + '\n' + object.npc_desc)
 		self.tooltip.set('visible', true)
-	elif object is GameObject:
+	elif object is Item:
 		self.sprite.texture = collect
-		var item_id = object.get_parent().item_id
+		var item_id = object.item_id
 		var data = get_node("/root/Global").item_db[item_id]
 		self.tooltip.set_text(data['name'])
 		self.tooltip.set('visible', true)
@@ -49,19 +47,6 @@ func update_cursor(object):
 		self.tooltip.set_text(object.animal_name)
 		self.tooltip.set('visible', true)
 
-
-func process_click(object, distance):
-	var target
-	if object is GameObject:
-		collect_item(object)
-	elif object is NPC and distance < TALK_RANGE:
-		object.start_dialog()
-	elif object is Animal and distance < TALK_RANGE:
-		object.on_click()
-		
-	if object is NPC or Animal:
-		target = object
-	get_node('/root/Level/Ui').update_target(target)
 
 
 # -------------------------------------- #
@@ -86,10 +71,13 @@ func _physics_process(delta):
 	
 	# choose mouse interaction mode
 	var object = mouse_over.collider
-	var object_pos = object.get_global_transform().origin
-	var distance = object_pos.distance_to(get_node('/root/Level').player_pos)  # player_pos is exported
-	update_cursor(object)
+	var par = object.get_parent()
+	update_cursor(par)
 	if Input.is_action_just_pressed('select'):
-		process_click(object, distance)
+		if par is Creature:
+			par.select()
+	if Input.is_action_just_pressed('interact'):
+		if par is Item or par is Creature:
+			par.interact()
 	
 

@@ -8,6 +8,8 @@ var anim_player
 var character
 var raycast
 var target
+var blocking = false
+var block_timer
 
 var RUN_SPEED = 13
 var WALK_SPEED = 1.5
@@ -30,6 +32,9 @@ func _ready():
 	anim_player = get_node('Armature/AnimationPlayer')
 	equip_test()
 	#print(anim_player)
+	block_timer = Timer.new()
+	block_timer.connect("timeout", self, '_on_block_timer_timeout')
+	get_node('.').add_child(block_timer)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -140,8 +145,22 @@ func attack():
 		#hit = true
 		var dmg = int(rand_range(weapon[0].damage-weapon[0].noise, weapon[0].damage+weapon[0].noise))
 		ui.notify(String(dmg) + ' Schaden')
-		target.get_hit(dmg)
+		target._get_hit(dmg)
 		ui.update_target(target)
 		
 	else:
 		ui.notify('Verfehlt.')
+		
+
+func block():
+	blocking = true
+	block_timer.start(1)
+	
+	
+
+func _on_block_timer_timeout():
+	blocking = false
+	print('fertig mit blocken')
+	
+	
+	

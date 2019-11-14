@@ -1,15 +1,11 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
-[ext_resource path="res://assets/character/AnimationPlayer.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/character/skins/skin_adventurer.png" type="Texture" id=2]
-[ext_resource path="res://assets/character/Camera_Follow.gd" type="Script" id=3]
+[ext_resource path="res://assets/creature/npc/NPC.gd" type="Script" id=1]
+[ext_resource path="res://assets/character/idle.anim" type="Animation" id=2]
+[ext_resource path="res://assets/character/walk.anim" type="Animation" id=3]
+[ext_resource path="res://assets/creature/npc/gustav/skin_manAlternative.png" type="Texture" id=4]
 
-
-[sub_resource type="CapsuleShape" id=1]
-radius = 3.2069
-height = 8.80334
-
-[sub_resource type="Shader" id=2]
+[sub_resource type="Shader" id=1]
 resource_name = "Shader Nodetree"
 code = "shader_type spatial;
 render_mode blend_mix, depth_draw_always, cull_back, diffuse_burley, specular_schlick_ggx;
@@ -70,11 +66,11 @@ void fragment () {
 }
 "
 
-[sub_resource type="ShaderMaterial" id=3]
-shader = SubResource( 2 )
-shader_param/texture_0 = ExtResource( 2 )
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/texture_0 = ExtResource( 4 )
 
-[sub_resource type="ArrayMesh" id=4]
+[sub_resource type="ArrayMesh" id=3]
 resource_name = "Mesh002"
 surfaces/0 = {
 "aabb": AABB( 2, -1, -12, 2.00001, 2.00001, 7 ),
@@ -83,17 +79,17 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97751,
 "index_count": 168,
-"material": SubResource( 3 ),
+"material": SubResource( 2 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 2, -1, -12, 2.00001, 2.00001, 3.00001 ), AABB( 2, -1, -12, 2.00001, 2.00001, 6 ), AABB( 2, -1, -12, 2.00001, 2.00001, 7 ), AABB( 2, -1, -7, 2, 2.00001, 2 ), AABB( 2.66667, -1, -6, 1.33333, 2, 1.00001 ), AABB( 2, -1, -12, 2.00001, 2.00001, 7 ), AABB( 2, -1, -7, 0.66668, 2, 1 ) ],
 "vertex_count": 80
 }
 
-[sub_resource type="ShaderMaterial" id=5]
-shader = SubResource( 2 )
-shader_param/texture_0 = ExtResource( 2 )
+[sub_resource type="ShaderMaterial" id=4]
+shader = SubResource( 1 )
+shader_param/texture_0 = ExtResource( 4 )
 
-[sub_resource type="ArrayMesh" id=6]
+[sub_resource type="ArrayMesh" id=5]
 resource_name = "Mesh003"
 surfaces/0 = {
 "aabb": AABB( -4, -1, -12, 2.00001, 2.00001, 7 ),
@@ -102,17 +98,17 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97751,
 "index_count": 168,
-"material": SubResource( 5 ),
+"material": SubResource( 4 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -4, -1, -12, 2.00001, 2.00001, 3.00001 ), AABB( -4, -1, -12, 2.00001, 2.00001, 6 ), AABB( -4, -1, -12, 2.00001, 2.00001, 7 ), AABB( -4, -1, -7, 2, 2.00001, 2 ), AABB( -4, -1, -6, 1.33333, 2, 1.00001 ), AABB( -4, -1, -12, 2.00001, 2.00001, 7 ), AABB( -2.66667, -1, -7, 0.66667, 2.00001, 1 ) ],
 "vertex_count": 84
 }
 
-[sub_resource type="ShaderMaterial" id=7]
-shader = SubResource( 2 )
-shader_param/texture_0 = ExtResource( 2 )
+[sub_resource type="ShaderMaterial" id=6]
+shader = SubResource( 1 )
+shader_param/texture_0 = ExtResource( 4 )
 
-[sub_resource type="ArrayMesh" id=8]
+[sub_resource type="ArrayMesh" id=7]
 resource_name = "Mesh"
 surfaces/0 = {
 "aabb": AABB( -2.00217, -1, -12, 4.00434, 2.00001, 6.00001 ),
@@ -121,17 +117,17 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97751,
 "index_count": 36,
-"material": SubResource( 7 ),
+"material": SubResource( 6 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( -2.00217, -1, -12, 4.00434, 2.00001, 6.00001 ), AABB( -2.00217, -1, -12, 4.00434, 2.00001, 6.00001 ), AABB( -2.00217, -1, -12, 4.00434, 2.00001, 6.00001 ) ],
 "vertex_count": 24
 }
 
-[sub_resource type="ShaderMaterial" id=9]
-shader = SubResource( 2 )
-shader_param/texture_0 = ExtResource( 2 )
+[sub_resource type="ShaderMaterial" id=8]
+shader = SubResource( 1 )
+shader_param/texture_0 = ExtResource( 4 )
 
-[sub_resource type="ArrayMesh" id=10]
+[sub_resource type="ArrayMesh" id=9]
 resource_name = "Mesh001"
 surfaces/0 = {
 "aabb": AABB( -2, -2, -16, 4.00001, 4.00001, 4.00001 ),
@@ -140,17 +136,17 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97751,
 "index_count": 36,
-"material": SubResource( 9 ),
+"material": SubResource( 8 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -2, -2, -16, 4.00001, 4.00001, 4.00001 ) ],
 "vertex_count": 24
 }
 
-[sub_resource type="ShaderMaterial" id=11]
-shader = SubResource( 2 )
-shader_param/texture_0 = ExtResource( 2 )
+[sub_resource type="ShaderMaterial" id=10]
+shader = SubResource( 1 )
+shader_param/texture_0 = ExtResource( 4 )
 
-[sub_resource type="ArrayMesh" id=12]
+[sub_resource type="ArrayMesh" id=11]
 resource_name = "Mesh004"
 surfaces/0 = {
 "aabb": AABB( -3.26684e-08, -1, -6, 2.00001, 3, 6 ),
@@ -159,17 +155,17 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97751,
 "index_count": 108,
-"material": SubResource( 11 ),
+"material": SubResource( 10 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -3.26684e-08, -1, -6, 2.00001, 3, 6 ), AABB( -3.26684e-08, -1, -6, 2.00001, 3, 6 ), AABB( -3.26684e-08, -1, -6, 2.00001, 3, 6 ), AABB( -3.26684e-08, -1, -6, 2.00001, 3, 6 ) ],
 "vertex_count": 52
 }
 
-[sub_resource type="ShaderMaterial" id=13]
-shader = SubResource( 2 )
-shader_param/texture_0 = ExtResource( 2 )
+[sub_resource type="ShaderMaterial" id=12]
+shader = SubResource( 1 )
+shader_param/texture_0 = ExtResource( 4 )
 
-[sub_resource type="ArrayMesh" id=14]
+[sub_resource type="ArrayMesh" id=13]
 resource_name = "Mesh005"
 surfaces/0 = {
 "aabb": AABB( -2, -1, -6, 2.00001, 3, 6 ),
@@ -178,19 +174,26 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97751,
 "index_count": 108,
-"material": SubResource( 13 ),
+"material": SubResource( 12 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -2, -1, -6, 2.00001, 3, 6 ), AABB( -2, -1, -6, 2.00001, 3, 6 ), AABB( -2, -1, -6, 2.00001, 3, 6 ), AABB( -2, -1, -6, 2.00001, 3, 6 ) ],
 "vertex_count": 52
 }
 
-[node name="Character" type="KinematicBody"]
+[sub_resource type="CylinderShape" id=14]
+radius = 0.100888
+height = 0.744171
 
-[node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 0.05, 0, 0, 0, -2.18557e-09, 0.05, 0, -0.05, -2.18557e-09, 0, 0.380733, -1.66421e-08 )
-shape = SubResource( 1 )
+[node name="Gustav" type="Spatial"]
+script = ExtResource( 1 )
+npc_name = "Gustav"
+npc_max_health = 10.0
+npc_skin_file = "res://assets/creature/npc/gustav/skin_manAlternative.png"
+npc_dialog_file = "res://assets/creature/npc/gustav/dialog.json"
 
-[node name="Armature" type="Skeleton" parent="."]
+[node name="Body" type="KinematicBody" parent="."]
+
+[node name="Armature" type="Skeleton" parent="Body"]
 transform = Transform( 0.05, 0, 0, 0, -2.18557e-09, -0.05, 0, 0.05, -2.18557e-09, 0, 0, 0 )
 bones_in_world_transform = true
 bones/0/name = "Rig1"
@@ -324,47 +327,40 @@ bones/25/rest = Transform( 1, 0, 2.27272e-08, 0, 1, 0, -2.27272e-08, 0, 1, -0.03
 bones/25/enabled = true
 bones/25/bound_children = [  ]
 
-[node name="AnimationPlayer" parent="Armature" instance=ExtResource( 1 )]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Body/Armature"]
+anims/idle = ExtResource( 2 )
+anims/walk = ExtResource( 3 )
 
-[node name="ArmLeft1" type="MeshInstance" parent="Armature"]
+[node name="ArmLeft1" type="MeshInstance" parent="Body/Armature"]
 transform = Transform( 1, 0, 0, 0, 1, -3.55271e-15, 0, 3.55271e-15, 1, -7.10543e-15, 0, -2.66454e-15 )
-mesh = SubResource( 4 )
+mesh = SubResource( 3 )
 material/0 = null
 
-[node name="ArmRight1" type="MeshInstance" parent="Armature"]
+[node name="ArmRight1" type="MeshInstance" parent="Body/Armature"]
 transform = Transform( 1, 0, 0, 0, 1, -3.55271e-15, 0, 3.55271e-15, 1, -3.55271e-15, 0, 0 )
-mesh = SubResource( 6 )
+mesh = SubResource( 5 )
 material/0 = null
 
-[node name="Body1" type="MeshInstance" parent="Armature"]
+[node name="Body1" type="MeshInstance" parent="Body/Armature"]
 transform = Transform( 1, 0, 0, 0, 1, -3.55271e-15, 0, 3.55271e-15, 1, 0, 0, 0 )
-mesh = SubResource( 8 )
+mesh = SubResource( 7 )
 material/0 = null
 
-[node name="Head1" type="MeshInstance" parent="Armature"]
+[node name="Head1" type="MeshInstance" parent="Body/Armature"]
 transform = Transform( 1, 0, 0, 0, 1, -3.55271e-15, 0, 3.55271e-15, 1, 0, 0, 0 )
-mesh = SubResource( 10 )
+mesh = SubResource( 9 )
 material/0 = null
 
-[node name="LegLeft1" type="MeshInstance" parent="Armature"]
+[node name="LegLeft1" type="MeshInstance" parent="Body/Armature"]
 transform = Transform( 1, 0, 0, 0, 1, -3.55271e-15, 0, 3.55271e-15, 1, 0, 0, 0 )
-mesh = SubResource( 12 )
+mesh = SubResource( 11 )
 material/0 = null
 
-[node name="LegRight1" type="MeshInstance" parent="Armature"]
+[node name="LegRight1" type="MeshInstance" parent="Body/Armature"]
 transform = Transform( 1, 0, 0, 0, 1, -3.55271e-15, 0, 3.55271e-15, 1, 0, 0, 0 )
-mesh = SubResource( 14 )
+mesh = SubResource( 13 )
 material/0 = null
 
-[node name="RayCast" type="RayCast" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.045882, 0 )
-enabled = true
-cast_to = Vector3( 0, -0.2, 0 )
-
-[node name="target" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.563104, 0 )
-
-[node name="Camera" type="Camera" parent="target"]
-transform = Transform( -1, 1.47351e-07, -1.36849e-07, 7.57103e-08, 0.906308, 0.422618, 1.863e-07, 0.422618, -0.906308, 1.11927e-06, 12.7938, -27.331 )
-current = true
-script = ExtResource( 3 )
+[node name="CollisionShape" type="CollisionShape" parent="Body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.391774, 0 )
+shape = SubResource( 14 )

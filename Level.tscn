@@ -3,7 +3,7 @@
 [ext_resource path="res://Level.gd" type="Script" id=1]
 [ext_resource path="res://assets/map/Map.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/character/Character.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/npc/gustav/Gustav.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/creature/npc/gustav/Gustav.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/ui/Ui.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/music/randommind Loop_Rejoicing.ogg" type="AudioStream" id=6]
 
@@ -12,7 +12,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15605, 0.295441, 0.995201 )
 script = ExtResource( 1 )
 
 [node name="Sun" type="DirectionalLight" parent="."]
-transform = Transform( 0.992623, 0.101473, 0.0663553, 0.00719244, -0.595614, 0.803239, 0.121029, -0.796836, -0.59195, -11.3141, -34.0128, -63.8895 )
+transform = Transform( 0.992623, 0.101473, 0.0663553, 0.00719244, -0.595614, 0.803239, 0.121029, -0.796836, -0.59195, -18.291, 21.7064, -9.97948 )
 light_color = Color( 1, 0.882353, 0.356863, 1 )
 light_energy = 1.1
 light_indirect_energy = 0.3
@@ -25,7 +25,7 @@ directional_shadow_max_distance = 380.7
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
 
 [node name="Character" parent="." instance=ExtResource( 3 )]
-transform = Transform( 0.232393, 0, 0.972621, 0, 1, 0, -0.972621, 0, 0.232393, 10.4892, -0.161743, -11.7054 )
+transform = Transform( 0.889771, 0, 0.456406, 0, 1, 0, -0.456406, 0, 0.889771, 8.4054, 1.9917, 1.35129 )
 
 [node name="NPCs" type="Spatial" parent="."]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.22192, 0, 0 )

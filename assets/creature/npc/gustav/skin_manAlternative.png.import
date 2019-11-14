@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/skin_manAlternative.png-d44771ccf8603567022a5bd84bb81a35.s3tc.stex"
-path.etc2="res://.import/skin_manAlternative.png-d44771ccf8603567022a5bd84bb81a35.etc2.stex"
+path.s3tc="res://.import/skin_manAlternative.png-d6902f87f0b7eb7f174fd5116178d045.s3tc.stex"
+path.etc2="res://.import/skin_manAlternative.png-d6902f87f0b7eb7f174fd5116178d045.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/npc/gustav/skin_manAlternative.png"
-dest_files=[ "res://.import/skin_manAlternative.png-d44771ccf8603567022a5bd84bb81a35.s3tc.stex", "res://.import/skin_manAlternative.png-d44771ccf8603567022a5bd84bb81a35.etc2.stex" ]
+source_file="res://assets/creature/npc/gustav/skin_manAlternative.png"
+dest_files=[ "res://.import/skin_manAlternative.png-d6902f87f0b7eb7f174fd5116178d045.s3tc.stex", "res://.import/skin_manAlternative.png-d6902f87f0b7eb7f174fd5116178d045.etc2.stex" ]
 
 [params]
 

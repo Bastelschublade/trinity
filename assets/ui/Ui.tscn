@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/ui/Ui.gd" type="Script" id=1]
 [ext_resource path="res://assets/ui/rpg/png/panel_brown.png" type="Texture" id=2]
@@ -8,19 +8,20 @@
 [ext_resource path="res://assets/ui/Notification.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/ui/rpg/png/buttonSquare_brown_pressed.png" type="Texture" id=7]
 [ext_resource path="res://assets/item/weapon/club/icon.png" type="Texture" id=8]
-[ext_resource path="res://assets/item/weapon/shield/icon.png" type="Texture" id=9]
-[ext_resource path="res://assets/ui/GameMenu/GameMenuWindow.gd" type="Script" id=10]
-[ext_resource path="res://assets/ui/trinity_theme.tres" type="Theme" id=11]
-[ext_resource path="res://assets/ui/rpg/png/panelInset_beige.png" type="Texture" id=12]
-[ext_resource path="res://assets/ui/rpg/png/buttonLong_brown.png" type="Texture" id=13]
-[ext_resource path="res://assets/ui/rpg/png/buttonLong_brown_pressed.png" type="Texture" id=14]
-[ext_resource path="res://assets/ui/rpg/png/buttonLong_blue.png" type="Texture" id=15]
-[ext_resource path="res://assets/ui/inventory/Inventory.tscn" type="PackedScene" id=16]
-[ext_resource path="res://assets/ui/rpg/png/buttonRound_brown.png" type="Texture" id=17]
-[ext_resource path="res://assets/ui/rpg/png/iconCross_beige.png" type="Texture" id=18]
-[ext_resource path="res://assets/ui/rpg/png/iconCross_grey.png" type="Texture" id=19]
-[ext_resource path="res://assets/ui/cursor/Cursor.gd" type="Script" id=20]
-[ext_resource path="res://assets/ui/cursor/sprites/cursorGauntlet_blue.png" type="Texture" id=21]
+[ext_resource path="res://assets/ui/rpg/png/buttonRound_blue.png" type="Texture" id=9]
+[ext_resource path="res://assets/item/weapon/shield/icon.png" type="Texture" id=10]
+[ext_resource path="res://assets/ui/GameMenu/GameMenuWindow.gd" type="Script" id=11]
+[ext_resource path="res://assets/ui/trinity_theme.tres" type="Theme" id=12]
+[ext_resource path="res://assets/ui/rpg/png/panelInset_beige.png" type="Texture" id=13]
+[ext_resource path="res://assets/ui/rpg/png/buttonLong_brown.png" type="Texture" id=14]
+[ext_resource path="res://assets/ui/rpg/png/buttonLong_brown_pressed.png" type="Texture" id=15]
+[ext_resource path="res://assets/ui/rpg/png/buttonLong_blue.png" type="Texture" id=16]
+[ext_resource path="res://assets/ui/inventory/Inventory.tscn" type="PackedScene" id=17]
+[ext_resource path="res://assets/ui/rpg/png/buttonRound_brown.png" type="Texture" id=18]
+[ext_resource path="res://assets/ui/rpg/png/iconCross_beige.png" type="Texture" id=19]
+[ext_resource path="res://assets/ui/rpg/png/iconCross_grey.png" type="Texture" id=20]
+[ext_resource path="res://assets/ui/cursor/Cursor.gd" type="Script" id=21]
+[ext_resource path="res://assets/ui/cursor/sprites/cursorGauntlet_blue.png" type="Texture" id=22]
 
 [sub_resource type="StyleBoxFlat" id=1]
 content_margin_left = 8.0
@@ -57,6 +58,7 @@ margin_bottom = 600.0
 alignment = 1
 
 [node name="TopContainer" type="HBoxContainer" parent="MarginContainer/MainContainer"]
+editor/display_folded = true
 margin_right = 1024.0
 margin_bottom = 102.0
 size_flags_horizontal = 3
@@ -226,7 +228,6 @@ margin_bottom = 60.0
 size_flags_horizontal = 3
 
 [node name="button_01" type="TextureButton" parent="MarginContainer/MainContainer/Actionbar"]
-editor/display_folded = true
 margin_left = 465.0
 margin_right = 510.0
 margin_bottom = 45.0
@@ -246,11 +247,25 @@ custom_constants/margin_bottom = 8
 margin_left = 4.0
 margin_top = 4.0
 margin_right = 41.0
-margin_bottom = 37.0
+margin_bottom = 42.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 8 )
 expand = true
+
+[node name="Cooldown" type="TextureProgress" parent="MarginContainer/MainContainer/Actionbar/button_01/MarginContainer"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 41.0
+margin_bottom = 42.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 20.0
+texture_progress = ExtResource( 9 )
+fill_mode = 4
+
+[node name="Timer" type="Timer" parent="MarginContainer/MainContainer/Actionbar/button_01"]
+one_shot = true
 
 [node name="button_02" type="TextureButton" parent="MarginContainer/MainContainer/Actionbar"]
 margin_left = 514.0
@@ -272,11 +287,25 @@ custom_constants/margin_bottom = 8
 margin_left = 4.0
 margin_top = 4.0
 margin_right = 41.0
-margin_bottom = 37.0
+margin_bottom = 42.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 9 )
+texture = ExtResource( 10 )
 expand = true
+
+[node name="Cooldown" type="TextureProgress" parent="MarginContainer/MainContainer/Actionbar/button_02/MarginContainer"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 41.0
+margin_bottom = 42.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 20.0
+texture_progress = ExtResource( 9 )
+fill_mode = 4
+
+[node name="Timer" type="Timer" parent="MarginContainer/MainContainer/Actionbar/button_02"]
+one_shot = true
 
 [node name="space_right" type="Control" parent="MarginContainer/MainContainer/Actionbar"]
 margin_left = 563.0
@@ -297,7 +326,7 @@ editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 10 )
+script = ExtResource( 11 )
 
 [node name="Background" type="NinePatchRect" parent="GameMenu"]
 visible = false
@@ -318,7 +347,7 @@ margin_top = 64.0
 margin_right = 750.0
 margin_bottom = 514.0
 rect_min_size = Vector2( 550, 450 )
-theme = ExtResource( 11 )
+theme = ExtResource( 12 )
 tab_align = 0
 
 [node name="Menü" type="Tabs" parent="GameMenu/TabContainer"]
@@ -359,7 +388,7 @@ margin_left = 10.0
 margin_top = 10.0
 margin_right = 250.0
 margin_bottom = 380.0
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 1, 2, 92, 94 )
 patch_margin_left = 22
 patch_margin_top = 22
@@ -385,9 +414,9 @@ alignment = 1
 [node name="PauseButton" type="TextureButton" parent="GameMenu/TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer"]
 margin_right = 190.0
 margin_bottom = 49.0
-texture_normal = ExtResource( 13 )
-texture_pressed = ExtResource( 14 )
-texture_disabled = ExtResource( 15 )
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 15 )
+texture_disabled = ExtResource( 16 )
 
 [node name="Label" type="Label" parent="GameMenu/TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer/PauseButton"]
 anchor_right = 1.0
@@ -400,8 +429,8 @@ valign = 1
 margin_top = 53.0
 margin_right = 190.0
 margin_bottom = 102.0
-texture_normal = ExtResource( 13 )
-texture_pressed = ExtResource( 14 )
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 15 )
 
 [node name="Label" type="Label" parent="GameMenu/TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer/SaveButton"]
 anchor_right = 1.0
@@ -414,8 +443,8 @@ valign = 1
 margin_top = 106.0
 margin_right = 190.0
 margin_bottom = 155.0
-texture_normal = ExtResource( 13 )
-texture_pressed = ExtResource( 14 )
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 15 )
 
 [node name="Label" type="Label" parent="GameMenu/TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer/LoadButton"]
 anchor_right = 1.0
@@ -428,8 +457,8 @@ valign = 1
 margin_top = 159.0
 margin_right = 190.0
 margin_bottom = 208.0
-texture_normal = ExtResource( 13 )
-texture_pressed = ExtResource( 14 )
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 15 )
 
 [node name="Label" type="Label" parent="GameMenu/TabContainer/Menü/HBoxContainer/LeftPanel/VBoxContainer/QuitButton"]
 anchor_right = 1.0
@@ -460,7 +489,7 @@ margin_bottom = 380.0
 margin_top = 10.0
 margin_right = 240.0
 margin_bottom = 380.0
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 1, 2, 92, 94 )
 patch_margin_left = 22
 patch_margin_top = 22
@@ -477,7 +506,7 @@ margin_right = -14.0
 margin_bottom = -37.0
 scrolling_enabled = false
 
-[node name="Inventory" parent="GameMenu/TabContainer/Inventar" instance=ExtResource( 16 )]
+[node name="Inventory" parent="GameMenu/TabContainer/Inventar" instance=ExtResource( 17 )]
 
 [node name="Karte" type="Tabs" parent="GameMenu/TabContainer"]
 visible = false
@@ -535,7 +564,7 @@ margin_left = 10.0
 margin_top = 10.0
 margin_right = 250.0
 margin_bottom = 380.0
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 1, 2, 92, 94 )
 patch_margin_left = 22
 patch_margin_top = 22
@@ -591,7 +620,7 @@ custom_constants/margin_bottom = 10
 margin_top = 10.0
 margin_right = 240.0
 margin_bottom = 380.0
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 1, 2, 92, 94 )
 patch_margin_left = 22
 patch_margin_top = 22
@@ -610,7 +639,7 @@ margin_left = 0.556564
 margin_top = 1.02369
 margin_right = 38.5566
 margin_bottom = 39.0237
-texture = ExtResource( 17 )
+texture = ExtResource( 18 )
 expand = true
 
 [node name="TextureButton" type="TextureButton" parent="GameMenu/CloseButton"]
@@ -618,8 +647,8 @@ margin_left = 11.361
 margin_top = 8.07318
 margin_right = 30.361
 margin_bottom = 27.0732
-texture_normal = ExtResource( 18 )
-texture_hover = ExtResource( 19 )
+texture_normal = ExtResource( 19 )
+texture_hover = ExtResource( 20 )
 expand = true
 
 [node name="FPS" type="Label" parent="."]
@@ -629,11 +658,11 @@ align = 2
 
 [node name="Cursor" type="Node2D" parent="."]
 position = Vector2( 55.0839, -140.703 )
-script = ExtResource( 20 )
+script = ExtResource( 21 )
 
 [node name="Sprite" type="Sprite" parent="Cursor"]
 position = Vector2( -0.107193, 0.114799 )
-texture = ExtResource( 21 )
+texture = ExtResource( 22 )
 offset = Vector2( 11.6863, 11.4643 )
 
 [node name="Tooltip" type="Label" parent="Cursor"]
