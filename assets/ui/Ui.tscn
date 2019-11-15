@@ -53,11 +53,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="MainContainer" type="VBoxContainer" parent="MarginContainer"]
+editor/display_folded = true
 margin_right = 1024.0
 margin_bottom = 600.0
 alignment = 1
 
 [node name="TopContainer" type="HBoxContainer" parent="MarginContainer/MainContainer"]
+editor/display_folded = true
 margin_right = 1024.0
 margin_bottom = 102.0
 size_flags_horizontal = 3
@@ -143,6 +145,7 @@ alignment = 1
 [node name="Note" parent="MarginContainer/MainContainer/TopContainer/NotificationFrame/List" instance=ExtResource( 6 )]
 
 [node name="TargetFrame" type="MarginContainer" parent="MarginContainer/MainContainer/TopContainer"]
+editor/display_folded = true
 margin_left = 864.0
 margin_right = 1024.0
 margin_bottom = 102.0
@@ -331,7 +334,6 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="GameMenu" type="Control" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 11 )
@@ -368,6 +370,7 @@ margin_bottom = -37.0
 scrolling_enabled = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="GameMenu/TabContainer/Menü"]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -39.0
@@ -535,7 +538,6 @@ margin_right = -14.0
 margin_bottom = -37.0
 
 [node name="Hilfe" type="Tabs" parent="GameMenu/TabContainer"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 59.0
@@ -599,18 +601,14 @@ text = "Steuerung:
 
 Gehen:  w, a, s, d
 Rennen: Shift gedrückt
-Camera: Pfeiltasten
-Hilfe/Inventar: Escape
-Interaktion: Linksklick
-
-
-\"Story\":
-
-Es gibt bisher eine Hauptquest, einen essbaren Kürbis zu sammeln. Nicht einmal die ist ausgereift ;)
-
-Aber das kommt bald.
-
-~50h Arbeit bis status quo"
+Menu: Escape
+Inventar: I
+Hilfe: H
+Interaktion: Rechtsklick
+Select: Linksklick
+Camera: Mausradklick / Pfeiltasten
+Attakieren: 1
+"
 
 [node name="RightPanel" type="MarginContainer" parent="GameMenu/TabContainer/Hilfe/HBoxContainer"]
 margin_left = 256.0

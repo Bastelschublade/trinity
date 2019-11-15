@@ -126,12 +126,25 @@ Belohnung:
 			{
 				"text": "[!] Ja, da komme ich villeicht vorbei.",
 				"set_flag": "findgaran",
+				"next_view": "final",
 				"exit": true,
 			},{
 				"text": "Sicherlich nicht",
 				"exit": true,
 				"repoutation": -1
 			}
+		]
+	},
+	"final":{
+		"text": "Bitte Kaufe die Vollversion um, den Entwickler zu unterstützen diese Questreihe zu beenden oder hilf selbst mit: http://github.com/sarbot/trinity",
+		"choices": [
+			{
+				"text": "[Vollversion Kaufen]",
+				"exit": true
+			},{
+				"text": "[Mithelfen]",
+				"exit": true
+			},
 		]
 	}
 }
