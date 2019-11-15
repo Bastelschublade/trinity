@@ -1,14 +1,21 @@
 extends Spatial
 class_name Item
 
+# class constants
+#const SLOTS = ["", "OFFHAND", "HEAD", "CHEST", "PANTS", "BOOTS", "TRINKET"]
+enum SLOTS {MAINHAND, OFFHAND, HEAD}
+# editable parameters
 export(String) var item_id
 
+# initials
+#var slot_keys = SLOTS.keys()
 var body
 var data
 
 func _ready():
 	var item_db = get_node('/root/Global').item_db
 	data = item_db[self.item_id]
+	print('item ready')
 
 
 func create_body():

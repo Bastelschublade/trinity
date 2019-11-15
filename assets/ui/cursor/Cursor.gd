@@ -1,10 +1,15 @@
 extends Node2D
 
 # preload cursors to switch without lag
-onready var default    = preload('res://assets/ui/cursor/sprites/cursorGauntlet_blue.png')
-onready var collect    = preload('res://assets/ui/cursor/sprites/cursorGauntlet_bronze.png')
-onready var talk       = preload('res://assets/ui/cursor/sprites/cursorGauntlet_bronze.png')
-onready var attack     = preload('res://assets/ui/cursor/sprites/cursorSword_bronze.png')
+onready var sprites = {
+	'default': preload('res://assets/ui/cursor/sprites/cursorGauntlet_blue.png'),
+	'talk':    preload('res://assets/ui/cursor/sprites/cursorGauntlet_bronze.png'),
+	'attack':  preload('res://assets/ui/cursor/sprites/cursorSword_bronze.png'),
+	'inspect': preload('res://assets/ui/cursor/sprites/cursorGauntlet_bronze.png'),
+	'menu':    preload('res://assets/ui/cursor/sprites/cursorGauntlet_bronze.png'),
+	'loot':    preload('res://assets/ui/cursor/sprites/cursorGauntlet_bronze.png'),
+	'passive': preload('res://assets/ui/cursor/sprites/cursorGauntlet_blue.png'),
+	}
 onready var sprite     = get_node('Sprite')
 onready var tooltip    = get_node('Tooltip')
 onready var camera     = get_viewport().get_camera()
@@ -29,24 +34,18 @@ func collect_item(item_body):
 	item_body.get_parent().queue_free()
 
 
-
 func update_cursor(object):
-	self.sprite.texture = default
-	if object is NPC:
-		self.sprite.texture = talk
-		self.tooltip.set_text(object.npc_name + '\n' + object.npc_desc)
+	self.sprite.texture = sprites['default']
+	if object is Creature:
+		self.sprite.texture = sprites[object.interaction]
+		self.tooltip.set_text(object.creature_name)
 		self.tooltip.set('visible', true)
 	elif object is Item:
-		self.sprite.texture = collect
+		self.sprite.texture = sprites['loot']
 		var item_id = object.item_id
 		var data = get_node("/root/Global").item_db[item_id]
 		self.tooltip.set_text(data['name'])
 		self.tooltip.set('visible', true)
-	elif object is Animal:
-		self.sprite.texture = attack
-		self.tooltip.set_text(object.animal_name)
-		self.tooltip.set('visible', true)
-
 
 
 # -------------------------------------- #
@@ -66,7 +65,7 @@ func _physics_process(delta):
 	
 	# nothing special return default
 	if not 'collider' in mouse_over:
-		self.sprite.texture = default
+		self.sprite.texture = sprites['default']
 		return
 	
 	# choose mouse interaction mode
@@ -76,8 +75,10 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed('select'):
 		if par is Creature:
 			par.select()
+		else:
+			get_parent().update_target(null)
 	if Input.is_action_just_pressed('interact'):
-		if par is Item or par is Creature:
+		if par is Item or par is Creature or par is GameObject:
 			par.interact()
 	
 

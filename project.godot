@@ -9,22 +9,22 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "KinematicBody",
+"base": "Creature",
 "class": "Animal",
 "language": "GDScript",
-"path": "res://assets/objects/animals/Animal.gd"
+"path": "res://assets/creatures/animals/Animal.gd"
 }, {
 "base": "Spatial",
 "class": "Creature",
 "language": "GDScript",
-"path": "res://assets/creature/Creature.gd"
+"path": "res://assets/creatures/Creature.gd"
 }, {
 "base": "Item",
 "class": "Food",
 "language": "GDScript",
 "path": "res://assets/item/food/Food.gd"
 }, {
-"base": "RigidBody",
+"base": "Node",
 "class": "GameObject",
 "language": "GDScript",
 "path": "res://assets/objects/GameObject.gd"
@@ -34,6 +34,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://assets/item/Item.gd"
 }, {
+"base": "GameObject",
+"class": "LootContainer",
+"language": "GDScript",
+"path": "res://assets/objects/containers/LootContainer.gd"
+}, {
 "base": "Node",
 "class": "LootTable",
 "language": "GDScript",
@@ -42,7 +47,7 @@ _global_script_classes=[ {
 "base": "Creature",
 "class": "NPC",
 "language": "GDScript",
-"path": "res://assets/creature/npc/NPC.gd"
+"path": "res://assets/creatures/npc/NPC.gd"
 }, {
 "base": "Node",
 "class": "Note",
@@ -65,6 +70,7 @@ _global_script_class_icons={
 "Food": "",
 "GameObject": "",
 "Item": "",
+"LootContainer": "",
 "LootTable": "",
 "NPC": "",
 "Note": "",

@@ -44,5 +44,14 @@
 		"speed": 4,
 		"parry": 2,
 		"stats": {"Trefferwertung": 2}
-	}
+	},
+	"5":{
+		"name": "Schlüssel",
+		"type": "stuff",
+		"fname": "key",
+		"tooltip": "Goldener Schlüssel",
+		"text": "Ein goldener Schlüssel mit unlesbarer Gravur.",
+		"weight": 0,
+		"sell": false,
+	},
 }

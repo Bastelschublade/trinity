@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Level.gd" type="Script" id=1]
 [ext_resource path="res://assets/map/Map.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/character/Character.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/creature/npc/gustav/Gustav.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/ui/Ui.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/music/randommind Loop_Rejoicing.ogg" type="AudioStream" id=6]
+[ext_resource path="res://assets/creatures/npc/gustav/Gustav.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/creatures/npc/garan/garan.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/ui/Ui.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/music/randommind Loop_Rejoicing.ogg" type="AudioStream" id=7]
 
 [node name="Level" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15605, 0.295441, 0.995201 )
@@ -25,20 +26,26 @@ directional_shadow_max_distance = 380.7
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
 
 [node name="Character" parent="." instance=ExtResource( 3 )]
-transform = Transform( 0.889771, 0, 0.456406, 0, 1, 0, -0.456406, 0, 0.889771, 8.4054, 1.9917, 1.35129 )
+transform = Transform( 0.168784, 0, 0.985652, 0, 1, 0, -0.985652, 0, 0.168784, 12.6206, 1.9917, -10.95 )
 
 [node name="NPCs" type="Spatial" parent="."]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.22192, 0, 0 )
 
 [node name="Gustav" parent="NPCs" instance=ExtResource( 4 )]
 transform = Transform( -1.74448, 0, 0.978158, 0, 2, 0, -0.978158, 0, -1.74448, 30.896, 0, -12.1921 )
-npc_desc = "Er steht schon eine Weile dort und kann sich nicht bewegen..."
-npc_max_health = 30.0
-npc_can_talk = true
+max_health = 20.0
+interaction = "talk"
+creature_name = "Gustav"
+npc_skin_file = "res://assets/creatures/npc/gustav/skin_manAlternative.png"
+npc_dialog_file = "res://assets/creatures/npc/gustav/dialog.json"
 
-[node name="Ui" parent="." instance=ExtResource( 5 )]
+[node name="Garan" parent="NPCs" instance=ExtResource( 5 )]
+transform = Transform( -0.95786, 0, 1.75571, 0, 2, 0, -1.75571, 0, -0.95786, -40.6918, 0, 41.1496 )
+max_health = 20.0
+
+[node name="Ui" parent="." instance=ExtResource( 6 )]
 
 [node name="Music" type="Node" parent="."]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Music"]
-stream = ExtResource( 6 )
+stream = ExtResource( 7 )

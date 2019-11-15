@@ -35,26 +35,38 @@ func answer(choice):
 		player.inventory.remove_items(choice['provide_item'])
 	if 'next_view' in choice:
 		npc.npc_next_view = choice['next_view']
+	if 'set_flag' in choice:
+		player.set_flag(choice['set_flag'])
+	if 'rem_flag' in choice:
+		player.set_flag(choice['set_flag'])
 	if 'exit' in choice:
 		queue_free()
 
 
 func check_conditions(conditions):
-	print('checking conditions')
-	var fulfill = false
-	for condition in conditions:
-		var fulfill_all = true
-		for key in condition:
-			print(key)
-			var val = condition[key]
-			# todo add all cases
-			if key == 'has_item':
-				if !player.inventory.has_items(val):
-					fulfill_all = false
-		# any condition where every {} is fullfilled -> true
-		if fulfill_all:
-			fulfill = true
-	return fulfill
+	# recursive decisions for nested "and"/"or" logic
+	# for multiple keys its always "and"
+	var each = (conditions.get('logic', 'and') == 'and')
+	for key in conditions:
+		if key == 'logic':
+			continue
+		elif key == 'condition':
+			var c = check_conditions(conditions[key])
+			if each != c:
+				return c
+		elif key == 'has_item':
+			var c = player.inventory.has_items(conditions[key])
+			if each != c:
+				return c
+		elif key == 'rep_min':
+			var c = (npc.reputation >= conditions[key])
+			if each != c:
+				return c
+		elif key == 'has_flag':
+			var c = player.has_flag(conditions[key])
+			if each != c:
+				return c
+	return each
 
 
 func finish_talk():
@@ -62,8 +74,8 @@ func finish_talk():
 		var ansButton = Button.new()
 		var fulfill = true
 		# check visibility
-		if 'conditions' in ans:
-			fulfill = check_conditions(ans['conditions'])
+		if 'condition' in ans:
+			fulfill = check_conditions(ans['condition'])
 		if !fulfill:
 			var show_disabled = ans.get('show_disabled', false)
 			if !show_disabled:

@@ -1,11 +1,10 @@
-extends RigidBody
-
+extends Node
 class_name GameObject
 
-export(String) var go_tooltip
-export(bool) var go_collectable
-export(bool) var go_attackable
+export(String) var object_tooltip
+export(String) var object_name
+export(String) var object_id
+
 
 func _ready():
-	print('Game Object created:')
-	print(self.name)
+	pass

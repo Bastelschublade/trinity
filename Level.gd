@@ -14,10 +14,5 @@ func _ready():
 	camera = get_node("Character/target/Camera")
 
 
-
 func _physics_process(delta):
 	player_pos = player.get_global_transform().origin
-
-		
-		
-	

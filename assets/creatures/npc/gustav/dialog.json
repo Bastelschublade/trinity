@@ -1,0 +1,137 @@
+{
+	"start":{
+		"text": "Was für ein Glück euch zu treffen. Gestern habe ich meinen Freund verloren und kann kaum laufen. Ich habe Hunger.
+Wenn Ihr einen Kürbis besorgt, kann ich uns etwas leckeres daraus zubereiten.
+
+Benötigt:
+ 1 Kürbis
+Belohnung:
+ 2 Rationen Essen
+ 2 Gunst bei Gustav",
+		"choices": [
+			{
+				"text": "[!] Ja, ich gehe einen holen.",
+				"view":"q1start",
+				"next_view": "start2",
+			},{
+				"text": "Hol ihn dir doch selbst...",
+				"view":"q1deny",
+			},{
+				"text": "[Weg gehen]",
+				"exit":true
+			}
+		]
+	},
+	"q1start":{
+		"text": "Das freut mich, ich bereite derweil schon eine Sauce vor.",
+		"choices": [
+			{
+				"text": "[Los gehen]",
+				"exit":true
+			}
+		]
+	},
+	"q1deny":{
+		"text": "Ich würd ja gern, wenn ich könnte.
+Mein Bein ist verletzt und ich kann kaum laufen, deshalb bin ich auf eure Hilfe angewiesen.",
+		"choices": [
+			{
+				"text": "Schon gut, ich machs.",
+				"view":"q1start2",
+				"next_view": "start2",
+			},{
+				"text": "Das ist nicht mein Problem.",
+				"view":"q1deny2"
+			},{
+				"text": "[Weg gehen]",
+				"exit":true
+			}
+		]
+	},
+	"q1deny2":{
+		"text": "Töricht von euch, die Gunst der Götter gegenüber den Gnädigen zu unterschätzen.
+Stünde ich in eurer Schuld, hättet ihr reichlich provitieren können.
+Nun geht und esst euren Kürbis roh.",
+		"choices": [
+			{
+				"text": "[Gehen]",
+				"exit":true,
+				"next_view": "q1retry",
+			}
+		]
+	},
+	"q1start2":{
+		"text": "Ich wusste doch, dass ihr ein gutes Herz habt.
+Das werde ich euch nicht vergessen. Für die Sauce werde ich meine feinsten Kräuter verwenden.
+
+Benötigt:
+ 1 Kürbis
+Belohnung:
+ 2 Rationen Essen
+ 2 Gunst bei Gustav",
+		"choices": [
+			{
+				"text": "Los gehen",
+				"nextview": "start2",
+				"exit":true
+			}
+		]
+	},
+	"start2":{
+		"text": "Da seid ihr ja schon wieder. Habt ihr einen Kürbis für mich?",
+		"choices": [
+			{
+				"text": "[?] Ja hier ist er",
+				"condition": {"has_item": {"1": 1}},
+				"provide_item": {"1": 1},
+				"food": 2,
+				"reputation": 2,
+				"next_view": "finish",
+				"view": "finish",
+				"exit":true,
+			},{
+				"text": "Nein ich bin noch auf der Suche",
+				"exit":true
+			},{
+				"text": "Das könnt ihr vergessen, Krüppel.",
+				"exit":true,
+				"reputation": -1,
+				"next_view": "q1retry",
+			}
+		]
+	},
+	"q1retry":{
+		"text": "Ich hungere! Bringt mir einen Kürbis, oder lasst mich in Ruhe.",
+		"choices": [
+			{
+				"text": "Hier ist der Kürbis, verzeiht mir.",
+				"view": "finish",
+				"condition": {"has_item": {"1": 1}},
+				"provide_item": {"1": 1},
+				"reputation": 1,
+				"notify": "Gustav einen Kürbis gegeben",
+			},{
+				"text": "Von mir aus könnt ihr verhungern!",
+				"reputation": -1,
+				"exit": true,
+			},{
+				"text": "Ok",
+				"exit": true,
+			}
+		]
+	},
+	"finish":{
+		"text": "Dank euch komm ich erstmal über die Runden, falls Ihr weiter Norden geht, trefft Ihr vielleicht auf die Farm meiner Familie. Ich weiß Ihr kennt mich nicht, aber ich wäre euch sehr Verbunden wenn ihr meinem Vater Garan, bescheid gebt, dass ich hier bin.",
+		"choices": [
+			{
+				"text": "[!] Ja, da komme ich villeicht vorbei.",
+				"set_flag": "findgaran",
+				"exit": true,
+			},{
+				"text": "Sicherlich nicht",
+				"exit": true,
+				"repoutation": -1
+			}
+		]
+	}
+}

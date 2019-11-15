@@ -1,0 +1,167 @@
+{
+	"start":{
+		"text": "Was wollt Ihr Fremder?",
+		"choices": [
+			{
+				"text": "Ich suche Arbeit.",
+				"view":"arbeit",
+			},{
+				"text": "Gustav schickt mich, er hat sich verletzt.",
+				"view":"gustavversorgen",
+        "condition": {"has_flag": "findgaran"},
+        "receive_rep": 10,
+			},{
+				"text": "[Weg gehen]",
+				"exit":true
+			}
+		]
+	},
+	"gustavversorgen":{
+		"text": "Nichts als Ärger bereitet einem dieser Bengel.
+Als hätte ich nicht schon genug Arbeit, mit der Ernte.
+Hoffentlich tut es ordentlich weh, vielleicht sieht er dann endlich ein, dass er kein Abenteurer ist.
+Wie auch immer, ich Danke euch. Ihr könnt ihm diese Wurzel gegen die Schmerzen bringen und ihm sagen, dass ich ihn morgen früh holen komme.
+
+Belohnung:
+  2 Gunst bei Gustav
+  2 Gunst bei Garan",
+		"choices": [
+      {
+        "text": "[!] Ich mache mich sofort auf den Weg",
+        "exit": true,
+        "set_flag": "supportgustav",
+        "next_view": "arbeit",
+      },{
+        "text": "Ich denke er kommt auch so klar.. Kann ich mich auch hier nützlich machen.",
+        "view": "arbeit",
+      },
+			{
+				"text": "[Weg gehen]",
+				"exit":true
+			}
+		]
+	},
+	"arbeit":{
+		"text": "Ihr seht nicht besonders kräftig aus, aber hier gibt es immer etwas zu tun.
+  Ernten, Füttern, Reparieren.. ",
+		"choices": [
+			{
+				"text": "Sind die Kürbisse reif?",
+				"view":"questernte1",
+				"next_view": "arbeit2",
+        "condition": {"has_not_flag": "questernte1"}
+			},{
+				"text": "Kann ich die Kuh füttern?",
+				"view":"questfuettern1",
+        "next_view": "arbeit2",
+        "condition": {"has_not_flag": "questfuettern1"}
+			},{
+				"text": "Ich denke da kann bin ich keine Hilfe. [gehen]",
+				"exit":true
+			}
+		]
+	},
+	"arbeit2":{
+		"text": "Was wollt ihr tun.. ",
+    "choices": [
+			{
+				"text": "Sind die Kürbisse reif?",
+				"view":"questernte1",
+				"next_view": "arbeit2",
+        "condition": {"has_not_flag": "questernte1"}
+			},{
+				"text": "Kann ich die Kuh füttern?",
+				"view":"questfuettern1",
+        "next_view": "arbeit2",
+        "condition": {"has_not_flag": "questfuettern1"}
+			},{
+				"text": "Ich denke da kann bin ich keine Hilfe. [gehen]",
+				"exit":true
+			}
+		]
+	},
+	"questernte1":{
+		"text": "Das Feld ist hinter dem Haus und die Kürbisse müssen geholt werden, bevor die Schnecken sie fressen. Fünf sind mindestens dort, bringt sie einfach her.",
+		"choices": [
+			{
+				"text": "[!] Alles klar, gleich wieder da",
+        "set_flag": "questernte1",
+				"exit": true
+			},{
+        "text": "Kann ich etwas anderes machen?",
+        "view": "arbeit2",
+      }
+		]
+	},
+  "questfuettern1": {
+    "text": "Die Kuh steht gleich da drüben, finde etwas Heu und bring es ihr.",
+    "choices": [
+      {
+        "text": "[!] Alles klar, bis gleich",
+        "set_flag": "questfuettern1",
+        "exit": true
+      },{
+        "text": "Kann ich etwas anderes machen?",
+        "view": "arbeit2",
+      }
+    ]
+  },
+	"start2":{
+		"text": "Da seid ihr ja schon wieder. Habt ihr einen Kürbis für mich?",
+		"choices": [
+			{
+				"text": "[?] Ja hier ist er",
+				"condition": {"has_item": {"1": 1}},
+				"provide_item": {"1": 1},
+				"food": 2,
+				"reputation": 2,
+				"next_view": "finish",
+				"view": "finish",
+				"exit":true,
+			},{
+				"text": "Nein ich bin noch auf der Suche",
+				"exit":true
+			},{
+				"text": "Das könnt ihr vergessen, Krüppel.",
+				"exit":true,
+				"reputation": -1,
+				"next_view": "q1retry",
+			}
+		]
+	},
+	"q1retry":{
+		"text": "Ich hungere! Bringt mir einen Kürbis, oder lasst mich in Ruhe.",
+		"choices": [
+			{
+				"text": "Hier ist der Kürbis, verzeiht mir.",
+				"view": "finish",
+				"condition": {"has_item": {"1": 1}},
+				"provide_item": {"1": 1},
+				"reputation": 1,
+				"notify": "Gustav einen Kürbis gegeben",
+			},{
+				"text": "Von mir aus könnt ihr verhungern!",
+				"reputation": -1,
+				"exit": true,
+			},{
+				"text": "Ok",
+				"exit": true,
+			}
+		]
+	},
+	"finish":{
+		"text": "Ich danke euch, falls ihr weiter nach Norden zieht, trefft ihr vielleicht auf unsere Farm. Berichtet meinem Vater Garan, dass ich hier feststecke, falls ihr Ihn trefft.",
+		"choices": [
+			{
+				"text": "Nein, sicherlich nicht.",
+				"exit": true,
+        "reputation": -1,
+        "set_flag": "findgaran",
+			},{
+				"text": "Selbstverständlich.",
+				"exit": true,
+        "set_flag": "findgaran",
+			}
+		]
+	}
+}

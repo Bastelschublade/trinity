@@ -2,6 +2,7 @@ extends HBoxContainer
 
 onready var item_list = get_node('ListPage/MarginContainer/ScrollContainer/ItemList')
 onready var item_details = get_node('ItemInspect/Details')
+onready var player = get_node('/root/Level/Character')
 
 
 var list_item_res = preload("res://assets/ui/inventory/ListItem.tscn")
@@ -41,7 +42,7 @@ func has_items(dict):
 	return true
 
 
-func remove_items(dict):
+func remove_items_old(dict):
 	for iid in dict:
 		for item in item_list.get_children():
 			if String(iid) == item.get_node('Layout/Slot/Id').get_text():
@@ -54,6 +55,15 @@ func remove_items(dict):
 					item.queue_free()
 				else:
 					item.get_node('Layout/Slot/Amount').set_text(String(new_am))
+
+
+func remove_items(dict):
+	for id in dict:
+		var c = dict[id]
+		items[id] -= c
+		if items[id] == 0:
+			items.erase(id)
+	update_list()
 
 
 func add_item(item_id):
@@ -70,6 +80,7 @@ func add_item(item_id):
 
 
 func update_details(id):
+	print('update details')
 	var data = item_db[id]
 	var view = get_node("ItemInspect/Details/ItemDetails")
 	view.set_visible(true)
@@ -79,8 +90,13 @@ func update_details(id):
 	this_details.get_node('IconLarge').set('rect_size', Vector2(100,100))
 	this_details.get_node('ItemName').set_text(String(data['name']))
 	this_details.get_node('ItemDesc').set_text(String(data.get('text', "")))
+	var equip_button = this_details.get_node('ItemButtons/Equip')
 	if data['type'] == 'weapon':
-		print('add equip button')
+		equip_button.set_visible(true)
+		equip_button.disconnect("pressed", self, "_on_equip_pressed")
+		equip_button.connect("pressed", self, "_on_equip_pressed", [id, data])
+	else:
+		equip_button.set_visible(false)
 	
 	
 func update_list():
@@ -113,3 +129,16 @@ func update_list():
 
 func _ready():
 	item_db = get_node("/root/Global").item_db
+
+
+func _on_equip_pressed(id, data):
+	print('pressed: ', data['fname'], id)
+	self.remove_items({id: 1})
+	var it_res = load('res://assets/item/weapon/' + data['fname'] + '/' + data['fname'] + '.tscn')
+	var it = it_res.instance()
+	if player.equip["mainhand"].get('item', false):
+		add_item(player.equip['mainhand']['item'].item_id)
+	player.equip(it)
+	get_node('ItemInspect/Details/ItemDetails').set_visible(false)
+	#print(it.get_node('Body'))
+	#it.create_body()

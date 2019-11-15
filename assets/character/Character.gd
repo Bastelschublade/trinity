@@ -10,6 +10,7 @@ var raycast
 var target
 var blocking = false
 var block_timer
+var flags = []
 
 var RUN_SPEED = 13
 var WALK_SPEED = 1.5
@@ -17,12 +18,16 @@ var JUMP_SPEED = 2
 var ACCELERATION = 1.5
 var DE_ACCELERATION = 5
 
-var equip = []
-var weapon = [null, null]
-
+# equip is array of Items
+var slots = ["mainhand", "offhand", "chest", "legs", "boots"]
+var equip = {}
+var bones = {"mainhand": 'HandR1'}
 
 onready var ui = get_node('/root/Level/Ui')
 onready var inventory = ui.get_node('GameMenu/TabContainer/Inventar/Inventory')
+onready var arma = get_node('Armature')
+
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -30,16 +35,21 @@ func _ready():
 	character = get_node('.')
 	raycast = get_node('RayCast')
 	anim_player = get_node('Armature/AnimationPlayer')
-	equip_test()
+	#equip()
 	#print(anim_player)
 	block_timer = Timer.new()
 	block_timer.connect("timeout", self, '_on_block_timer_timeout')
 	get_node('.').add_child(block_timer)
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	print('update')
+	
+	# setup equipment dict
+	for s in slots:
+		equip[s] = {}
+		if bones.get(s, false):
+			var kit = BoneAttachment.new()
+			kit.set_name(s)
+			arma.add_child(kit)
+			kit.set_bone_name(bones[s])
+			equip[s] = {'kit':kit}
 
 
 func _physics_process(delta):
@@ -121,46 +131,65 @@ func _physics_process(delta):
 	#print('prog: ', anim_player.current_animation_position, '/', anim_player.current_animation_length)
 	
 	
-func equip_test():
-	var arma = get_node('Armature')
-	var kit = BoneAttachment.new()
-	arma.add_child(kit)
-	kit.set_bone_name('HandR1')
-	var club_res = load("res://assets/item/weapon/club/Club.tscn")
-	var club = club_res.instance()
-	club.scale = Vector3(15, 15, 15)
-	club.set('translation', Vector3(+1, 0,0))
-	kit.add_child(club)
-	weapon[0] = club
-	#print(kit)
-	#print(mesh.scale)
+func equip(obj):
+	print('equipping ', obj.name, ' at ', obj.slot)
+	print(obj.get_children())
+	var kit = equip[obj.slot]['kit']
+	for c in kit.get_children():
+		print('removing equip mesh: ', c.get_parent().name, '>', c.name)
+		c.queue_free()
+	obj.scale = Vector3(15, 15, 15)
+	obj.set('translation', Vector3(+1, 0,0))
+	kit.add_child(obj)
+	equip[obj.slot]['item'] = obj
 
+func unequip(slot):
+	pass
+	
 	
 func attack():
 	#var hit = false
 	if not target or not is_instance_valid(target):
 		ui.notify('Kein Ziel zum Angreifen!')
-		return
-	if randf() < weapon[0].hit:
-		#hit = true
-		var dmg = int(rand_range(weapon[0].damage-weapon[0].noise, weapon[0].damage+weapon[0].noise))
+		return false
+	if not equip["mainhand"].get('item', false):
+		ui.notify('Keine Waffe ausgerüstet!')
+		return false
+	var weapon = equip["mainhand"]["item"]
+	if randf() < weapon.hit:
+		var d = weapon.noise
+		var dmg = int(rand_range(weapon.damage-d, weapon.damage+d))
 		ui.notify(String(dmg) + ' Schaden')
 		target._get_hit(dmg)
 		ui.update_target(target)
-		
 	else:
 		ui.notify('Verfehlt.')
-		
+	return true
+
 
 func block():
 	blocking = true
 	block_timer.start(1)
-	
-	
+
+
 
 func _on_block_timer_timeout():
 	blocking = false
 	print('fertig mit blocken')
 	
-	
-	
+
+
+func has_flag(key):
+	for f in flags:
+		if f == key:
+			return true
+	return false
+
+
+func set_flag(key):
+	flags.append(key)
+
+
+func rem_flag(key):
+	while key in flags:
+		flags.remove(key)

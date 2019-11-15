@@ -8,7 +8,7 @@ var timers = [null, null]  # timer node contains current cd time
 var cd_bars = [null, null]
 
 onready var fps_label = get_node('FPS')
-onready var target_frame = get_node('MarginContainer/MainContainer/TopContainer/TargetFrame')
+onready var target_frame = get_node('MarginContainer/MainContainer/TopContainer/TargetFrame/Target')
 onready var settings = get_node('/root/Global').settings
 onready var player = get_node('/root/Level/Character')
 
@@ -30,7 +30,7 @@ func update_target(obj):
 	if not obj:
 		target_frame.set_visible(visible)
 		return
-	if obj is NPC or obj is Animal:  # todo parent class creature
+	if obj is Creature:
 		var name_label = target_frame.get_node('MarginContainer/VBoxContainer/Name')
 		var health_bar = target_frame.get_node('MarginContainer/VBoxContainer/HealthBar')
 		name_label.set_text(obj.name)
@@ -67,9 +67,9 @@ func _on_button_01_pressed():
 		if timers[0].time_left > 0:
 			notify('Noch nicht bereit')
 			return
-		player.attack()
-		timers[0].start(cooldowns[0])
-		_global_cd()
+		if player.attack():
+			timers[0].start(cooldowns[0])
+			_global_cd()
 	else:
 		notify('Kein Ziel zum Angreifen.')
 
