@@ -6049,7 +6049,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 18 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 21 )
 
 [node name="Farm" type="Spatial" parent="."]
-editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, 35.4031 )
 
 [node name="Animals" type="Spatial" parent="Farm"]
@@ -6060,48 +6059,37 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.567802, 0, -2.26423 )
 
 [node name="Horse" parent="Farm/Animals" instance=ExtResource( 37 )]
 transform = Transform( 0.709303, 0, -0.704903, 0, 1, 0, 0.704903, 0, 0.709303, 0.126297, 0.206543, 1.76096 )
-visible = false
 
 [node name="Chick" parent="Farm/Animals" instance=ExtResource( 38 )]
 transform = Transform( 0.999994, -0.00197435, 0.0028871, 0.00203432, 0.999779, -0.0209167, -0.00284517, 0.0209224, 0.999777, 3.0372, 0.343078, -1.38478 )
-visible = false
 creature_name = "Huhn"
 
 [node name="Chick2" parent="Farm/Animals" instance=ExtResource( 38 )]
 transform = Transform( -0.562433, -0.00197437, 0.826841, 0.0161893, 0.999779, 0.0133996, -0.826685, 0.0209223, -0.562277, -7.29269, 0.492994, -9.52331 )
-visible = false
 creature_name = "Huhn"
 
 [node name="Lama" parent="Farm/Animals" instance=ExtResource( 39 )]
 transform = Transform( 0.655808, 0, 0.754928, 0, 1, 0, -0.754928, 0, 0.655808, 0, 0, 3.81799 )
-visible = false
 
 [node name="Pug" parent="Farm/Animals" instance=ExtResource( 40 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.52832, 0, 1.33972 )
-visible = false
 
 [node name="Sheep" parent="Farm/Animals" instance=ExtResource( 41 )]
 transform = Transform( -0.910914, 0, -0.412595, 0, 1, 0, 0.412595, 0, -0.910914, 4.50195, 0, 0 )
-visible = false
 
 [node name="Zebra" parent="Farm/Animals" instance=ExtResource( 42 )]
 transform = Transform( -0.650291, 0, 0.759686, 0, 1, 0, -0.759686, 0, -0.650291, 1.67565, 0, 6.22756 )
-visible = false
 
 [node name="Fox" parent="Farm/Animals" instance=ExtResource( 43 )]
 transform = Transform( -0.0157025, 0, 0.999877, 0, 1, 0, -0.999877, 0, -0.0157025, -2.65381, 0.316937, 0 )
-visible = false
 
 [node name="Cat" parent="Farm/Animals" instance=ExtResource( 44 )]
-visible = false
 
 [node name="Dog" parent="Farm/Animals" instance=ExtResource( 45 )]
 transform = Transform( 0.179569, 0, 0.983745, 0, 1, 0, -0.983745, 0, 0.179569, -2.88843, 0, 5.32129 )
-visible = false
 
 [node name="Wolf" parent="Farm/Animals" instance=ExtResource( 46 )]
 transform = Transform( 0.49106, 0, 0.871126, 0, 1, 0, -0.871126, 0, 0.49106, 3.48827, 0, 3.60771 )
-visible = false
 
 [node name="Fences" type="Spatial" parent="Farm"]
 

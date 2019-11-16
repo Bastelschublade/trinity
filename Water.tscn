@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://WaterWaves.material" type="Material" id=1]
+
+[sub_resource type="PlaneMesh" id=1]
+size = Vector2( 100, 100 )
+subdivide_width = 50
+subdivide_depth = 50
+
+[node name="Water" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = ExtResource( 1 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.993194, 3.75065e-09, 0.116473, -0.0531966, 0.889605, 0.453621, -0.103615, -0.45673, 0.883551, 2.24381, 26.2008, 25.0901 )
