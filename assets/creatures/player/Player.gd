@@ -1,4 +1,5 @@
 extends KinematicBody
+class_name Player
 
 
 var velocity = Vector3()
@@ -11,6 +12,7 @@ var target
 var blocking = false
 var block_timer
 var flags = []
+var buffs = []
 
 var RUN_SPEED = 13
 var WALK_SPEED = 1.5
@@ -20,12 +22,13 @@ var DE_ACCELERATION = 5
 
 # equip is array of Items
 var slots = ["mainhand", "offhand", "chest", "legs", "boots"]
-var equip = {}
+var gear = {}
 var bones = {"mainhand": 'HandR1'}
 
 onready var ui = get_node('/root/Level/Ui')
 onready var inventory = ui.get_node('GameMenu/TabContainer/Inventar/Inventory')
 onready var arma = get_node('Armature')
+onready var stats = get_node('Stats')
 
 
 
@@ -35,7 +38,6 @@ func _ready():
 	character = get_node('.')
 	raycast = get_node('RayCast')
 	anim_player = get_node('Armature/AnimationPlayer')
-	#equip()
 	#print(anim_player)
 	block_timer = Timer.new()
 	block_timer.connect("timeout", self, '_on_block_timer_timeout')
@@ -43,13 +45,13 @@ func _ready():
 	
 	# setup equipment dict
 	for s in slots:
-		equip[s] = {}
+		gear[s] = {}
 		if bones.get(s, false):
 			var kit = BoneAttachment.new()
 			kit.set_name(s)
 			arma.add_child(kit)
 			kit.set_bone_name(bones[s])
-			equip[s] = {'kit':kit}
+			gear[s] = {'kit':kit}
 
 
 func _physics_process(delta):
@@ -131,20 +133,22 @@ func _physics_process(delta):
 	#print('prog: ', anim_player.current_animation_position, '/', anim_player.current_animation_length)
 	
 	
-func equip(obj):
+func equip_item(obj):
 	print('equipping ', obj.name, ' at ', obj.slot)
 	print(obj.get_children())
-	var kit = equip[obj.slot]['kit']
+	var kit = gear[obj.slot]['kit']
 	for c in kit.get_children():
 		print('removing equip mesh: ', c.get_parent().name, '>', c.name)
 		c.queue_free()
 	obj.scale = Vector3(15, 15, 15)
 	obj.set('translation', Vector3(+1, 0,0))
 	kit.add_child(obj)
-	equip[obj.slot]['item'] = obj
+	gear[obj.slot]['item'] = obj
+	stats.update()
+
 
 func unequip(slot):
-	pass
+	print('unequip slot ', slot)
 	
 	
 func attack():
@@ -152,10 +156,10 @@ func attack():
 	if not target or not is_instance_valid(target):
 		ui.notify('Kein Ziel zum Angreifen!')
 		return false
-	if not equip["mainhand"].get('item', false):
+	if not gear["mainhand"].get('item', false):
 		ui.notify('Keine Waffe ausgerüstet!')
 		return false
-	var weapon = equip["mainhand"]["item"]
+	var weapon = gear["mainhand"]["item"]
 	if randf() < weapon.hit:
 		var d = weapon.noise
 		var dmg = int(rand_range(weapon.damage-d, weapon.damage+d))

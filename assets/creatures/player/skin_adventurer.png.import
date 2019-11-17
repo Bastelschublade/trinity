@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/skin_adventurer.png-620a9cb61c887871694ba6545bc65477.s3tc.stex"
-path.etc2="res://.import/skin_adventurer.png-620a9cb61c887871694ba6545bc65477.etc2.stex"
+path.s3tc="res://.import/skin_adventurer.png-30252ec995c55a5e7ac431f9100f400d.s3tc.stex"
+path.etc2="res://.import/skin_adventurer.png-30252ec995c55a5e7ac431f9100f400d.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/character/skins/skin_adventurer.png"
-dest_files=[ "res://.import/skin_adventurer.png-620a9cb61c887871694ba6545bc65477.s3tc.stex", "res://.import/skin_adventurer.png-620a9cb61c887871694ba6545bc65477.etc2.stex" ]
+source_file="res://assets/creatures/player/skin_adventurer.png"
+dest_files=[ "res://.import/skin_adventurer.png-30252ec995c55a5e7ac431f9100f400d.s3tc.stex", "res://.import/skin_adventurer.png-30252ec995c55a5e7ac431f9100f400d.etc2.stex" ]
 
 [params]
 

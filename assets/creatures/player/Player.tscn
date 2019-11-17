@@ -1,14 +1,14 @@
 [gd_scene load_steps=37 format=2]
 
-[ext_resource path="res://assets/character/Character.gd" type="Script" id=1]
-[ext_resource path="res://assets/character/AnimationPlayer.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/character/idle.anim" type="Animation" id=3]
-[ext_resource path="res://assets/character/walk.anim" type="Animation" id=4]
-[ext_resource path="res://assets/character/skins/skin_adventurer.png" type="Texture" id=5]
-[ext_resource path="res://assets/character/Camera_Follow.gd" type="Script" id=6]
-[ext_resource path="res://assets/player/src/Armor.material" type="Material" id=7]
-[ext_resource path="res://assets/player/src/Boots.material" type="Material" id=8]
-[ext_resource path="res://assets/player/src/Skin.material" type="Material" id=9]
+[ext_resource path="res://assets/creatures/player/Player.gd" type="Script" id=1]
+[ext_resource path="res://assets/creatures/player/skins/skin_adventurer.png" type="Texture" id=2]
+[ext_resource path="res://assets/creatures/player/animations/idle.anim" type="Animation" id=3]
+[ext_resource path="res://assets/creatures/player/animations/walk.anim" type="Animation" id=4]
+[ext_resource path="res://assets/creatures/player/PlayerCamera.gd" type="Script" id=5]
+[ext_resource path="res://assets/player_quad/src/Armor.material" type="Material" id=6]
+[ext_resource path="res://assets/player_quad/src/Boots.material" type="Material" id=7]
+[ext_resource path="res://assets/player_quad/src/Skin.material" type="Material" id=8]
+[ext_resource path="res://assets/creatures/Stats.gd" type="Script" id=9]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 3.2069
@@ -77,7 +77,7 @@ void fragment () {
 
 [sub_resource type="ShaderMaterial" id=3]
 shader = SubResource( 2 )
-shader_param/texture_0 = ExtResource( 5 )
+shader_param/texture_0 = ExtResource( 2 )
 
 [sub_resource type="ArrayMesh" id=4]
 resource_name = "Mesh002"
@@ -96,7 +96,7 @@ surfaces/0 = {
 
 [sub_resource type="ShaderMaterial" id=5]
 shader = SubResource( 2 )
-shader_param/texture_0 = ExtResource( 5 )
+shader_param/texture_0 = ExtResource( 2 )
 
 [sub_resource type="ArrayMesh" id=6]
 resource_name = "Mesh003"
@@ -115,7 +115,7 @@ surfaces/0 = {
 
 [sub_resource type="ShaderMaterial" id=7]
 shader = SubResource( 2 )
-shader_param/texture_0 = ExtResource( 5 )
+shader_param/texture_0 = ExtResource( 2 )
 
 [sub_resource type="ArrayMesh" id=8]
 resource_name = "Mesh"
@@ -134,7 +134,7 @@ surfaces/0 = {
 
 [sub_resource type="ShaderMaterial" id=9]
 shader = SubResource( 2 )
-shader_param/texture_0 = ExtResource( 5 )
+shader_param/texture_0 = ExtResource( 2 )
 
 [sub_resource type="ArrayMesh" id=10]
 resource_name = "Mesh001"
@@ -153,7 +153,7 @@ surfaces/0 = {
 
 [sub_resource type="ShaderMaterial" id=11]
 shader = SubResource( 2 )
-shader_param/texture_0 = ExtResource( 5 )
+shader_param/texture_0 = ExtResource( 2 )
 
 [sub_resource type="ArrayMesh" id=12]
 resource_name = "Mesh004"
@@ -172,7 +172,7 @@ surfaces/0 = {
 
 [sub_resource type="ShaderMaterial" id=13]
 shader = SubResource( 2 )
-shader_param/texture_0 = ExtResource( 5 )
+shader_param/texture_0 = ExtResource( 2 )
 
 [sub_resource type="ArrayMesh" id=14]
 surfaces/0 = {
@@ -196,7 +196,7 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97783,
 "index_count": 1194,
-"material": ExtResource( 7 ),
+"material": ExtResource( 6 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.63399, 1.46432, -0.160473, 1.26798, 1.52717, 0.476737 ), AABB( -0.660534, 1.23817, -0.786798, 1.32107, 1.34986, 1.10306 ), AABB( -0.676111, 1.44341, -0.786798, 1.35222, 2.10632, 1.11133 ), AABB( -0.466321, 2.94498, -0.596697, 0.932641, 1.06827, 0.921231 ), AABB( -0.351197, 3.72648, -0.429897, 0.702393, 0.28678, 0.727306 ), AABB( -0.439698, 3.83825, -0.570533, 0.879396, 0.175, 0.693541 ), AABB( -0.313878, 2.48175, -0.596697, 1.14352, 1.5315, 0.921231 ), AABB( 0.322936, 3.35189, -0.45599, 2.04281, 0.63856, 0.679962 ), AABB( 1.65118, 3.49464, -0.426305, 0.75051, 0.40333, 0.457951 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 2.32151, 3.57417, -0.153947, 0.07617, 0.24973, 0.185594 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.897049, 2.48175, -0.596697, 1.21093, 1.5315, 0.921231 ), AABB( -2.36575, 3.35189, -0.45599, 2.04281, 0.63425, 0.679962 ), AABB( -2.40169, 3.49464, -0.426305, 1.57624, 0.41907, 0.457951 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -2.39768, 3.57417, -0.153947, 0.07617, 0.24973, 0.185594 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.603021, 0.666255, -0.786798, 1.32223, 1.92178, 1.10306 ), AABB( 0.234469, 0.666255, -0.539141, 0.479175, 0.633615, 0.767876 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.719209, 0.666255, -0.786798, 1.32223, 2.35272, 1.10306 ), AABB( -0.713644, 0.666255, -0.539141, 0.519024, 0.743715, 0.804756 ) ],
 "vertex_count": 1194
@@ -208,7 +208,7 @@ surfaces/1 = {
 "blend_shape_data": [  ],
 "format": 97783,
 "index_count": 366,
-"material": ExtResource( 8 ),
+"material": ExtResource( 7 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0.430686, -0.00176881, -0.208331, 0.217561, 0.235871, 0.463142 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0.295251, 0.535131, -0.320081, 0.408062, 0.266685, 0.493214 ), AABB( 0.295251, -0.00176881, -0.320081, 0.408062, 0.803585, 0.516904 ), AABB( -0.648247, -0.00176877, -0.208331, 0.217561, 0.235871, 0.463142 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.703303, 0.535131, -0.320081, 0.408052, 0.266685, 0.493214 ), AABB( -0.703303, -0.00176877, -0.320081, 0.408052, 0.803585, 0.574892 ) ],
 "vertex_count": 366
@@ -220,7 +220,7 @@ surfaces/2 = {
 "blend_shape_data": [  ],
 "format": 97783,
 "index_count": 1308,
-"material": ExtResource( 9 ),
+"material": ExtResource( 8 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.377858, 3.90424, -0.589084, 0.755726, 0.60102, 0.652204 ), AABB( -0.377858, 3.90424, -0.429897, 0.755726, 0.3438, 0.497038 ), AABB( -0.597071, 3.90424, -0.750023, 1.19414, 1.69282, 1.34477 ), AABB( -2.91767e-08, 3.90424, -0.50819, 0.377868, 0.42308, 0.38941 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 2.36636, 3.4965, -0.540897, 0.63918, 0.35729, 0.640085 ), AABB( 2.50507, 3.63172, -0.540897, 0.89392, 0.22207, 0.746399 ), AABB( 2.67506, 3.63172, -0.540897, 0.72393, 0.18649, 0.746399 ), AABB( 2.79677, 3.63172, -0.540897, 0.60222, 0.18376, 0.746399 ), AABB( 2.36636, 3.4106, -0.181132, 0.96888, 0.44319, 0.386634 ), AABB( 2.48188, 3.40992, 0.00217461, 0.34162, 0.41749, 0.198361 ), AABB( -0.377858, 3.90424, -0.50819, 0.377868, 0.42308, 0.3894 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -3.00554, 3.4965, -0.540897, 0.63918, 0.35729, 0.718054 ), AABB( -3.39899, 3.63172, -0.540897, 0.89393, 0.22207, 0.746399 ), AABB( -3.39899, 3.63172, -0.540897, 0.72393, 0.18649, 0.746399 ), AABB( -3.39899, 3.63172, -0.538644, 0.39346, 0.18376, 0.744156 ), AABB( -3.22604, 3.4106, -0.181132, 0.85968, 0.44319, 0.386634 ), AABB( -2.8235, 3.40992, 0.0021745, 0.34163, 0.41749, 0.198362 ) ],
 "vertex_count": 1308
@@ -2648,7 +2648,7 @@ tracks/30/keys = PoolRealArray( 0, 1, -8.75443e-08, -1.46683e-07, -1.20956e-07, 
 
 [sub_resource type="CapsuleShape" id=27]
 
-[node name="Character" type="KinematicBody"]
+[node name="Player" type="KinematicBody"]
 script = ExtResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
@@ -2656,6 +2656,7 @@ transform = Transform( 0.05, 0, 0, 0, -2.18557e-09, 0.05, 0, -0.05, -2.18557e-09
 shape = SubResource( 1 )
 
 [node name="Armature" type="Skeleton" parent="."]
+editor/display_folded = true
 transform = Transform( 0.05, 0, 0, 0, -2.18557e-09, -0.05, 0, 0.05, -2.18557e-09, 0, 0, 0 )
 bones_in_world_transform = true
 bones/0/name = "Rig1"
@@ -2789,11 +2790,6 @@ bones/25/rest = Transform( 1, 0, 2.27272e-08, 0, 1, 0, -2.27272e-08, 0, 1, -0.03
 bones/25/enabled = true
 bones/25/bound_children = [  ]
 
-[node name="AnimationPlayer" parent="Armature" instance=ExtResource( 2 )]
-autoplay = "Idle"
-anims/Idle = ExtResource( 3 )
-anims/Walk = ExtResource( 4 )
-
 [node name="ArmLeft1" type="MeshInstance" parent="Armature"]
 transform = Transform( 1, 0, 0, 0, 1, -3.55271e-15, 0, 3.55271e-15, 1, -7.10543e-15, 0, -2.66454e-15 )
 mesh = SubResource( 4 )
@@ -2824,20 +2820,27 @@ transform = Transform( 1, 0, 0, 0, 1, -3.55271e-15, 0, 3.55271e-15, 1, 0, 0, 0 )
 mesh = SubResource( 14 )
 material/0 = null
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Armature"]
+autoplay = "Idle"
+anims/Idle = ExtResource( 3 )
+anims/Walk = ExtResource( 4 )
+
 [node name="RayCast" type="RayCast" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.045882, 0 )
 enabled = true
 cast_to = Vector3( 0, -0.2, 0 )
 
 [node name="target" type="Spatial" parent="."]
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.563104, 0 )
 
 [node name="Camera" type="Camera" parent="target"]
 transform = Transform( -1, 1.47351e-07, -1.36849e-07, 7.57103e-08, 0.906308, 0.422618, 1.863e-07, 0.422618, -0.906308, 1.11927e-06, 12.7938, -27.331 )
 current = true
-script = ExtResource( 6 )
+script = ExtResource( 5 )
 
 [node name="HumanArmature" type="Skeleton" parent="."]
+editor/display_folded = true
 transform = Transform( 0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0 )
 visible = false
 bones_in_world_transform = true
@@ -3021,3 +3024,6 @@ anims/Walk = SubResource( 26 )
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1.88375, 0, -1, -8.23415e-08, 0, 2.85321, -1.24718e-07 )
 visible = false
 shape = SubResource( 27 )
+
+[node name="Stats" type="Node" parent="."]
+script = ExtResource( 9 )

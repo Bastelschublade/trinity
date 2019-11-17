@@ -146,9 +146,9 @@ func _on_equip_pressed(id, data):
 	self.remove_items({id: 1})
 	var it_res = load('res://assets/item/weapon/' + data['fname'] + '/' + data['fname'] + '.tscn')
 	var it = it_res.instance()
-	if player.equip["mainhand"].get('item', false):
-		add_item(player.equip['mainhand']['item'].item_id)
-	player.equip(it)
+	if player.gear["mainhand"].get('item', false):
+		add_item(player.gear['mainhand']['item'].item_id)
+	player.equip_item(it)
 	get_node('ItemInspect/Details/ItemDetails').set_visible(false)
 	#print(it.get_node('Body'))
 	#it.create_body()

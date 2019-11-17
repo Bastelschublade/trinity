@@ -18,6 +18,7 @@ export(String) var creature_name = 'Kreatur'
 # automatic assigned variables
 var velocity = Vector3(0,0,0)
 var speed = 0
+var buffs = []
 onready var ui = get_node('/root/Level/Ui')
 onready var current_health = max_health
 onready var current_power = max_power

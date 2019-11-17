@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Character.escn-5564ea3d7b4026ab47c33a4506c77984.scn"
+path="res://.import/KnightCharacter.escn-3948f90c0653e39469d2ff902e87a32e.scn"
 
 [deps]
 
-source_file="res://assets/player/src/Character.escn"
-dest_files=[ "res://.import/Character.escn-5564ea3d7b4026ab47c33a4506c77984.scn" ]
+source_file="res://assets/player_quad/src/KnightCharacter.escn"
+dest_files=[ "res://.import/KnightCharacter.escn-3948f90c0653e39469d2ff902e87a32e.scn" ]
 
 [params]
 

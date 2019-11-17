@@ -12,6 +12,8 @@ export(String) var item_id
 var body
 var data
 
+onready var stats = get_node('Stats')
+
 func _ready():
 	var item_db = get_node('/root/Global').item_db
 	data = item_db[self.item_id]

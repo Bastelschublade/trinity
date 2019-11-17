@@ -1,8 +1,9 @@
 [gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://assets/player/src/Armor.material" type="Material" id=1]
-[ext_resource path="res://assets/player/src/Boots.material" type="Material" id=2]
-[ext_resource path="res://assets/player/src/Skin.material" type="Material" id=3]
+[ext_resource path="res://assets/player_quad/src/Armor.material" type="Material" id=1]
+[ext_resource path="res://assets/player_quad/src/Boots.material" type="Material" id=2]
+[ext_resource path="res://assets/player_quad/src/Skin.material" type="Material" id=3]
+
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "_ncl1_29002"

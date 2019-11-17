@@ -2,12 +2,15 @@
 
 [ext_resource path="res://Level.gd" type="Script" id=1]
 [ext_resource path="res://assets/map/Map.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/character/Character.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/creatures/player/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/creatures/npc/gustav/Gustav.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/creatures/npc/garan/garan.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/ui/Ui.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/music/randommind Loop_Rejoicing.ogg" type="AudioStream" id=7]
 [ext_resource path="res://Water.tscn" type="PackedScene" id=8]
+
+
+
 
 [node name="Level" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15605, 0.295441, 0.995201 )
