@@ -10,10 +10,10 @@ Von Zeit zu Zeit, lade ich Releases hoch. Auch wenn das Spiel noch nicht annähe
 Falls du Bock hast mit zu basteln oder feedback hast, bin ich sehr gespannt. 
 
 Wo was geht:
-Kontakt: Dicsord / Telegram
-Testen: Releases
-Bugs/Feedback: Issues
-Story: Wiki
-Design: Godot + PR
-Scripting: Issues/PR
-Art: Ui, Sound, 3D, Materials.. Kontakt oder PR
+* Kontakt: Dicsord / Telegram
+* Testen: Releases
+* Bugs/Feedback: Issues
+* Story: Wiki
+* Design: Godot + PR
+* Scripting: Issues/PR
+* Art: Ui, Sound, 3D, Materials.. Kontakt oder PR
