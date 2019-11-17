@@ -17,3 +17,5 @@ Wo was geht:
 * Design: Godot + PR
 * Scripting: Issues/PR
 * Art: Ui, Sound, 3D, Materials.. Kontakt oder PR
+
+Bisher basiert das ganze Game auf FOSS Software und CC(0) lizensierten Assets. Wäre schön wenn es so bleibt. Credits und nen Dankeschön für Mithilfe gibts selbstverständlich trotzdem ;)
