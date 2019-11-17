@@ -1,6 +1,8 @@
 extends HBoxContainer
 
-onready var item_list = get_node('ListPage/MarginContainer/ScrollContainer/ItemList')
+onready var item_list = get_node('ListPage/MarginContainer/VBoxContainer/ScrollContainer/ItemList')
+onready var weight_box = get_node('ListPage/MarginContainer/VBoxContainer/WeightBox')
+onready var weight_bar = get_node('ListPage/MarginContainer/VBoxContainer/WeightBar')
 onready var item_details = get_node('ItemInspect/Details')
 onready var player = get_node('/root/Level/Character')
 
@@ -8,6 +10,7 @@ onready var player = get_node('/root/Level/Character')
 var list_item_res = preload("res://assets/ui/inventory/ListItem.tscn")
 var item_details_res = preload("res://assets/ui/inventory/ItemDetails.tscn")
 var weight = 0
+var max_weight = 20
 var items = {}
 var icons = {}
 var item_db
@@ -125,6 +128,13 @@ func update_list():
 		self.weight += float(data.get('weight', 0))
 		li.connect("pressed", get_node('.'), "update_details", [id])
 		item_list.add_child(li)
+		print(item_list.get_children())
+	# update weight bar
+	weight_box.set_visible(true)
+	weight_box.get_node('WeightLabel').set_text(String(weight) + '/' + String(max_weight))
+	weight_bar.set_visible(true)
+	weight_bar.set_value(self.weight/self.max_weight*100)
+
 
 
 func _ready():

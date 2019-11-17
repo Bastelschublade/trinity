@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/ui/inventory/Inventory.gd" type="Script" id=1]
 [ext_resource path="res://assets/ui/rpg/png/panelInset_beige.png" type="Texture" id=2]
-[ext_resource path="res://assets/item/food/pumpkin/icon.png" type="Texture" id=3]
-[ext_resource path="res://icon.png" type="Texture" id=4]
-[ext_resource path="res://assets/ui/rpg/png/iconCross_beige.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui/rpg/png/barBack_horizontal.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui/rpg/png/barRed_horizontal.png" type="Texture" id=4]
+[ext_resource path="res://icon.png" type="Texture" id=5]
+[ext_resource path="res://assets/item/food/pumpkin/icon.png" type="Texture" id=6]
+[ext_resource path="res://assets/ui/rpg/png/iconCross_beige.png" type="Texture" id=7]
 
 [node name="Inventory" type="HBoxContainer"]
 anchor_right = 1.0
@@ -59,13 +61,60 @@ custom_constants/margin_top = 10
 custom_constants/margin_left = 10
 custom_constants/margin_bottom = 10
 
-[node name="ScrollContainer" type="ScrollContainer" parent="ListPage/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="ListPage/MarginContainer"]
 margin_left = 10.0
 margin_top = 10.0
 margin_right = 230.0
 margin_bottom = 360.0
 
-[node name="ItemList" type="VBoxContainer" parent="ListPage/MarginContainer/ScrollContainer"]
+[node name="WeightBar" type="TextureProgress" parent="ListPage/MarginContainer/VBoxContainer"]
+visible = false
+margin_right = 220.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 0, 15 )
+size_flags_horizontal = 3
+size_flags_vertical = 0
+value = 40.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+nine_patch_stretch = true
+stretch_margin_left = 8
+stretch_margin_right = 8
+
+[node name="WeightBox" type="HBoxContainer" parent="ListPage/MarginContainer/VBoxContainer"]
+visible = false
+margin_right = 220.0
+margin_bottom = 15.0
+
+[node name="WeightIcon" type="TextureRect" parent="ListPage/MarginContainer/VBoxContainer/WeightBox"]
+margin_right = 15.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 15, 15 )
+texture = ExtResource( 5 )
+expand = true
+
+[node name="WeightLabel" type="Label" parent="ListPage/MarginContainer/VBoxContainer/WeightBox"]
+margin_left = 19.0
+margin_right = 56.0
+margin_bottom = 14.0
+text = "40/85"
+
+[node name="GoldIcon" type="TextureRect" parent="ListPage/MarginContainer/VBoxContainer/WeightBox"]
+margin_left = 60.0
+margin_right = 60.0
+margin_bottom = 15.0
+
+[node name="GoldLabel" type="Label" parent="ListPage/MarginContainer/VBoxContainer/WeightBox"]
+margin_left = 64.0
+margin_right = 64.0
+margin_bottom = 14.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ListPage/MarginContainer/VBoxContainer"]
+margin_right = 220.0
+margin_bottom = 350.0
+size_flags_vertical = 3
+
+[node name="ItemList" type="VBoxContainer" parent="ListPage/MarginContainer/VBoxContainer/ScrollContainer"]
 margin_right = 220.0
 size_flags_horizontal = 3
 alignment = 1
@@ -115,7 +164,7 @@ margin_bottom = 118.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 3 )
+texture = ExtResource( 6 )
 expand = true
 stretch_mode = 1
 
@@ -208,7 +257,7 @@ margin_left = 142.0
 margin_right = 182.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 40, 40 )
-texture_normal = ExtResource( 4 )
+texture_normal = ExtResource( 5 )
 expand = true
 
 [node name="Delete" type="TextureButton" parent="ItemInspect/Details/ItemDetails/ItemButtons"]
@@ -218,7 +267,7 @@ margin_bottom = 40.0
 rect_min_size = Vector2( 40, 40 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture_normal = ExtResource( 5 )
+texture_normal = ExtResource( 7 )
 expand = true
 
 [node name="margin" type="Label" parent="ItemInspect/Details/ItemDetails/ItemButtons"]
