@@ -139,6 +139,7 @@ func update_list():
 
 func _ready():
 	item_db = get_node("/root/Global").item_db
+	self.add_item("3")
 
 
 func _on_equip_pressed(id, data):

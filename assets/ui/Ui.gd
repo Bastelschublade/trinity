@@ -33,7 +33,7 @@ func update_target(obj):
 	if obj is Creature:
 		var name_label = target_frame.get_node('MarginContainer/VBoxContainer/Name')
 		var health_bar = target_frame.get_node('MarginContainer/VBoxContainer/HealthBar')
-		name_label.set_text(obj.name)
+		name_label.set_text(obj.creature_name)
 		health_bar.value = obj._rel_health()
 		visible = true
 		player.target = obj
@@ -44,7 +44,7 @@ func update_target(obj):
 
 
 func _process(delta):
-	if settings.get('debug', false):
+	if settings.get('debug', false) and delta > 0:
 		fps_label.set_text(String(1/delta))
 	if Input.is_action_just_pressed('one'):
 		_on_button_01_pressed()

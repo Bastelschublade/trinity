@@ -38,6 +38,7 @@ func _rel_health():
 
 func _add_health(amount):
 	current_health += amount
+	print('current health: ', current_health)
 	if current_health > max_health:
 		current_health = max_health
 	if current_health <= 0:
@@ -46,6 +47,7 @@ func _add_health(amount):
 
 
 func _get_hit(amount):
+	print('got hit')
 	self._add_health(-amount)
 
 

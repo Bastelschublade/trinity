@@ -2,12 +2,16 @@ extends Camera
 
 
 # Declare member variables here. Examples:
-export var distance = 5.0
-export var height = 2.0
+export var distance = 6.0
+export var distance_min = 3.0
+export var distance_max = 10.0
+export var height = 3.0
 export var rotation_speed = 1.0
 
 var mouse_rotation = 0
 var last_known_mouse_pos = Vector2(0,0)
+var zoom_step = 0.5
+onready var height_ratio = distance/height
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -57,9 +61,20 @@ func _physics_process(delta):
 	
 	look_at_from_position(pos, target, up)
 
+func zoom(d):
+	var d_new = distance + d*zoom_step
+	if d_new <= distance_max and d_new >= distance_min:
+		distance += d*zoom_step
+		height = distance/height_ratio
 
 func _input(event):	
 	if Input.is_action_pressed("drag_cam"):
 		if event is InputEventMouseMotion:
 			# todo hide or change cursor to cam
 			mouse_rotation = event.get_relative().x
+	if event is InputEventMouseButton:
+		if event.is_pressed():
+			if event.button_index == BUTTON_WHEEL_UP:
+				zoom(-1)
+			if event.button_index == BUTTON_WHEEL_DOWN:
+				zoom(1)

@@ -24,6 +24,7 @@ var DE_ACCELERATION = 5
 var slots = ["mainhand", "offhand", "chest", "legs", "boots"]
 var gear = {}
 var bones = {"mainhand": 'HandR1'}
+var attacking = false
 
 onready var ui = get_node('/root/Level/Ui')
 onready var inventory = ui.get_node('GameMenu/TabContainer/Inventar/Inventory')
@@ -55,6 +56,8 @@ func _ready():
 
 
 func _physics_process(delta):
+	if attacking:
+		return
 	var is_moving = false
 	var is_fast = false
 	var is_grounded = raycast.is_colliding()
@@ -149,16 +152,9 @@ func equip_item(obj):
 
 func unequip(slot):
 	print('unequip slot ', slot)
-	
-	
-func attack():
-	#var hit = false
-	if not target or not is_instance_valid(target):
-		ui.notify('Kein Ziel zum Angreifen!')
-		return false
-	if not gear["mainhand"].get('item', false):
-		ui.notify('Keine Waffe ausgerüstet!')
-		return false
+
+
+func finish_attack():
 	var weapon = gear["mainhand"]["item"]
 	if randf() < weapon.hit:
 		var d = weapon.noise
@@ -168,6 +164,19 @@ func attack():
 		ui.update_target(target)
 	else:
 		ui.notify('Verfehlt.')
+	return true
+
+
+func attack():
+	#var hit = false
+	if not target or not is_instance_valid(target):
+		ui.notify('Kein Ziel zum Angreifen!')
+		return false
+	if not gear["mainhand"].get('item', false):
+		ui.notify('Keine Waffe ausgerüstet!')
+		return false
+	attacking = true
+	anim_player.play('Attack')
 	return true
 
 
@@ -197,3 +206,9 @@ func set_flag(key):
 func rem_flag(key):
 	while key in flags:
 		flags.remove(key)
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	if anim_name == 'Attack':
+		print('attacking target')
+		self.finish_attack()
+		attacking = false

@@ -15,6 +15,7 @@ var quit_distance = false
 var npc
 
 onready var player = get_node('/root/Level/Character')
+onready var ui = get_node('/root/Level/Ui')
 
 
 func setup_view(view):
@@ -30,9 +31,12 @@ func answer(choice):
 	if 'view' in choice:
 		setup_view(views[choice['view']])
 	if 'receive_item' in choice:
-		print('receive item', choice['receive_item'])
+		print('receiving item')
+		player.inventory.add_item(choice['receive_item'])
+		ui.notify('Gegenstand erhalten')
 	if 'provide_item' in choice:
 		player.inventory.remove_items(choice['provide_item'])
+		ui.notify('Gegenstand abgegeben')
 	if 'next_view' in choice:
 		npc.npc_next_view = choice['next_view']
 	if 'set_flag' in choice:

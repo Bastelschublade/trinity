@@ -121,12 +121,13 @@ Belohnung:
 		]
 	},
 	"finish":{
-		"text": "Dank euch komm ich erstmal über die Runden, falls Ihr weiter Norden geht, trefft Ihr vielleicht auf die Farm meiner Familie. Ich weiß Ihr kennt mich nicht, aber ich wäre euch sehr Verbunden wenn ihr meinem Vater Garan, bescheid gebt, dass ich hier bin.",
+		"text": "Dank euch komm ich erstmal über die Runden, falls Ihr weiter Norden geht, trefft Ihr vielleicht auf die Farm meiner Familie. Ich weiß Ihr kennt mich nicht, aber ich wäre euch sehr Verbunden wenn ihr meinem Vater Garan, bescheid gebt, dass ich hier bin. Ich würde euch meine Keule mitgeben, falls ihr angegriffen werdet.",
 		"choices": [
 			{
 				"text": "[!] Ja, da komme ich villeicht vorbei.",
 				"set_flag": "findgaran",
 				"next_view": "final",
+				"receive_item": "3",
 				"exit": true,
 			},{
 				"text": "Sicherlich nicht",
