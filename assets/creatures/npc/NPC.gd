@@ -15,6 +15,7 @@ var dialog
 var reputation = 0
 
 
+
 func start_dialog():
 	var dialog_scene = preload("res://assets/ui/dialog/Dialog.tscn")
 	var dialog = dialog_scene.instance()
@@ -52,8 +53,18 @@ func _get_hit(dmg):
 	self._add_health(-dmg)
 
 
+func _die():
+	if alive:
+		anim_player.play('death')
+		alive = false
+
 func _ready():
 	current_health = max_health
 	if npc_dialog_file:
 		dialog = load_dialog()
 	#print(npc_name, ' spawned')
+
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	if anim_name == 'death':
+		ui.notify(creature_name + ' getötet.')

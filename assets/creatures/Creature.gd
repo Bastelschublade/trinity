@@ -47,8 +47,11 @@ func _add_health(amount):
 
 
 func _get_hit(amount):
-	print('got hit')
-	self._add_health(-amount)
+	if alive:
+		self._add_health(-amount)
+		return true
+	else:
+		return false
 
 
 func _die():

@@ -9,6 +9,7 @@ onready var sprites = {
 	'menu':    preload('res://assets/ui/cursor/sprites/cursorGauntlet_bronze.png'),
 	'loot':    preload('res://assets/ui/cursor/sprites/cursorGauntlet_bronze.png'),
 	'passive': preload('res://assets/ui/cursor/sprites/cursorGauntlet_blue.png'),
+	'interact':preload('res://assets/ui/cursor/sprites/cursorGauntlet_bronze.png'),
 	}
 onready var sprite     = get_node('Sprite')
 onready var tooltip    = get_node('Tooltip')
@@ -46,6 +47,10 @@ func update_cursor(object):
 		var data = get_node("/root/Global").item_db[item_id]
 		self.tooltip.set_text(data['name'])
 		self.tooltip.set('visible', true)
+	elif object is GameObject:
+		self.sprite.texture = sprites['interact']
+		self.tooltip.set_text(object.object_tooltip)
+		self.tooltip.set_visible(true)
 
 
 # -------------------------------------- #

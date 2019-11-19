@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/fenceCurved.glb-5cbc80888780a70fe25576d7a4ae39d4.scn"
+path="res://.import/characterMedium.escn-2657f3f5956c4e0406b4dcc80f4a279a.scn"
 
 [deps]
 
-source_file="res://assets/objects/fantasykit/src/fenceCurved.glb"
-dest_files=[ "res://.import/fenceCurved.glb-5cbc80888780a70fe25576d7a4ae39d4.scn" ]
+source_file="res://assets/creatures/character/characterMedium.escn"
+dest_files=[ "res://.import/characterMedium.escn-2657f3f5956c4e0406b4dcc80f4a279a.scn" ]
 
 [params]
 

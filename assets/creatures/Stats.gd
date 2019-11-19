@@ -35,7 +35,7 @@ func reset_stats():
 
 
 func apply_stats(add_stats):
-	if not add_stats or len(add_stats) < 1:
+	if not add_stats:
 		print('Nothing to apply')
 		return false
 	for s in add_stats.current:

@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/fenceBroken.glb-bb25e2fb4144df5d8f5c75bafffd56aa.scn"
+path="res://.import/death.escn-27e96a4ed7218c245e4dbeaf3cfdb2af.scn"
 
 [deps]
 
-source_file="res://assets/objects/fantasykit/src/fenceBroken.glb"
-dest_files=[ "res://.import/fenceBroken.glb-bb25e2fb4144df5d8f5c75bafffd56aa.scn" ]
+source_file="res://assets/creatures/character/death.escn"
+dest_files=[ "res://.import/death.escn-27e96a4ed7218c245e4dbeaf3cfdb2af.scn" ]
 
 [params]
 

@@ -36,7 +36,7 @@ func _ready():
 func goto_scene(path):
 	print('go to scene: ', path)
 	loader = ResourceLoader.load_interactive(path)
-	print(loader)
+	#print(loader)
 	if loader == null:
 		#show_error()
 		print('no loader created')
@@ -58,24 +58,24 @@ func _process(delta):
 	
 	# skip (first) frame to display loading before blocking
 	if wait_frames > 0:
-		print('skipping this frame')
+		#print('skipping this frame')
 		wait_frames -= 1
 		return
 		
 	var t = OS.get_ticks_msec()
 	# time_max decides how long loading can block the thread
 	while OS.get_ticks_msec() < t + time_max:
-		print('loading ...')
+		#print('loading ...')
 		# update loading
 		var err = loader.poll()
 		
 		if err == ERR_FILE_EOF: # finish
-			print('finish!')
+			#print('finish!')
 			var resource = loader.get_resource()
 			loader = null  # stop in next call
 			set_new_scene(resource)
 			get_node('/root/LoadingScreen').set_visible(false)
-			print('new scene set')
+			#print('new scene set')
 			break
 		elif err == OK:
 			update_loading_screen(delta)
@@ -95,8 +95,8 @@ func update_loading_screen(delta):
 	var progress = float(loader.get_stage()) / loader.get_stage_count()
 	var loading_screen = get_node('/root/LoadingScreen')
 	#print(loading_screen)
-	print('progress: ', progress*100)
-	print('in: ', delta)
+	#print('progress: ', progress*100)
+	#print('in: ', delta)
 	loading_screen.get_node('CenterContainer/Progress').set_value(progress*100)
 
 

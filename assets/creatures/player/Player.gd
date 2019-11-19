@@ -5,7 +5,6 @@ class_name Player
 var velocity = Vector3()
 var gravity = -4.6
 var camera
-var anim_player
 var character
 var raycast
 var target
@@ -23,13 +22,14 @@ var DE_ACCELERATION = 5
 # equip is array of Items
 var slots = ["mainhand", "offhand", "chest", "legs", "boots"]
 var gear = {}
-var bones = {"mainhand": 'HandR1'}
+var bones = {"mainhand": 'RightHand'}
 var attacking = false
 
 onready var ui = get_node('/root/Level/Ui')
-onready var inventory = ui.get_node('GameMenu/TabContainer/Inventar/Inventory')
-onready var arma = get_node('Armature')
+onready var inventory = get_node('/root/Level/Ui/GameMenu/TabContainer/Inventar/Inventory')
+onready var arma = get_node('Root')
 onready var stats = get_node('Stats')
+onready var anim_player = get_node('AnimationPlayer')
 
 
 
@@ -38,7 +38,6 @@ func _ready():
 	#print('Character ready!')
 	character = get_node('.')
 	raycast = get_node('RayCast')
-	anim_player = get_node('Armature/AnimationPlayer')
 	#print(anim_player)
 	block_timer = Timer.new()
 	block_timer.connect("timeout", self, '_on_block_timer_timeout')
@@ -53,6 +52,8 @@ func _ready():
 			arma.add_child(kit)
 			kit.set_bone_name(bones[s])
 			gear[s] = {'kit':kit}
+	print('anim childs:')
+	print(anim_player.get_animation_list())
 
 
 func _physics_process(delta):
@@ -116,19 +117,19 @@ func _physics_process(delta):
 		#if anim_player.current_animation != "Run":
 		#	print('play run animation')
 		if is_fast:
-			anim_player.current_animation = "Walk"
-			anim_player.set_speed_scale(7)
+			anim_player.current_animation = "run"
+			#anim_player.set_speed_scale(7)
 			#print('running')
 		else:
-			anim_player.current_animation = "Walk"
-			anim_player.set_speed_scale(4)
+			anim_player.current_animation = "walk"
+			#anim_player.set_speed_scale(4)
 			#print('walking')
 	elif not is_grounded:
-		anim_player.current_animation = "Idle"
+		anim_player.current_animation = "jump"
 		#anim_player.set_speed_scale(2)
 		#print('falling')
 	else:
-		anim_player.current_animation = "Idle"
+		anim_player.current_animation = "idle"
 		#anim_player.set_speed_scale(2)
 		#print('idle')
 		
@@ -143,8 +144,12 @@ func equip_item(obj):
 	for c in kit.get_children():
 		print('removing equip mesh: ', c.get_parent().name, '>', c.name)
 		c.queue_free()
-	obj.scale = Vector3(15, 15, 15)
-	obj.set('translation', Vector3(+1, 0,0))
+	obj.scale = Vector3(2, 2, 2)
+	#obj.set('translation', Vector3(+1, 0,0))
+	#obj.rotate()
+	# remove collision shape
+	var collider = obj.get_node('Body/CollisionShape')
+	collider.queue_free()
 	kit.add_child(obj)
 	gear[obj.slot]['item'] = obj
 	stats.update()
@@ -172,11 +177,13 @@ func attack():
 	if not target or not is_instance_valid(target):
 		ui.notify('Kein Ziel zum Angreifen!')
 		return false
+	if not target.alive:
+		ui.notify('Ziel ist schon erledigt.')
 	if not gear["mainhand"].get('item', false):
 		ui.notify('Keine Waffe ausgerüstet!')
 		return false
 	attacking = true
-	anim_player.play('Attack')
+	anim_player.play('attack')
 	return true
 
 
@@ -207,8 +214,9 @@ func rem_flag(key):
 	while key in flags:
 		flags.remove(key)
 
+
 func _on_AnimationPlayer_animation_finished(anim_name):
-	if anim_name == 'Attack':
+	if anim_name == 'attack':
 		print('attacking target')
 		self.finish_attack()
 		attacking = false

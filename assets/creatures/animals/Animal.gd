@@ -17,6 +17,8 @@ var walking = false
 var motion_time = 10
 var motion_time_noise = 1
 var motion_timer
+var v_y = 0
+var gravity = -9
 
 
 func _ready():
@@ -44,7 +46,13 @@ func _physics_process(delta):
 	var dir = body.get_global_transform().basis[2]  # local basis the animal is facing
 	dir.y = 0
 	var velocity = dir.normalized() * self.speed
+	velocity.y = v_y
 	body.move_and_slide(velocity, Vector3(0,1,0))
+	if body.is_on_floor():
+		v_y = 0
+	else:
+		v_y += gravity*delta
+		
 	#self.pos
 	#print(motion_timer.time_left)
 
@@ -58,12 +66,9 @@ func on_click():
 	
 	
 func _on_task_timer_timeout():
-	#var t = rand_range(motion_time-motion_time_noise, motion_time+motion_time_noise)
 	#print(t)
 	#print('local translation', self.get_translation())
 	#print('randomize motion')
-	if self.creature_name != 'Kuh':
-		return
 	#print('...')
 	if task == 'browse':
 		var new_speed = randi()%2 * self.walk_speed
@@ -83,6 +88,9 @@ func _on_task_timer_timeout():
 			anim_player.current_animation = "Walk"
 	elif task == 'chase':
 		print('chasing player')
+	
+	var t = rand_range(motion_time-motion_time_noise, motion_time+motion_time_noise)
+	motion_timer.start(t)
 
 
 func get_hit(dmg):
