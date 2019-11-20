@@ -27,11 +27,11 @@ func _ready():
 		feedable = true
 	
 	# redundant default animation settings
-	var looped_anims = ['Idle', 'Walk', 'Run']
+	var looped_anims = ['idle', 'walk', 'run']
 	for anim_name in anim_player.get_animation_list():
 		if anim_name in looped_anims:
 			anim_player.get_animation(anim_name).loop = true
-	anim_player.current_animation = 'Idle'
+	anim_player.current_animation = 'idle'
 	
 	# behaviour init
 	motion_timer = Timer.new()
@@ -71,7 +71,7 @@ func _on_task_timer_timeout():
 	#print('randomize motion')
 	#print('...')
 	if task == 'browse':
-		var new_speed = randi()%2 * self.walk_speed
+		var new_speed = randi()%2 * self.creature_walk_speed
 		if new_speed == speed: # either motion or angle change
 			#print('same speed change angle')
 			turn_angle = rand_range(-0.5, 0.5)
@@ -83,25 +83,11 @@ func _on_task_timer_timeout():
 		else:
 			speed = new_speed
 		if speed == 0:
-			anim_player.current_animation = "Idle"
+			anim_player.current_animation = "idle"
 		else:
-			anim_player.current_animation = "Walk"
+			anim_player.current_animation = "walk"
 	elif task == 'chase':
 		print('chasing player')
 	
 	var t = rand_range(motion_time-motion_time_noise, motion_time+motion_time_noise)
 	motion_timer.start(t)
-
-
-func get_hit(dmg):
-	# move to creature class
-	self.current_health -= dmg
-	if self.current_health < 0:
-		die()
-	# TODO: armor, block dmg type, animation
-	
-
-func die():
-	# move to creature class
-	#add loot and animation
-	self.queue_free()

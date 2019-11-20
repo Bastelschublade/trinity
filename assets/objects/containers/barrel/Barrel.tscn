@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/objects/containers/barrel/wood.material" type="Material" id=1]
-[ext_resource path="res://assets/objects/containers/barrel/woodDark.material" type="Material" id=2]
-[ext_resource path="res://assets/objects/containers/barrel/metal.material" type="Material" id=3]
+[ext_resource path="res://assets/materials/WoodSignLight.material" type="Material" id=1]
+[ext_resource path="res://assets/materials/WoodSignDark.material" type="Material" id=2]
+[ext_resource path="res://assets/materials/Metal.material" type="Material" id=3]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "barrel(Clone)"

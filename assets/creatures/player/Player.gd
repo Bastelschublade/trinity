@@ -160,28 +160,48 @@ func unequip(slot):
 
 
 func finish_attack():
-	var weapon = gear["mainhand"]["item"]
-	if randf() < weapon.hit:
-		var d = weapon.noise
-		var dmg = int(rand_range(weapon.damage-d, weapon.damage+d))
-		ui.notify(String(dmg) + ' Schaden')
-		target._get_hit(dmg)
-		ui.update_target(target)
-	else:
+	
+	# check hit
+	if randf() > stats.current.hit:
 		ui.notify('Verfehlt.')
+		return false
+	# calc dmg
+	var dmg
+	if not gear["mainhand"].get('item', false):
+		print('no weapon')
+		dmg = 2
+	else:
+		print('weapon')
+		var weapon = gear["mainhand"]["item"]
+		var d = weapon.noise
+		dmg = int(rand_range(weapon.damage-d, weapon.damage+d))
+	ui.notify(String(dmg) + ' Schaden')
+	target.get_hit(dmg)
+	ui.update_target(target)
 	return true
 
 
 func attack():
-	#var hit = false
+	
+	# check target valid
 	if not target or not is_instance_valid(target):
 		ui.notify('Kein Ziel zum Angreifen!')
 		return false
+	
+	# check target alive
 	if not target.alive:
 		ui.notify('Ziel ist schon erledigt.')
+	
+	# check weapon equiped
 	if not gear["mainhand"].get('item', false):
-		ui.notify('Keine Waffe ausgerüstet!')
-		return false
+		attacking = true
+		if randf() < 0.8:
+			anim_player.play('punch')
+		else:
+			anim_player.play('kick')
+		return true
+		
+	# default attack
 	attacking = true
 	anim_player.play('attack')
 	return true
@@ -216,7 +236,7 @@ func rem_flag(key):
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	if anim_name == 'attack':
-		print('attacking target')
+	if anim_name in ['attack', 'punch', 'kick']:
 		self.finish_attack()
+		print('att finished')
 		attacking = false

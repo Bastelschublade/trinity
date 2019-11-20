@@ -2,61 +2,124 @@ extends Spatial
 class_name Creature
 
 
-export(float) var max_health = 1
-export(float) var max_power = 0
 export(String) var creature_type = 'Kreatur'
-export(bool) var alive = true
-export(float) var respawn_time = 120
-export(float) var despawn_time = 20
-export(int) var level = 1
+export(float) var creature_respawn_time = 30
+export(float) var creature_despawn_time = 10
+export(int) var creature_level = 1
 export(String, 'default', 'loot', 'attack', 'talk', 'inspect', 'menu') var interaction = 'default'
-export(float) var walk_speed = 0.2
-export(float) var run_speed = 0.6
+export(float) var creature_walk_speed = 0.2
+export(float) var creature_run_speed = 0.6
 export(String) var creature_name = 'Kreatur'
 
 
 # automatic assigned variables
-var velocity = Vector3(0,0,0)
-var speed = 0
-var buffs = []
 onready var ui = get_node('/root/Level/Ui')
-onready var current_health = max_health
-onready var current_power = max_power
 onready var body = get_node('Body')
 onready var spawn_position = get_global_transform().origin
 onready var anim_player = get_node('Body/AnimationPlayer')
+onready var stats = get_node('Stats')
+onready var loot_table = get_node('LootTable')
 
+var velocity = Vector3(0,0,0)
+var speed = 0
+var buffs = []
+var alive = true
+var spawn = Vector3(0,0,0)
+var despawn_timer = Timer.new()
+var respawn_timer = Timer.new()
+
+var dt = 0
 
 func _ready():
-	# specify prev defaults
-	pass
+	despawn_timer.set_one_shot(true)
+	respawn_timer.set_one_shot(true)
+	despawn_timer.connect("timeout", self, "_on_despawn_timeout")
+	respawn_timer.connect("timeout", self, "_on_respawn_timeout")
+	self.add_child(despawn_timer)
+	self.add_child(respawn_timer)
+	if anim_player:
+		# expect to have at least idle and death animation
+		anim_player.connect("animation_finished", self, "_on_animation_finished")
+		anim_player.play('idle')
+	if not self.stats:
+		self.stats = Stats.new()
+		self.add_child(self.stats)
+		self.stats.base.health = 20
+		self.stats.reset_stats()
+	print(stats.base)
+	print(stats.current)
 
 
-func _rel_health():
-	return current_health / max_health * 100
+func _process(delta):
+	if anim_player:
+		pass
 
 
-func _add_health(amount):
-	current_health += amount
-	print('current health: ', current_health)
-	if current_health > max_health:
-		current_health = max_health
-	if current_health <= 0:
-		current_health = 0
-		self._die()
+func _on_animation_finished(anim_name):
+	if anim_name == 'death':
+		self.death()
 
 
-func _get_hit(amount):
-	if alive:
-		self._add_health(-amount)
-		return true
-	else:
+func _on_despawn_timeout():
+	print('despawn timer triggerd')
+	if respawn_timer.is_stopped():
+		return  # make sure it's not already respawned
+	self.set_visible(false)
+	print('despawned: ', self.creature_name)
+	
+
+func _on_respawn_timeout():
+	print('respawn timer triggerd')
+	print('reswpawn: ', self.creature_name)
+	self.anim_player.play('idle')
+	self.stats.reset_stats()
+	self.set_visible(true)
+	self.ui.update_target(get_node('/root/Level/Character').target)
+	
+
+func rel_health():
+	# redundant shortcut for backw. compability
+	return stats.rel_health()
+
+
+func add_health(amount):
+	stats.current.health += amount
+	if stats.current.health > stats.base.health:
+		stats.current.health = stats.base.health
+	if stats.current.health <= 0:
+		stats.current.health = 0
+		self.die()
+	# TODO: update target seems not to work this way?
+	self.ui.update_target(get_node('/root/Level/Character').target)
+
+
+func get_hit(amount):
+	if not alive:
+		ui.notify('Ziel ist bereits tot.')
 		return false
+	amount -= stats.current.armor
+	if amount > 0:
+		self.add_health(-amount)
+	return true
 
 
-func _die():
-	print('Dieing: ', self)
-	self.queue_free()
+func die():
+	if not self.alive:
+		return false
+	print('Kreatur stirbt: ', self)
+	self.alive = false
+	self.despawn_timer.start(self.creature_despawn_time)
+	self.respawn_timer.start(self.creature_respawn_time)
+	if anim_player:
+		self.anim_player.play('death')
+	else:
+		self.death()
+
+
+func death():
+	print('Kreatur ist tot')
+	if self.loot_table:
+		print('loot...')
 
 
 func interact():

@@ -29,14 +29,16 @@ func update_target(obj):
 	var visible = false
 	if not obj:
 		target_frame.set_visible(visible)
+		player.target = null
 		return
 	if obj is Creature:
 		var name_label = target_frame.get_node('MarginContainer/VBoxContainer/Name')
 		var health_bar = target_frame.get_node('MarginContainer/VBoxContainer/HealthBar')
 		name_label.set_text(obj.creature_name)
-		health_bar.value = obj._rel_health()
+		health_bar.value = obj.rel_health()
 		visible = true
 		player.target = obj
+		# TODO: change frame for dead/alive
 	
 	target_frame.set_visible(visible)
 	if not visible:

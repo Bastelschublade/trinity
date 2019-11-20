@@ -10,6 +10,8 @@ export(Vector3) var player_pos
 
 func _ready():
 	player = get_node("Character")
+	Global.player = player
+	Global.ui = get_node("Ui")
 	player_pos = player.get_global_transform().origin
 	camera = get_node("Character/target/Camera")
 

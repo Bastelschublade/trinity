@@ -2,18 +2,18 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/referencebox.escn-ce9c9660169766052ee3bd4b1e69b250.scn"
+path="res://.import/rat.escn-222bb6a224f9f5e3e3a201de6c52eee5.scn"
 
 [deps]
 
-source_file="res://assets/referencebox.escn"
-dest_files=[ "res://.import/referencebox.escn-ce9c9660169766052ee3bd4b1e69b250.scn" ]
+source_file="res://assets/creatures/enemys/rat/rat.escn"
+dest_files=[ "res://.import/rat.escn-222bb6a224f9f5e3e3a201de6c52eee5.scn" ]
 
 [params]
 
 nodes/root_type="Spatial"
-nodes/root_name="Scene Root"
-nodes/root_scale=1.0
+nodes/root_name="Rat"
+nodes/root_scale=0.1
 nodes/custom_script=""
 nodes/storage=0
 materials/location=1

@@ -10,6 +10,8 @@ var wait_frames
 var time_max = 1000 # msec
 var item_db
 var settings
+var ui
+var player
 
 
 func _ready():

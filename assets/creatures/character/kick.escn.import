@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Dog.escn-98dade340af6920ddff5d2a7dd6cd9e6.scn"
+path="res://.import/kick.escn-808719515045e17815b8e1a65802f49d.scn"
 
 [deps]
 
-source_file="res://assets/creatures/animals/dog/Dog.escn"
-dest_files=[ "res://.import/Dog.escn-98dade340af6920ddff5d2a7dd6cd9e6.scn" ]
+source_file="res://assets/creatures/character/kick.escn"
+dest_files=[ "res://.import/kick.escn-808719515045e17815b8e1a65802f49d.scn" ]
 
 [params]
 

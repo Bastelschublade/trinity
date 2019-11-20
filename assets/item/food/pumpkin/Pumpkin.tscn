@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/item/food/Food.gd" type="Script" id=1]
 [ext_resource path="res://assets/objects/GameObject.gd" type="Script" id=2]
-[ext_resource path="res://assets/kenney/objects/graveyard/pumpkin.material" type="Material" id=3]
+[ext_resource path="res://assets/materials/Pumpkin.material" type="Material" id=3]
 [ext_resource path="res://assets/kenney/objects/graveyard/metal.material" type="Material" id=4]
+[ext_resource path="res://assets/kenney/objects/graveyard/pumpkin.material" type="Material" id=5]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.14826, 0.100155, 0.151264 )
@@ -42,9 +43,6 @@ item_id = "1"
 
 [node name="Pumpkin" type="RigidBody" parent="."]
 script = ExtResource( 2 )
-go_tooltip = "Kuerbis"
-go_collectable = true
-go_attackable = true
 
 [node name="CollisionShape" type="CollisionShape" parent="Pumpkin"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0783691, 0 )
@@ -52,5 +50,5 @@ shape = SubResource( 1 )
 
 [node name="pumpkin" type="MeshInstance" parent="Pumpkin"]
 mesh = SubResource( 2 )
-material/0 = ExtResource( 3 )
+material/0 = ExtResource( 5 )
 material/1 = ExtResource( 4 )

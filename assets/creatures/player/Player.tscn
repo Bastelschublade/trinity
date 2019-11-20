@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://assets/creatures/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://assets/creatures/player/PlayerCamera.gd" type="Script" id=2]
@@ -8,8 +8,10 @@
 [ext_resource path="res://assets/creatures/character/animations/death.tres" type="Animation" id=6]
 [ext_resource path="res://assets/creatures/character/animations/idle.tres" type="Animation" id=7]
 [ext_resource path="res://assets/creatures/character/animations/jump.tres" type="Animation" id=8]
-[ext_resource path="res://assets/creatures/character/animations/run.tres" type="Animation" id=9]
-[ext_resource path="res://assets/creatures/character/animations/walk.tres" type="Animation" id=10]
+[ext_resource path="res://assets/creatures/character/animations/kick.tres" type="Animation" id=9]
+[ext_resource path="res://assets/creatures/character/animations/punch.tres" type="Animation" id=10]
+[ext_resource path="res://assets/creatures/character/animations/run.tres" type="Animation" id=11]
+[ext_resource path="res://assets/creatures/character/animations/walk.tres" type="Animation" id=12]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 3.2069
@@ -615,6 +617,8 @@ anims/attack = ExtResource( 5 )
 anims/death = ExtResource( 6 )
 anims/idle = ExtResource( 7 )
 anims/jump = ExtResource( 8 )
-anims/run = ExtResource( 9 )
-anims/walk = ExtResource( 10 )
+anims/kick = ExtResource( 9 )
+anims/punch = ExtResource( 10 )
+anims/run = ExtResource( 11 )
+anims/walk = ExtResource( 12 )
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

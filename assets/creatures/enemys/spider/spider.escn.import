@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/barrel.glb-7f8cebf69d72e36cfc5021dcd3b385b9.scn"
+path="res://.import/spider.escn-3bfc93f7b3508fefb5efe1518d5f0b48.scn"
 
 [deps]
 
-source_file="res://assets/objects/containers/barrel/barrel.glb"
-dest_files=[ "res://.import/barrel.glb-7f8cebf69d72e36cfc5021dcd3b385b9.scn" ]
+source_file="res://assets/creatures/enemys/spider/spider.escn"
+dest_files=[ "res://.import/spider.escn-3bfc93f7b3508fefb5efe1518d5f0b48.scn" ]
 
 [params]
 

@@ -26,12 +26,12 @@ var current
 
 
 func _ready():
-	current = base
+	current = base.duplicate(true)
 
 
 func reset_stats():
 	print('reset stats to: ', base)
-	current = base
+	current = base.duplicate(true)
 
 
 func apply_stats(add_stats):
@@ -57,3 +57,8 @@ func update():
 		# update buffs
 		for b in par.buffs:
 			apply_stats(b.stats)
+
+
+func rel_health():
+	print('rel_h: ', self.current.health, ' / ', self.base.health)
+	return self.current.health/self.base.health * 100

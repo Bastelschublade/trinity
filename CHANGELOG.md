@@ -33,6 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Target system (animals and npc)
 - inventory interactions, search and equip items
 - Items: Sword, Club
+- Music: One Song in loop
 
 
 

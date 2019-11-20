@@ -43,9 +43,8 @@ script = ExtResource( 1 )
 item_id = "3"
 
 [node name="Body" type="RigidBody" parent="."]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
 script = ExtResource( 2 )
-go_tooltip = "Keule"
-go_collectable = true
 
 [node name="Mesh" type="MeshInstance" parent="Body"]
 transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, -0.0167469, 0 )

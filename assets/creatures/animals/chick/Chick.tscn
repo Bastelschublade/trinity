@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/creatures/animals/Animal.gd" type="Script" id=1]
-[ext_resource path="res://assets/creatures/animals/chick/MaterialShaderChick1.tres" type="Material" id=2]
-[ext_resource path="res://assets/creatures/animals/chick/MaterialShaderChick2.tres" type="Material" id=3]
+[ext_resource path="res://assets/materials/YellowChick.tres" type="Material" id=2]
+[ext_resource path="res://assets/materials/OrangeChick.tres" type="Material" id=3]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "Icosphere"
@@ -32,7 +32,7 @@ surfaces/1 = {
 }
 
 [sub_resource type="Animation" id=2]
-resource_name = "Death"
+resource_name = "death"
 length = 0.375
 tracks/0/type = "transform"
 tracks/0/path = NodePath("Armature:Bone")
@@ -106,7 +106,7 @@ tracks/9/enabled = true
 tracks/9/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.375, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
 [sub_resource type="Animation" id=3]
-resource_name = "Idle"
+resource_name = "idle"
 length = 4.83333
 loop = true
 tracks/0/type = "transform"
@@ -181,7 +181,7 @@ tracks/9/enabled = true
 tracks/9/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 4.83333, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
 [sub_resource type="Animation" id=4]
-resource_name = "Walk"
+resource_name = "walk"
 length = 2.875
 loop = true
 tracks/0/type = "transform"
@@ -324,10 +324,10 @@ material/0 = null
 material/1 = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Body"]
-autoplay = "Idle"
-anims/Death = SubResource( 2 )
-anims/Idle = SubResource( 3 )
-anims/Walk = SubResource( 4 )
+autoplay = "idle"
+anims/death = SubResource( 2 )
+anims/idle = SubResource( 3 )
+anims/walk = SubResource( 4 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Body"]
 transform = Transform( -4.37114e-08, 0, -1.16558, 0, 1.70797, 0, 1, 0, -5.0949e-08, -0.166334, -0.197892, 0.302586 )

@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/creatures/animals/Animal.gd" type="Script" id=1]
-[ext_resource path="res://assets/creatures/animals/cat/White.material" type="Material" id=2]
-[ext_resource path="res://assets/creatures/animals/cat/Grey.material" type="Material" id=3]
-[ext_resource path="res://assets/creatures/animals/cat/Pink.material" type="Material" id=4]
+[ext_resource path="res://assets/materials/WhiteCat.material" type="Material" id=2]
+[ext_resource path="res://assets/materials/GreyCat.material" type="Material" id=3]
+[ext_resource path="res://assets/materials/PinkCat.material" type="Material" id=4]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "Cylinder"
@@ -45,7 +45,7 @@ surfaces/2 = {
 }
 
 [sub_resource type="Animation" id=2]
-resource_name = "Death"
+resource_name = "death"
 length = 1.54167
 tracks/0/type = "transform"
 tracks/0/path = NodePath("Armature:Bone")
@@ -189,7 +189,7 @@ tracks/19/enabled = true
 tracks/19/keys = PoolRealArray( 0, 1, -6.48583e-11, -1.43845e-07, 7.57088e-08, 7.45064e-09, 1.06581e-14, 1.68754e-14, 1, 1, 1, 1, 1.54167, 1, -1.49012e-07, 2.23517e-08, -5.96046e-08, -9.77889e-09, -4.65661e-09, -2.91038e-09, 1, 1, 1, 1 )
 
 [sub_resource type="Animation" id=3]
-resource_name = "Idle"
+resource_name = "idle"
 length = 0.0416667
 loop = true
 tracks/0/type = "transform"
@@ -334,7 +334,7 @@ tracks/19/enabled = true
 tracks/19/keys = PoolRealArray( 0, 1, -6.47447e-11, -1.73648e-07, 7.57088e-08, 7.45064e-09, 1.77636e-15, 1.86517e-14, 1, 1, 1, 1, 0.0416667, 1, -3.62661e-11, -2.33252e-07, 6.08021e-08, -0.000320008, 1.06581e-14, -2.9754e-14, 1, 1, 1, 1 )
 
 [sub_resource type="Animation" id=4]
-resource_name = "Walk"
+resource_name = "walk"
 length = 1.66667
 loop = true
 tracks/0/type = "transform"
@@ -598,10 +598,10 @@ material/1 = null
 material/2 = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Body"]
-autoplay = "Idle"
-anims/Death = SubResource( 2 )
-anims/Idle = SubResource( 3 )
-anims/Walk = SubResource( 4 )
+autoplay = "idle"
+anims/death = SubResource( 2 )
+anims/idle = SubResource( 3 )
+anims/walk = SubResource( 4 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Body"]
 transform = Transform( -6.32651e-08, 0, -0.669659, 0, 1.31428, 0, 1.44734, 0, -2.92717e-08, -0.160583, 1.33054, 0 )

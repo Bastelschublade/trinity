@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/creatures/animals/Animal.gd" type="Script" id=1]
-[ext_resource path="res://assets/creatures/animals/fox/Fox001.material" type="Material" id=2]
-[ext_resource path="res://assets/creatures/animals/fox/Fox002.material" type="Material" id=3]
+[ext_resource path="res://assets/materials/OrangeFox.material" type="Material" id=2]
+[ext_resource path="res://assets/materials/WhiteFox.material" type="Material" id=3]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "Cylinder"
@@ -32,7 +32,7 @@ surfaces/1 = {
 }
 
 [sub_resource type="Animation" id=2]
-resource_name = "Death"
+resource_name = "death"
 length = 1.4
 tracks/0/type = "transform"
 tracks/0/path = NodePath("Armature:Bone")
@@ -155,7 +155,7 @@ tracks/16/enabled = true
 tracks/16/keys = PoolRealArray( 0, 1, 0, 0, 0, -0.142879, -0.00696345, 0.0140921, 0.989615, 1, 1, 1, 1.4, 1, 0, 0, 0, -0.142879, -0.00696345, 0.0140921, 0.989615, 1, 1, 1 )
 
 [sub_resource type="Animation" id=3]
-resource_name = "Idle"
+resource_name = "idle"
 length = 7.93333
 loop = true
 tracks/0/type = "transform"
@@ -279,7 +279,7 @@ tracks/16/enabled = true
 tracks/16/keys = PoolRealArray( 0, 1, 0, 0, 0, -0.142879, -0.00696345, 0.0140921, 0.989615, 1, 1, 1, 7.93333, 1, 0, 0, 0, -0.142879, -0.00696345, 0.0140921, 0.989615, 1, 1, 1 )
 
 [sub_resource type="Animation" id=4]
-resource_name = "Walk"
+resource_name = "walk"
 loop = true
 tracks/0/type = "transform"
 tracks/0/path = NodePath("Armature:Bone.009")
@@ -499,11 +499,11 @@ material/0 = null
 material/1 = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Body"]
-autoplay = "Idle"
-anims/Death = SubResource( 2 )
-anims/Idle = SubResource( 3 )
-anims/Walk = SubResource( 4 )
+autoplay = "idle"
+anims/death = SubResource( 2 )
+anims/idle = SubResource( 3 )
+anims/walk = SubResource( 4 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Body"]
-transform = Transform( -0.53645, 0, -1.55671e-07, 0, 1.01366, 0, 8.10017e-08, 0, -1.03096, 0, -0.57185, -2.25195 )
+transform = Transform( -0.53645, 0, -1.55671e-07, 0, 1.01366, 0, 8.10017e-08, 0, -1.03096, 3.10854e-07, -0.57185, -0.193256 )
 shape = SubResource( 5 )

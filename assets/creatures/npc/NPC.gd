@@ -48,18 +48,9 @@ func interact():
 	start_dialog()
 
 
-func _get_hit(dmg):
-	print('npc got dmg: ', dmg)
-	self._add_health(-dmg)
 
-
-func _die():
-	if alive:
-		anim_player.play('death')
-		alive = false
 
 func _ready():
-	current_health = max_health
 	if npc_dialog_file:
 		dialog = load_dialog()
 	#print(npc_name, ' spawned')

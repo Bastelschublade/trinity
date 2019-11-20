@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Wolf.escn-38b6c046842d6975e370561a971924c9.scn"
+path="res://.import/punch.escn-87a68064b11ed848eb5394de690a2766.scn"
 
 [deps]
 
-source_file="res://assets/creatures/animals/wolf/Wolf.escn"
-dest_files=[ "res://.import/Wolf.escn-38b6c046842d6975e370561a971924c9.scn" ]
+source_file="res://assets/creatures/character/punch.escn"
+dest_files=[ "res://.import/punch.escn-87a68064b11ed848eb5394de690a2766.scn" ]
 
 [params]
 
