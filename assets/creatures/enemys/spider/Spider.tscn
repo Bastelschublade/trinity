@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://assets/creatures/enemys/Enemy.gd" type="Script" id=1]
-[ext_resource path="res://assets/creatures/Stats.gd" type="Script" id=2]
+[ext_resource path="res://assets/creatures/enemys/spider/death.tres" type="Animation" id=2]
+[ext_resource path="res://assets/creatures/Stats.gd" type="Script" id=3]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.261328, 0.261328, 0.261328, 1 )
@@ -1149,14 +1150,18 @@ tracks/38/keys = PoolRealArray( 0, 1, 1.63913e-07, 1.49012e-08, 2.23517e-07, -0.
 radius = 0.312591
 height = 0.427966
 
+[sub_resource type="SphereShape" id=9]
+radius = 7.82064
+
 [node name="Spider" type="Spatial"]
 script = ExtResource( 1 )
+creature_run_speed = 1.6
 creature_name = "Spinne"
 
 [node name="Body" type="KinematicBody" parent="."]
 
 [node name="HumanArmature" type="Skeleton" parent="Body"]
-transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0 )
+transform = Transform( -0.25, 0, -3.7749e-08, 0, 0.25, 0, 3.7749e-08, 0, -0.25, 0, 0, 0 )
 bones_in_world_transform = true
 bones/0/name = "Root"
 bones/0/parent = -1
@@ -1362,6 +1367,7 @@ material/1 = null
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Body"]
 autoplay = "idle"
 anims/attack = SubResource( 4 )
+anims/death = ExtResource( 2 )
 anims/idle = SubResource( 5 )
 anims/jump = SubResource( 6 )
 anims/walk = SubResource( 7 )
@@ -1371,7 +1377,17 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.193778, -0.17595 )
 shape = SubResource( 8 )
 
 [node name="Stats" type="Node" parent="."]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 base_health = 15.0
 base_power = 0.0
-base_speed = 0.8
+base_armor = 1.0
+base_speed = 0.7
+base_damage = 3.0
+
+[node name="Detection" type="Area" parent="."]
+input_ray_pickable = false
+
+[node name="CollisionShape" type="CollisionShape" parent="Detection"]
+shape = SubResource( 9 )
+[connection signal="body_entered" from="Detection" to="." method="_on_Detection_body_entered"]
+[connection signal="body_exited" from="Detection" to="." method="_on_Detection_body_exited"]

@@ -17,7 +17,7 @@ onready var stats = get_node('Stats')
 func _ready():
 	var item_db = get_node('/root/Global').item_db
 	data = item_db[self.item_id]
-	print('item ready')
+	#print('item ready')
 
 
 func create_body():
@@ -26,7 +26,7 @@ func create_body():
 
 
 func interact():
-	print('item collect itself')
+	#print('item collect itself')
 	var inventory = get_node('/root/Level/Ui/GameMenu/TabContainer/Inventar/Inventory')
 	inventory.add_item(self.item_id)
 	self.queue_free()

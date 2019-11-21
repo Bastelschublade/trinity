@@ -9,28 +9,29 @@ export(float) var base_shoot  = 0.5
 export(float) var base_power  = 20
 export(float) var base_armor  = 0
 export(float) var base_speed  = 1
+export(float) var base_damage = 0
 
 
-var base = {
-	'health': base_health,
-	'hit'   : base_hit,
-	'block' : base_block,
-	'shoot' : base_shoot,
-	'power' : base_power,
-	'armor' : base_armor,
-	'speed' : base_speed,
-}
-
-
+var base
 var current
 
 
 func _ready():
+	base = {
+		'health': base_health,
+		'hit'   : base_hit,
+		'block' : base_block,
+		'shoot' : base_shoot,
+		'power' : base_power,
+		'armor' : base_armor,
+		'speed' : base_speed,
+		'damage': base_damage,
+	}
 	current = base.duplicate(true)
 
 
 func reset_stats():
-	print('reset stats to: ', base)
+	#print('reset stats to: ', base)
 	current = base.duplicate(true)
 
 

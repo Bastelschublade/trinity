@@ -17,9 +17,10 @@ onready var ui = get_node('/root/Level/Ui')
 onready var body = get_node('Body')
 onready var spawn_position = get_global_transform().origin
 onready var anim_player = get_node('Body/AnimationPlayer')
-onready var stats = get_node('Stats')
+#onready var stats = get_node('Stats')
 onready var loot_table = get_node('LootTable')
 
+var stats
 var velocity = Vector3(0,0,0)
 var speed = 0
 var buffs = []
@@ -41,13 +42,18 @@ func _ready():
 		# expect to have at least idle and death animation
 		anim_player.connect("animation_finished", self, "_on_animation_finished")
 		anim_player.play('idle')
+	stats = get_node('Stats')
+	if self.creature_name == 'Spinne':
+		print('SPINNE: \n')
+		print(stats.base)
 	if not self.stats:
+		print('no stats found adding defaults: ', self.creature_name)
 		self.stats = Stats.new()
 		self.add_child(self.stats)
 		self.stats.base.health = 20
 		self.stats.reset_stats()
-	print(stats.base)
-	print(stats.current)
+	#print(stats.base)
+	#print(stats.current)
 
 
 func _process(delta):

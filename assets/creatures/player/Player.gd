@@ -240,3 +240,22 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 		self.finish_attack()
 		print('att finished')
 		attacking = false
+
+
+func add_health(hp):
+	self.stats.current.health += hp
+	if stats.current.health > stats.base.health:
+		stats.current.health = stats.base.health
+	elif stats.current.health < 0:
+		stats.current.health = 0
+		die()
+
+
+func get_hit(dmg):
+	# TODO: blocking and stuff
+	print('got hit: ', dmg)
+	add_health(-dmg)
+
+
+func die():
+	print('player dies')
