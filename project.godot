@@ -253,4 +253,4 @@ drag_cam={
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/default_environment="res://assets/scenes/environment/default_env.tres"

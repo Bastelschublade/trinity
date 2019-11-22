@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/terrain.escn-8963fa0034749051f06643d22b9db8a5.scn"
+path="res://.import/terrain.escn-bde25e27e108e61dc4d66a07012b07a7.scn"
 
 [deps]
 
-source_file="res://assets/map/terrain/terrain.escn"
-dest_files=[ "res://.import/terrain.escn-8963fa0034749051f06643d22b9db8a5.scn" ]
+source_file="res://assets/scenes/environment/terrain/terrain.escn"
+dest_files=[ "res://.import/terrain.escn-bde25e27e108e61dc4d66a07012b07a7.scn" ]
 
 [params]
 

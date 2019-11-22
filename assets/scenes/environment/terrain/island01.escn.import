@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/island01.escn-502ce648ba0ba226db6a4e523b0f68de.scn"
+path="res://.import/island01.escn-acc252febc35c472bbb06f804758a652.scn"
 
 [deps]
 
-source_file="res://assets/map/terrain/island01.escn"
-dest_files=[ "res://.import/island01.escn-502ce648ba0ba226db6a4e523b0f68de.scn" ]
+source_file="res://assets/scenes/environment/terrain/island01.escn"
+dest_files=[ "res://.import/island01.escn-acc252febc35c472bbb06f804758a652.scn" ]
 
 [params]
 

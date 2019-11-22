@@ -6,10 +6,10 @@
 [ext_resource path="res://assets/creatures/npc/garan/garan.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/ui/Ui.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/music/randommind Loop_Rejoicing.ogg" type="AudioStream" id=6]
-[ext_resource path="res://Water.tscn" type="PackedScene" id=7]
-[ext_resource path="res://assets/map/terrain/Sand.material" type="Material" id=8]
-[ext_resource path="res://assets/map/terrain/Gras.material" type="Material" id=9]
-[ext_resource path="res://assets/map/terrain/Hilltop.material" type="Material" id=10]
+[ext_resource path="res://assets/scenes/environment/Water.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/materials/Sand.material" type="Material" id=8]
+[ext_resource path="res://assets/materials/Gras.material" type="Material" id=9]
+[ext_resource path="res://assets/materials/Hilltop.material" type="Material" id=10]
 [ext_resource path="res://assets/creatures/animals/cow/Cow.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/creatures/animals/horse/Horse.tscn" type="PackedScene" id=12]
 [ext_resource path="res://assets/creatures/animals/chick/Chick.tscn" type="PackedScene" id=13]
@@ -54,7 +54,11 @@
 [ext_resource path="res://assets/objects/furniture/StallRed.tscn" type="PackedScene" id=52]
 [ext_resource path="res://assets/objects/fences/WoodFenceGate.tscn" type="PackedScene" id=53]
 [ext_resource path="res://assets/creatures/enemys/spider/Spider.tscn" type="PackedScene" id=54]
-[ext_resource path="res://assets/map/terrain/Island01.tscn" type="PackedScene" id=55]
+[ext_resource path="res://assets/scenes/environment/terrain/Island01.tscn" type="PackedScene" id=55]
+
+
+
+
 
 
 [sub_resource type="ArrayMesh" id=1]
