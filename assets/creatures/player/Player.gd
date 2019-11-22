@@ -13,7 +13,7 @@ var block_timer
 var flags = []
 var buffs = []
 
-var RUN_SPEED = 13
+export(float) var RUN_SPEED = 13
 var WALK_SPEED = 1.5
 var JUMP_SPEED = 2
 var ACCELERATION = 1.5
@@ -25,8 +25,8 @@ var gear = {}
 var bones = {"mainhand": 'RightHand'}
 var attacking = false
 
-onready var ui = get_node('/root/Level/Ui')
-onready var inventory = get_node('/root/Level/Ui/GameMenu/TabContainer/Inventar/Inventory')
+onready var ui = get_node('/root/World/Ui')
+onready var inventory = get_node('/root/World/Ui/GameMenu/TabContainer/Inventar/Inventory')
 onready var arma = get_node('Root')
 onready var stats = get_node('Stats')
 onready var anim_player = get_node('AnimationPlayer')

@@ -4,7 +4,7 @@ onready var item_list = get_node('ListPage/MarginContainer/VBoxContainer/ScrollC
 onready var weight_box = get_node('ListPage/MarginContainer/VBoxContainer/WeightBox')
 onready var weight_bar = get_node('ListPage/MarginContainer/VBoxContainer/WeightBar')
 onready var item_details = get_node('ItemInspect/Details')
-onready var player = get_node('/root/Level/Character')
+onready var player = get_node('/root/World/Character')
 
 
 var list_item_res = preload("res://assets/ui/inventory/ListItem.tscn")

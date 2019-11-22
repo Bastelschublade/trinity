@@ -6,7 +6,7 @@ func _ready():
 
 func _on_NewButton_pressed():
 	print('starting new game')
-	Global.goto_scene("res://Level.tscn")
+	Global.goto_scene("res://World.tscn")
 
 
 func _on_QuitButton_pressed():

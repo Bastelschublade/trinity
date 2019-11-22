@@ -13,7 +13,7 @@ export(String) var creature_name = 'Kreatur'
 
 
 # automatic assigned variables
-onready var ui = get_node('/root/Level/Ui')
+onready var ui = get_node('/root/World/Ui')
 onready var body = get_node('Body')
 onready var spawn_position = get_global_transform().origin
 onready var anim_player = get_node('Body/AnimationPlayer')
@@ -80,7 +80,7 @@ func _on_respawn_timeout():
 	self.anim_player.play('idle')
 	self.stats.reset_stats()
 	self.set_visible(true)
-	self.ui.update_target(get_node('/root/Level/Character').target)
+	self.ui.update_target(get_node('/root/World/Character').target)
 	
 
 func rel_health():
@@ -96,7 +96,7 @@ func add_health(amount):
 		stats.current.health = 0
 		self.die()
 	# TODO: update target seems not to work this way?
-	self.ui.update_target(get_node('/root/Level/Character').target)
+	self.ui.update_target(get_node('/root/World/Character').target)
 
 
 func get_hit(amount):

@@ -44,7 +44,7 @@ func _physics_process(delta):
 	# starting camera drag
 	if Input.is_action_just_pressed("drag_cam"):  
 		last_known_mouse_pos = get_viewport().get_mouse_position()
-		get_node('/root/Level/Ui/Cursor').set_visible(false)
+		get_node('/root/World/Ui/Cursor').set_visible(false)
 	# dragging cam
 	if Input.is_action_pressed("drag_cam"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -53,7 +53,7 @@ func _physics_process(delta):
 	if Input.is_action_just_released("drag_cam"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 		get_viewport().warp_mouse(last_known_mouse_pos)
-		get_node('/root/Level/Ui/Cursor').set_visible(true)
+		get_node('/root/World/Ui/Cursor').set_visible(true)
 		
 
 	offset.y = height

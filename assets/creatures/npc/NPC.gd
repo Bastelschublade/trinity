@@ -8,7 +8,6 @@ export(String) var npc_next_view = "start"
 export(String, FILE, '*.png') var npc_skin_file
 export(String, FILE, '*.json') var npc_dialog_file
 
-#onready var ui = get_node('/root/Level/Ui')
 
 # variables maintained by script
 var dialog
@@ -25,7 +24,7 @@ func start_dialog():
 	dialog.start_pos = self.get_global_transform().origin
 	dialog.quit_distance = 5
 	dialog.npc = self
-	get_node('/root/Level/Ui/Dialog').add_child(dialog)
+	get_node('/root/World/Ui/Dialog').add_child(dialog)
 
 
 func load_dialog():
@@ -41,7 +40,7 @@ func load_dialog():
 
 func interact():
 	var object_pos = self.get_global_transform().origin
-	var distance = object_pos.distance_to(get_node('/root/Level').player_pos)  # player_pos is exported
+	var distance = object_pos.distance_to(get_node('/root/World').player_pos)  # player_pos is exported
 	if distance > npc_talk_range:
 		ui.notify('Zu weit entfernt um sich zu unterhalten.')
 		return

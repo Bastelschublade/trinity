@@ -27,6 +27,6 @@ func create_body():
 
 func interact():
 	#print('item collect itself')
-	var inventory = get_node('/root/Level/Ui/GameMenu/TabContainer/Inventar/Inventory')
+	var inventory = get_node('/root/World/Ui/GameMenu/TabContainer/Inventar/Inventory')
 	inventory.add_item(self.item_id)
 	self.queue_free()

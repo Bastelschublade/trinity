@@ -10,7 +10,7 @@ var cd_bars = [null, null]
 onready var fps_label = get_node('FPS')
 onready var target_frame = get_node('MarginContainer/MainContainer/TopContainer/TargetFrame/Target')
 onready var settings = get_node('/root/Global').settings
-onready var player = get_node('/root/Level/Character')
+onready var player = get_node('/root/World/Character')
 
 
 func _ready():

@@ -14,8 +14,8 @@ var start_pos
 var quit_distance = false
 var npc
 
-onready var player = get_node('/root/Level/Character')
-onready var ui = get_node('/root/Level/Ui')
+onready var player = get_node('/root/World/Character')
+onready var ui = get_node('/root/World/Ui')
 
 
 func setup_view(view):
@@ -121,6 +121,6 @@ func _on_TextureButton_pressed():
 
 func _physics_process(delta):
 	if quit_distance:
-		var player_pos = get_node('/root/Level/Character').get_global_transform().origin
+		var player_pos = get_node('/root/World/Character').get_global_transform().origin
 		if start_pos.distance_to(player_pos) > quit_distance:
 			queue_free()

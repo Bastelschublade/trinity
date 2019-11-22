@@ -105,7 +105,7 @@ _global_script_class_icons={
 [application]
 
 config/name="trinity"
-run/main_scene="res://MainMenu.tscn"
+run/main_scene="res://assets/scenes/mainmenu/MainMenu.tscn"
 boot_splash/bg_color=Color( 0, 0.309804, 0.0117647, 1 )
 config/icon="res://icon.png"
 

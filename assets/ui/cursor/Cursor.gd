@@ -24,7 +24,7 @@ var TALK_RANGE    = 5
 func get_object_under_mouse():
 	var ray_from = camera.project_ray_origin(self.position)
 	var ray_to = ray_from + camera.project_ray_normal(self.position) * INSPECT_RANGE
-	var space_state = get_node('/root/Level').get_world().direct_space_state
+	var space_state = get_node('/root/World').get_world().direct_space_state
 	var selection = space_state.intersect_ray(ray_from, ray_to)
 	return selection
 
