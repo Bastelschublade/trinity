@@ -43,6 +43,10 @@ func answer(choice):
 		player.set_flag(choice['set_flag'])
 	if 'rem_flag' in choice:
 		player.set_flag(choice['set_flag'])
+	if 'emit_signal' in choice:
+		var events = get_node('/root/Events')
+		print('emit signal in world')
+		events.emit_signal(choice['emit_signal']['signal'], [choice['emit_signal']['data']])
 	if 'exit' in choice:
 		queue_free()
 

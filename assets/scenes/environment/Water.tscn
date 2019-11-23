@@ -2,7 +2,6 @@
 
 [ext_resource path="res://assets/materials/WaterWaves.material" type="Material" id=1]
 
-
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 100, 100 )
 subdivide_width = 50

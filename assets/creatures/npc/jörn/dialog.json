@@ -1,0 +1,15 @@
+{
+	"start":{
+		"text": "Was wollt Ihr Fremder?",
+		"choices": [
+			{
+				"text": "Fahrt mich zur alten Insel",
+				"emit_signal": {"signal": "start_journey", "data":"route1"},
+				"exit":true,
+			},{
+				"text": "[Weg gehen]",
+				"exit":true
+			}
+		]
+	},
+}
