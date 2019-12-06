@@ -9,3 +9,7 @@ export_presets.cfg
 
 # Project ignores
 export
+
+docs/
+screenshot*
+icon.png.import

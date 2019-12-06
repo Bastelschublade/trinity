@@ -81,6 +81,7 @@ texture = ExtResource( 2 )
 expand = true
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MainContainer/TopContainer/PlayerFrame"]
+editor/display_folded = true
 margin_left = 20.0
 margin_top = 10.0
 margin_right = 140.0
@@ -127,6 +128,7 @@ stretch_margin_left = 9
 stretch_margin_right = 9
 
 [node name="NotificationFrame" type="ScrollContainer" parent="MarginContainer/MainContainer/TopContainer"]
+editor/display_folded = true
 margin_left = 164.0
 margin_right = 860.0
 margin_bottom = 102.0

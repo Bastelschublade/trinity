@@ -1,6 +1,6 @@
 extends Control
 
-
+var panel_blue_res = preload('res://assets/ui/rpg/png/panel_blue.png')
 var notification_res = preload('res://assets/ui/Notification.tscn')
 var buttons = [null, null]
 var cooldowns = [null, null]  # max cooldown time
@@ -9,6 +9,7 @@ var cd_bars = [null, null]
 
 onready var fps_label = get_node('FPS')
 onready var target_frame = get_node('MarginContainer/MainContainer/TopContainer/TargetFrame/Target')
+onready var player_frame = get_node('MarginContainer/MainContainer/TopContainer/PlayerFrame')
 onready var settings = get_node('/root/Global').settings
 onready var player = get_node('/root/World/Character')
 
@@ -39,7 +40,8 @@ func update_target(obj):
 		health_bar.set_value(obj.rel_health())
 		visible = true
 		player.target = obj
-		# TODO: change frame for dead/alive
+		if obj.rel_health() <= 0:
+			target_frame.get_node('Background').set_texture(panel_blue_res)
 	
 	target_frame.set_visible(visible)
 	if not visible:
@@ -54,7 +56,8 @@ func update_player_frame():
 	print('value set to: ', p_h_rel)
 	player_p_bar.set_value(player.stats.rel_power())
 	print('player hbar val: ', player_h_bar.get_value(), ' should be ', player.stats.rel_health())
-
+	if player.stats.rel_health() <= 0:
+		player_frame.get_node('Background').set_texture(panel_blue_res)
 
 func _process(delta):
 	if settings.get('debug', false) and delta > 0:
