@@ -10,6 +10,8 @@ export(float) var base_power  = 20
 export(float) var base_armor  = 0
 export(float) var base_speed  = 1
 export(float) var base_damage = 0
+export(float) var base_hreg   = 0
+export(float) var base_preg   = 0
 
 
 var base
@@ -26,6 +28,8 @@ func _ready():
 		'armor' : base_armor,
 		'speed' : base_speed,
 		'damage': base_damage,
+		'hreg'  : base_hreg,
+		'preg'  : base_preg,
 	}
 	current = base.duplicate(true)
 
@@ -61,5 +65,10 @@ func update():
 
 
 func rel_health():
-	print('rel_h: ', self.current.health, ' / ', self.base.health)
-	return self.current.health/self.base.health * 100
+	var rel_h = self.current.health / self.base.health * 100
+	print('rel_h: ', self.current.health, ' / ', self.base.health, ' ', rel_h, '%')
+	return rel_h
+
+
+func rel_power():
+	return self.current.power/self.base.power * 100

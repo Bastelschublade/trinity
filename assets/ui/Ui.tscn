@@ -107,7 +107,7 @@ margin_top = 18.0
 margin_right = 100.0
 margin_bottom = 38.0
 rect_min_size = Vector2( 100, 20 )
-value = 95.0
+value = 50.0
 texture_under = ExtResource( 3 )
 texture_progress = ExtResource( 4 )
 nine_patch_stretch = true
@@ -142,7 +142,6 @@ alignment = 1
 [node name="Note" parent="MarginContainer/MainContainer/TopContainer/NotificationFrame/List" instance=ExtResource( 6 )]
 
 [node name="TargetFrame" type="MarginContainer" parent="MarginContainer/MainContainer/TopContainer"]
-editor/display_folded = true
 margin_left = 864.0
 margin_right = 1024.0
 margin_bottom = 102.0

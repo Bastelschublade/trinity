@@ -14,6 +14,7 @@ onready var player = get_node('/root/World/Character')
 
 
 func _ready():
+	self.update_player_frame()
 	target_frame.set_visible(false)
 	cooldowns[0] = 1
 	cooldowns[1] = 1
@@ -35,7 +36,7 @@ func update_target(obj):
 		var name_label = target_frame.get_node('MarginContainer/VBoxContainer/Name')
 		var health_bar = target_frame.get_node('MarginContainer/VBoxContainer/HealthBar')
 		name_label.set_text(obj.creature_name)
-		health_bar.value = obj.rel_health()
+		health_bar.set_value(obj.rel_health())
 		visible = true
 		player.target = obj
 		# TODO: change frame for dead/alive
@@ -46,9 +47,13 @@ func update_target(obj):
 
 
 func update_player_frame():
-	var health_bar = get_node('MarginContainer/MainContainer/TopContainer/PlayerFrame/MarginContainer/VBoxContainer/HealthBar')
-	var power_bar = get_node('MarginContainer/MainContainer/TopContainer/PlayerFrame/MarginContainer/VBoxContainer/HealthBar')
-	health_bar.value = player.stats.rel_health()
+	var player_h_bar = get_node('MarginContainer/MainContainer/TopContainer/PlayerFrame/MarginContainer/VBoxContainer/HealthBar')
+	var player_p_bar = get_node('MarginContainer/MainContainer/TopContainer/PlayerFrame/MarginContainer/VBoxContainer/PowerBar')
+	var p_h_rel = player.stats.rel_health()
+	player_h_bar.set_value(p_h_rel)
+	print('value set to: ', p_h_rel)
+	player_p_bar.set_value(player.stats.rel_power())
+	print('player hbar val: ', player_h_bar.get_value(), ' should be ', player.stats.rel_health())
 
 
 func _process(delta):

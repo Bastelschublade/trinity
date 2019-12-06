@@ -24,6 +24,8 @@ var slots = ["mainhand", "offhand", "chest", "legs", "boots"]
 var gear = {}
 var bones = {"mainhand": 'RightHand'}
 var attacking = false
+var dead = false
+var reg_time = 0
 
 onready var ui = get_node('/root/World/Ui')
 onready var inventory = get_node('/root/World/Ui/GameMenu/TabContainer/Inventar/Inventory')
@@ -57,7 +59,16 @@ func _ready():
 
 
 func _physics_process(delta):
-	if attacking:
+	# 1s reg stuff
+	reg_time += delta
+	if reg_time > 1:
+		reg_time -= 1  # don't waste the milliseconds between frames
+		#self.stats.current.health += self.stats.current.hreg
+		#self.stats.current.power += self.stats.current.preg
+		#ui.update_player_frame()
+		
+		
+	if attacking or dead:
 		return
 	var is_moving = false
 	var is_fast = false
@@ -245,10 +256,20 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 func add_health(hp):
 	self.stats.current.health += hp
 	if stats.current.health > stats.base.health:
+		print('already on max health..')
 		stats.current.health = stats.base.health
 	elif stats.current.health < 0:
 		stats.current.health = 0
 		die()
+	ui.update_player_frame()
+
+
+func add_power(pp):
+	self.stats.current.power += pp
+	if stats.current.power > stats.base.power:
+		stats.current.power = stats.base.power
+	elif stats.current.power < 0:
+		stats.current.power = 0
 	ui.update_player_frame()
 
 
@@ -259,4 +280,6 @@ func get_hit(dmg):
 
 
 func die():
-	print('player dies')
+	if !dead:
+		anim_player.play('death')
+		self.dead = true
