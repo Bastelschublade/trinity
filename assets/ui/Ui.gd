@@ -59,14 +59,15 @@ func update_player_frame():
 func _process(delta):
 	if settings.get('debug', false) and delta > 0:
 		fps_label.set_text(String(1/delta))
-	if Input.is_action_just_pressed('one'):
-		_on_button_01_pressed()
-	if Input.is_action_just_pressed('two'):
-		_on_button_02_pressed()
-	# update cds
-	for i in range(len(timers)):
-		var cd = timers[i].time_left
-		cd_bars[i].set_value(cd/cooldowns[i]*100)
+	if not self.player.dead:
+		if Input.is_action_just_pressed('one'):
+			_on_button_01_pressed()
+		if Input.is_action_just_pressed('two'):
+			_on_button_02_pressed()
+		# update cds
+		for i in range(len(timers)):
+			var cd = timers[i].time_left
+			cd_bars[i].set_value(cd/cooldowns[i]*100)
 
 
 func _global_cd():

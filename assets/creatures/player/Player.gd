@@ -260,7 +260,11 @@ func add_health(hp):
 		stats.current.health = stats.base.health
 	elif stats.current.health < 0:
 		stats.current.health = 0
-		die()
+		if self.dead:
+			print('player is dead')
+		else:
+			print('die')
+			die()
 	ui.update_player_frame()
 
 
@@ -280,6 +284,5 @@ func get_hit(dmg):
 
 
 func die():
-	if !dead:
-		anim_player.play('death')
-		self.dead = true
+	anim_player.play('death')
+	self.dead = true
