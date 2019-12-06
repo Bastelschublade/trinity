@@ -53,20 +53,17 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="MainContainer" type="VBoxContainer" parent="MarginContainer"]
-editor/display_folded = true
 margin_right = 1024.0
 margin_bottom = 600.0
 alignment = 1
 
 [node name="TopContainer" type="HBoxContainer" parent="MarginContainer/MainContainer"]
-editor/display_folded = true
 margin_right = 1024.0
 margin_bottom = 102.0
 size_flags_horizontal = 3
 alignment = 1
 
 [node name="PlayerFrame" type="MarginContainer" parent="MarginContainer/MainContainer/TopContainer"]
-editor/display_folded = true
 margin_right = 160.0
 margin_bottom = 102.0
 custom_constants/margin_right = 20

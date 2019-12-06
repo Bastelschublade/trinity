@@ -249,6 +249,7 @@ func add_health(hp):
 	elif stats.current.health < 0:
 		stats.current.health = 0
 		die()
+	ui.update_player_frame()
 
 
 func get_hit(dmg):

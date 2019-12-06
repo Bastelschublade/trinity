@@ -393,14 +393,13 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.323, 3.68028, -24.9874 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.647, 3.19224, -29.3803 )
 
 [node name="Enemies" type="Spatial" parent="."]
-editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5708, 6.36442, 36.9263 )
 
 [node name="Spider" parent="Enemies" instance=ExtResource( 55 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00743484, -2.97085, -0.213905 )
 
 [node name="Spider2" parent="Enemies" instance=ExtResource( 55 )]
-transform = Transform( 0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 6.18817, -2.97085, -0.213905 )
+transform = Transform( 0.141158, 0, -0.989987, 0, 1, 0, 0.989987, 0, 0.141158, 6.18817, -2.97085, 10.7387 )
 
 [node name="Island" parent="." instance=ExtResource( 56 )]
 transform = Transform( 0.992977, 0, -0.118295, 0, 1, 0, 0.118295, 0, 0.992977, 20.6068, -21.1729, 14.333 )

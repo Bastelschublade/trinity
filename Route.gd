@@ -1,8 +1,13 @@
 extends Path
 
-onready var follow = get_node('Follow')
+
+
 var speed = 5
 var moving = false
+
+onready var follow = get_node('Follow')
+onready var player = get_node('/root/World/Character')
+onready var seat = get_node('Follow/CraftRaft/PlayerPosition')
 
 
 func _ready():
@@ -22,3 +27,7 @@ func _on_start_journey(data):
 	print('reise gestartet')
 	print(data)
 	self.moving=true
+	var seat_pos = seat.get_global_transform().origin
+	var transform = player.get_global_transform()
+	transform.origin = seat_pos
+	player.set_global_transform(transform)

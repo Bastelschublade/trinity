@@ -45,6 +45,12 @@ func update_target(obj):
 		player.target = null
 
 
+func update_player_frame():
+	var health_bar = get_node('MarginContainer/MainContainer/TopContainer/PlayerFrame/MarginContainer/VBoxContainer/HealthBar')
+	var power_bar = get_node('MarginContainer/MainContainer/TopContainer/PlayerFrame/MarginContainer/VBoxContainer/HealthBar')
+	health_bar.value = player.stats.rel_health()
+
+
 func _process(delta):
 	if settings.get('debug', false) and delta > 0:
 		fps_label.set_text(String(1/delta))
