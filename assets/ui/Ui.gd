@@ -11,11 +11,10 @@ onready var fps_label = get_node('FPS')
 onready var target_frame = get_node('MarginContainer/MainContainer/TopContainer/TargetFrame/Target')
 onready var player_frame = get_node('MarginContainer/MainContainer/TopContainer/PlayerFrame')
 onready var settings = get_node('/root/Global').settings
-onready var player = get_node('/root/World/Character')
+onready var player = Global.get_player()
 
 
 func _ready():
-	self.update_player_frame()
 	target_frame.set_visible(false)
 	cooldowns[0] = 1
 	cooldowns[1] = 1
@@ -26,7 +25,7 @@ func _ready():
 	
 
 
-func update_target(obj):
+func update_target(obj=player.target):
 	#print('new target: ', obj)
 	var visible = false
 	if not obj:

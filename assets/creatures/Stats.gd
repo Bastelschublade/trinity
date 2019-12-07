@@ -41,11 +41,11 @@ func reset_stats():
 
 func apply_stats(add_stats):
 	if not add_stats:
-		print('Nothing to apply')
+		#print('Nothing to apply')
 		return false
 	for s in add_stats.current:
 		if not s in current:
-			print('stat not found: ', s)
+			#print('stat not found: ', s)
 			continue
 		current[s] += add_stats.current[s]
 
@@ -66,7 +66,7 @@ func update():
 
 func rel_health():
 	var rel_h = self.current.health / self.base.health * 100
-	print('rel_h: ', self.current.health, ' / ', self.base.health, ' ', rel_h, '%')
+	#print('rel_h: ', self.current.health, ' / ', self.base.health, ' ', rel_h, '%')
 	return rel_h
 
 

@@ -18,7 +18,7 @@ onready var body = get_node('Body')
 onready var spawn_position = get_global_transform().origin
 onready var anim_player = get_node('Body/AnimationPlayer')
 #onready var stats = get_node('Stats')
-onready var loot_table = get_node('LootTable')
+#onready var loot_table = get_node('LootTable')
 
 var stats
 var velocity = Vector3(0,0,0)
@@ -43,11 +43,11 @@ func _ready():
 		anim_player.connect("animation_finished", self, "_on_animation_finished")
 		anim_player.play('idle')
 	stats = get_node('Stats')
-	if self.creature_name == 'Spinne':
-		print('SPINNE: \n')
-		print(stats.base)
+	#if self.creature_name == 'Spinne':
+		#print('SPINNE: \n')
+		#print(stats.base)
 	if not self.stats:
-		print('no stats found adding defaults: ', self.creature_name)
+		#print('no stats found adding defaults: ', self.creature_name)
 		self.stats = Stats.new()
 		self.add_child(self.stats)
 		self.stats.base.health = 20
@@ -96,7 +96,7 @@ func add_health(amount):
 		stats.current.health = 0
 		self.die()
 	# TODO: update target seems not to work this way?
-	self.ui.update_target(get_node('/root/World/Character').target)
+	self.ui.update_target()
 
 
 func get_hit(amount):

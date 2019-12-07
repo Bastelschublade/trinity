@@ -1,8 +1,8 @@
 extends Creature
 class_name Breakable
 
-var fence_res = preload('res://assets/objects/fences/WoodFenceDark.tscn')
-var broken_fence_res = preload('res://assets/objects/fences/WoodFenceDarkBroken.tscn')
+var fence_res = preload('res://assets/objects/fences/wood/WoodFenceDark.tscn')
+var broken_fence_res = preload('res://assets/objects/fences/wood/WoodFenceDarkBroken.tscn')
 
 func _ready():
 	pass

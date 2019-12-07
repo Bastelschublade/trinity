@@ -2,6 +2,7 @@ extends Node
 
 # Loads first (AutoLoad) on project start as Node: 'Global' in /root
 # acts as wrapper over all scenes to switch between them and store data
+# also keeps references to often used objects like world, player or ui
 
 var current_scene
 var loading_screen
@@ -10,8 +11,9 @@ var wait_frames
 var time_max = 1000 # msec
 var item_db
 var settings
-var ui
-var player
+var ui = null
+var player = null
+var world = null
 
 
 func _ready():
@@ -33,6 +35,10 @@ func _ready():
 	
 	#load settings
 	settings = {'debug': true}
+	
+	# load player
+	var player_res = preload('res://assets/creatures/player/Player.tscn')
+	player = player_res.instance()
 
 
 func goto_scene(path):
@@ -50,27 +56,22 @@ func goto_scene(path):
 
 
 func _process(delta):
-	print('.')
-	
 	# disable _process when loading is done
 	if loader == null:
 		print('no loader setting to false')
 		set_process(false)
 		return
-	
 	# skip (first) frame to display loading before blocking
 	if wait_frames > 0:
 		#print('skipping this frame')
 		wait_frames -= 1
 		return
-		
 	var t = OS.get_ticks_msec()
 	# time_max decides how long loading can block the thread
 	while OS.get_ticks_msec() < t + time_max:
 		#print('loading ...')
 		# update loading
 		var err = loader.poll()
-		
 		if err == ERR_FILE_EOF: # finish
 			#print('finish!')
 			var resource = loader.get_resource()
@@ -103,17 +104,27 @@ func update_loading_screen(delta):
 
 
 func _deferred_goto_scene(path):
-    # It is now safe to remove the current scene
-    current_scene.free()
+	# It is now safe to remove the current scene
+	# seems like this is never called? still needed?
+	print('_deferred_goto_scene() called')
+	current_scene.free()
+	# Load the new scene.
+	var s = ResourceLoader.load(path)
+	# Instance the new scene.
+	current_scene = s.instance()
+	# Add it to the active scene, as child of root.
+	get_tree().get_root().add_child(current_scene)
+	# Optionally, to make it compatible with the SceneTree.change_scene() API.
+	get_tree().set_current_scene(current_scene)
 
-    # Load the new scene.
-    var s = ResourceLoader.load(path)
 
-    # Instance the new scene.
-    current_scene = s.instance()
+func get_player():
+	return self.player
 
-    # Add it to the active scene, as child of root.
-    get_tree().get_root().add_child(current_scene)
 
-    # Optionally, to make it compatible with the SceneTree.change_scene() API.
-    get_tree().set_current_scene(current_scene)
+func get_world():
+	return self.world
+
+
+func get_ui():
+	return self.ui

@@ -6,7 +6,7 @@ var speed = 5
 var moving = false
 
 onready var follow = get_node('Follow')
-onready var player = get_node('/root/World/Character')
+onready var player = Global.player
 onready var seat = get_node('Follow/CraftRaft/PlayerPosition')
 
 
@@ -27,7 +27,10 @@ func _on_start_journey(data):
 	print('reise gestartet')
 	print(data)
 	self.moving=true
-	var seat_pos = seat.get_global_transform().origin
-	var transform = player.get_global_transform()
-	transform.origin = seat_pos
-	player.set_global_transform(transform)
+	#var seat_pos = seat.get_global_transform().origin
+	#var transform = player.get_global_transform()
+	#transform.origin = seat_pos
+	#player.set_global_transform(transform)
+	player.set_translation(Vector3(0,0,0))
+	player.get_parent().remove_child(player)
+	seat.add_child(player)

@@ -17,15 +17,20 @@ onready var camera     = get_viewport().get_camera()
 
 
 var COLLECT_RANGE = 2
-var INSPECT_RANGE = 20
+var INSPECT_RANGE = 2000
 var TALK_RANGE    = 5
 
 
 func get_object_under_mouse():
 	var ray_from = camera.project_ray_origin(self.position)
+	#print(camera.is_current())
+	#print(self.position)
 	var ray_to = ray_from + camera.project_ray_normal(self.position) * INSPECT_RANGE
+	#print(ray_to)
 	var space_state = get_node('/root/World').get_world().direct_space_state
+	#print(space_state)
 	var selection = space_state.intersect_ray(ray_from, ray_to)
+	#print(selection)
 	return selection
 
 
@@ -72,7 +77,7 @@ func _physics_process(delta):
 	if not 'collider' in mouse_over:
 		self.sprite.texture = sprites['default']
 		return
-	
+	#print('mouse over collider')
 	# choose mouse interaction mode
 	var object = mouse_over.collider
 	var par = object.get_parent()

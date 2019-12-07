@@ -1,0 +1,14 @@
+{
+	"start":{
+		"text": "Wonach sucht Ihr?",
+		"choices": [
+			{
+				"text": "Nichts! Ich schaue mich nur um.",
+				"exit":true,
+			},{
+				"text": "[Weg gehen]",
+				"exit":true
+			}
+		]
+	},
+}
