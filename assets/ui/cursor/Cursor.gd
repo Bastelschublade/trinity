@@ -20,7 +20,6 @@ var COLLECT_RANGE = 2
 var INSPECT_RANGE = 2000
 var TALK_RANGE    = 5
 
-
 func get_object_under_mouse():
 	var ray_from = camera.project_ray_origin(self.position)
 	#print(camera.is_current())
@@ -56,6 +55,11 @@ func update_cursor(object):
 		self.sprite.texture = sprites['interact']
 		self.tooltip.set_text(object.object_tooltip)
 		self.tooltip.set_visible(true)
+	elif object is FarmLand:
+		self.sprite.texture = sprites['interact']
+		self.tooltip.set_text(object.get_tooltip())
+		self.tooltip.set_visible(true)
+
 
 
 # -------------------------------------- #
@@ -73,6 +77,7 @@ func _physics_process(delta):
 	var mouse_over = get_object_under_mouse()
 	self.tooltip.set('visible', false)
 	
+	
 	# nothing special return default
 	if not 'collider' in mouse_over:
 		self.sprite.texture = sprites['default']
@@ -88,7 +93,5 @@ func _physics_process(delta):
 		else:
 			get_parent().update_target(null)
 	if Input.is_action_just_pressed('interact'):
-		if par is Item or par is Creature or par is GameObject:
+		if par is Item or par is Creature or par is GameObject or par is FarmLand:
 			par.interact()
-	
-

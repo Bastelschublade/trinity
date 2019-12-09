@@ -62,7 +62,7 @@ func on_click():
 	var c_menu = menu_scene.instance()
 	c_menu.set_position(get_viewport().get_mouse_position())
 	#var button
-	get_node('/root/World/Ui/CursorMenu').add_child(c_menu)
+	Global.ui.get_node('CursorMenu').add_child(c_menu)
 	
 	
 func _on_task_timer_timeout():

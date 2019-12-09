@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/objects/farm/crops/Crop.gd" type="Script" id=1]
+[ext_resource path="res://assets/objects/farm/crops/Strawberry.tscn" type="PackedScene" id=2]
+
+[node name="StrawberryX" type="Spatial"]
+script = ExtResource( 1 )
+crop_harvest = 3
+crop_name = "Erdbeere"
+
+[node name="Growing" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="Strawberry" parent="Growing" instance=ExtResource( 2 )]
+transform = Transform( 0.673409, 0, 0, 0, 1, 0, 0, 0, 0.71941, 0.135269, 0.0493502, -0.111654 )
+
+[node name="Finish" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="Strawberry" parent="Finish" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.135269, 0.0625488, -0.111654 )
+
+[node name="Strawberry3" parent="Finish" instance=ExtResource( 2 )]
+transform = Transform( 1.15829, 0, -0.251191, 0, 1.26742, 0, 0.300589, 0, 0.967937, 0.350222, 0.085125, 0.0318799 )
+
+[node name="Strawberry2" parent="Finish" instance=ExtResource( 2 )]
+transform = Transform( 0.595658, 0, 0.937764, 0, 1.24387, 0, -0.968787, 0, 0.576584, -0.0646711, 0.106653, -0.0283266 )

@@ -118,7 +118,7 @@ func _physics_process(delta):
 	hv = hv.linear_interpolate(new_pos, accel * delta)
 	velocity.x = hv.x
 	velocity.z = hv.z
-	velocity = move_and_slide(velocity, Vector3(0,1,0))
+	velocity = move_and_slide(velocity, Vector3(0,1,0), true)
 	
 	if is_moving and is_grounded:
 		var angle = atan2(hv.x, hv.z)

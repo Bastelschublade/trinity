@@ -54,4 +54,16 @@
 		"weight": 0,
 		"sell": false,
 	},
+	"6":{
+		"name": "Erdbeere",
+		"type": "food",
+		"fname": "strawberry",
+		"tooltip": "Zum Verkaufen oder Essen geeignet.",
+		"text": "Zum Verkaufen oder Essen geeignet. Aber Achtung mit feinen weißen Sachen! Die Flecken bekommt man kaum wieder heraus.",
+		"weight": 0.1,
+		"sell": true,
+		"price": 1,
+		"rations": 1,
+		"crop": "res://assets/objects/farm/crops/StrawberryX.tscn"
+	},
 }

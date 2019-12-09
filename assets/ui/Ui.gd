@@ -2,10 +2,13 @@ extends Control
 
 var panel_blue_res = preload('res://assets/ui/rpg/png/panel_blue.png')
 var notification_res = preload('res://assets/ui/Notification.tscn')
+var mouse_menu_res = preload('res://assets/ui/CursorMenu.tscn')
 var buttons = [null, null]
 var cooldowns = [null, null]  # max cooldown time
 var timers = [null, null]  # timer node contains current cd time
 var cd_bars = [null, null]
+var stylebox = preload('res://assets/ui/BrownFlatButtonStyleBox.tres')
+#var mouse_menu = null
 
 onready var fps_label = get_node('FPS')
 onready var target_frame = get_node('MarginContainer/MainContainer/TopContainer/TargetFrame/Target')
@@ -104,3 +107,38 @@ func notify(text):
 	var noti = notification_res.instance()
 	noti.set_text(text)
 	get_node('MarginContainer/MainContainer/TopContainer/NotificationFrame/List').add_child(noti)
+
+
+func btn_style(btn):
+	btn.set('custom_styles/normal', stylebox)
+	btn.set('custom_styles/hover', stylebox)
+	btn.set('custom_styles/pressed', stylebox)
+
+func mouse_menu(sender, data, cancle=true):
+	var mouse_menu = mouse_menu_res.instance()
+	
+	mouse_menu.set_position(get_viewport().get_mouse_position())
+	for k in data:
+		var btn = Button.new()
+		btn.set_text(k['text'])
+		btn_style(btn)
+		if 'data' in k:
+			btn.connect("pressed", sender, k['callback'], [k['data']])
+		else:
+			btn.connect("pressed", sender, k['callback'])
+			
+		mouse_menu.get_node('List').add_child(btn)
+	if cancle:
+		var btn = Button.new()
+		btn.set_text('Abbrechen')
+		btn_style(btn)
+		btn.connect("pressed", self, "close_mouse_menu")
+		mouse_menu.get_node('List').add_child(btn)
+	self.close_mouse_menu()
+	get_node('CursorMenu').add_child(mouse_menu)
+
+
+func close_mouse_menu():
+	print('close mouse menu')
+	for c in get_node('CursorMenu').get_children():
+		c.queue_free()

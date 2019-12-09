@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/objects/farm/FarmLandEnd.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/objects/farm/FarmLand.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/objects/farm/FarmLandEndInv.tscn" type="PackedScene" id=3]
+
+[node name="Row" type="Spatial"]
+
+[node name="FarmLandEnd" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.99008, -0.0295013, 0.154303 )
+
+[node name="FarmLand1" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.994095, -0.0469761, -0.168957 )
+
+[node name="FarmLand2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.4384e-05, -0.0469761, -0.168957 )
+
+[node name="FarmLand3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.997167, -0.0469761, -0.168957 )
+
+[node name="FarmLand4" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.99835, -0.0469761, -0.168957 )
+
+[node name="FarmLandEndInv" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.99965, -0.0280035, 0.155337 )

@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/objects/farm/crops/Crop.gd" type="Script" id=1]
+[ext_resource path="res://assets/objects/farm/crops/Carrot.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/objects/farm/crops/CarrotGrowing.tscn" type="PackedScene" id=3]
+
+[node name="CarrotX" type="Spatial"]
+script = ExtResource( 1 )
+grow_time = 40
+crop_name = "Karotte"
+
+[node name="Finish" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0461293, 0 )
+visible = false
+
+[node name="Carrot" parent="Finish" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30336, 0, 0.13052 )
+
+[node name="Carrot2" parent="Finish" instance=ExtResource( 2 )]
+transform = Transform( 0.8197, 0, -0.572793, 0, 1, 0, 0.572793, 0, 0.8197, 0.201039, 0, -0.187992 )
+
+[node name="Growing" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0461293, 0 )
+
+[node name="Scene Root" parent="Growing" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.308657, 0.0053314, 0.144794 )
+
+[node name="Scene Root2" parent="Growing" instance=ExtResource( 3 )]
+transform = Transform( 0.777235, 0, 0, 0, 1, 0, 0, 0, 0.702538, 0.20532, -0.0635481, -0.184361 )
