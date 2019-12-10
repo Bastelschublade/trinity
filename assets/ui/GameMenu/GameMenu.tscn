@@ -40,6 +40,8 @@ theme = ExtResource( 3 )
 tab_align = 0
 
 [node name="Menü" type="Tabs" parent="TabContainer"]
+editor/display_folded = true
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 59.0
@@ -186,6 +188,7 @@ patch_margin_right = 58
 patch_margin_bottom = 34
 
 [node name="Inventar" type="Tabs" parent="TabContainer"]
+editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -216,7 +219,6 @@ margin_right = -14.0
 margin_bottom = -37.0
 
 [node name="Hilfe" type="Tabs" parent="TabContainer"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 59.0
@@ -278,20 +280,13 @@ margin_bottom = 360.0
 custom_colors/default_color = Color( 0.392157, 0.203922, 0.0588235, 1 )
 text = "Steuerung:
 
-Gehen:  w, a, s, d
-Rennen: Shift gedrückt
-Camera: Pfeiltasten
-Hilfe/Inventar: Escape
-Interaktion: Linksklick
-
-
-\"Story\":
-
-Es gibt bisher eine Hauptquest, einen essbaren Kürbis zu sammeln. Nicht einmal die ist ausgereift ;)
-
-Aber das kommt bald.
-
-~50h Arbeit bis status quo"
+Gehen:  		w, a, s, d
+Rennen: 		Shift gedrückt
+Camera: 		Pfeiltasten
+Menu/Hilfe:	Escape
+Auswählen:	Linksklick
+Aktion: 		Rechtsklick
+"
 
 [node name="RightPanel" type="MarginContainer" parent="TabContainer/Hilfe/HBoxContainer"]
 margin_left = 256.0
@@ -315,6 +310,26 @@ patch_margin_left = 22
 patch_margin_top = 22
 patch_margin_right = 58
 patch_margin_bottom = 34
+
+[node name="MarginContainer2" type="MarginContainer" parent="TabContainer/Hilfe/HBoxContainer/RightPanel"]
+margin_top = 10.0
+margin_right = 240.0
+margin_bottom = 380.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Hilfe/HBoxContainer/RightPanel/MarginContainer2"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 230.0
+margin_bottom = 360.0
+custom_colors/default_color = Color( 0.392157, 0.203922, 0.0588235, 1 )
+text = "Fortschritt:
+
+Nicht wirklich neue quests, aber neue skins, neue animationen (teilweise spackiger arm) und items. Am Hafen kleine Stände an der Farm ackerland wo man Gemüse pflanzen kann. Achtung, der Jörn lockt dich aufs Schiff, aber da kommste nichtmehr runter und buggst fest. 
+"
 
 [node name="CloseButton" type="Control" parent="."]
 anchor_right = 1.0

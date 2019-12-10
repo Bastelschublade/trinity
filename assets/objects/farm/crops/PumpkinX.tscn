@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/objects/farm/crops/Crop.gd" type="Script" id=1]
+[ext_resource path="res://assets/objects/farm/crops/PumpkinGrowing.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/objects/farm/crops/PumpkinFinish.tscn" type="PackedScene" id=3]
+
+[node name="PumpkinX" type="Spatial"]
+script = ExtResource( 1 )
+crop_name = "Kürbis"
+harvest_btn = "Kürbis ernten"
+harvest_item = "1"
+
+[node name="Growing" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.254545, 0 )
+
+[node name="PumpkinSmall" parent="Growing" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.26414, 0 )
+
+[node name="Finish" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00528806, -0.0373356 )
+
+[node name="PumpkinFinish" parent="Finish" instance=ExtResource( 3 )]
+transform = Transform( 0.98349, -0.0246676, -0.179272, 0, 0.990666, -0.136314, 0.180961, 0.134064, 0.97431, 0, 0, -0.0393352 )
+
+[node name="PumpkinFinish2" parent="Finish" instance=ExtResource( 3 )]
+transform = Transform( -0.0233489, 0, 0.999727, -0.234031, 0.972214, -0.00546588, -0.971949, -0.234095, -0.0227002, 0, 0, 0.118955 )

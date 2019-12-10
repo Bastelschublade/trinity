@@ -11,8 +11,8 @@ var list_item_res = preload("res://assets/ui/inventory/ListItem.tscn")
 var item_details_res = preload("res://assets/ui/inventory/ItemDetails.tscn")
 var weight = 0
 var max_weight = 20
-var items = {}
-var icons = {}
+var items = {}  # dict: {id: amount, id2: amount2, ..}
+var icons = {}  # dict: {id: iconpath, id2: iconpath2}
 var item_db
 
 
@@ -45,6 +45,15 @@ func has_items(dict):
 	return true
 
 
+func get_items_with_key(key):
+	var matches = {}
+	for id in items:
+		if key in item_db[id]:
+			matches[id] = matches.get(id, 0) +1
+	return matches
+
+
+
 func remove_items_old(dict):
 	for iid in dict:
 		for item in item_list.get_children():
@@ -69,18 +78,22 @@ func remove_items(dict):
 	update_list()
 
 
-func add_item(item_id):
+func add_item(item_id, count=1):
 	#var item = object.get_node('Item')
-	items[item_id] = items.get(item_id,0) + 1
+	items[item_id] = items.get(item_id,0) + count
 	print('item added to inventory: ', item_id, '->', items[item_id])
 	if not item_id in icons:
 		print('loading icon')
-		icons[item_id] = load("res://assets/item/" + item_db[item_id]["type"] + "/" + item_db[item_id]["fname"] + "/icon.png")
+		icons[item_id] = load("res://assets/items/" + item_db[item_id]["type"] + "/" + item_db[item_id]["fname"] + "/icon.png")
 	update_list()
 	
 	# pass details to button callback
 	#item_list.add_child(list_item)
 
+func add_items(items):
+	for id in items:
+		self.add_item(id, items[id])
+		
 
 func update_details(id):
 	print('update details')
@@ -117,7 +130,7 @@ func update_list():
 		
 		# set icon, name and desc
 		if not id in icons:
-			icons[id] = load('res://assets/item/' + data.get('type', 'stuff') + data['fname'] + 'icon.png')
+			icons[id] = load('res://assets/items/' + data.get('type', 'stuff') + data['fname'] + 'icon.png')
 		li.get_node('Layout/Slot/Icon').set('texture', icons[id])
 		li.get_node('Layout/Slot/Id').set_text(String(id))
 		li.get_node('Layout/Slot/Amount').set_text(String(items[id]))
@@ -139,13 +152,13 @@ func update_list():
 
 func _ready():
 	item_db = get_node("/root/Global").item_db
-	self.add_item("3")
+	self.add_item("6")
 
 
 func _on_equip_pressed(id, data):
 	print('pressed: ', data['fname'], id)
 	self.remove_items({id: 1})
-	var it_res = load('res://assets/item/weapon/' + data['fname'] + '/' + data['fname'] + '.tscn')
+	var it_res = load('res://assets/items/weapon/' + data['fname'] + '/' + data['fname'] + '.tscn')
 	var it = it_res.instance()
 	if player.gear["mainhand"].get('item', false):
 		add_item(player.gear['mainhand']['item'].item_id)

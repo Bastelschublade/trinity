@@ -26,7 +26,7 @@ func _ready():
 	loading_screen.name = 'LoadingScreen'
 	
 	#load item db
-	var item_db_res = "res://assets/item/itemdb.json"
+	var item_db_res = "res://assets/items/itemdb.json"
 	var file = File.new()
 	assert file.file_exists(item_db_res)
 	file.open(item_db_res, file.READ)

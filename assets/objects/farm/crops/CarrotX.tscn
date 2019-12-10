@@ -8,11 +8,11 @@
 script = ExtResource( 1 )
 grow_time = 40
 crop_name = "Karotte"
+harvest_item = "7"
 
 [node name="Finish" type="Spatial" parent="."]
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0461293, 0 )
-visible = false
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0650451, 0 )
 
 [node name="Carrot" parent="Finish" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30336, 0, 0.13052 )
@@ -22,7 +22,8 @@ transform = Transform( 0.8197, 0, -0.572793, 0, 1, 0, 0.572793, 0, 0.8197, 0.201
 
 [node name="Growing" type="Spatial" parent="."]
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0461293, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.091117, 0 )
+visible = false
 
 [node name="Scene Root" parent="Growing" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.308657, 0.0053314, 0.144794 )

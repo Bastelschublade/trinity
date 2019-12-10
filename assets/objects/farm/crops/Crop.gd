@@ -1,10 +1,11 @@
 extends Spatial
 class_name Crop
 
-export(int)    var  crop_item    = 0
 export(int)    var  grow_time    = 60  # seconds
-export(int)    var  crop_harvest = 2
 export(String) var  crop_name    = 'Pflanze'
+export(String) var  harvest_btn  = 'Pflanze ernten'
+export(int)    var  harvest_num  = 2
+export(String) var  harvest_item = 0
 
 var ripe = false
 var timer

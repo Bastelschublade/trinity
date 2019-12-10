@@ -17,8 +17,9 @@ func set_crop(c):
 	self.crop = c
 
 
-func create_crop(crop_res_path):
-	var crop_res = load(crop_res_path)
+func create_crop(data):
+	var crop_res = load(data['res'])
+	Global.player.inventory.remove_items({data['id']: 1})
 	crop = crop_res.instance()
 	get_node('Crop').add_child(crop)
 	Global.ui.close_mouse_menu()
@@ -28,7 +29,7 @@ func create_crop(crop_res_path):
 func harvest_crop():
 	# todo give player item
 	crop.queue_free()  # removed node and obj?
-	Global.ui.notify('Pflanze geerntet')
+	Global.player.inventory.add_items({crop.harvest_item: crop.harvest_num})
 	crop = false
 	Global.ui.close_mouse_menu()
 	
@@ -46,12 +47,18 @@ func interact():
 	# search inventory for valid crops
 	print('show menu')
 	if not crop:
-		# TODO: parse user inventar instead of hardcode, and remove on click.. 
-		var menu_data = [
-			{'text': 'Weizen säen', 'callback': "create_crop", 'data': 'res://assets/objects/farm/crops/WheatX.tscn'},
-			{'text': 'Karotte pflanzen', 'callback': "create_crop", 'data': 'res://assets/objects/farm/crops/CarrotX.tscn'},
-			{'text': 'Erdbeere pflanzen', 'callback': "create_crop", 'data': 'res://assets/objects/farm/crops/StrawberryX.tscn'},
-			]
+		var available_seeds = Global.player.inventory.get_items_with_key('crop') 
+		#var menu_data = [
+		#	{'text': 'Weizen anbauen', 'callback': "create_crop", 'data': 'res://assets/objects/farm/crops/WheatX.tscn'},
+		#	{'text': 'Karotte anbauen', 'callback': "create_crop", 'data': 'res://assets/objects/farm/crops/CarrotX.tscn'},
+		#	{'text': 'Erdbeere anbauen', 'callback': "create_crop", 'data': 'res://assets/objects/farm/crops/StrawberryX.tscn'},
+		#	]
+		var menu_data = []
+		for id in available_seeds:
+			var idb = Global.player.inventory.item_db
+			var text = idb[id]['crop']['button']
+			var res = idb[id]['crop']['res']
+			menu_data.append({'text': text, 'callback': "create_crop", 'data': {'res': res, 'id': id}})
 		Global.ui.mouse_menu(self, menu_data)
 	elif crop.ripe:
 		var menu_data = [{'text': 'Ernten', 'callback': 'harvest_crop'}]

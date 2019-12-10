@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://World.gd" type="Script" id=1]
 [ext_resource path="res://assets/ui/Ui.tscn" type="PackedScene" id=2]
@@ -24,9 +24,9 @@
 [ext_resource path="res://assets/objects/nature/trees/066TreeBrown.tscn" type="PackedScene" id=22]
 [ext_resource path="res://assets/objects/nature/trees/TreeFir053.tscn" type="PackedScene" id=23]
 [ext_resource path="res://assets/objects/nature/trees/082TreeTrunk.tscn" type="PackedScene" id=24]
-[ext_resource path="res://assets/item/stuff/key/Key.tscn" type="PackedScene" id=25]
-[ext_resource path="res://assets/item/stuff/pumpkincarved/PumpkinCarved.tscn" type="PackedScene" id=26]
-[ext_resource path="res://assets/item/food/pumpkin/Pumpkin.tscn" type="PackedScene" id=27]
+[ext_resource path="res://assets/items/stuff/key/Key.tscn" type="PackedScene" id=25]
+[ext_resource path="res://assets/items/stuff/pumpkincarved/PumpkinCarved.tscn" type="PackedScene" id=26]
+[ext_resource path="res://assets/items/food/pumpkin/Pumpkin.tscn" type="PackedScene" id=27]
 [ext_resource path="res://assets/creatures/npc/gustav/Gustav.tscn" type="PackedScene" id=28]
 [ext_resource path="res://assets/creatures/enemys/spider/Spider.tscn" type="PackedScene" id=29]
 [ext_resource path="res://assets/scenes/environment/terrain/IslandRough01.tscn" type="PackedScene" id=30]
@@ -36,12 +36,13 @@
 [ext_resource path="res://assets/objects/nature/hills/HillSmall02.tscn" type="PackedScene" id=34]
 [ext_resource path="res://assets/objects/nature/hills/HillsFlat01.tscn" type="PackedScene" id=35]
 [ext_resource path="res://assets/objects/furniture/StallRed.tscn" type="PackedScene" id=36]
-[ext_resource path="res://assets/item/weapon/sword/sword.tscn" type="PackedScene" id=37]
+[ext_resource path="res://assets/items/weapon/sword/sword.tscn" type="PackedScene" id=37]
 [ext_resource path="res://assets/creatures/npc/jörn/Jörn.tscn" type="PackedScene" id=38]
 [ext_resource path="res://assets/objects/deco/lanterns/ModernLantern.tscn" type="PackedScene" id=39]
 [ext_resource path="res://assets/objects/furniture/StallGreen.tscn" type="PackedScene" id=40]
-[ext_resource path="res://assets/item/food/strawberry/Strawberry.tscn" type="PackedScene" id=41]
-[ext_resource path="res://assets/creatures/npc/sedius/Sedius.tscn" type="PackedScene" id=42]
+[ext_resource path="res://assets/items/food/strawberry/Strawberry.tscn" type="PackedScene" id=41]
+[ext_resource path="res://assets/items/food/carrot/Carrot.tscn" type="PackedScene" id=42]
+[ext_resource path="res://assets/creatures/npc/sedius/Sedius.tscn" type="PackedScene" id=43]
 
 [sub_resource type="ArrayMesh" id=1]
 surfaces/0 = {
@@ -107,11 +108,11 @@ directional_shadow_max_distance = 380.7
 [node name="Ui" parent="." instance=ExtResource( 2 )]
 
 [node name="Music" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Music"]
 stream = ExtResource( 3 )
-volume_db = -20.023
+volume_db = -39.715
+autoplay = true
 
 [node name="Water2" parent="." instance=ExtResource( 4 )]
 transform = Transform( 10.2175, 0, 0, 0, 1, 0, 0, 0, 1000.23, 162, -0.71624, -10.9809 )
@@ -135,7 +136,6 @@ material/2 = ExtResource( 7 )
 shape = SubResource( 2 )
 
 [node name="Farm" type="Spatial" parent="."]
-editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 8.83586, 35.4031 )
 
 [node name="Animals" type="Spatial" parent="Farm"]
@@ -215,9 +215,10 @@ transform = Transform( -4.37114e-08, -0.0621832, -0.998065, 0, 0.998065, -0.0621
 transform = Transform( -4.36688e-08, 1.9294e-09, 1, 0.0441395, 0.999025, 0, -0.999025, 0.0441395, -4.37114e-08, 0, 0.182566, -6.33381 )
 
 [node name="Garan" parent="Farm" instance=ExtResource( 15 )]
-transform = Transform( -0.478929, 0, 0.877853, 0, 1, 0, -0.877853, 0, -0.478929, -7.59298, -4.61554, 4.177 )
+transform = Transform( -0.478929, 0, 0.877853, 0, 1, 0, -0.877853, 0, -0.478929, -7.59298, -1.29779, 4.177 )
 
 [node name="Field" type="Spatial" parent="Farm"]
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6045, -1.17285, 15.2007 )
 
 [node name="Row" parent="Farm/Field" instance=ExtResource( 16 )]
@@ -233,17 +234,16 @@ transform = Transform( 0.981163, -0.193183, 0, 0.193183, 0.981163, 0, 0, 0, 1, 0
 transform = Transform( 0.981163, -0.193183, 0, 0.193183, 0.981163, 0, 0, 0, 1, 0.0220032, -1.1078, 1.42151 )
 
 [node name="Camp" type="Spatial" parent="."]
-editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.6958, 9.1549, -70.3615 )
 
 [node name="Fire" parent="Camp" instance=ExtResource( 17 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5687, 0.00321585, -1 )
 
 [node name="Tent" parent="Camp" instance=ExtResource( 18 )]
-transform = Transform( 0.847327, -0.0663934, -0.526905, 0.0781168, 0.996944, -2.32806e-09, 0.525295, -0.0411602, 0.849924, -6.67549, -0.33834, 4.7445 )
+transform = Transform( 0.847327, -0.0663934, -0.526905, 0.0781168, 0.996944, -2.32806e-09, 0.525295, -0.0411602, 0.849924, -6.67961, -0.276546, 4.74195 )
 
 [node name="TentPoles" parent="Camp" instance=ExtResource( 19 )]
-transform = Transform( 0.774538, 0, 0.632527, 0, 1, 0, -0.632527, 0, 0.774538, 4.42067, -0.303402, 7.75313 )
+transform = Transform( 0.774538, 0, 0.632527, 0, 1, 0, -0.632527, 0, 0.774538, 4.42067, 0.152409, 7.75313 )
 
 [node name="Tree" parent="Camp" instance=ExtResource( 20 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1582, -0.489685, 0.0122013 )
@@ -252,16 +252,16 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1582, -0.489685, 0.0122013 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8081, -0.697754, -3.4404 )
 
 [node name="Tree5" parent="Camp" instance=ExtResource( 22 )]
-transform = Transform( -0.212454, 0, 0.977171, 0, 1, 0, -0.977171, 0, -0.212454, -9.0943, 0.0358889, 4.5657 )
+transform = Transform( -0.212454, 0, 0.977171, 0, 1, 0, -0.977171, 0, -0.212454, -9.0943, 0.396484, 4.5657 )
 
 [node name="Tree3" parent="Camp" instance=ExtResource( 23 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.2563, -0.564941, 3.6323 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.2563, -0.286377, 3.6323 )
 
 [node name="TreeTrunk" parent="Camp" instance=ExtResource( 24 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.95116, -0.280518, -3.67331 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.95116, 0.112366, -3.67331 )
 
 [node name="Key" parent="Camp" instance=ExtResource( 25 )]
-transform = Transform( 0.325726, -0.945464, 0, 0.945464, 0.325726, 0, 0, 0, 1, 0.259129, 0.0842714, 0.314848 )
+transform = Transform( 0.325726, -0.945464, 0, 0.945464, 0.325726, 0, 0, 0, 1, 0.432652, 0.58794, 0.31485 )
 item_id = "5"
 
 [node name="Fruits" type="Spatial" parent="Camp"]
@@ -277,22 +277,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5729, 2.22703, 8.26529 )
 [node name="Pumpkin2" parent="Camp/Fruits" instance=ExtResource( 27 )]
 transform = Transform( 0.373465, -0.141378, 0.916807, 0.000875473, 0.988371, 0.152057, -0.927644, -0.0559855, 0.369246, -15.2296, 2.22703, 6.46744 )
 
-[node name="WoodFenceDark2" parent="Camp" instance=ExtResource( 11 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4988, -0.290897, -10.3618 )
-
-[node name="BreakableWoodFence" parent="Camp" instance=ExtResource( 13 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4988, -0.290897, -8.51753 )
-
 [node name="Gustav" parent="Camp" instance=ExtResource( 28 )]
-transform = Transform( -0.983202, 0, 0.182523, 0, 1, 0, -0.182523, 0, -0.983202, -3.66406, -4.89507, 57.3815 )
+transform = Transform( -0.983202, 0, 0.182523, 0, 1, 0, -0.182523, 0, -0.983202, 0.24181, 0.518993, 1.80112 )
 interaction = "talk"
 creature_name = "Gustav"
 npc_skin_file = "res://assets/creatures/npc/gustav/skin_manAlternative.png"
 npc_dialog_file = "res://assets/creatures/npc/gustav/dialog.json"
 
 [node name="Enemies" type="Spatial" parent="."]
-editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5708, 6.36442, 36.9263 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5708, 14.2508, 36.9263 )
 
 [node name="Spider" parent="Enemies" instance=ExtResource( 29 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00743484, -2.97085, -0.213905 )
@@ -324,7 +317,7 @@ cubic_interp = false
 transform = Transform( -0.276154, 0, -0.961113, 0, 1, 0, 0.961113, 0, -0.276154, -0.0219421, -0.254144, -0.204518 )
 
 [node name="Spawn" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -49.5396, 7.5722, 35.7534 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.2749, 9.3526, -88.5674 )
 
 [node name="Hills" type="Spatial" parent="."]
 editor/display_folded = true
@@ -342,6 +335,7 @@ transform = Transform( 1.67202, 0, 0, 0, 1, 0, 0, 0, 2.18892, -49.3461, 2.46191,
 transform = Transform( 0.51716, 0, -1.0728, 0, 0.583527, 0, 1.33647, 0, 0.415128, -66.5734, 2.81901, -20.8201 )
 
 [node name="Port" type="Spatial" parent="."]
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 126.89, 9.32362, 0 )
 
 [node name="StallRed" parent="Port" instance=ExtResource( 36 )]
@@ -375,5 +369,8 @@ transform = Transform( 0.911856, 0.410509, 2.70084e-08, -0.141702, 0.314762, 0.9
 [node name="Strawberry2" parent="Port/StallGreen" instance=ExtResource( 41 )]
 transform = Transform( 0.0284597, 0.999366, -0.0213613, 0.287497, 0.0122835, 0.957703, 0.957358, -0.0333973, -0.286965, -0.180389, 0.813113, -0.453041 )
 
-[node name="Sedius" parent="Port" instance=ExtResource( 42 )]
+[node name="Carrot" parent="Port/StallGreen" instance=ExtResource( 42 )]
+transform = Transform( 0.185209, -0.451618, 0.872775, 0.982698, 0.0851161, -0.164492, 1.76951e-08, 0.888141, 0.459568, -0.286453, 0.79715, -0.0642776 )
+
+[node name="Sedius" parent="Port" instance=ExtResource( 43 )]
 transform = Transform( 0.00238378, 0, -0.999997, 0, 1, 0, 0.999997, 0, 0.00238378, -5.27433, -3.12696, -24.2239 )

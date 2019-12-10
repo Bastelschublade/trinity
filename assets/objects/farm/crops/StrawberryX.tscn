@@ -5,17 +5,21 @@
 
 [node name="StrawberryX" type="Spatial"]
 script = ExtResource( 1 )
-crop_harvest = 3
-crop_name = "Erdbeere"
+grow_time = 50
+crop_name = "Erdbeeren"
+harvest_btn = "Erdbeeren pflücken"
+harvest_item = "6"
 
 [node name="Growing" type="Spatial" parent="."]
 editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0381376, 0 )
 
 [node name="Strawberry" parent="Growing" instance=ExtResource( 2 )]
 transform = Transform( 0.673409, 0, 0, 0, 1, 0, 0, 0, 0.71941, 0.135269, 0.0493502, -0.111654 )
 
 [node name="Finish" type="Spatial" parent="."]
 editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0658593, 0 )
 
 [node name="Strawberry" parent="Finish" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.135269, 0.0625488, -0.111654 )

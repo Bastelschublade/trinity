@@ -42,7 +42,7 @@ _global_script_classes=[ {
 "base": "Item",
 "class": "Food",
 "language": "GDScript",
-"path": "res://assets/item/food/Food.gd"
+"path": "res://assets/items/food/Food.gd"
 }, {
 "base": "Node",
 "class": "GameObject",
@@ -52,7 +52,7 @@ _global_script_classes=[ {
 "base": "Spatial",
 "class": "Item",
 "language": "GDScript",
-"path": "res://assets/item/Item.gd"
+"path": "res://assets/items/Item.gd"
 }, {
 "base": "GameObject",
 "class": "LootContainer",
@@ -87,12 +87,12 @@ _global_script_classes=[ {
 "base": "Item",
 "class": "Stuff",
 "language": "GDScript",
-"path": "res://assets/item/stuff/Stuff.gd"
+"path": "res://assets/items/stuff/Stuff.gd"
 }, {
 "base": "Item",
 "class": "Weapon",
 "language": "GDScript",
-"path": "res://assets/item/weapon/Weapon.gd"
+"path": "res://assets/items/weapon/Weapon.gd"
 }, {
 "base": "Spatial",
 "class": "vehicle",

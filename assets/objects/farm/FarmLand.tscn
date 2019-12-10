@@ -44,4 +44,4 @@ mesh = SubResource( 3 )
 material/0 = null
 
 [node name="Crop" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.329346, 0, 0.310547 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.520441, 0.164231, 0.310547 )

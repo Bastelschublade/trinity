@@ -7,9 +7,9 @@
 [ext_resource path="res://assets/ui/rpg/png/barBlue_horizontal.png" type="Texture" id=5]
 [ext_resource path="res://assets/ui/Notification.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/ui/rpg/png/buttonSquare_brown_pressed.png" type="Texture" id=7]
-[ext_resource path="res://assets/item/weapon/club/icon.png" type="Texture" id=8]
+[ext_resource path="res://assets/items/weapon/club/icon.png" type="Texture" id=8]
 [ext_resource path="res://assets/ui/rpg/png/buttonRound_blue.png" type="Texture" id=9]
-[ext_resource path="res://assets/item/weapon/shield/icon.png" type="Texture" id=10]
+[ext_resource path="res://assets/items/weapon/shield/icon.png" type="Texture" id=10]
 [ext_resource path="res://assets/ui/GameMenu/GameMenuWindow.gd" type="Script" id=11]
 [ext_resource path="res://assets/ui/trinity_theme.tres" type="Theme" id=12]
 [ext_resource path="res://assets/ui/rpg/png/panelInset_beige.png" type="Texture" id=13]
@@ -47,6 +47,9 @@ margin_top = 1.0818
 margin_right = -0.43927
 margin_bottom = 1.08179
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 97.2522 ]
+}
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 editor/display_folded = true
@@ -333,8 +336,6 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="GameMenu" type="Control" parent="."]
-editor/display_folded = true
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 11 )
@@ -362,6 +363,7 @@ theme = ExtResource( 12 )
 tab_align = 0
 
 [node name="Menü" type="Tabs" parent="GameMenu/TabContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 59.0
@@ -539,7 +541,6 @@ margin_right = -14.0
 margin_bottom = -37.0
 
 [node name="Hilfe" type="Tabs" parent="GameMenu/TabContainer"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 59.0
@@ -601,16 +602,15 @@ margin_bottom = 360.0
 custom_colors/default_color = Color( 0.392157, 0.203922, 0.0588235, 1 )
 text = "Steuerung:
 
-Gehen:  w, a, s, d
-Rennen: Shift gedrückt
-Menu: Escape
-Inventar: I
-Hilfe: H
-Interaktion: Rechtsklick
-Select: Linksklick
-Camera: Mausradklick / Pfeiltasten
-Attakieren: 1
-"
+Gehen:  		w, a, s, d
+Rennen: 		Shift gedrückt
+Kamera: 		Pfeiltasten
+Menu:			Escape
+Inventar:		i
+Hilfe:			 h
+Auswählen:	Linksklick
+Aktion: 		 Rechtsklick
+Angreifen: 	1"
 
 [node name="RightPanel" type="MarginContainer" parent="GameMenu/TabContainer/Hilfe/HBoxContainer"]
 margin_left = 256.0
@@ -634,6 +634,26 @@ patch_margin_left = 22
 patch_margin_top = 22
 patch_margin_right = 58
 patch_margin_bottom = 34
+
+[node name="MarginContainer2" type="MarginContainer" parent="GameMenu/TabContainer/Hilfe/HBoxContainer/RightPanel"]
+margin_top = 10.0
+margin_right = 240.0
+margin_bottom = 380.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GameMenu/TabContainer/Hilfe/HBoxContainer/RightPanel/MarginContainer2"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 230.0
+margin_bottom = 360.0
+custom_colors/default_color = Color( 0.392157, 0.203922, 0.0588235, 1 )
+text = "Fortschritt:
+
+Nicht wirklich neue quests, aber neue skins, neue animationen (teilweise spackiger arm) und items. Am Hafen kleine Stände an der Farm ackerland wo man Gemüse pflanzen kann. Achtung, der Jörn lockt dich aufs Schiff, aber da kommste nichtmehr runter und buggst fest. 
+"
 
 [node name="CloseButton" type="Control" parent="GameMenu"]
 anchor_right = 1.0
