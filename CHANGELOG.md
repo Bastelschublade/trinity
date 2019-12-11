@@ -1,29 +1,31 @@
 # Changelog
-All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## [Unreleased]
+## [0.0.3] - 2019-12-10
 ### Added
-- new 3D Character assets
 - Animations: Jump, Run, Death
 - Interactive Objects: Lantern, Breakable Fence, Fence Gate
+- Farmland with crops: Strawberry, wheat, pumpkin, carrot
+- New camp started "Port" containing route to next area and small market
 - Sound: Fence Gate open/close
-- Animated transparent water
-- 3D Surface
+- animated water (looks bad cause of the scale)
+- rough surface with small hills
+- Combat: Attack only on alive target
+- Combat: Player gets dmg and can die (no respawn yet)
+- Combat: Creatures (npc/enemy/animals) can respawn
 
 ### Changed
 - Blocky Characters replaced by new nice 3D Characters
 - Reorganized Mapobjects
-- Attack will check for target beeing alive
 - Damage applyed on attack animation finish
 
 ### Removed
 - Old Blocky Characters
 - flat surface
+- castle (because ugly)
+- farm house (because unfinished and ugly)
 
-## [0.0.2] - 2019-11.15
+
+## [0.0.2] - 2019-11-15
 ### Added
 - Camera control
 - another NPC with skin and dialog
