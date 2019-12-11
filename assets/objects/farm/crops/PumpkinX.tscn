@@ -8,7 +8,7 @@
 script = ExtResource( 1 )
 crop_name = "Kürbis"
 harvest_btn = "Kürbis ernten"
-harvest_item = "1"
+harvest_item = "pumpkin"
 
 [node name="Growing" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.254545, 0 )

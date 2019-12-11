@@ -59,8 +59,9 @@ surfaces/3 = {
 
 [sub_resource type="BoxShape" id=2]
 
-[node name="Body" type="RigidBody"]
+[node name="Sword" type="RigidBody"]
 script = ExtResource( 1 )
+item_alias = "sword"
 
 [node name="Mesh" type="MeshInstance" parent="."]
 transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )

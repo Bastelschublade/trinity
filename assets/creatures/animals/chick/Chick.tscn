@@ -259,6 +259,7 @@ tracks/9/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.166667, 1, 
 
 [node name="Chick" type="Spatial"]
 script = ExtResource( 1 )
+interaction = "menu"
 
 [node name="Body" type="KinematicBody" parent="."]
 transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.286839, 0 )

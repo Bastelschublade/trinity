@@ -37,7 +37,7 @@ surfaces/1 = {
 
 [sub_resource type="BoxShape" id=4]
 
-[node name="Body" type="RigidBody"]
+[node name="club" type="RigidBody"]
 transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0 )
 script = ExtResource( 1 )
 item_alias = "club"

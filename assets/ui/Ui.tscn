@@ -23,9 +23,6 @@
 [ext_resource path="res://assets/ui/cursor/Cursor.gd" type="Script" id=21]
 [ext_resource path="res://assets/ui/cursor/sprites/cursorGauntlet_blue.png" type="Texture" id=22]
 
-
-
-
 [sub_resource type="StyleBoxFlat" id=1]
 content_margin_left = 8.0
 content_margin_right = 8.0
@@ -366,7 +363,6 @@ theme = ExtResource( 12 )
 tab_align = 0
 
 [node name="Menü" type="Tabs" parent="GameMenu/TabContainer"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 59.0
@@ -544,6 +540,7 @@ margin_right = -14.0
 margin_bottom = -37.0
 
 [node name="Hilfe" type="Tabs" parent="GameMenu/TabContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 59.0

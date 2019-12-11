@@ -35,29 +35,30 @@ func get_object_under_mouse():
 
 func collect_item(item_body):
 	var inventory = get_parent().get_node('GameMenu/TabContainer/Inventar/Inventory')
-	inventory.add_item(item_body.get_parent().item_id)
-	item_body.get_parent().queue_free()
+	inventory.add_item(item_body.item_alias)
+	item_body.queue_free()
 
 
 func update_cursor(object):
+	var par = object.get_parent()
 	self.sprite.texture = sprites['default']
-	if object is Creature:
-		self.sprite.texture = sprites[object.interaction]
-		self.tooltip.set_text(object.creature_name)
+	if par is Creature:
+		self.sprite.texture = sprites[par.interaction]  # TODO: chick crash no interaction for animals?
+		self.tooltip.set_text(par.creature_name)
 		self.tooltip.set('visible', true)
-	elif object is Item:
+	elif object is ItemBody:
 		self.sprite.texture = sprites['loot']
-		var item_id = object.item_id
-		var data = get_node("/root/Global").item_db[item_id]
-		self.tooltip.set_text(data['name'])
+		var item_id = object.item_alias
+		var item = Global.itemdb.get_item(item_id)
+		self.tooltip.set_text(item.item_name)
 		self.tooltip.set('visible', true)
-	elif object is GameObject:
+	elif par is GameObject:
 		self.sprite.texture = sprites['interact']
-		self.tooltip.set_text(object.object_tooltip)
+		self.tooltip.set_text(par.object_tooltip)
 		self.tooltip.set_visible(true)
-	elif object is FarmLand:
+	elif par is FarmLand:
 		self.sprite.texture = sprites['interact']
-		self.tooltip.set_text(object.get_tooltip())
+		self.tooltip.set_text(par.get_tooltip())
 		self.tooltip.set_visible(true)
 
 
@@ -86,12 +87,14 @@ func _physics_process(delta):
 	# choose mouse interaction mode
 	var object = mouse_over.collider
 	var par = object.get_parent()
-	update_cursor(par)
+	update_cursor(object)
 	if Input.is_action_just_pressed('select'):
 		if par is Creature:
 			par.select()
 		else:
 			get_parent().update_target(null)
 	if Input.is_action_just_pressed('interact'):
-		if par is Item or par is Creature or par is GameObject or par is FarmLand:
+		if par is Creature or par is GameObject or par is FarmLand:
 			par.interact()
+		if object is ItemBody:
+			object.interact()

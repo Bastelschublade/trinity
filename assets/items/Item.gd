@@ -10,6 +10,7 @@ export(String) var item_name = "Gegenstand"
 export(String) var item_alias = "item"
 export(float) var item_weight = 0
 export(float) var item_price = 0  # <0 = not sellable
+export(bool) var item_stackable = true
 export(String, MULTILINE) var item_text = "Beschreibung"
 export(Texture) var item_icon
 export(PackedScene) var item_body
@@ -18,13 +19,22 @@ export(PackedScene) var item_body
 # initials
 #var slot_keys = SLOTS.keys()
 var body = null
+#var allowed_types = [Weapon, Food, Seed]
+var types = {} # 'type': ref to instance
 
-onready var stats = get_node('Stats')
 
 func _ready():
-	var item_db = get_node('/root/Global').item_db
-	#data = item_db[self.item_id]
-	#print('item ready')
+	var item_db = Global.item_db
+	for c in self.get_children():
+		# TODO: make this generic for all (or selected) types? use classes as keys?
+		if c is Equip:
+			types["Equip"] = c
+		elif c is Weapon:  # check which behaviour is wanted.. is weapon also returned as equip?
+			types["Weapon"] = c
+		elif c is Food:
+			types["Food"] = c
+		elif c is Seed:
+			types["Seed"] = c
 
 
 func create_body():

@@ -34,7 +34,7 @@ surfaces/1 = {
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 0.0404828, 0.119217, 0.0418161 )
 
-[node name="Body" type="RigidBody"]
+[node name="carrot" type="RigidBody"]
 script = ExtResource( 1 )
 item_alias = "carrot"
 

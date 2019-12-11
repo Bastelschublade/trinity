@@ -112,8 +112,9 @@ surfaces/0 = {
 [sub_resource type="BoxShape" id=12]
 extents = Vector3( 0.0430444, 0.0724445, 0.0347634 )
 
-[node name="RigidBody" type="RigidBody"]
+[node name="Strawberry" type="RigidBody"]
 script = ExtResource( 1 )
+item_alias = "strawberry"
 
 [node name="Cube_Cube000" type="MeshInstance" parent="."]
 transform = Transform( 4, 0, 0, 0, -1.74846e-07, -4, 0, 4, -1.74846e-07, 0.00272695, -0.00061433, 0 )

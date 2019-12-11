@@ -17,8 +17,8 @@ var world = null
 var itemdb = null
 
 func _ready():
-	var itemdb_res = preload('res://assets/items/ItemDB.tscn')
-	itemdb = itemdb_res.instance()
+	#var itemdb_res = preload('res://assets/items/ItemDB.tscn')
+	itemdb = get_node("/root/ItemDB")
 	var root = get_tree().get_root()
 	# last scene (not these one) should be Level
 	current_scene = root.get_child(root.get_child_count()-1)

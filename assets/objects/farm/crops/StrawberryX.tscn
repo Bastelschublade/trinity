@@ -8,7 +8,7 @@ script = ExtResource( 1 )
 grow_time = 50
 crop_name = "Erdbeeren"
 harvest_btn = "Erdbeeren pflücken"
-harvest_item = "6"
+harvest_item = "strawberry"
 
 [node name="Growing" type="Spatial" parent="."]
 editor/display_folded = true

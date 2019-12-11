@@ -18,9 +18,9 @@ func set_crop(c):
 
 
 func create_crop(data):
-	var crop_res = load(data['res'])
+	print(data)
 	Global.player.inventory.remove_items({data['id']: 1})
-	crop = crop_res.instance()
+	crop = data['res'].instance()
 	get_node('Crop').add_child(crop)
 	Global.ui.close_mouse_menu()
 	# todo get scene from item
@@ -47,17 +47,13 @@ func interact():
 	# search inventory for valid crops
 	print('show menu')
 	if not crop:
-		var available_seeds = Global.player.inventory.get_items_with_key('crop') 
-		#var menu_data = [
-		#	{'text': 'Weizen anbauen', 'callback': "create_crop", 'data': 'res://assets/objects/farm/crops/WheatX.tscn'},
-		#	{'text': 'Karotte anbauen', 'callback': "create_crop", 'data': 'res://assets/objects/farm/crops/CarrotX.tscn'},
-		#	{'text': 'Erdbeere anbauen', 'callback': "create_crop", 'data': 'res://assets/objects/farm/crops/StrawberryX.tscn'},
-		#	]
+		var available_seeds = Global.player.inventory.get_items_by_type('Seed') 
 		var menu_data = []
 		for id in available_seeds:
-			var idb = Global.player.inventory.item_db
-			var text = idb[id]['crop']['button']
-			var res = idb[id]['crop']['res']
+			var idb = Global.player.inventory.itemdb
+			var item_seed = idb.get_item(id).types['Seed']
+			var text = item_seed.plant_button
+			var res = item_seed.crop
 			menu_data.append({'text': text, 'callback': "create_crop", 'data': {'res': res, 'id': id}})
 		Global.ui.mouse_menu(self, menu_data)
 	elif crop.ripe:

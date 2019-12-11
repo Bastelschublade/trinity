@@ -8,7 +8,7 @@
 script = ExtResource( 1 )
 grow_time = 40
 crop_name = "Karotte"
-harvest_item = "7"
+harvest_item = "carrot"
 
 [node name="Finish" type="Spatial" parent="."]
 editor/display_folded = true

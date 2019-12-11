@@ -20,7 +20,7 @@ surfaces/0 = {
 
 [sub_resource type="BoxShape" id=2]
 
-[node name="Body" type="RigidBody"]
+[node name="Key" type="RigidBody"]
 script = ExtResource( 1 )
 item_alias = "key"
 

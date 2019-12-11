@@ -3,7 +3,6 @@
 [ext_resource path="res://assets/src/blender/coin.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://assets/kenney/objects/graveyard/gold.material" type="Material" id=2]
 
-
 [sub_resource type="CylinderShape" id=1]
 radius = 0.511109
 height = 0.128134

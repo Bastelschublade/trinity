@@ -271,6 +271,7 @@ surfaces/0 = {
 script = ExtResource( 1 )
 grow_time = 20
 crop_name = "Weizen"
+harvest_item = "wheat"
 
 [node name="Growing" type="Spatial" parent="."]
 editor/display_folded = true
