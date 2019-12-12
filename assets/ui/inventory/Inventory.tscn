@@ -235,6 +235,7 @@ margin_bottom = 189.0
 
 [node name="ItemStats" type="VBoxContainer" parent="ItemInspect/Details/ItemDetails"]
 editor/display_folded = true
+visible = false
 margin_top = 193.0
 margin_right = 240.0
 margin_bottom = 225.0
@@ -285,7 +286,7 @@ rect_min_size = Vector2( 100, 0 )
 text = "Nahkampf"
 
 [node name="spacer" type="Control" parent="ItemInspect/Details/ItemDetails"]
-margin_top = 229.0
+margin_top = 193.0
 margin_right = 240.0
 margin_bottom = 316.0
 size_flags_vertical = 3
