@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://assets/items/ItemDB.gd" type="Script" id=1]
 [ext_resource path="res://assets/items/Item.gd" type="Script" id=2]
@@ -26,6 +26,8 @@
 [ext_resource path="res://assets/items/wheat/wheat_body.tscn" type="PackedScene" id=24]
 [ext_resource path="res://assets/objects/farm/crops/WheatX.tscn" type="PackedScene" id=25]
 [ext_resource path="res://assets/objects/farm/crops/OnionX.tscn" type="PackedScene" id=26]
+[ext_resource path="res://assets/items/dice/dice_icon.png" type="Texture" id=27]
+[ext_resource path="res://assets/items/dice/dice_body.tscn" type="PackedScene" id=28]
 
 [node name="ItemDB" type="Node"]
 script = ExtResource( 1 )
@@ -183,3 +185,13 @@ plant_button = "Zwiebel pflanzen"
 
 [node name="Food" type="Node" parent="onion"]
 script = ExtResource( 7 )
+
+[node name="dice" type="Node" parent="."]
+script = ExtResource( 2 )
+item_name = "Würfel"
+item_alias = "dice"
+item_weight = 0.1
+item_price = 2.5
+item_text = "Ein Spielwürfel"
+item_icon = ExtResource( 27 )
+item_body = ExtResource( 28 )
