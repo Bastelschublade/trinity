@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://World.gd" type="Script" id=1]
 [ext_resource path="res://assets/ui/Ui.tscn" type="PackedScene" id=2]
@@ -44,6 +44,7 @@
 [ext_resource path="res://assets/items/cabbage/cabbage_body.tscn" type="PackedScene" id=42]
 [ext_resource path="res://assets/items/oninon/onion_body.tscn" type="PackedScene" id=43]
 [ext_resource path="res://assets/creatures/npc/sedius/Sedius.tscn" type="PackedScene" id=44]
+[ext_resource path="res://assets/scenes/buildings/FarmHouse.tscn" type="PackedScene" id=45]
 
 [sub_resource type="ArrayMesh" id=1]
 surfaces/0 = {
@@ -321,6 +322,7 @@ cubic_interp = false
 transform = Transform( -0.276154, 0, -0.961113, 0, 1, 0, 0.961113, 0, -0.276154, -0.0219421, -0.254144, -0.204518 )
 
 [node name="Spawn" type="Spatial" parent="."]
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.2749, 9.3526, -88.5674 )
 
 [node name="Dice" parent="Spawn" instance=ExtResource( 33 )]
@@ -378,3 +380,6 @@ transform = Transform( 1, -1.99652e-08, 4.47035e-08, -5.82077e-11, 1, 2.6077e-08
 
 [node name="Sedius" parent="Port" instance=ExtResource( 44 )]
 transform = Transform( 0.00238378, 0, -0.999997, 0, 1, 0, 0.999997, 0, 0.00238378, -5.27433, -3.12696, -24.2239 )
+
+[node name="FarmHouse" parent="." instance=ExtResource( 45 )]
+transform = Transform( 2.9979, -0.0275613, 0.108895, 0.0240106, 2.99831, 0.0978569, -0.109733, -0.0969167, 2.99643, 12.6793, 11.3388, -69.8957 )

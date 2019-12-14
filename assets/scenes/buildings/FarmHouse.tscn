@@ -1,149 +1,124 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://assets/objects/nature/ground/001PlateGrassDirt.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/objects/fantasykit/src/fenceGate.glb" type="PackedScene" id=2]
-[ext_resource path="res://assets/objects/fences/wood/WoodFenceDark.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/objects/fantasykit/src/tree.glb" type="PackedScene" id=4]
-[ext_resource path="res://assets/objects/fantasykit/src/wallDoor.glb" type="PackedScene" id=5]
-[ext_resource path="res://assets/objects/fantasykit/src/wallWindowRound.glb" type="PackedScene" id=6]
-[ext_resource path="res://assets/objects/fantasykit/src/wallDetailHorizontal.glb" type="PackedScene" id=7]
-[ext_resource path="res://assets/objects/fantasykit/src/wall.glb" type="PackedScene" id=8]
-[ext_resource path="res://assets/objects/fantasykit/src/roofRight.glb" type="PackedScene" id=9]
-[ext_resource path="res://assets/objects/fantasykit/src/roofGableDetail.glb" type="PackedScene" id=10]
-[ext_resource path="res://assets/objects/fantasykit/src/roofWindow.glb" type="PackedScene" id=11]
-[ext_resource path="res://assets/objects/fantasykit/src/roofGable.glb" type="PackedScene" id=12]
-[ext_resource path="res://assets/objects/fantasykit/src/roof.glb" type="PackedScene" id=13]
-[ext_resource path="res://assets/objects/fantasykit/src/roofLeft.glb" type="PackedScene" id=14]
+[ext_resource path="res://assets/scenes/buildings/Building.gd" type="Script" id=1]
+[ext_resource path="res://assets/objects/fantasykit/DoorX.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/objects/fantasykit/src/wallWindowRound.glb" type="PackedScene" id=3]
+[ext_resource path="res://assets/objects/fantasykit/src/wallDetailHorizontal.glb" type="PackedScene" id=4]
+[ext_resource path="res://assets/objects/fantasykit/src/wall.glb" type="PackedScene" id=5]
+[ext_resource path="res://assets/objects/fantasykit/src/roofRight.glb" type="PackedScene" id=6]
+[ext_resource path="res://assets/objects/fantasykit/src/roofGableDetail.glb" type="PackedScene" id=7]
+[ext_resource path="res://assets/objects/fantasykit/src/roofWindow.glb" type="PackedScene" id=8]
+[ext_resource path="res://assets/objects/fantasykit/src/roofGable.glb" type="PackedScene" id=9]
+[ext_resource path="res://assets/objects/fantasykit/src/roof.glb" type="PackedScene" id=10]
+[ext_resource path="res://assets/objects/fantasykit/src/roofLeft.glb" type="PackedScene" id=11]
+[ext_resource path="res://assets/materials/BeigePug.material" type="Material" id=12]
 
-
-[sub_resource type="BoxShape" id=1]
+[sub_resource type="QuadMesh" id=1]
 
 [node name="FarmHouse" type="Spatial"]
-transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0 )
+transform = Transform( 6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0 )
+script = ExtResource( 1 )
 
-[node name="GrassTile" parent="." instance=ExtResource( 1 )]
-transform = Transform( 50, 0, 0, 0, 10, 0, 0, 0, 50, 0.567749, -1.78003, -1.24927 )
-visible = false
+[node name="Walls" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03204, 0, 0 )
 
-[node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.185761, 0.982595, 0, -0.982595, 0.185761, -22.5376, 38.6234, -7.349 )
-visible = false
-light_color = Color( 0.984314, 1, 0.45098, 1 )
+[node name="Front" type="Spatial" parent="Walls"]
 
-[node name="Garden" type="Spatial" parent="."]
-editor/display_folded = true
+[node name="DoorX" parent="Walls/Front" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.47257, 0, -0.940542 )
 
-[node name="Scene Root" parent="Garden" instance=ExtResource( 2 )]
-
-[node name="Scene Root2" parent="Garden" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.925096 )
-
-[node name="Scene Root3" parent="Garden" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.926703 )
-
-[node name="Scene Root4" parent="Garden" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.92515, 0, -0.926703 )
-
-[node name="Scene Root5" parent="Garden" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.922852, 0, 1.85186 )
-
-[node name="Scene Root7" parent="Garden" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.84656, 0, 1.85186 )
-
-[node name="Scene Root6" parent="Garden" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.42993, 0, 2.52383 )
-
-[node name="House" type="Spatial" parent="."]
-editor/display_folded = true
-
-[node name="Door" parent="House" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01826, 0, -0.944861 )
-
-[node name="Scene Root5" parent="House" instance=ExtResource( 6 )]
+[node name="Scene Root5" parent="Walls/Front" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.92231, 0, -0.0347362 )
 
-[node name="Scene Root6" parent="House" instance=ExtResource( 6 )]
+[node name="Scene Root6" parent="Walls/Front" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.92231, 0, 0.864434 )
 
-[node name="Scene Root" parent="House" instance=ExtResource( 7 )]
+[node name="Scene Root" parent="Walls/Front" instance=ExtResource( 4 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.91561, 0, -0.0366145 )
 
-[node name="Scene Root2" parent="House" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.91561, 0, -0.943597 )
+[node name="Left" type="Spatial" parent="Walls"]
+editor/display_folded = true
 
-[node name="Scene Root3" parent="House" instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.82486, 0, -0.0316014 )
-
-[node name="Scene Root4" parent="House" instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.82486, 0, 0.865552 )
-
-[node name="Scene Root11" parent="House" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.82587, 0, -0.941868 )
-
-[node name="Scene Root7" parent="House" instance=ExtResource( 8 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.82283, 0, 1.86383 )
-
-[node name="Scene Root9" parent="House" instance=ExtResource( 8 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.82283, 0, -1.02616 )
-
-[node name="Scene Root8" parent="House" instance=ExtResource( 8 )]
+[node name="Scene Root8" parent="Walls/Left" instance=ExtResource( 5 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.82224, 0, 1.86438 )
 
-[node name="Scene Root10" parent="House" instance=ExtResource( 8 )]
+[node name="Scene Root7" parent="Walls/Left" instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.82283, 0, 1.86383 )
+
+[node name="Right" type="Spatial" parent="Walls"]
+editor/display_folded = true
+
+[node name="Scene Root2" parent="Walls/Right" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.91561, 0, -0.943597 )
+
+[node name="Scene Root9" parent="Walls/Right" instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.82283, 0, -1.02616 )
+
+[node name="Scene Root10" parent="Walls/Right" instance=ExtResource( 5 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.82224, 0, -1.02561 )
+
+[node name="Back" type="Spatial" parent="Walls"]
+editor/display_folded = true
+
+[node name="Scene Root3" parent="Walls/Back" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.82486, 0, -0.0316014 )
+
+[node name="Scene Root4" parent="Walls/Back" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.82486, 0, 0.865552 )
+
+[node name="Scene Root11" parent="Walls/Back" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.82587, 0, -0.941868 )
 
 [node name="Roof" type="Spatial" parent="."]
 editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03204, 0, 0 )
 
-[node name="Scene Root" parent="Roof" instance=ExtResource( 9 )]
+[node name="Scene Root" parent="Roof" instance=ExtResource( 6 )]
 transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, -3.82181, 0.988504, 0.966345 )
 
-[node name="Scene Root5" parent="Roof" instance=ExtResource( 9 )]
+[node name="Scene Root5" parent="Roof" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, -6.3573e-08, 0, 1, 0, 6.3573e-08, 0, 1, -2.82313, 0.994514, -1.02673 )
 
-[node name="Scene Root2" parent="Roof" instance=ExtResource( 10 )]
+[node name="Scene Root2" parent="Roof" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.91374, 0.998585, -0.944225 )
 
-[node name="Scene Root3" parent="Roof" instance=ExtResource( 11 )]
+[node name="Scene Root3" parent="Roof" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.82416, 0.992743, -0.0340675 )
 
-[node name="Scene Root4" parent="Roof" instance=ExtResource( 12 )]
+[node name="Scene Root4" parent="Roof" instance=ExtResource( 9 )]
 transform = Transform( 0.908524, 0, 0, 0, 0.997658, 0, 0, 0, 0.997658, -2.89514, 0.998329, -0.937078 )
 
-[node name="Mid" parent="Roof" instance=ExtResource( 13 )]
+[node name="Mid" parent="Roof" instance=ExtResource( 10 )]
 transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -3.82291, 0.989315, -0.0333296 )
 
-[node name="Scene Root6" parent="Roof" instance=ExtResource( 14 )]
+[node name="Scene Root6" parent="Roof" instance=ExtResource( 11 )]
 transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -3.8227, 0.991788, -1.02518 )
 
-[node name="Scene Root7" parent="Roof" instance=ExtResource( 14 )]
+[node name="Scene Root7" parent="Roof" instance=ExtResource( 11 )]
 transform = Transform( 1, 0, 2.38419e-07, 0, 1, 0, -2.38419e-07, 0, 1, -2.82318, 0.989183, 0.964568 )
 
-[node name="Collision" type="Spatial" parent="."]
+[node name="Floor" type="Spatial" parent="."]
 editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.53204, 0, 0 )
 
-[node name="StaticBody" type="StaticBody" parent="Collision"]
+[node name="StaticBody" type="StaticBody" parent="Floor"]
 
-[node name="CollisionShape" type="CollisionShape" parent="Collision/StaticBody"]
-transform = Transform( 1, 0, 0, 0, 0.506976, 0, 0, 0, 1.50112, -3.32883, 0.488774, -0.0297513 )
-shape = SubResource( 1 )
+[node name="MeshInstance" type="MeshInstance" parent="Floor/StaticBody"]
+transform = Transform( 0.947812, 0, 0, 0, -4.16838e-08, 1, 0, -0.953613, -4.37114e-08, -0.411316, -4.08536e-08, -0.934621 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 12 )
 
-[node name="CollisionShape2" type="CollisionShape" parent="Collision/StaticBody"]
-transform = Transform( 0.453681, 0, 0, 0, 0.506976, 0, 0, 0, 0.505335, -1.86178, 0.488774, -0.935227 )
-shape = SubResource( 1 )
+[node name="MeshInstance2" type="MeshInstance" parent="Floor/StaticBody"]
+transform = Transform( 1.87245, 0, 0, 0, -1.24785e-07, 1, 0, -2.85474, -4.37114e-08, -1.81496, -9.6979e-10, -0.0221863 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 12 )
 
-[node name="CollisionShape3" type="CollisionShape" parent="Collision/StaticBody"]
-transform = Transform( 0.48538, 0, 0, 0, 0.189994, 0, 0, 0, 0.0535517, -0.915906, 0.189549, -1.39104 )
-shape = SubResource( 1 )
+[node name="Area" type="Area" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.53204, 0, 0 )
 
-[node name="CollisionShape4" type="CollisionShape" parent="Collision/StaticBody"]
-transform = Transform( -2.35268e-08, 0, -0.0535517, 0, 0.189994, 0, 0.538231, 0, -2.34082e-09, -0.462781, 0.189549, -0.811785 )
-shape = SubResource( 1 )
-
-[node name="CollisionShape5" type="CollisionShape" parent="Collision/StaticBody"]
-transform = Transform( -2.35268e-08, 0, -0.0535517, 0, 0.189994, 0, 0.538231, 0, -2.34082e-09, -0.462781, 0.189549, 0.819746 )
-shape = SubResource( 1 )
-
-[node name="CollisionShape6" type="CollisionShape" parent="Collision/StaticBody"]
-transform = Transform( 1.00341, 0, 0, 0, 0.184207, 0, 0, 0, 0.0519205, -1.44117, 0.189549, 1.37996 )
-shape = SubResource( 1 )
+[node name="CollisionPolygon" type="CollisionPolygon" parent="Area"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.5, -2.18557e-08 )
+polygon = PoolVector2Array( -0.897365, 1.47152, -0.89124, 1.36127, 0.0336066, 1.37352, 0.0299014, 0.471624, -0.888821, 0.483873, -0.894946, -1.40257, -2.76977, -1.40623, -2.77156, 1.45927 )
+[connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Area" to="." method="_on_Area_body_exited"]
