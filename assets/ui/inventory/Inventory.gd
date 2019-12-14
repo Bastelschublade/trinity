@@ -57,6 +57,12 @@ func get_items_by_type(key):
 	return matches
 
 
+func remove_item(alias):
+	""" shortcut for remove_items({alias: 1})?
+	"""
+	return self.remove_items({alias: 1})
+
+
 func remove_items(rem_items):
 	""" takes dict {alias: count} and removes that amount from inventory.
 	if not enough available, nothing is removed and false is returned.
@@ -67,13 +73,17 @@ func remove_items(rem_items):
 		var rem = rem_items[alias]
 		var new = items.get(alias, 0) - rem
 		if new < 0:
+			print('not removable')
 			return false
 		new_amounts[alias] = new
+		print('ready to removed')
 	# if passed, set to new values
 	# items.update(new_amounts)  # NOTE: method not defined
 	for alias in new_amounts:
 		items[alias] = new_amounts[alias]
+		print('removed')
 	update_inventory()
+	return true
 
 
 func add_items(add_items):

@@ -1049,11 +1049,14 @@ tracks/27/keys = PoolRealArray( 0, 1, -5.58794e-08, -5.47618e-07, 4.65661e-09, 0
 [node name="Cow" type="Spatial"]
 script = ExtResource( 1 )
 creature_name = "Kuh"
+animal_eats = [ "wheat", "hay" ]
+animal_produces = "milk"
 
 [node name="Body" type="KinematicBody" parent="."]
 transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0 )
 
 [node name="Armature" type="Skeleton" parent="Body"]
+editor/display_folded = true
 bones_in_world_transform = true
 bones/0/name = "root"
 bones/0/parent = -1

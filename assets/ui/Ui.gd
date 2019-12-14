@@ -114,7 +114,12 @@ func btn_style(btn):
 	btn.set('custom_styles/hover', stylebox)
 	btn.set('custom_styles/pressed', stylebox)
 
+
 func mouse_menu(sender, data, cancle=true):
+	#data is list of dict items like
+	#{'text': btntext, 'callback': func} 
+	#and optional a data key to add callback argument 
+	
 	var mouse_menu = mouse_menu_res.instance()
 	
 	mouse_menu.set_position(get_viewport().get_mouse_position())

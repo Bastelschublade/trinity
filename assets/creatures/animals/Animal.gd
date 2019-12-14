@@ -3,7 +3,9 @@ class_name Animal
 
 
 # custom properties
-export(Dictionary) var eats
+export(Array, String) var animal_eats
+export(String) var animal_produces
+export(float) var animal_production_time = 20
 #export(bool) var stick_to_spawn = true
 #export(float) var animal_browse_radius = 10
 
@@ -19,13 +21,20 @@ var motion_time_noise = 1
 var motion_timer
 var v_y = 0
 var gravity = -9
+var prod_timer
+var fed = false  # cannot be fed while producing
 
 
 func _ready():
 	# dependent properties
-	if eats:
+	if animal_eats:
 		feedable = true
-	
+	if animal_produces:
+		prod_timer = Timer.new()
+		prod_timer.set_wait_time(animal_production_time)
+		prod_timer.connect("timeout", self, "produce")
+		prod_timer.set_one_shot(true)
+		self.add_child(prod_timer)
 	# redundant default animation settings
 	var looped_anims = ['idle', 'walk', 'run']
 	for anim_name in anim_player.get_animation_list():
@@ -91,3 +100,40 @@ func _on_task_timer_timeout():
 	
 	var t = rand_range(motion_time-motion_time_noise, motion_time+motion_time_noise)
 	motion_timer.start(t)
+
+
+func interact():
+	# check player inventory for food
+	var menu = []
+	for food in self.animal_eats:
+		if Global.player.inventory.has_item(food):
+			var food_name = Global.itemdb.get_item(food).item_name
+			menu.append({'text': 'Füttern: '+food_name, 'callback': "feed", 'data': food})
+	if len(menu) > 0:
+		ui.mouse_menu(self, menu)
+	else:
+		ui.notify('Kein Futter vorhanden')
+	# show feed buttons with this options
+
+
+func feed(item):
+	# callback from interaction menu, removes item, triggers production timer
+	ui.close_mouse_menu()
+	if fed:
+		ui.notify(self.creature_name + ' ist Satt')
+		return
+	fed = true
+	var removed = Global.player.inventory.remove_item(item)
+	if not removed:
+		ui.notify('ITEM NICHT GEFUNDEN!')
+		return
+	self.prod_timer.start()
+	
+
+func produce():
+	# callback from production timer
+	print('produced')
+	fed = false
+	var product_res = Global.itemdb.get_item(animal_produces).item_body
+	var product = product_res.instance()
+	self.get_parent().add_child(product)

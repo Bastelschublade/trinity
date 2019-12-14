@@ -1,13 +1,14 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/ui/inventory/Inventory.gd" type="Script" id=1]
 [ext_resource path="res://assets/ui/rpg/png/panelInset_beige.png" type="Texture" id=2]
 [ext_resource path="res://assets/ui/coins.png" type="Texture" id=3]
-[ext_resource path="res://assets/ui/rpg/png/barBack_horizontal.png" type="Texture" id=4]
-[ext_resource path="res://assets/ui/rpg/png/barRed_horizontal.png" type="Texture" id=5]
-[ext_resource path="res://icon.png" type="Texture" id=6]
-[ext_resource path="res://assets/items/pumpkin/pumpkin_icon.png" type="Texture" id=7]
-[ext_resource path="res://assets/ui/rpg/png/iconCross_beige.png" type="Texture" id=8]
+[ext_resource path="res://assets/items/meat/meat_icon.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui/rpg/png/barBack_horizontal.png" type="Texture" id=5]
+[ext_resource path="res://assets/ui/rpg/png/barRed_horizontal.png" type="Texture" id=6]
+[ext_resource path="res://icon.png" type="Texture" id=7]
+[ext_resource path="res://assets/items/pumpkin/pumpkin_icon.png" type="Texture" id=8]
+[ext_resource path="res://assets/ui/rpg/png/iconCross_beige.png" type="Texture" id=9]
 
 [node name="Inventory" type="HBoxContainer"]
 anchor_right = 1.0
@@ -98,7 +99,7 @@ margin_left = 100.0
 margin_right = 124.0
 margin_bottom = 24.0
 rect_min_size = Vector2( 24, 24 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 expand = true
 
 [node name="FoodLabel" type="Label" parent="ListPage/MarginContainer/VBoxContainer/HBoxContainer"]
@@ -116,8 +117,8 @@ rect_min_size = Vector2( 0, 15 )
 size_flags_horizontal = 3
 size_flags_vertical = 0
 value = 40.0
-texture_under = ExtResource( 4 )
-texture_progress = ExtResource( 5 )
+texture_under = ExtResource( 5 )
+texture_progress = ExtResource( 6 )
 nine_patch_stretch = true
 stretch_margin_left = 8
 stretch_margin_right = 8
@@ -132,7 +133,7 @@ margin_bottom = 15.0
 margin_right = 15.0
 margin_bottom = 15.0
 rect_min_size = Vector2( 15, 15 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 expand = true
 
 [node name="WeightLabel" type="Label" parent="ListPage/MarginContainer/VBoxContainer/WeightBox"]
@@ -208,7 +209,7 @@ margin_bottom = 118.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 expand = true
 stretch_mode = 1
 
@@ -302,7 +303,7 @@ margin_left = 142.0
 margin_right = 182.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 40, 40 )
-texture_normal = ExtResource( 6 )
+texture_normal = ExtResource( 7 )
 expand = true
 
 [node name="Delete" type="TextureButton" parent="ItemInspect/Details/ItemDetails/ItemButtons"]
@@ -312,7 +313,7 @@ margin_bottom = 40.0
 rect_min_size = Vector2( 40, 40 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture_normal = ExtResource( 8 )
+texture_normal = ExtResource( 9 )
 expand = true
 
 [node name="margin" type="Label" parent="ItemInspect/Details/ItemDetails/ItemButtons"]
