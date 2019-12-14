@@ -3,8 +3,9 @@ extends HBoxContainer
 export(float) var max_weight = 30
 
 onready var item_list = get_node('ListPage/MarginContainer/VBoxContainer/ScrollContainer/ItemList')
-onready var weight_box = get_node('ListPage/MarginContainer/VBoxContainer/WeightBox')
-onready var weight_bar = get_node('ListPage/MarginContainer/VBoxContainer/WeightBar')
+onready var tag_row = get_node('ListPage/MarginContainer/VBoxContainer/HBoxContainer/')
+#onready var weight_box = get_node('ListPage/MarginContainer/VBoxContainer/WeightBox')
+#onready var weight_bar = get_node('ListPage/MarginContainer/VBoxContainer/WeightBar')
 onready var item_details = get_node('ItemInspect/Details')
 onready var player = Global.player
 onready var itemdb = Global.itemdb
@@ -16,6 +17,9 @@ var weight = 0
 var gold = 0
 var rations = 0
 var items = {}  # dict: {'id_name1': 'count'}
+var weight_label
+var gold_label
+var food_label
 #var icons = {}  # dict: {id: iconpath, id2: iconpath2}
 #var item_db
 
@@ -139,10 +143,10 @@ func update_inventory():
 		item_list.add_child(li)
 	
 	# update weight bar
-	weight_box.set_visible(true)
-	weight_box.get_node('WeightLabel').set_text(String(weight) + '/' + String(max_weight))
-	weight_bar.set_visible(true)
-	weight_bar.set_value(self.weight/self.max_weight*100)
+	#weight_box.set_visible(true)
+	#weight_box.get_node('WeightLabel').set_text(String(weight) + '/' + String(max_weight))
+	#weight_bar.set_visible(true)
+	#weight_bar.set_value(self.weight/self.max_weight*100)
 
 
 func update_details(id):
@@ -166,7 +170,11 @@ func update_details(id):
 
 
 func _ready():
+	food_label = tag_row.get_node('FoodLabel')
+	weight_label = tag_row.get_node('WeightLabel')
+	gold_label = tag_row.get_node('GoldLabel')
 	self.add_item("carrot")
+	
 
 
 func _on_equip_pressed(item):

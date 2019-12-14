@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://assets/items/ItemDB.gd" type="Script" id=1]
 [ext_resource path="res://assets/items/Item.gd" type="Script" id=2]
@@ -17,21 +17,23 @@
 [ext_resource path="res://assets/items/hay/hay_body.tscn" type="PackedScene" id=15]
 [ext_resource path="res://assets/items/key/key_icon.png" type="Texture" id=16]
 [ext_resource path="res://assets/items/key/key_body.tscn" type="PackedScene" id=17]
-[ext_resource path="res://assets/items/milk/milk_icon.png" type="Texture" id=18]
-[ext_resource path="res://assets/items/milk/milk_body.tscn" type="PackedScene" id=19]
-[ext_resource path="res://assets/items/pumpkin/pumpkin_icon.png" type="Texture" id=20]
-[ext_resource path="res://assets/items/pumpkin/pumpkin_body.tscn" type="PackedScene" id=21]
-[ext_resource path="res://assets/objects/farm/crops/PumpkinX.tscn" type="PackedScene" id=22]
-[ext_resource path="res://assets/items/pumpkinlantern/pumpkinlantern_icon.png" type="Texture" id=23]
-[ext_resource path="res://assets/items/pumpkinlantern/pumpkinlantern_body.tscn" type="PackedScene" id=24]
-[ext_resource path="res://assets/items/sword/sword_icon.png" type="Texture" id=25]
-[ext_resource path="res://assets/items/sword/sword_body.tscn" type="PackedScene" id=26]
-[ext_resource path="res://assets/items/wheat/wheat_icon.png" type="Texture" id=27]
-[ext_resource path="res://assets/items/wheat/wheat_body.tscn" type="PackedScene" id=28]
-[ext_resource path="res://assets/objects/farm/crops/WheatX.tscn" type="PackedScene" id=29]
-[ext_resource path="res://assets/objects/farm/crops/OnionX.tscn" type="PackedScene" id=30]
-[ext_resource path="res://assets/items/dice/dice_icon.png" type="Texture" id=31]
-[ext_resource path="res://assets/items/dice/dice_body.tscn" type="PackedScene" id=32]
+[ext_resource path="res://assets/items/mass/mass_icon.png" type="Texture" id=18]
+[ext_resource path="res://assets/items/mass/mass_body.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/items/milk/milk_icon.png" type="Texture" id=20]
+[ext_resource path="res://assets/items/milk/milk_body.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/items/pumpkin/pumpkin_icon.png" type="Texture" id=22]
+[ext_resource path="res://assets/items/pumpkin/pumpkin_body.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/objects/farm/crops/PumpkinX.tscn" type="PackedScene" id=24]
+[ext_resource path="res://assets/items/pumpkinlantern/pumpkinlantern_icon.png" type="Texture" id=25]
+[ext_resource path="res://assets/items/pumpkinlantern/pumpkinlantern_body.tscn" type="PackedScene" id=26]
+[ext_resource path="res://assets/items/sword/sword_icon.png" type="Texture" id=27]
+[ext_resource path="res://assets/items/sword/sword_body.tscn" type="PackedScene" id=28]
+[ext_resource path="res://assets/items/wheat/wheat_icon.png" type="Texture" id=29]
+[ext_resource path="res://assets/items/wheat/wheat_body.tscn" type="PackedScene" id=30]
+[ext_resource path="res://assets/objects/farm/crops/WheatX.tscn" type="PackedScene" id=31]
+[ext_resource path="res://assets/objects/farm/crops/OnionX.tscn" type="PackedScene" id=32]
+[ext_resource path="res://assets/items/dice/dice_icon.png" type="Texture" id=33]
+[ext_resource path="res://assets/items/dice/dice_body.tscn" type="PackedScene" id=34]
 
 [node name="ItemDB" type="Node"]
 script = ExtResource( 1 )
@@ -107,6 +109,19 @@ item_text = "Ein Schlüssel ohne Gravur. Wer weiß in welches Schloss er passt."
 item_icon = ExtResource( 16 )
 item_body = ExtResource( 17 )
 
+[node name="mass" type="Node" parent="."]
+script = ExtResource( 2 )
+item_name = "Gewicht"
+item_alias = "mass"
+item_weight = 10.0
+item_price = 0.5
+item_text = "Ein Stück Blei, dass genau 10 wiegt. Verkauf es an jemanden, der eine Waage besitzt, dann schleppst du kein Blei mit dir herum."
+item_icon = ExtResource( 18 )
+item_body = ExtResource( 19 )
+
+[node name="meat" type="Node" parent="."]
+script = ExtResource( 2 )
+
 [node name="milk" type="Node" parent="."]
 editor/display_folded = true
 script = ExtResource( 2 )
@@ -115,8 +130,8 @@ item_alias = "milk"
 item_weight = 0.5
 item_price = 1.0
 item_text = "Frische Milch enthält viel Calcium. Sie sollte zeitnah verkauft, verzehrt oder weiterverarbeitet werden, sonst wird sie sauer."
-item_icon = ExtResource( 18 )
-item_body = ExtResource( 19 )
+item_icon = ExtResource( 20 )
+item_body = ExtResource( 21 )
 
 [node name="Food" type="Node" parent="milk"]
 script = ExtResource( 7 )
@@ -129,8 +144,8 @@ item_alias = "pumpkin"
 item_weight = 1.5
 item_price = 3.0
 item_text = "Ein dicker Kürbis, kann lecker zubereitet oder für gutes Geld verkauft werden. Es soll auch Leute geben die daraus Laternen herstellen."
-item_icon = ExtResource( 20 )
-item_body = ExtResource( 21 )
+item_icon = ExtResource( 22 )
+item_body = ExtResource( 23 )
 
 [node name="Food" type="Node" parent="pumpkin"]
 script = ExtResource( 7 )
@@ -138,7 +153,7 @@ food_rations = 2
 
 [node name="Seed" type="Node" parent="pumpkin"]
 script = ExtResource( 5 )
-crop = ExtResource( 22 )
+crop = ExtResource( 24 )
 plant_button = "Kürbis setzen"
 
 [node name="pumpkinlantern" type="Node" parent="."]
@@ -148,8 +163,8 @@ item_alias = "pumpkinlantern"
 item_weight = 1.0
 item_price = 2.0
 item_text = "Nichts essbares mehr dran, aber wenn man eine Kerze darin entzündet gibt es hübsches Licht."
-item_icon = ExtResource( 23 )
-item_body = ExtResource( 24 )
+item_icon = ExtResource( 25 )
+item_body = ExtResource( 26 )
 
 [node name="strawberry" type="Node" parent="."]
 editor/display_folded = true
@@ -176,8 +191,8 @@ item_alias = "sword"
 item_weight = 2.0
 item_price = 8.0
 item_text = "Ein gut geschmiedetes Schwert mit verziertem Griff und scharfer Klinge."
-item_icon = ExtResource( 25 )
-item_body = ExtResource( 26 )
+item_icon = ExtResource( 27 )
+item_body = ExtResource( 28 )
 
 [node name="Weapon" type="Node" parent="sword"]
 script = ExtResource( 13 )
@@ -189,12 +204,12 @@ weapon_noise = 1.0
 editor/display_folded = true
 script = ExtResource( 2 )
 item_alias = "wheat"
-item_icon = ExtResource( 27 )
-item_body = ExtResource( 28 )
+item_icon = ExtResource( 29 )
+item_body = ExtResource( 30 )
 
 [node name="Seed" type="Node" parent="wheat"]
 script = ExtResource( 5 )
-crop = ExtResource( 29 )
+crop = ExtResource( 31 )
 plant_button = "Weizen anbauen"
 
 [node name="onion" type="Node" parent="."]
@@ -208,7 +223,7 @@ item_text = "Eine dicke scharfe Gemüsezwiebel. Macht sich besonders gut in Supp
 
 [node name="Seed" type="Node" parent="onion"]
 script = ExtResource( 5 )
-crop = ExtResource( 30 )
+crop = ExtResource( 32 )
 plant_button = "Zwiebel pflanzen"
 
 [node name="Food" type="Node" parent="onion"]
@@ -221,5 +236,5 @@ item_alias = "dice"
 item_weight = 0.1
 item_price = 2.5
 item_text = "Ein Spielwürfel"
-item_icon = ExtResource( 31 )
-item_body = ExtResource( 32 )
+item_icon = ExtResource( 33 )
+item_body = ExtResource( 34 )
