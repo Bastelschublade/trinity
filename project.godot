@@ -37,7 +37,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Equip",
 "language": "GDScript",
-"path": "res://assets/items/Equip.gd"
+"path": "res://assets/items/types/Equip.gd"
 }, {
 "base": "Spatial",
 "class": "FarmLand",
@@ -47,7 +47,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Food",
 "language": "GDScript",
-"path": "res://assets/items/Food.gd"
+"path": "res://assets/items/types/Food.gd"
 }, {
 "base": "Node",
 "class": "GameObject",
@@ -97,7 +97,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Seed",
 "language": "GDScript",
-"path": "res://assets/items/Seed.gd"
+"path": "res://assets/items/types/Seed.gd"
 }, {
 "base": "Node",
 "class": "Stats",
@@ -107,7 +107,7 @@ _global_script_classes=[ {
 "base": "Equip",
 "class": "Weapon",
 "language": "GDScript",
-"path": "res://assets/items/Weapon.gd"
+"path": "res://assets/items/types/Weapon.gd"
 }, {
 "base": "GameObject",
 "class": "door",

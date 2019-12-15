@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="iconcam" type="Spatial"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -0.363798, 0.220161, -0.905086, -0.381842, 0.851025, 0.360492, 0.849616, 0.476745, -0.225534, -1.8103, 0.923218, -0.705231 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 0.846797, 0, -0.531916, 0, 1, 0, 0.531916, 0, 0.846797, -0.735474, 1.36926, -1.5957 )
