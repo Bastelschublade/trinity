@@ -18,8 +18,8 @@
 [ext_resource path="res://assets/objects/farm/FarmLandRow.tscn" type="PackedScene" id=16]
 [ext_resource path="res://assets/scenes/buildings/FarmHouse.tscn" type="PackedScene" id=17]
 [ext_resource path="res://assets/deco/fire/Fire.tscn" type="PackedScene" id=18]
-[ext_resource path="res://assets/objects/nature/buildings/075Tent.tscn" type="PackedScene" id=19]
-[ext_resource path="res://assets/objects/nature/buildings/095TentPoles.tscn" type="PackedScene" id=20]
+[ext_resource path="res://assets/objects/structures/tent.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/objects/structures/tent_poles.tscn" type="PackedScene" id=20]
 [ext_resource path="res://assets/objects/nature/trees/051Tree.tscn" type="PackedScene" id=21]
 [ext_resource path="res://assets/objects/nature/trees/TreeFir52.tscn" type="PackedScene" id=22]
 [ext_resource path="res://assets/objects/nature/trees/066TreeBrown.tscn" type="PackedScene" id=23]
@@ -369,7 +369,6 @@ transform = Transform( -0.00073157, 0.52498, -0.851114, -0.999698, -0.0212732, -
 
 [node name="Shovel" parent="Port/StallRed" instance=ExtResource( 42 )]
 transform = Transform( 0.996641, 0.081188, -0.0106959, 0.0190003, -0.102214, 0.994581, 0.0796548, -0.991444, -0.103413, -0.00971985, 0.649734, 1.08071 )
-item_alias = "shovel"
 
 [node name="Jörn" parent="Port" instance=ExtResource( 43 )]
 transform = Transform( -0.327549, 0, -0.944834, 0, 1, 0, 0.944834, 0, -0.327549, 13.2552, -5.63064, -20.469 )

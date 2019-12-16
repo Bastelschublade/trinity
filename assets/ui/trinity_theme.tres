@@ -18,7 +18,7 @@ margin_right = 10.45
 margin_top = 16.4943
 margin_bottom = 18.861
 
-[sub_resource type="StyleBoxFlat" id=8]
+[sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.603922, 0.45098, 0.286275, 1 )
 border_width_left = 2
 border_width_top = 2
@@ -30,7 +30,7 @@ corner_radius_top_right = 4
 corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
-[sub_resource type="StyleBoxFlat" id=7]
+[sub_resource type="StyleBoxFlat" id=3]
 content_margin_left = 2.0
 content_margin_right = 2.0
 bg_color = Color( 0.94902, 0.905882, 0.776471, 1 )
@@ -44,7 +44,7 @@ corner_radius_top_right = 2
 corner_radius_bottom_right = 2
 corner_radius_bottom_left = 2
 
-[sub_resource type="StyleBoxTexture" id=2]
+[sub_resource type="StyleBoxTexture" id=4]
 content_margin_left = 8.0
 content_margin_right = 8.0
 content_margin_top = 8.0
@@ -56,7 +56,7 @@ margin_right = 6.30166
 margin_top = 25.8385
 margin_bottom = 28.0451
 
-[sub_resource type="StyleBoxTexture" id=3]
+[sub_resource type="StyleBoxTexture" id=5]
 content_margin_left = 10.0
 content_margin_right = 10.0
 content_margin_top = 10.0
@@ -68,7 +68,7 @@ margin_right = 12.8299
 margin_top = 24.4934
 margin_bottom = 20.9943
 
-[sub_resource type="StyleBoxTexture" id=4]
+[sub_resource type="StyleBoxTexture" id=6]
 texture = ExtResource( 3 )
 region_rect = Rect2( 0, 0, 100, 100 )
 margin_left = 59.0
@@ -76,7 +76,7 @@ margin_right = 14.0
 margin_top = 32.0
 margin_bottom = 37.0
 
-[sub_resource type="StyleBoxTexture" id=5]
+[sub_resource type="StyleBoxTexture" id=7]
 texture = ExtResource( 4 )
 region_rect = Rect2( 0, 0, 190, 36 )
 margin_left = 9.89508
@@ -84,7 +84,7 @@ margin_right = 9.53573
 margin_top = 9.0
 margin_bottom = 0.662175
 
-[sub_resource type="StyleBoxTexture" id=6]
+[sub_resource type="StyleBoxTexture" id=8]
 texture = ExtResource( 5 )
 region_rect = Rect2( 0, 0, 190, 37 )
 margin_left = 13.8426
@@ -111,11 +111,11 @@ ColorPickerButton/colors/font_color_pressed = Color( 0.8, 0.8, 0.8, 1 )
 ColorPickerButton/constants/hseparation = 2
 ColorPickerButton/fonts/font = null
 ColorPickerButton/icons/bg = null
-ColorPickerButton/styles/disabled = SubResource( 8 )
-ColorPickerButton/styles/focus = SubResource( 8 )
-ColorPickerButton/styles/hover = SubResource( 8 )
-ColorPickerButton/styles/normal = SubResource( 8 )
-ColorPickerButton/styles/pressed = SubResource( 8 )
+ColorPickerButton/styles/disabled = SubResource( 2 )
+ColorPickerButton/styles/focus = SubResource( 2 )
+ColorPickerButton/styles/hover = SubResource( 2 )
+ColorPickerButton/styles/normal = SubResource( 2 )
+ColorPickerButton/styles/pressed = SubResource( 2 )
 Label/colors/font_color = Color( 0.392157, 0.266667, 0.137255, 1 )
 Label/colors/font_color_shadow = Color( 0, 0, 0, 0 )
 Label/colors/font_outline_modulate = Color( 1, 1, 1, 1 )
@@ -135,12 +135,12 @@ LineEdit/constants/minimum_spaces = 12
 LineEdit/fonts/font = null
 LineEdit/icons/clear = null
 LineEdit/styles/focus = null
-LineEdit/styles/normal = SubResource( 7 )
+LineEdit/styles/normal = SubResource( 3 )
 LineEdit/styles/read_only = null
-Panel/styles/panel = SubResource( 2 )
+Panel/styles/panel = SubResource( 4 )
 Panel/styles/panelf = null
 Panel/styles/panelnc = null
-PanelContainer/styles/panel = SubResource( 3 )
+PanelContainer/styles/panel = SubResource( 5 )
 TabContainer/colors/font_color_bg = Color( 0.341176, 0.270588, 0.219608, 1 )
 TabContainer/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
 TabContainer/colors/font_color_fg = Color( 0.941176, 0.941176, 0.941176, 1 )
@@ -156,7 +156,7 @@ TabContainer/icons/increment = null
 TabContainer/icons/increment_highlight = null
 TabContainer/icons/menu = null
 TabContainer/icons/menu_highlight = null
-TabContainer/styles/panel = SubResource( 4 )
-TabContainer/styles/tab_bg = SubResource( 5 )
-TabContainer/styles/tab_disabled = SubResource( 5 )
-TabContainer/styles/tab_fg = SubResource( 6 )
+TabContainer/styles/panel = SubResource( 6 )
+TabContainer/styles/tab_bg = SubResource( 7 )
+TabContainer/styles/tab_disabled = SubResource( 7 )
+TabContainer/styles/tab_fg = SubResource( 8 )

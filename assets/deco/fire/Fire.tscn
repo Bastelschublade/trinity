@@ -1,7 +1,10 @@
 [gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://assets/objects/nature/buildings/078FireWood.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/objects/nature/buildings/077FirePit.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/objects/structures/fire_wood.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/objects/structures/fire_pit.tscn" type="PackedScene" id=2]
+
+
+
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.0124224, 0.993789, 1 )

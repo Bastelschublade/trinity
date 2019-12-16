@@ -7,14 +7,18 @@ class_name Item
 # editable parameters
 #export(String) var item_id
 export(String) var item_name = "Gegenstand"
-export(String) var item_alias = "item"
 export(float) var item_weight = 0
 export(float) var item_price = 0  # <0 = not sellable
 export(bool) var item_stackable = true
 export(String, MULTILINE) var item_text = "Beschreibung"
-export(Texture) var item_icon
-export(PackedScene) var item_body
 
+# optional
+#export(Texture) var item_icon
+#export(PackedScene) var item_body
+#export(String) var item_alias
+var item_icon
+var item_body
+var item_alias
 
 # initials
 #var slot_keys = SLOTS.keys()

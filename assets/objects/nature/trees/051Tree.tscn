@@ -2,6 +2,8 @@
 
 [ext_resource path="res://assets/objects/nature/src/naturePack_051.gltf" type="PackedScene" id=1]
 
+
+
 [sub_resource type="CylinderShape" id=1]
 radius = 0.15589
 height = 5.47073
