@@ -1,15 +1,8 @@
 [gd_scene load_steps=3 format=2]
 
-[sub_resource type="SpatialMaterial" id=1]
-resource_name = "Green_leafs"
-albedo_color = Color( 0.582088, 0.754406, 0.685381, 1 )
-emission_enabled = true
-emission = Color( 0, 0, 0, 1 )
-emission_energy = 1.0
-emission_operator = 0
-emission_on_uv2 = false
+[ext_resource path="res://assets/materials/LeavesPirate.material" type="Material" id=1]
 
-[sub_resource type="ArrayMesh" id=2]
+[sub_resource type="ArrayMesh" id=1]
 resource_local_to_scene = true
 resource_name = "Mesh1 Group1 Model"
 surfaces/0 = {
@@ -19,15 +12,15 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 264,
-"material": SubResource( 1 ),
+"material": ExtResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 120
 }
 
-[node name="Bush" type="Spatial"]
+[node name="GrassBush" type="Spatial"]
 
 [node name="Mesh1 Group1 Model" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.516357, 0, 0.643433 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = null

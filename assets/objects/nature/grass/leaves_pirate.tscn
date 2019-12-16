@@ -17,7 +17,7 @@ surfaces/0 = {
 "vertex_count": 132
 }
 
-[node name="LeavePirate" type="Spatial"]
+[node name="LeavesPirate" type="Spatial"]
 
 [node name="plant" type="MeshInstance" parent="."]
 transform = Transform( 0.69, 2.94966e-16, -1.03812e-32, -2.94966e-16, 0.69, -2.9141e-16, -1.14193e-31, 2.9141e-16, 0.69, -0.00137877, 1.98526e-14, 0.00110006 )
