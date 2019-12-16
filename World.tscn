@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=2]
+[gd_scene load_steps=80 format=2]
 
 [ext_resource path="res://World.gd" type="Script" id=1]
 [ext_resource path="res://assets/ui/Ui.tscn" type="PackedScene" id=2]
@@ -20,38 +20,62 @@
 [ext_resource path="res://assets/deco/fire/Fire.tscn" type="PackedScene" id=18]
 [ext_resource path="res://assets/objects/structures/tent.tscn" type="PackedScene" id=19]
 [ext_resource path="res://assets/objects/structures/tent_poles.tscn" type="PackedScene" id=20]
-[ext_resource path="res://assets/objects/nature/trees/051Tree.tscn" type="PackedScene" id=21]
-[ext_resource path="res://assets/objects/nature/fir/TreeFir52.tscn" type="PackedScene" id=22]
-[ext_resource path="res://assets/objects/nature/trees/066TreeBrown.tscn" type="PackedScene" id=23]
-[ext_resource path="res://assets/objects/nature/fir/TreeFir053.tscn" type="PackedScene" id=24]
-[ext_resource path="res://assets/objects/nature/wood/tree_trunk_block.tscn" type="PackedScene" id=25]
-[ext_resource path="res://assets/items/bodies/key.tscn" type="PackedScene" id=26]
-[ext_resource path="res://assets/items/bodies/pumpkinlantern.tscn" type="PackedScene" id=27]
-[ext_resource path="res://assets/items/bodies/pumpkin.tscn" type="PackedScene" id=28]
-[ext_resource path="res://assets/creatures/npc/gustav/Gustav.tscn" type="PackedScene" id=29]
-[ext_resource path="res://assets/creatures/enemys/spider/Spider.tscn" type="PackedScene" id=30]
-[ext_resource path="res://assets/scenes/environment/terrain/IslandRough01.tscn" type="PackedScene" id=31]
-[ext_resource path="res://Route.gd" type="Script" id=32]
-[ext_resource path="res://assets/objects/vehicles/craftraft/CraftRaft.tscn" type="PackedScene" id=33]
-[ext_resource path="res://assets/items/bodies/dice.tscn" type="PackedScene" id=34]
-[ext_resource path="res://assets/objects/furniture/StallRed.tscn" type="PackedScene" id=35]
-[ext_resource path="res://assets/items/bodies/sword.tscn" type="PackedScene" id=36]
-[ext_resource path="res://assets/items/bodies/mass.tscn" type="PackedScene" id=37]
-[ext_resource path="res://assets/items/bodies/scimitar.tscn" type="PackedScene" id=38]
-[ext_resource path="res://assets/items/bodies/piratehat.tscn" type="PackedScene" id=39]
-[ext_resource path="res://assets/deco/bottles/bottle.tscn" type="PackedScene" id=40]
-[ext_resource path="res://assets/items/bodies/gladius.tscn" type="PackedScene" id=41]
-[ext_resource path="res://assets/items/bodies/shovel.tscn" type="PackedScene" id=42]
-[ext_resource path="res://assets/creatures/npc/jörn/Jörn.tscn" type="PackedScene" id=43]
-[ext_resource path="res://assets/deco/lanterns/ModernLantern.tscn" type="PackedScene" id=44]
-[ext_resource path="res://assets/objects/furniture/StallGreen.tscn" type="PackedScene" id=45]
-[ext_resource path="res://assets/items/bodies/carrot.tscn" type="PackedScene" id=46]
-[ext_resource path="res://assets/items/bodies/strawberry.tscn" type="PackedScene" id=47]
-[ext_resource path="res://assets/items/bodies/wheat.tscn" type="PackedScene" id=48]
-[ext_resource path="res://assets/items/bodies/cabbage.tscn" type="PackedScene" id=49]
-[ext_resource path="res://assets/items/bodies/onion.tscn" type="PackedScene" id=50]
-[ext_resource path="res://assets/items/bodies/meat.tscn" type="PackedScene" id=51]
-[ext_resource path="res://assets/creatures/npc/sedius/Sedius.tscn" type="PackedScene" id=52]
+[ext_resource path="res://assets/items/bodies/key.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/items/bodies/pumpkinlantern.tscn" type="PackedScene" id=22]
+[ext_resource path="res://assets/items/bodies/pumpkin.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/creatures/npc/gustav/Gustav.tscn" type="PackedScene" id=24]
+[ext_resource path="res://assets/creatures/enemys/spider/Spider.tscn" type="PackedScene" id=25]
+[ext_resource path="res://assets/scenes/environment/terrain/IslandRough01.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Route.gd" type="Script" id=27]
+[ext_resource path="res://assets/objects/vehicles/craftraft/CraftRaft.tscn" type="PackedScene" id=28]
+[ext_resource path="res://assets/items/bodies/dice.tscn" type="PackedScene" id=29]
+[ext_resource path="res://assets/objects/furniture/StallRed.tscn" type="PackedScene" id=30]
+[ext_resource path="res://assets/items/bodies/sword.tscn" type="PackedScene" id=31]
+[ext_resource path="res://assets/items/bodies/mass.tscn" type="PackedScene" id=32]
+[ext_resource path="res://assets/items/bodies/scimitar.tscn" type="PackedScene" id=33]
+[ext_resource path="res://assets/items/bodies/piratehat.tscn" type="PackedScene" id=34]
+[ext_resource path="res://assets/deco/bottles/bottle.tscn" type="PackedScene" id=35]
+[ext_resource path="res://assets/items/bodies/gladius.tscn" type="PackedScene" id=36]
+[ext_resource path="res://assets/items/bodies/shovel.tscn" type="PackedScene" id=37]
+[ext_resource path="res://assets/creatures/npc/jörn/Jörn.tscn" type="PackedScene" id=38]
+[ext_resource path="res://assets/deco/lanterns/ModernLantern.tscn" type="PackedScene" id=39]
+[ext_resource path="res://assets/objects/furniture/StallGreen.tscn" type="PackedScene" id=40]
+[ext_resource path="res://assets/items/bodies/carrot.tscn" type="PackedScene" id=41]
+[ext_resource path="res://assets/items/bodies/strawberry.tscn" type="PackedScene" id=42]
+[ext_resource path="res://assets/items/bodies/wheat.tscn" type="PackedScene" id=43]
+[ext_resource path="res://assets/items/bodies/cabbage.tscn" type="PackedScene" id=44]
+[ext_resource path="res://assets/items/bodies/onion.tscn" type="PackedScene" id=45]
+[ext_resource path="res://assets/items/bodies/meat.tscn" type="PackedScene" id=46]
+[ext_resource path="res://assets/creatures/npc/sedius/Sedius.tscn" type="PackedScene" id=47]
+[ext_resource path="res://assets/objects/nature/fir/fir_high_warped.tscn" type="PackedScene" id=48]
+[ext_resource path="res://assets/objects/nature/fir/fir_high_detail.tscn" type="PackedScene" id=49]
+[ext_resource path="res://assets/objects/nature/trees/tree_brown.tscn" type="PackedScene" id=50]
+[ext_resource path="res://assets/objects/nature/fir/fir_ground_warped.tscn" type="PackedScene" id=51]
+[ext_resource path="res://assets/objects/nature/wood/tree_trunk_block.tscn" type="PackedScene" id=52]
+[ext_resource path="res://assets/objects/nature/wood/tree_trunk_detail.tscn" type="PackedScene" id=53]
+[ext_resource path="res://assets/objects/nature/trees/tree.tscn" type="PackedScene" id=54]
+[ext_resource path="res://assets/objects/nature/trees/tree_flat.tscn" type="PackedScene" id=55]
+[ext_resource path="res://assets/objects/nature/trees/tree_warped.tscn" type="PackedScene" id=56]
+[ext_resource path="res://assets/objects/nature/trees/tree_simple_large.tscn" type="PackedScene" id=57]
+[ext_resource path="res://assets/objects/nature/trees/tree_large_oak.tscn" type="PackedScene" id=58]
+[ext_resource path="res://assets/objects/nature/trees/tree_simple_big.tscn" type="PackedScene" id=59]
+[ext_resource path="res://assets/objects/nature/trees/tree_flat_warped.tscn" type="PackedScene" id=60]
+[ext_resource path="res://assets/objects/nature/trees/tree_simple_high.tscn" type="PackedScene" id=61]
+[ext_resource path="res://assets/objects/nature/trees/tree_small_detail.tscn" type="PackedScene" id=62]
+[ext_resource path="res://assets/objects/nature/wood/tree_trunk.tscn" type="PackedScene" id=63]
+[ext_resource path="res://assets/objects/nature/trees/tree_simple_detail.tscn" type="PackedScene" id=64]
+[ext_resource path="res://assets/objects/nature/trees/tree_simple_high_brown.tscn" type="PackedScene" id=65]
+[ext_resource path="res://assets/objects/nature/trees/tree_simple_detail_brown.tscn" type="PackedScene" id=66]
+[ext_resource path="res://assets/objects/nature/fir/tree_fir_ground.tscn" type="PackedScene" id=67]
+[ext_resource path="res://assets/objects/nature/wood/tree_trunk_block_detail.tscn" type="PackedScene" id=68]
+[ext_resource path="res://assets/objects/nature/wood/tree_trunk_block_hollow.tscn" type="PackedScene" id=69]
+[ext_resource path="res://assets/objects/nature/grass/grass_bush.tscn" type="PackedScene" id=70]
+[ext_resource path="res://assets/objects/nature/grass/grass_flat.tscn" type="PackedScene" id=71]
+[ext_resource path="res://assets/objects/nature/grass/grass_small.tscn" type="PackedScene" id=72]
+[ext_resource path="res://assets/objects/nature/grass/grass_bush_tiny.tscn" type="PackedScene" id=73]
+[ext_resource path="res://assets/objects/nature/grass/grass_bush_small.tscn" type="PackedScene" id=74]
+[ext_resource path="res://assets/objects/nature/grass/leaves.tscn" type="PackedScene" id=75]
+[ext_resource path="res://assets/objects/nature/grass/leaves_pirate.tscn" type="PackedScene" id=76]
 
 [sub_resource type="ArrayMesh" id=1]
 surfaces/0 = {
@@ -146,6 +170,7 @@ material/2 = ExtResource( 7 )
 shape = SubResource( 2 )
 
 [node name="Farm" type="Spatial" parent="."]
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 8.83586, 35.4031 )
 
 [node name="Animals" type="Spatial" parent="Farm"]
@@ -259,38 +284,23 @@ transform = Transform( 0.847327, -0.0663934, -0.526905, 0.0781168, 0.996944, -2.
 [node name="TentPoles" parent="Camp" instance=ExtResource( 20 )]
 transform = Transform( 0.774538, 0, 0.632527, 0, 1, 0, -0.632527, 0, 0.774538, 4.42067, 0.152409, 7.75313 )
 
-[node name="Tree" parent="Camp" instance=ExtResource( 21 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1582, -0.489685, 0.0122013 )
-
-[node name="Tree2" parent="Camp" instance=ExtResource( 22 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8081, -0.697754, -3.4404 )
-
-[node name="Tree5" parent="Camp" instance=ExtResource( 23 )]
-transform = Transform( -0.212454, 0, 0.977171, 0, 1, 0, -0.977171, 0, -0.212454, -9.0943, 0.396484, 4.5657 )
-
-[node name="Tree3" parent="Camp" instance=ExtResource( 24 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.2563, -0.286377, 3.6323 )
-
-[node name="TreeTrunk" parent="Camp" instance=ExtResource( 25 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.95116, 0.112366, -3.67331 )
-
-[node name="Key" parent="Camp" instance=ExtResource( 26 )]
+[node name="Key" parent="Camp" instance=ExtResource( 21 )]
 transform = Transform( 0.325726, -0.945464, 0, 0.945464, 0.325726, 0, 0, 0, 1, 0.432652, 0.58794, 0.31485 )
 
 [node name="Fruits" type="Spatial" parent="Camp"]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9512, -1.6311, -14.6733 )
 
-[node name="PumpkinCarved" parent="Camp/Fruits" instance=ExtResource( 27 )]
+[node name="PumpkinCarved" parent="Camp/Fruits" instance=ExtResource( 22 )]
 transform = Transform( 0.488467, 0.00295536, 0.872577, -0.00605017, 0.999982, 2.56109e-09, -0.872561, -0.00527924, 0.488476, 5.15289, 0.0105126, 5.69697 )
 
-[node name="Pumpkin" parent="Camp/Fruits" instance=ExtResource( 28 )]
+[node name="Pumpkin" parent="Camp/Fruits" instance=ExtResource( 23 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5729, 2.22703, 8.26529 )
 
-[node name="Pumpkin2" parent="Camp/Fruits" instance=ExtResource( 28 )]
+[node name="Pumpkin2" parent="Camp/Fruits" instance=ExtResource( 23 )]
 transform = Transform( 0.373465, -0.141378, 0.916807, 0.000875473, 0.988371, 0.152057, -0.927644, -0.0559855, 0.369246, -15.2296, 2.22703, 6.46744 )
 
-[node name="Gustav" parent="Camp" instance=ExtResource( 29 )]
+[node name="Gustav" parent="Camp" instance=ExtResource( 24 )]
 transform = Transform( -0.983202, 0, 0.182523, 0, 1, 0, -0.182523, 0, -0.983202, 0.24181, 0.518993, 1.80112 )
 interaction = "talk"
 creature_name = "Gustav"
@@ -301,13 +311,13 @@ npc_dialog_file = "res://assets/creatures/npc/gustav/dialog.json"
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5708, 14.2508, 36.9263 )
 
-[node name="Spider" parent="Enemies" instance=ExtResource( 30 )]
+[node name="Spider" parent="Enemies" instance=ExtResource( 25 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00743484, -2.97085, -0.213905 )
 
-[node name="Spider2" parent="Enemies" instance=ExtResource( 30 )]
+[node name="Spider2" parent="Enemies" instance=ExtResource( 25 )]
 transform = Transform( 0.141158, 0, -0.989987, 0, 1, 0, 0.989987, 0, 0.141158, 6.18817, -2.97085, 10.7387 )
 
-[node name="Island01" parent="." instance=ExtResource( 31 )]
+[node name="Island01" parent="." instance=ExtResource( 26 )]
 transform = Transform( 0.992977, 0, -0.118295, 0, 1, 0, 0.118295, 0, 0.992977, 20.6068, -21.1729, 14.333 )
 
 [node name="Routes" type="Spatial" parent="."]
@@ -318,7 +328,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.22192, 0, 0 )
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 149.977, 0, 0 )
 curve = SubResource( 3 )
-script = ExtResource( 32 )
+script = ExtResource( 27 )
 
 [node name="Follow" type="PathFollow" parent="Routes/Path"]
 transform = Transform( 0.996053, 0, -0.0887666, 0, 1, 0, 0.0887666, 0, 0.996053, 4.17194, 0.704559, -0.930633 )
@@ -327,91 +337,255 @@ v_offset = 1.0
 rotation_mode = 1
 cubic_interp = false
 
-[node name="CraftRaft" parent="Routes/Path/Follow" instance=ExtResource( 33 )]
+[node name="CraftRaft" parent="Routes/Path/Follow" instance=ExtResource( 28 )]
 transform = Transform( -0.276154, 0, -0.961113, 0, 1, 0, 0.961113, 0, -0.276154, -0.0219421, -0.254144, -0.204518 )
 
 [node name="Spawn" type="Spatial" parent="."]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 114.76, 8.18118, -23.2472 )
 
-[node name="Dice" parent="Spawn" instance=ExtResource( 34 )]
+[node name="Dice" parent="Spawn" instance=ExtResource( 29 )]
 transform = Transform( 1, 0, 0, 0, 0.35604, -0.934471, 0, 0.934471, 0.35604, 2.62844, 1.29625, 1.89843 )
 
 [node name="Port" type="Spatial" parent="."]
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 126.89, 9.32362, 0 )
 
-[node name="StallRed" parent="Port" instance=ExtResource( 35 )]
+[node name="StallRed" parent="Port" instance=ExtResource( 30 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98486, -3.01948, -22.6519 )
 
-[node name="Sword" parent="Port/StallRed" instance=ExtResource( 36 )]
+[node name="Sword" parent="Port/StallRed" instance=ExtResource( 31 )]
 transform = Transform( 0.996931, -0.0490079, -0.0610524, 0.0612047, 0.00160907, 0.998123, -0.0488178, -0.998797, 0.00460364, 0.0367813, 0.788914, 0.394167 )
 
-[node name="mass" parent="Port/StallRed" instance=ExtResource( 37 )]
+[node name="mass" parent="Port/StallRed" instance=ExtResource( 32 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30072, 0.734179, -0.652193 )
 
-[node name="Dice" parent="Port/StallRed" instance=ExtResource( 34 )]
+[node name="Dice" parent="Port/StallRed" instance=ExtResource( 29 )]
 transform = Transform( -0.0296534, 0.570073, -0.821058, 0.999316, 0.0350474, -0.0117575, 0.0220733, -0.820846, -0.570723, -0.318214, 0.85192, 0.465105 )
 
-[node name="Key" parent="Port/StallRed" instance=ExtResource( 26 )]
+[node name="Key" parent="Port/StallRed" instance=ExtResource( 21 )]
 transform = Transform( 0.0871558, 0.95837, 0.271903, -0.996195, 0.0838466, 0.0237885, -1.11759e-08, -0.272942, 0.962031, -0.238411, 0.767, -0.487841 )
 
-[node name="Scimitar" parent="Port/StallRed" instance=ExtResource( 38 )]
+[node name="Scimitar" parent="Port/StallRed" instance=ExtResource( 33 )]
 transform = Transform( 0.0607155, -0.166657, 0.984144, -0.996601, -0.0651138, 0.0504575, 0.0556723, -0.983862, -0.170044, 0.30278, 0.858426, 0.203476 )
 
-[node name="PirateHat" parent="Port/StallRed" instance=ExtResource( 39 )]
+[node name="PirateHat" parent="Port/StallRed" instance=ExtResource( 34 )]
 transform = Transform( 0.851774, 0, 0.523909, 0, 1, 0, -0.523909, 0, 0.851774, 0.435143, 0.759297, 0.707455 )
 
-[node name="Bottle" parent="Port/StallRed" instance=ExtResource( 40 )]
+[node name="Bottle" parent="Port/StallRed" instance=ExtResource( 35 )]
 transform = Transform( 0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0.0111847, 0.730059, -0.747017 )
 
-[node name="Gladius" parent="Port/StallRed" instance=ExtResource( 41 )]
+[node name="Gladius" parent="Port/StallRed" instance=ExtResource( 36 )]
 transform = Transform( -0.00073157, 0.52498, -0.851114, -0.999698, -0.0212732, -0.0122623, -0.0245434, 0.850849, 0.524837, -0.365906, 0.816661, -0.144438 )
 
-[node name="Shovel" parent="Port/StallRed" instance=ExtResource( 42 )]
+[node name="Shovel" parent="Port/StallRed" instance=ExtResource( 37 )]
 transform = Transform( 0.996641, 0.081188, -0.0106959, 0.0190003, -0.102214, 0.994581, 0.0796548, -0.991444, -0.103413, -0.00971985, 0.649734, 1.08071 )
 
-[node name="Jörn" parent="Port" instance=ExtResource( 43 )]
+[node name="Jörn" parent="Port" instance=ExtResource( 38 )]
 transform = Transform( -0.327549, 0, -0.944834, 0, 1, 0, 0.944834, 0, -0.327549, 13.2552, -5.63064, -20.469 )
 creature_name = "Jörn"
 npc_skin_file = "res://assets/creatures/character/skins/survivorMaleB.png"
 
-[node name="ModernLantern" parent="Port" instance=ExtResource( 44 )]
+[node name="ModernLantern" parent="Port" instance=ExtResource( 39 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.36237, -3.12651, -19.0032 )
 
-[node name="StallGreen" parent="Port" instance=ExtResource( 45 )]
+[node name="StallGreen" parent="Port" instance=ExtResource( 40 )]
 editor/display_folded = true
 transform = Transform( 0.997944, -0.0472257, -0.0433375, 0.0479802, 0.998711, 0.016536, 0.0425007, -0.0185813, 0.998923, -3.50085, -2.96474, -25.8634 )
 
-[node name="pumpkinlantern2" parent="Port/StallGreen" instance=ExtResource( 27 )]
+[node name="pumpkinlantern2" parent="Port/StallGreen" instance=ExtResource( 22 )]
 transform = Transform( -0.333535, -4.38304e-08, -0.942737, 9.31323e-09, 1, -3.91155e-08, 0.942737, -1.11759e-08, -0.333535, -0.33931, 0.766617, 0.788977 )
 
-[node name="pumpkinlantern" parent="Port/StallGreen" instance=ExtResource( 27 )]
+[node name="pumpkinlantern" parent="Port/StallGreen" instance=ExtResource( 22 )]
 transform = Transform( 0.0272507, -8.56235e-08, -0.999629, 5.7742e-08, 1, -8.76316e-08, 0.999628, -2.79397e-08, 0.0272506, 0.181, 0.766621, 0.750124 )
 
-[node name="Carrot" parent="Port/StallGreen" instance=ExtResource( 46 )]
+[node name="Carrot" parent="Port/StallGreen" instance=ExtResource( 41 )]
 transform = Transform( 0.185209, -0.451618, 0.872775, 0.982698, 0.0851161, -0.164492, 1.76951e-08, 0.888141, 0.459568, -0.286453, 0.79715, -0.0642776 )
 
-[node name="RigidBody" parent="Port/StallGreen" instance=ExtResource( 47 )]
+[node name="RigidBody" parent="Port/StallGreen" instance=ExtResource( 42 )]
 transform = Transform( 1, -3.72529e-09, -6.98492e-10, -5.82077e-11, 0.100105, 0.994977, 0, -0.994977, 0.100105, -6.86646e-05, 0.825031, -0.670662 )
 
-[node name="RigidBody2" parent="Port/StallGreen" instance=ExtResource( 47 )]
+[node name="RigidBody2" parent="Port/StallGreen" instance=ExtResource( 42 )]
 transform = Transform( 0.664512, -0.747277, -7.68341e-09, 0.0748062, 0.0665209, 0.994977, -0.743523, -0.661174, 0.100105, -0.216896, 0.819163, -0.612329 )
 
 [node name="Spatial" type="Spatial" parent="Port/StallGreen"]
 editor/display_folded = true
 transform = Transform( 0.384774, 0.0888938, 0.577968, -9.31323e-10, 0.691865, -0.106412, -0.584764, 0.058492, 0.380302, -0.108688, 0.329005, -0.388126 )
 
-[node name="Wheat" parent="Port/StallGreen/Spatial" instance=ExtResource( 48 )]
+[node name="Wheat" parent="Port/StallGreen/Spatial" instance=ExtResource( 43 )]
 transform = Transform( 0.990214, 0.139557, 3.72529e-09, -0.0242167, 0.171827, -0.984829, -0.13744, 0.975192, 0.173525, 0, 0.743969, -9.53674e-06 )
 
-[node name="cabbage" parent="Port/StallGreen" instance=ExtResource( 49 )]
+[node name="cabbage" parent="Port/StallGreen" instance=ExtResource( 44 )]
 transform = Transform( 1, -2.01399e-08, 3.72529e-08, -5.82077e-11, 1, 2.23517e-08, 0, 1.86265e-08, 0.999999, 0.0922394, 0.751779, 0.148806 )
 
-[node name="Onion" parent="Port/StallGreen" instance=ExtResource( 50 )]
+[node name="Onion" parent="Port/StallGreen" instance=ExtResource( 45 )]
 transform = Transform( 1, -1.99652e-08, 4.47035e-08, -5.82077e-11, 1, 2.6077e-08, 0, 2.23517e-08, 0.999999, -0.289642, 0.765968, 0.457153 )
 
-[node name="meat" parent="Port/StallGreen" instance=ExtResource( 51 )]
+[node name="meat" parent="Port/StallGreen" instance=ExtResource( 46 )]
 transform = Transform( 0.481119, -1.29221e-08, 0.876655, -9.31323e-09, 1, -1.30385e-08, -0.876655, 1.30385e-08, 0.481118, 0.344765, 0.801753, -0.628204 )
 
-[node name="Sedius" parent="Port" instance=ExtResource( 52 )]
+[node name="Sedius" parent="Port" instance=ExtResource( 47 )]
 transform = Transform( 0.00238378, 0, -0.999997, 0, 1, 0, 0.999997, 0, 0.00238378, -5.27433, -3.12696, -24.2239 )
+
+[node name="Forest" type="Spatial" parent="."]
+
+[node name="Trees" type="Spatial" parent="Forest"]
+editor/display_folded = true
+
+[node name="Tree" parent="Forest/Trees" instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.6873, 8.66521, -68.5974 )
+
+[node name="Tree2" parent="Forest/Trees" instance=ExtResource( 49 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50.5103, 10.764, -73.8019 )
+
+[node name="Tree5" parent="Forest/Trees" instance=ExtResource( 50 )]
+transform = Transform( -0.212454, 0, 0.977171, 0, 1, 0, -0.977171, 0, -0.212454, 9.22744, 11.1815, -61.801 )
+
+[node name="Tree3" parent="Forest/Trees" instance=ExtResource( 51 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44.9521, 8.86852, -66.7292 )
+
+[node name="TreeTrunk" parent="Forest/Trees" instance=ExtResource( 52 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 39.647, 9.26727, -74.0348 )
+
+[node name="TreeTrunk2" parent="Forest/Trees" instance=ExtResource( 52 )]
+transform = Transform( 0.738328, -0.0585853, -0.671893, 0, 0.99622, -0.0868649, 0.674442, 0.0641347, 0.735537, 42.0714, 9.61871, -69.8575 )
+
+[node name="TreeStumpDetail" parent="Forest/Trees" instance=ExtResource( 53 )]
+transform = Transform( 0.531459, -0.138293, -0.835719, 0.015342, 0.987993, -0.153734, 0.846945, 0.0688819, 0.5272, 44.6438, 9.88159, -70.7314 )
+
+[node name="Tree4" parent="Forest/Trees" instance=ExtResource( 54 )]
+transform = Transform( 0.758407, 0.0304068, 0.651071, 0, 0.998911, -0.0466519, -0.651781, 0.0353811, 0.757582, -33.1673, 8.1748, -60.8977 )
+
+[node name="Tree6" parent="Forest/Trees" instance=ExtResource( 55 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.3469, -69.4075 )
+
+[node name="Tree10" parent="Forest/Trees" instance=ExtResource( 55 )]
+transform = Transform( -0.213023, 0, 0.977047, 0, 1, 0, -0.977047, 0, -0.213023, -9.00847, 11.2123, -82.7656 )
+
+[node name="Tree11" parent="Forest/Trees" instance=ExtResource( 55 )]
+transform = Transform( -0.213023, 0, 0.977047, 0, 1, 0, -0.977047, 0, -0.213023, -37.231, 10.007, -76.6124 )
+
+[node name="Tree7" parent="Forest/Trees" instance=ExtResource( 50 )]
+transform = Transform( 0.688844, 0, 0.72491, 0, 1, 0, -0.72491, 0, 0.688844, -15.1745, 9.52588, -61.2729 )
+
+[node name="Tree8" parent="Forest/Trees" instance=ExtResource( 56 )]
+transform = Transform( -0.989576, 0, 0.14401, 0, 1, 0, -0.14401, 0, -0.989576, 4.45332, 9.9729, -90.5049 )
+
+[node name="Tree9" parent="Forest/Trees" instance=ExtResource( 56 )]
+transform = Transform( 0.703604, 0.0839717, -0.705613, -0.0679718, 0.996393, 0.0507979, 0.707333, 0.0122201, 0.706774, -14.9835, 6.40088, -103.809 )
+
+[node name="tree_simple_large" parent="Forest/Trees" instance=ExtResource( 57 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7439, 10.4141, -93.156 )
+
+[node name="tree_simple_large2" parent="Forest/Trees" instance=ExtResource( 57 )]
+transform = Transform( 0.461601, 0, -0.887087, 0, 1, 0, 0.887087, 0, 0.461601, -28.6187, 10.2806, -83.8548 )
+
+[node name="TreeOakLarge" parent="Forest/Trees" instance=ExtResource( 58 )]
+
+[node name="Tree12" parent="Forest/Trees" instance=ExtResource( 59 )]
+
+[node name="TreeFlatWarped" parent="Forest/Trees" instance=ExtResource( 60 )]
+
+[node name="TreeSmallHigh" parent="Forest/Trees" instance=ExtResource( 61 )]
+
+[node name="Tree13" parent="Forest/Trees" instance=ExtResource( 62 )]
+transform = Transform( 0.768084, 0, -0.640349, 0, 1, 0, 0.640349, 0, 0.768084, -13.094, 9.32117, -70.1501 )
+
+[node name="TreeStump" parent="Forest/Trees" instance=ExtResource( 63 )]
+transform = Transform( 1, 0, 0, 0, 0.982985, 0.183688, 0, -0.183688, 0.982985, 27.0093, 9.16931, -78.8855 )
+
+[node name="TreeSimpleDetail" parent="Forest/Trees" instance=ExtResource( 64 )]
+transform = Transform( -0.00491598, 0, 0.999988, 0, 1, 0, -0.999988, 0, -0.00491598, 3.54928, 10.582, -80.453 )
+
+[node name="TreeSimpleDetail2" parent="Forest/Trees" instance=ExtResource( 64 )]
+transform = Transform( 0.516553, 0.0560928, 0.854416, -0.107956, 0.994156, 0, -0.849422, -0.0922393, 0.519589, 3.30472, 8.37879, -104.709 )
+
+[node name="TreeSimpleHighBrown" parent="Forest/Trees" instance=ExtResource( 65 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.3784, 10.3024, -81.4209 )
+
+[node name="TreeSimpleDetailBrown" parent="Forest/Trees" instance=ExtResource( 66 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.27612, 10.0872, -90.5483 )
+
+[node name="TreeTrunk3" parent="Forest/Trees" instance=ExtResource( 52 )]
+transform = Transform( 0.980896, 0.194535, 0, -0.194535, 0.980896, 0, 0, 0, 1, 18.8066, 11.0935, -63.0403 )
+
+[node name="TreeStumpDetail2" parent="Forest/Trees" instance=ExtResource( 53 )]
+transform = Transform( 0.999301, 0.0373936, 0, -0.0373936, 0.999301, 0, 0, 0, 1, 19.8699, 10.4439, -53.3555 )
+
+[node name="TreeFir" parent="Forest/Trees" instance=ExtResource( 67 )]
+transform = Transform( 0.568269, 0.0639752, -0.820352, -0.111872, 0.993723, 0, 0.815203, 0.0917749, 0.571858, 26.1897, 9.04497, -87.8479 )
+
+[node name="TreeTrunk4" parent="Forest/Trees" instance=ExtResource( 68 )]
+transform = Transform( 0.984091, 0.175233, -0.0293027, -0.177667, 0.970614, -0.162307, 3.72529e-09, 0.164931, 0.986305, 14.6385, 11.1927, -72.8565 )
+
+[node name="TreeTrunk5" parent="Forest/Trees" instance=ExtResource( 69 )]
+transform = Transform( 0.990827, -0.13514, 0, 0.13514, 0.990827, 0, 0, 0, 1, -27.8682, 10.2012, -47.3723 )
+
+[node name="Grass" type="Spatial" parent="Forest"]
+editor/display_folded = true
+
+[node name="GrassBush" parent="Forest/Grass" instance=ExtResource( 70 )]
+transform = Transform( 1, 0, 0, 0, 0.990588, -0.136876, 0, 0.136876, 0.990588, 0, 11.141, -63.771 )
+
+[node name="GrassBush2" parent="Forest/Grass" instance=ExtResource( 70 )]
+transform = Transform( 1, 0, 0, 0, 0.998069, -0.0621208, 0, 0.0621208, 0.998069, 0, 10.7404, -76.095 )
+
+[node name="GrassBush3" parent="Forest/Grass" instance=ExtResource( 70 )]
+transform = Transform( 0.658962, 3.72529e-09, -0.752177, -0.0467258, 0.998069, -0.0409352, 0.750724, 0.0621208, 0.657689, -5.23958, 10.474, -67.6915 )
+
+[node name="GrassBush4" parent="Forest/Grass" instance=ExtResource( 70 )]
+transform = Transform( 0.658962, -0.0876239, -0.747055, -0.0467258, 0.986504, -0.156925, 0.750724, 0.138315, 0.645974, -23.6574, 9.79855, -73.6296 )
+
+[node name="GrassBush5" parent="Forest/Grass" instance=ExtResource( 70 )]
+transform = Transform( 0.658962, 0.114553, -0.743402, -0.0467258, 0.99266, 0.111543, 0.750724, -0.0387664, 0.659478, -39.4711, 7.41385, -91.6411 )
+
+[node name="GrassBush6" parent="Forest/Grass" instance=ExtResource( 70 )]
+transform = Transform( 0.658961, -0.02768, -0.751667, -0.0467258, 0.995886, -0.0776363, 0.750724, 0.0862816, 0.654957, 4.78814, 8.865, -97.2204 )
+
+[node name="Grass" parent="Forest/Grass" instance=ExtResource( 71 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.5424, -58.6533 )
+
+[node name="Grass2" parent="Forest/Grass" instance=ExtResource( 72 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.87354, 10.3843, -62.5264 )
+
+[node name="Grass3" parent="Forest/Grass" instance=ExtResource( 71 )]
+transform = Transform( 0.402103, 0, 0.915594, 0, 1, 0, -0.915594, 0, 0.402103, 6.14581, 10.864, -72.1692 )
+
+[node name="Grass4" parent="Forest/Grass" instance=ExtResource( 71 )]
+transform = Transform( 0.739368, 0, 0.673302, 0, 1, 0, -0.673302, 0, 0.739368, -4.24986, 11.1082, -76.7347 )
+
+[node name="Grass5" parent="Forest/Grass" instance=ExtResource( 71 )]
+transform = Transform( 0.739368, 0, 0.673302, 0, 1, 0, -0.673302, 0, 0.739368, 11.1396, 9.82068, -90.0663 )
+
+[node name="Grass6" parent="Forest/Grass" instance=ExtResource( 71 )]
+transform = Transform( 0.739368, 0.0251511, 0.672832, 0, 0.999302, -0.0373549, -0.673302, 0.027619, 0.738852, 21.9964, 9.73887, -92.3434 )
+
+[node name="Grass7" parent="Forest/Grass" instance=ExtResource( 71 )]
+transform = Transform( 0.741999, 0.0185035, 0.670145, -0.112016, 0.988988, 0.0967195, -0.660976, -0.146833, 0.735901, 33.5321, 9.0522, -96.2892 )
+
+[node name="GrassBushTiny" parent="Forest/Grass" instance=ExtResource( 73 )]
+transform = Transform( 0.974969, -0.222341, 0, 0.222341, 0.974969, 0, 0, 0, 1, 4.2572, 10.8402, -68.3552 )
+
+[node name="GrassBushTiny2" parent="Forest/Grass" instance=ExtResource( 73 )]
+transform = Transform( 0.965352, 0.26095, 0, -0.26095, 0.965352, 0, 0, 0, 1, 14.1195, 10.6863, -82.2883 )
+
+[node name="GrassBushTiny3" parent="Forest/Grass" instance=ExtResource( 73 )]
+transform = Transform( 0.931665, 0.26095, -0.252795, -0.251844, 0.965352, 0.0683343, 0.261868, 0, 0.965104, 5.40298, 10.4289, -85.1758 )
+
+[node name="GrassBushSmall" parent="Forest/Grass" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4529, 10.9087, -71.1893 )
+
+[node name="GrassBushSmall2" parent="Forest/Grass" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.4515, 9.48615, -83.7298 )
+
+[node name="Leaves" parent="Forest/Grass" instance=ExtResource( 75 )]
+transform = Transform( 0.973251, 0.229745, -1.76228e-09, -0.229343, 0.971548, -0.0591357, -0.0135861, 0.0575539, 0.99825, 1.06929, 11.3627, -56.6364 )
+
+[node name="Leaves2" parent="Forest/Grass" instance=ExtResource( 75 )]
+transform = Transform( 0.979705, -0.185733, 0.075369, 0.160154, 0.951449, 0.262858, -0.120531, -0.245453, 0.961886, 5.83857, 10.8381, -77.9641 )
+
+[node name="LeavesPirate" parent="Forest/Grass" instance=ExtResource( 76 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.8033, 10.5414, -47.0209 )
+
+[node name="LeavesPirate2" parent="Forest/Grass" instance=ExtResource( 76 )]
+transform = Transform( 0.486168, 0, -0.873865, 0, 1, 0, 0.873865, 0, 0.486168, 13.7389, 11.1515, -68.6665 )

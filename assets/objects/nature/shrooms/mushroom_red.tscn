@@ -1,21 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
-[sub_resource type="SpatialMaterial" id=1]
-resource_name = "FrontColor"
-emission_enabled = true
-emission = Color( 0, 0, 0, 1 )
-emission_energy = 1.0
-emission_operator = 0
-emission_on_uv2 = false
-
-[sub_resource type="SpatialMaterial" id=2]
-resource_name = "Mushroom_Red"
-albedo_color = Color( 0.919941, 0.595851, 0.541909, 1 )
-emission_enabled = true
-emission = Color( 0, 0, 0, 1 )
-emission_energy = 1.0
-emission_operator = 0
-emission_on_uv2 = false
+[ext_resource path="res://assets/materials/BeigePug.material" type="Material" id=1]
+[ext_resource path="res://assets/materials/SwordRed.material" type="Material" id=2]
 
 [sub_resource type="ArrayMesh" id=3]
 resource_name = "Mesh1 Mushroom_Red Model"
@@ -26,7 +12,7 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 30,
-"material": SubResource( 1 ),
+"material": ExtResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 48
@@ -38,7 +24,7 @@ surfaces/1 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 54,
-"material": SubResource( 2 ),
+"material": ExtResource( 2 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 48
@@ -47,6 +33,7 @@ surfaces/1 = {
 [node name="MushroomRed" type="Spatial"]
 
 [node name="Mesh1 Mushroom_Red Model" type="MeshInstance" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.115707, 0, 0.131531 )
 mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
