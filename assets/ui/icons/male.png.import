@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/uipack_rpg_sheet.png-78bdba66f6d0155e80d72596cf693b9a.stex"
+path="res://.import/male.png-510f30e70c485dcf15dfce1e2fe3241a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/rpg/Spritesheet/uipack_rpg_sheet.png"
-dest_files=[ "res://.import/uipack_rpg_sheet.png-78bdba66f6d0155e80d72596cf693b9a.stex" ]
+source_file="res://assets/ui/icons/male.png"
+dest_files=[ "res://.import/male.png-510f30e70c485dcf15dfce1e2fe3241a.stex" ]
 
 [params]
 

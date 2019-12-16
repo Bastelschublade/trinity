@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coins.png-02f07cf7f42f832aabbf2504c8738960.stex"
+path="res://.import/officerhat.png-f1253353bc708a954130e338e417ea1f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/coins.png"
-dest_files=[ "res://.import/coins.png-02f07cf7f42f832aabbf2504c8738960.stex" ]
+source_file="res://assets/items/icons/officerhat.png"
+dest_files=[ "res://.import/officerhat.png-f1253353bc708a954130e338e417ea1f.stex" ]
 
 [params]
 

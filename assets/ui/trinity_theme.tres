@@ -1,27 +1,91 @@
-[gd_resource type="Theme" load_steps=7 format=2]
+[gd_resource type="Theme" load_steps=14 format=2]
 
-[ext_resource path="res://assets/ui/rpg/png/panel_brown.png" type="Texture" id=1]
-[ext_resource path="res://assets/ui/rpg/png/buttonLong_blue.png" type="Texture" id=2]
-[ext_resource path="res://assets/ui/rpg/png/buttonLong_brown_cutoff.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui/rpg/png/buttonLong_brown.png" type="Texture" id=1]
+[ext_resource path="res://assets/ui/rpg/png/panelInset_beige.png" type="Texture" id=2]
+[ext_resource path="res://assets/ui/rpg/png/panel_brown.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui/rpg/png/buttonLong_beige_cutoff.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui/rpg/png/buttonLong_brown_cutoff.png" type="Texture" id=5]
 
 [sub_resource type="StyleBoxTexture" id=1]
+content_margin_left = 12.0
+content_margin_right = 12.0
+content_margin_top = 12.0
+content_margin_bottom = 12.0
 texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 190, 49 )
+margin_left = 47.3919
+margin_right = 10.45
+margin_top = 16.4943
+margin_bottom = 18.861
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.603922, 0.45098, 0.286275, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.392157, 0.266667, 0.137255, 1 )
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id=7]
+content_margin_left = 2.0
+content_margin_right = 2.0
+bg_color = Color( 0.94902, 0.905882, 0.776471, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.603922, 0.45098, 0.286275, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxTexture" id=2]
+content_margin_left = 8.0
+content_margin_right = 8.0
+content_margin_top = 8.0
+content_margin_bottom = 8.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 93, 94 )
+margin_left = 52.9952
+margin_right = 6.30166
+margin_top = 25.8385
+margin_bottom = 28.0451
+
+[sub_resource type="StyleBoxTexture" id=3]
+content_margin_left = 10.0
+content_margin_right = 10.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 100, 100 )
+margin_left = 62.9829
+margin_right = 12.8299
+margin_top = 24.4934
+margin_bottom = 20.9943
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 3 )
 region_rect = Rect2( 0, 0, 100, 100 )
 margin_left = 59.0
 margin_right = 14.0
 margin_top = 32.0
 margin_bottom = 37.0
 
-[sub_resource type="StyleBoxTexture" id=2]
-texture = ExtResource( 2 )
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 4 )
 region_rect = Rect2( 0, 0, 190, 36 )
 margin_left = 9.89508
 margin_right = 9.53573
 margin_top = 9.0
 margin_bottom = 0.662175
 
-[sub_resource type="StyleBoxTexture" id=3]
-texture = ExtResource( 3 )
+[sub_resource type="StyleBoxTexture" id=6]
+texture = ExtResource( 5 )
 region_rect = Rect2( 0, 0, 190, 37 )
 margin_left = 13.8426
 margin_right = 12.8963
@@ -29,6 +93,54 @@ margin_top = 8.0
 margin_bottom = 5.0
 
 [resource]
+Button/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
+Button/colors/font_color_disabled = Color( 0.243137, 0.243137, 0.243137, 0.752941 )
+Button/colors/font_color_hover = Color( 0.952941, 0.937255, 0.552941, 1 )
+Button/colors/font_color_pressed = Color( 0.219608, 0.219608, 0.215686, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = null
+Button/styles/disabled = SubResource( 1 )
+Button/styles/focus = SubResource( 1 )
+Button/styles/hover = SubResource( 1 )
+Button/styles/normal = SubResource( 1 )
+Button/styles/pressed = SubResource( 1 )
+ColorPickerButton/colors/font_color = Color( 1, 1, 1, 1 )
+ColorPickerButton/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.3 )
+ColorPickerButton/colors/font_color_hover = Color( 1, 1, 1, 1 )
+ColorPickerButton/colors/font_color_pressed = Color( 0.8, 0.8, 0.8, 1 )
+ColorPickerButton/constants/hseparation = 2
+ColorPickerButton/fonts/font = null
+ColorPickerButton/icons/bg = null
+ColorPickerButton/styles/disabled = SubResource( 8 )
+ColorPickerButton/styles/focus = SubResource( 8 )
+ColorPickerButton/styles/hover = SubResource( 8 )
+ColorPickerButton/styles/normal = SubResource( 8 )
+ColorPickerButton/styles/pressed = SubResource( 8 )
+Label/colors/font_color = Color( 0.392157, 0.266667, 0.137255, 1 )
+Label/colors/font_color_shadow = Color( 0, 0, 0, 0 )
+Label/colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+Label/constants/line_spacing = 3
+Label/constants/shadow_as_outline = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/fonts/font = null
+Label/styles/normal = null
+LineEdit/colors/clear_button_color = Color( 0.866667, 0.513726, 0.929412, 1 )
+LineEdit/colors/clear_button_color_pressed = Color( 0.509804, 0.168627, 0.647059, 1 )
+LineEdit/colors/cursor_color = Color( 0.423529, 0.054902, 0.054902, 1 )
+LineEdit/colors/font_color = Color( 0.423529, 0.337255, 0.188235, 1 )
+LineEdit/colors/font_color_selected = Color( 0.682353, 0.670588, 0.54902, 1 )
+LineEdit/colors/selection_color = Color( 0.407843, 0.282353, 0.0862745, 1 )
+LineEdit/constants/minimum_spaces = 12
+LineEdit/fonts/font = null
+LineEdit/icons/clear = null
+LineEdit/styles/focus = null
+LineEdit/styles/normal = SubResource( 7 )
+LineEdit/styles/read_only = null
+Panel/styles/panel = SubResource( 2 )
+Panel/styles/panelf = null
+Panel/styles/panelnc = null
+PanelContainer/styles/panel = SubResource( 3 )
 TabContainer/colors/font_color_bg = Color( 0.341176, 0.270588, 0.219608, 1 )
 TabContainer/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
 TabContainer/colors/font_color_fg = Color( 0.941176, 0.941176, 0.941176, 1 )
@@ -44,7 +156,7 @@ TabContainer/icons/increment = null
 TabContainer/icons/increment_highlight = null
 TabContainer/icons/menu = null
 TabContainer/icons/menu_highlight = null
-TabContainer/styles/panel = SubResource( 1 )
-TabContainer/styles/tab_bg = SubResource( 2 )
-TabContainer/styles/tab_disabled = null
-TabContainer/styles/tab_fg = SubResource( 3 )
+TabContainer/styles/panel = SubResource( 4 )
+TabContainer/styles/tab_bg = SubResource( 5 )
+TabContainer/styles/tab_disabled = SubResource( 5 )
+TabContainer/styles/tab_fg = SubResource( 6 )
