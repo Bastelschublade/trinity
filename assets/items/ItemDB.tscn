@@ -58,12 +58,25 @@ item_text = "Nicht der feinsten Schmiedkunst entsprungen, aber wer kräftig zusc
 [node name="Weapon" type="Node" parent="club"]
 script = ExtResource( 7 )
 
+[node name="coconut" type="Node" parent="."]
+script = ExtResource( 2 )
+item_name = "Kokosnuss"
+item_weight = 3.0
+item_price = 1.0
+item_text = "Wenn man sie geöffnet bekommt, wird man mit erfrischender Kokosmilch und knackigem Kokosfleisch belohnt."
+
 [node name="dice" type="Node" parent="."]
 script = ExtResource( 2 )
 item_name = "Würfel"
 item_weight = 0.1
 item_price = 2.5
 item_text = "Ein Spielwürfel"
+
+[node name="flatcap" type="Node" parent="."]
+script = ExtResource( 2 )
+item_name = "Schiebermütze"
+item_weight = 1.0
+item_price = 2.0
 
 [node name="gladius" type="Node" parent="."]
 editor/display_folded = true
@@ -172,6 +185,17 @@ item_weight = 1.0
 item_price = 2.0
 item_text = "Nichts essbares mehr dran, aber wenn man eine Kerze darin entzündet gibt es hübsches Licht."
 
+[node name="shield" type="Node" parent="."]
+editor/display_folded = true
+script = ExtResource( 2 )
+item_name = "Schild"
+item_weight = 3.0
+item_price = 4.0
+item_text = "Ein einfacher Schild, kann zum Blocken von Angriffen und Projektilen verwendet werden."
+
+[node name="Weapon" type="Node" parent="shield"]
+script = ExtResource( 9 )
+
 [node name="strawberry" type="Node" parent="."]
 editor/display_folded = true
 script = ExtResource( 2 )
@@ -234,9 +258,19 @@ script = ExtResource( 3 )
 crop = ExtResource( 11 )
 plant_button = "Weizen anbauen"
 
-[node name="coconut" type="Node" parent="."]
+[node name="oldsword" type="Node" parent="."]
 script = ExtResource( 2 )
-item_name = "Kokosnuss"
+item_name = "Altes Schwert"
 item_weight = 3.0
-item_price = 1.0
-item_text = "Wenn man sie geöffnet bekommt, wird man mit erfrischender Kokosmilch und knackigem Kokosfleisch belohnt."
+item_price = 2.0
+item_text = "Damit wurde das ein oder andere Gefecht gefochten. Es klebte sicher schon einiges an Blut an dieser Klinge."
+
+[node name="Weapon" type="Node" parent="oldsword"]
+script = ExtResource( 7 )
+
+[node name="strawhat" type="Node" parent="."]
+script = ExtResource( 2 )
+item_name = "Strohhut"
+item_weight = 0.5
+item_price = 0.5
+item_text = "Schützt vor der Sonne, aber nicht vor Schlägen auf den Kopf."

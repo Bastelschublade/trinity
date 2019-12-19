@@ -54,6 +54,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://assets/objects/GameObject.gd"
 }, {
+"base": "ResourceFormatLoader",
+"class": "HTerrainDataLoader",
+"language": "GDScript",
+"path": "res://addons/zylann.hterrain/hterrain_resource_loader.gd"
+}, {
+"base": "ResourceFormatSaver",
+"class": "HTerrainDataSaver",
+"language": "GDScript",
+"path": "res://addons/zylann.hterrain/hterrain_resource_saver.gd"
+}, {
 "base": "Node",
 "class": "Item",
 "language": "GDScript",
@@ -78,6 +88,11 @@ _global_script_classes=[ {
 "class": "LootTable",
 "language": "GDScript",
 "path": "res://assets/objects/LootTable.gd"
+}, {
+"base": "Node",
+"class": "ModelRes",
+"language": "GDScript",
+"path": "res://scripts/model_res.gd"
 }, {
 "base": "Creature",
 "class": "NPC",
@@ -114,6 +129,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://new_script.gd"
 }, {
+"base": "Node",
+"class": "material_res",
+"language": "GDScript",
+"path": "res://scripts/material_res.gd"
+}, {
 "base": "Spatial",
 "class": "vehicle",
 "language": "GDScript",
@@ -129,11 +149,14 @@ _global_script_class_icons={
 "FarmLand": "",
 "Food": "",
 "GameObject": "",
+"HTerrainDataLoader": "",
+"HTerrainDataSaver": "",
 "Item": "",
 "ItemBody": "",
 "ItemDB": "",
 "LootContainer": "",
 "LootTable": "",
+"ModelRes": "",
 "NPC": "",
 "Note": "",
 "Player": "",
@@ -141,6 +164,7 @@ _global_script_class_icons={
 "Stats": "",
 "Weapon": "",
 "door": "",
+"material_res": "",
 "vehicle": ""
 }
 
@@ -156,6 +180,10 @@ config/icon="res://icon.png"
 Global="*res://Global.gd"
 Events="*res://Events.gd"
 ItemDB="*res://assets/items/ItemDB.tscn"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "zylann.hterrain" )
 
 [input]
 

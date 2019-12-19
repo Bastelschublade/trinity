@@ -14,6 +14,7 @@ var flags = []
 var buffs = []
 
 export(float) var RUN_SPEED = 13
+export(bool) var freeze = false
 var WALK_SPEED = 1.5
 var JUMP_SPEED = 2
 var ACCELERATION = 1.5
@@ -26,6 +27,9 @@ var bones = {"mainhand": 'RightHand'}
 var attacking = false
 var dead = false
 var reg_time = 0
+
+# skin
+var skin = {'haircolor': 'black'}
 
 onready var ui = get_node('/root/World/Ui')
 onready var inventory = get_node('/root/World/Ui/GameMenu/TabContainer/Inventar/Inventory')
@@ -59,6 +63,8 @@ func _ready():
 
 
 func _physics_process(delta):
+	if self.freeze:
+		return
 	# 1s reg stuff
 	reg_time += delta
 	if reg_time > 1:

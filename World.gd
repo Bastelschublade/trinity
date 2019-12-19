@@ -9,6 +9,7 @@ export(Vector3) var player_pos
  
 
 func _ready():
+	print(get_tree())
 	Global.ui = get_node("Ui")
 	#player_pos = player.get_global_transform().origin
 	camera = self.player.get_node("target/Camera")
