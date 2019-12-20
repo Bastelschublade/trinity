@@ -39,8 +39,8 @@ func _ready():
 	settings = {'debug': true}
 	
 	# load player
-	var player_res = preload('res://assets/creatures/player/Player.tscn')
-	player = player_res.instance()
+	#var player_res = preload('res://assets/creatures/player/Player.tscn')
+	#player = player_res.instance()
 
 
 func goto_scene(path):

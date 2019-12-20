@@ -10,6 +10,6 @@ export_presets.cfg
 # Project ignores
 export
 
-docs/
+docs/diary
 screenshot*
 icon.png.import

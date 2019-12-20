@@ -6,6 +6,7 @@ export(Array, Material) var hair_colors
 export(Array, PackedScene) var hair_models
 export(Array, PackedScene) var beard_models
 export(Array, PackedScene) var accessory_models
+export(Array, Texture) var base_textures
 export(Array, Texture) var skin_textures
 export(Array, Texture) var face_textures
 # TODO replace skin with dynamic shader and add face_texture, base_texture  and so on
@@ -22,6 +23,7 @@ var beard_models_i = 0
 var skin_textures_i = 0
 var accessory_models_i = 0
 var face_textures_i = 0
+var base_textures_i = 0
 
 
 onready var player = get_node(player_node)
@@ -33,7 +35,7 @@ onready var shader = player_mesh.get('mesh').get('surface_1/material')
 
 
 func _ready():
-	print('Player:', player.get_name())
+	#print('Player:', player.get_name())
 	update_hair()
 
 
@@ -120,3 +122,17 @@ func _change_face(df):
 	print(face_textures[face_textures_i])
 	var text = face_textures[face_textures_i]
 	shader.set('shader_param/texture_face', text)
+
+
+func _change_base(db):
+	base_textures_i = reset_index(base_textures_i+db, base_textures)
+	var base = base_textures[base_textures_i]
+	shader.set('shader_param/texture_base', base)
+
+
+func _on_Start_pressed():
+	Global.player = self.player.duplicate()
+	Global.player.freeze = false
+	Global.player.get_node('target/Camera').set_current(true)
+	Global.player.get_node('target/Camera').manually_init()
+	Global.goto_scene("res://World.tscn")

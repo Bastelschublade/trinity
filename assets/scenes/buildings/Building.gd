@@ -1,11 +1,21 @@
 extends Spatial
 
+export(NodePath) var cut_ground
+
+
 onready var roof = get_node('Roof')
 onready var walls = get_node('Walls')
+onready var world = get_node('/root/World')
+onready var ground_node = get_node(cut_ground).get_node('StaticBody/Mesh')
 
 
 func _ready():
 	self.set_process(false)
+	
+	print('WORLD: ', ground_node)
+	var mesh_faces = ground_node.mesh.get_faces()
+	for i in range(len(mesh_faces)):
+		mesh_faces.set(i, Vector3(0,0,0))
 
 
 func _on_Area_body_entered(body):

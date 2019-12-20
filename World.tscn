@@ -169,7 +169,6 @@ material/2 = ExtResource( 6 )
 shape = SubResource( 2 )
 
 [node name="Farm" type="Spatial" parent="."]
-editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 8.83586, 35.4031 )
 
 [node name="Animals" type="Spatial" parent="Farm"]
@@ -249,7 +248,7 @@ transform = Transform( -4.37114e-08, -0.0621832, -0.998065, 0, 0.998065, -0.0621
 transform = Transform( -4.36688e-08, 1.9294e-09, 1, 0.0441395, 0.999025, 0, -0.999025, 0.0441395, -4.37114e-08, 0, 0.182566, -6.33381 )
 
 [node name="Garan" parent="Farm" instance=ExtResource( 14 )]
-transform = Transform( -0.258592, 0, 0.965986, 0, 1, 0, -0.965986, 0, -0.258592, -14.1335, -1.20829, -3.6669 )
+transform = Transform( -0.258592, 0, 0.965986, 0, 1, 0, -0.965986, 0, -0.258592, -6.83876, -0.660194, -0.166912 )
 
 [node name="Field" type="Spatial" parent="Farm"]
 editor/display_folded = true
@@ -269,6 +268,7 @@ transform = Transform( 0.981163, -0.193183, 0, 0.193183, 0.981163, 0, 0, 0, 1, 0
 
 [node name="FarmHouse" parent="Farm" instance=ExtResource( 16 )]
 transform = Transform( 2.93973, -0.285177, 0.526015, 0.308063, 2.9823, -0.10482, -0.512947, 0.156729, 2.95167, -13.9104, -1.48384, -0.967964 )
+cut_ground = NodePath("../../Island01")
 
 [node name="Camp" type="Spatial" parent="."]
 editor/display_folded = true
