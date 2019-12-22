@@ -1,0 +1,1 @@
+{"default_conversation":"Node1","nodes":{"Node0":{"Line0":"","Size":1,"type":"Speech"},"Node1":{"Line0":"","type":"Conversation"},"Node2":{"Line0":"","Size":1,"type":"Choice"},"Node3":{"Size":2,"type":"Mux"}},"sc":{"Node1":{"0":{"to":"Node2","to_slot":0}},"Node2":{"0":{"to":"Node0","to_slot":0}}}}

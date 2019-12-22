@@ -19,6 +19,26 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://assets/creatures/breakables/breakable.gd"
 }, {
+"base": "Textual",
+"class": "Condition",
+"language": "GDScript",
+"path": "res://scripts/condition/condition.gd"
+}, {
+"base": "Condition",
+"class": "ConditionItem",
+"language": "GDScript",
+"path": "res://scripts/condition/condition_item.gd"
+}, {
+"base": "Condition",
+"class": "ConditionItemType",
+"language": "GDScript",
+"path": "res://scripts/condition/condition_item_type.gd"
+}, {
+"base": "Condition",
+"class": "ConditionList",
+"language": "GDScript",
+"path": "res://scripts/condition/condition_list.gd"
+}, {
 "base": "Spatial",
 "class": "Creature",
 "language": "GDScript",
@@ -28,6 +48,16 @@ _global_script_classes=[ {
 "class": "Crop",
 "language": "GDScript",
 "path": "res://assets/objects/farm/crops/Crop.gd"
+}, {
+"base": "Node",
+"class": "Dialog",
+"language": "GDScript",
+"path": "res://scripts/dialog/dialog.gd"
+}, {
+"base": "Node",
+"class": "DialogView",
+"language": "GDScript",
+"path": "res://scripts/dialog/view.gd"
 }, {
 "base": "Creature",
 "class": "Enemy",
@@ -94,10 +124,25 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scripts/model_res.gd"
 }, {
+"base": "GraphNode",
+"class": "MyGraphNode",
+"language": "GDScript",
+"path": "res://assets/scenes/game/npc_generator/dialog_editor/nodes/base_node.gd"
+}, {
 "base": "Creature",
 "class": "NPC",
 "language": "GDScript",
 "path": "res://assets/creatures/npc/NPC.gd"
+}, {
+"base": "Control",
+"class": "NodeCondition",
+"language": "GDScript",
+"path": "res://assets/scenes/game/npc_generator/dialog_editor/nodes/conditions/node_condition.gd"
+}, {
+"base": "NodeCondition",
+"class": "NodeConditionGrace",
+"language": "GDScript",
+"path": "res://assets/scenes/game/npc_generator/dialog_editor/nodes/conditions/node_condition_item.gd"
 }, {
 "base": "Node",
 "class": "Note",
@@ -118,6 +163,11 @@ _global_script_classes=[ {
 "class": "Stats",
 "language": "GDScript",
 "path": "res://assets/creatures/Stats.gd"
+}, {
+"base": "Node",
+"class": "Textual",
+"language": "GDScript",
+"path": "res://scripts/textual.gd"
 }, {
 "base": "Equip",
 "class": "Weapon",
@@ -142,8 +192,14 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Animal": "",
 "Breakable": "",
+"Condition": "",
+"ConditionItem": "",
+"ConditionItemType": "",
+"ConditionList": "",
 "Creature": "",
 "Crop": "",
+"Dialog": "",
+"DialogView": "",
 "Enemy": "",
 "Equip": "",
 "FarmLand": "",
@@ -157,11 +213,15 @@ _global_script_class_icons={
 "LootContainer": "",
 "LootTable": "",
 "ModelRes": "",
+"MyGraphNode": "",
 "NPC": "",
+"NodeCondition": "",
+"NodeConditionGrace": "",
 "Note": "",
 "Player": "",
 "Seed": "",
 "Stats": "",
+"Textual": "",
 "Weapon": "",
 "door": "",
 "material_res": "",
@@ -183,7 +243,7 @@ ItemDB="*res://assets/items/ItemDB.tscn"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "zylann.hterrain" )
+enabled=PoolStringArray( "dialog_graph", "zylann.hterrain" )
 
 [input]
 

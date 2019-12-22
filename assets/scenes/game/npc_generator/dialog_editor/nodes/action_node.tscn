@@ -1,0 +1,170 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/scenes/game/npc_generator/editor_theme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/node_header.tscn" type="PackedScene" id=2]
+[ext_resource path="res://give_items.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+content_margin_left = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color( 0.184314, 0.176471, 0.196078, 1 )
+border_width_left = 2
+border_width_top = 24
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.74902, 0, 0.803922, 1 )
+
+[node name="ActionNode" type="GraphNode"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -695.0
+margin_bottom = -346.0
+theme = ExtResource( 1 )
+custom_styles/frame = SubResource( 1 )
+custom_styles/defaultframe = SubResource( 1 )
+title = "Aktion"
+show_close = true
+resizable = true
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+slot/1/left_enabled = true
+slot/1/left_type = 0
+slot/1/left_color = Color( 0.74902, 0, 0.803922, 1 )
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color( 1, 1, 1, 1 )
+slot/2/left_enabled = false
+slot/2/left_type = 0
+slot/2/left_color = Color( 1, 1, 1, 1 )
+slot/2/right_enabled = false
+slot/2/right_type = 0
+slot/2/right_color = Color( 1, 1, 1, 1 )
+slot/3/left_enabled = false
+slot/3/left_type = 0
+slot/3/left_color = Color( 1, 1, 1, 1 )
+slot/3/right_enabled = false
+slot/3/right_type = 0
+slot/3/right_color = Color( 1, 1, 1, 1 )
+slot/4/left_enabled = false
+slot/4/left_type = 0
+slot/4/left_color = Color( 1, 1, 1, 1 )
+slot/4/right_enabled = false
+slot/4/right_type = 0
+slot/4/right_color = Color( 1, 1, 1, 1 )
+slot/5/left_enabled = false
+slot/5/left_type = 0
+slot/5/left_color = Color( 1, 1, 1, 1 )
+slot/5/right_enabled = false
+slot/5/right_type = 0
+slot/5/right_color = Color( 1, 1, 1, 1 )
+
+[node name="NodeHeader" parent="." instance=ExtResource( 2 )]
+margin_left = 10.0
+margin_top = 24.0
+margin_right = 319.0
+margin_bottom = 46.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+editor/display_folded = true
+margin_left = 10.0
+margin_top = 46.0
+margin_right = 319.0
+margin_bottom = 66.0
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+margin_top = 3.0
+margin_right = 152.0
+margin_bottom = 17.0
+size_flags_horizontal = 3
+text = "Aktion: "
+
+[node name="OptionButton" type="OptionButton" parent="HBoxContainer"]
+margin_left = 156.0
+margin_right = 309.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 67.0
+margin_right = 319.0
+margin_bottom = 81.0
+
+[node name="HSeparator" type="HSeparator" parent="."]
+margin_left = 10.0
+margin_top = 82.0
+margin_right = 319.0
+margin_bottom = 86.0
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 87.0
+margin_right = 319.0
+margin_bottom = 101.0
+
+[node name="Actions" type="MarginContainer" parent="."]
+margin_left = 10.0
+margin_top = 102.0
+margin_right = 319.0
+margin_bottom = 154.0
+
+[node name="give_items" type="VBoxContainer" parent="Actions"]
+margin_right = 309.0
+margin_bottom = 52.0
+size_flags_horizontal = 3
+script = ExtResource( 3 )
+action_name = "items"
+
+[node name="Item" type="HBoxContainer" parent="Actions/give_items"]
+margin_right = 309.0
+margin_bottom = 24.0
+
+[node name="Label" type="Label" parent="Actions/give_items/Item"]
+margin_top = 5.0
+margin_right = 152.0
+margin_bottom = 19.0
+size_flags_horizontal = 3
+text = "Item Alias: "
+
+[node name="LineEdit" type="LineEdit" parent="Actions/give_items/Item"]
+margin_left = 156.0
+margin_right = 309.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Amount" type="HBoxContainer" parent="Actions/give_items"]
+margin_top = 28.0
+margin_right = 309.0
+margin_bottom = 52.0
+
+[node name="Label" type="Label" parent="Actions/give_items/Amount"]
+margin_top = 5.0
+margin_right = 231.0
+margin_bottom = 19.0
+size_flags_horizontal = 3
+text = "Anzahl: "
+
+[node name="SpinBox" type="SpinBox" parent="Actions/give_items/Amount"]
+margin_left = 235.0
+margin_right = 309.0
+margin_bottom = 24.0
+min_value = 1.0
+value = 1.0
+
+[node name="remove_items" type="VBoxContainer" parent="Actions"]
+margin_right = 309.0
+margin_bottom = 52.0
+script = ExtResource( 3 )
+action_name = "items"
+
+[node name="change_grace" type="VBoxContainer" parent="Actions"]
+margin_right = 309.0
+margin_bottom = 52.0
+script = ExtResource( 3 )
+action_name = "items"

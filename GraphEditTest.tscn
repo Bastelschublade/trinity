@@ -1,0 +1,93 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/dialog_graph/icon.png" type="Texture" id=1]
+[ext_resource path="res://GraphEdit.gd" type="Script" id=2]
+[ext_resource path="res://GraphNode.gd" type="Script" id=3]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -4.0
+margin_right = -4.0
+
+[node name="GraphEdit" type="GraphEdit" parent="."]
+margin_left = -2.0
+margin_top = 1.0
+margin_right = 970.0
+margin_bottom = 409.0
+custom_icons/snap = ExtResource( 1 )
+scroll_offset = Vector2( -40, -40 )
+script = ExtResource( 2 )
+
+[node name="GraphNode" type="GraphNode" parent="GraphEdit"]
+margin_left = 40.0
+margin_top = 40.0
+margin_right = 240.0
+margin_bottom = 177.0
+mouse_filter = 1
+title = "Test"
+show_close = true
+resizable = true
+slot/0/left_enabled = true
+slot/0/left_type = 0
+slot/0/left_color = Color( 0.490196, 0.0705882, 0.215686, 1 )
+slot/0/right_enabled = true
+slot/0/right_type = 0
+slot/0/right_color = Color( 0.360784, 1, 0, 1 )
+slot/1/left_enabled = true
+slot/1/left_type = 0
+slot/1/left_color = Color( 1, 1, 1, 1 )
+slot/1/right_enabled = true
+slot/1/right_type = 0
+slot/1/right_color = Color( 1, 1, 1, 1 )
+slot/2/left_enabled = true
+slot/2/left_type = 0
+slot/2/left_color = Color( 1, 1, 1, 1 )
+slot/2/right_enabled = true
+slot/2/right_type = 0
+slot/2/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 3 )
+
+[node name="CheckBox" type="CheckBox" parent="GraphEdit/GraphNode"]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 184.0
+margin_bottom = 48.0
+
+[node name="LineEdit2" type="LineEdit" parent="GraphEdit/GraphNode"]
+margin_left = 16.0
+margin_top = 48.0
+margin_right = 184.0
+margin_bottom = 72.0
+
+[node name="CheckBox2" type="CheckBox" parent="GraphEdit/GraphNode"]
+margin_left = 16.0
+margin_top = 73.0
+margin_right = 184.0
+margin_bottom = 97.0
+
+[node name="GraphNode2" type="GraphNode" parent="GraphEdit"]
+margin_left = 40.0
+margin_top = 40.0
+margin_right = 260.0
+margin_bottom = 192.0
+mouse_filter = 1
+title = "Zweite"
+resizable = true
+slot/0/left_enabled = true
+slot/0/left_type = 0
+slot/0/left_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+slot/0/right_enabled = true
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+
+[node name="LineEdit" type="LineEdit" parent="GraphEdit/GraphNode2"]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 204.0
+margin_bottom = 48.0
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+[connection signal="connection_request" from="GraphEdit" to="GraphEdit" method="_on_GraphEdit_connection_request"]

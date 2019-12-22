@@ -1,0 +1,180 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/scenes/game/npc_generator/editor_theme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/answer_node.gd" type="Script" id=2]
+[ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/node_header.tscn" type="PackedScene" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+content_margin_left = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color( 0.184314, 0.176471, 0.196078, 1 )
+border_width_left = 2
+border_width_top = 24
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.968627, 0.576471, 0.196078, 1 )
+
+[node name="AnswerNode" type="GraphNode"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.857361
+margin_right = -771.143
+margin_bottom = -421.0
+theme = ExtResource( 1 )
+custom_styles/frame = SubResource( 1 )
+custom_styles/defaultframe = SubResource( 1 )
+title = "Antwort"
+show_close = true
+resizable = true
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color( 0.968627, 0.576471, 0.196078, 1 )
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color( 1, 1, 1, 1 )
+slot/2/left_enabled = true
+slot/2/left_type = 0
+slot/2/left_color = Color( 0.968627, 0.576471, 0.196078, 1 )
+slot/2/right_enabled = true
+slot/2/right_type = 0
+slot/2/right_color = Color( 1, 1, 1, 1 )
+slot/3/left_enabled = false
+slot/3/left_type = 0
+slot/3/left_color = Color( 1, 1, 1, 1 )
+slot/3/right_enabled = true
+slot/3/right_type = 0
+slot/3/right_color = Color( 0.74902, 0, 0.803922, 1 )
+slot/4/left_enabled = false
+slot/4/left_type = 0
+slot/4/left_color = Color( 1, 1, 1, 1 )
+slot/4/right_enabled = false
+slot/4/right_type = 0
+slot/4/right_color = Color( 1, 1, 1, 1 )
+slot/5/left_enabled = false
+slot/5/left_type = 0
+slot/5/left_color = Color( 1, 1, 1, 1 )
+slot/5/right_enabled = false
+slot/5/right_type = 0
+slot/5/right_color = Color( 1, 1, 1, 1 )
+slot/6/left_enabled = false
+slot/6/left_type = 0
+slot/6/left_color = Color( 1, 1, 1, 1 )
+slot/6/right_enabled = false
+slot/6/right_type = 0
+slot/6/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 2 )
+
+[node name="NodeHeader" parent="." instance=ExtResource( 3 )]
+margin_left = 10.0
+margin_top = 24.0
+margin_right = 241.0
+margin_bottom = 46.0
+
+[node name="TextRow" type="HBoxContainer" parent="."]
+margin_left = 10.0
+margin_top = 46.0
+margin_right = 241.0
+margin_bottom = 70.0
+
+[node name="Label" type="Label" parent="TextRow"]
+margin_top = 5.0
+margin_right = 35.0
+margin_bottom = 19.0
+text = "Text: "
+
+[node name="LineEdit" type="LineEdit" parent="TextRow"]
+margin_left = 39.0
+margin_right = 231.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+editor/display_folded = true
+margin_left = 10.0
+margin_top = 71.0
+margin_right = 241.0
+margin_bottom = 89.0
+custom_constants/margin_top = 4
+
+[node name="Next" type="Label" parent="MarginContainer"]
+margin_top = 4.0
+margin_right = 231.0
+margin_bottom = 18.0
+size_flags_horizontal = 3
+text = "Nächster NPC Text"
+align = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+margin_left = 10.0
+margin_top = 90.0
+margin_right = 241.0
+margin_bottom = 122.0
+custom_constants/margin_top = 12
+custom_constants/margin_bottom = 6
+
+[node name="Condition" type="Label" parent="MarginContainer2"]
+visible = false
+margin_top = 12.0
+margin_right = 231.0
+margin_bottom = 26.0
+text = "Bedingung"
+
+[node name="Action" type="Label" parent="MarginContainer2"]
+margin_top = 12.0
+margin_right = 231.0
+margin_bottom = 26.0
+size_flags_horizontal = 3
+text = "Aktion"
+align = 2
+
+[node name="HSeparator" type="HSeparator" parent="."]
+margin_left = 10.0
+margin_top = 123.0
+margin_right = 241.0
+margin_bottom = 127.0
+
+[node name="ExitRow" type="HBoxContainer" parent="."]
+editor/display_folded = true
+margin_left = 10.0
+margin_top = 128.0
+margin_right = 241.0
+margin_bottom = 152.0
+
+[node name="close" type="Label" parent="ExitRow"]
+margin_top = 5.0
+margin_right = 203.0
+margin_bottom = 19.0
+size_flags_horizontal = 3
+text = "Dialog Beenden: "
+
+[node name="CheckBox" type="CheckBox" parent="ExitRow"]
+margin_left = 207.0
+margin_right = 231.0
+margin_bottom = 24.0
+
+[node name="SpecialRow" type="HBoxContainer" parent="."]
+margin_left = 10.0
+margin_top = 153.0
+margin_right = 241.0
+margin_bottom = 173.0
+
+[node name="special" type="Label" parent="SpecialRow"]
+margin_top = 3.0
+margin_right = 177.0
+margin_bottom = 17.0
+size_flags_horizontal = 3
+text = "Spezieller Typ:"
+
+[node name="select" type="OptionButton" parent="SpecialRow"]
+margin_left = 181.0
+margin_right = 231.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 50, 0 )
+[connection signal="close_request" from="." to="." method="_on_close_request"]

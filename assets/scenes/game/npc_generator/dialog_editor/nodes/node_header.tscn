@@ -1,0 +1,32 @@
+[gd_scene format=2]
+
+[node name="NodeHeader" type="HBoxContainer"]
+margin_right = 93.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+alignment = 2
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_top = 5.0
+margin_right = 31.0
+margin_bottom = 19.0
+size_flags_horizontal = 3
+text = "Alias"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+visible = false
+margin_left = 35.0
+margin_right = 93.0
+margin_bottom = 24.0
+
+[node name="TextureButton" type="ToolButton" parent="."]
+margin_left = 7.0
+margin_top = 1.0
+margin_right = 93.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 20, 20 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+toggle_mode = true
+text = "Minimieren"

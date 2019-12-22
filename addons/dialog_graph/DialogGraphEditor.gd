@@ -5,6 +5,7 @@ var conversation_node = preload("ConversationGraphNode.tscn")
 var speech_node = preload("SpeechGraphNode.tscn")
 var choice_node = preload("ChoiceGraphNode.tscn")
 var condition_node = preload("ConditionGraphNode.tscn")
+var condition_item_node = preload("ConditionItemGraphNode.tscn")
 var mux_node = preload("MuxGraphNode.tscn")
 var jump_node = preload("JumpGraphNode.tscn")
 var graph
@@ -24,6 +25,9 @@ func _on_Choice_pressed():
 
 func _on_Condition_pressed():
 	graph.create_node(condition_node)
+
+func _on_ConditionItem_pressed():
+	graph.create_node(condition_item_node)
 
 func _on_Mux_pressed():
 	graph.create_node(mux_node)
@@ -59,6 +63,7 @@ func set_data(data):
 			"Speech": node_type = speech_node
 			"Choice": node_type = choice_node
 			"Condition": node_type = condition_node
+			"ConditionItem": node_type = condition_item_node
 			"Mux": node_type = mux_node
 			"Jump": node_type = jump_node
 		var instance = graph.create_node(node_type, int(node.replace("Node", "")))
