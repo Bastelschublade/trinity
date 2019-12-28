@@ -1,7 +1,11 @@
 extends NodeCondition
-class_name NodeConditionGrace
-
 
 
 func _ready():
-	pass
+	self.condition_name = 'Hat Items'
+
+func export():
+	var data = {}
+	data['item_alias'] = get_node('ItemAlias/LineEdit').text
+	data['item_amount'] = get_node('ItemAmount/Value').value
+	return data

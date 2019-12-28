@@ -1,0 +1,188 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://assets/scenes/game/npc_generator/skin_editor/skin_editor.gd" type="Script" id=1]
+[ext_resource path="res://assets/materials/BeigePug.material" type="Material" id=2]
+[ext_resource path="res://assets/materials/BlondeCharacter.material" type="Material" id=3]
+[ext_resource path="res://assets/creatures/character/accessories/head/beard.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/creatures/character/accessories/head/cap.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/creatures/character/accessories/head/glasses.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/creatures/character/accessories/head/glasses_fancy.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_bob.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_curl_single.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_iro_anal.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_pony.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/creatures/character/bases/base_01.png" type="Texture" id=12]
+[ext_resource path="res://assets/creatures/character/bases/base_02.png" type="Texture" id=13]
+[ext_resource path="res://assets/creatures/character/bases/base_cloth_02.png" type="Texture" id=14]
+[ext_resource path="res://assets/creatures/character/faces/face_04.png" type="Texture" id=15]
+[ext_resource path="res://assets/creatures/character/faces/face_06.png" type="Texture" id=16]
+[ext_resource path="res://assets/creatures/character/Dummy.tscn" type="PackedScene" id=17]
+
+[sub_resource type="SpatialMaterial" id=1]
+
+[sub_resource type="StyleBoxFlat" id=2]
+content_margin_left = 10.0
+content_margin_right = 10.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+bg_color = Color( 0.262745, 0.262745, 0.262745, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+
+[sub_resource type="ViewportTexture" id=7]
+viewport_path = NodePath("Viewport")
+
+[sub_resource type="ViewportTexture" id=5]
+viewport_path = NodePath("Viewport")
+
+[sub_resource type="SpatialMaterial" id=6]
+resource_local_to_scene = true
+albedo_texture = SubResource( 5 )
+
+[node name="SkinEditor" type="Node"]
+script = ExtResource( 1 )
+materials = [ SubResource( 1 ), ExtResource( 2 ), ExtResource( 3 ) ]
+models = [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ]
+textures = [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ]
+
+[node name="Layout" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Sidebar" type="ScrollContainer" parent="Layout"]
+margin_right = 200.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 200, 0 )
+custom_styles/bg = SubResource( 2 )
+
+[node name="Settings" type="VBoxContainer" parent="Layout/Sidebar"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 190.0
+margin_bottom = 590.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Layout/Sidebar/Settings"]
+margin_right = 180.0
+margin_bottom = 31.0
+text = "Skin
+"
+
+[node name="Skin" type="VBoxContainer" parent="Layout/Sidebar/Settings"]
+margin_top = 35.0
+margin_right = 180.0
+margin_bottom = 35.0
+
+[node name="newskin" type="Button" parent="Layout/Sidebar/Settings"]
+margin_top = 39.0
+margin_right = 180.0
+margin_bottom = 59.0
+text = "+ Layer 2D"
+
+[node name="HSeparator" type="HSeparator" parent="Layout/Sidebar/Settings"]
+margin_top = 63.0
+margin_right = 180.0
+margin_bottom = 73.0
+custom_styles/separator = SubResource( 4 )
+custom_constants/separation = 10
+
+[node name="Label3" type="Label" parent="Layout/Sidebar/Settings"]
+margin_top = 77.0
+margin_right = 180.0
+margin_bottom = 91.0
+
+[node name="Label2" type="Label" parent="Layout/Sidebar/Settings"]
+margin_top = 95.0
+margin_right = 180.0
+margin_bottom = 109.0
+text = "Mesh"
+
+[node name="Mesh" type="VBoxContainer" parent="Layout/Sidebar/Settings"]
+margin_top = 113.0
+margin_right = 180.0
+margin_bottom = 113.0
+
+[node name="newmesh" type="Button" parent="Layout/Sidebar/Settings"]
+margin_top = 117.0
+margin_right = 180.0
+margin_bottom = 137.0
+text = "+ Layer 3D"
+
+[node name="PreviewControl" type="HBoxContainer" parent="Layout"]
+margin_left = 204.0
+margin_right = 820.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Button" type="Button" parent="Layout/PreviewControl"]
+margin_left = 280.0
+margin_top = 580.0
+margin_right = 336.0
+margin_bottom = 600.0
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "update"
+
+[node name="SidebarRight" type="VBoxContainer" parent="Layout"]
+margin_left = 824.0
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="TextureRect" type="TextureRect" parent="Layout/SidebarRight"]
+margin_right = 200.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+size_flags_horizontal = 0
+size_flags_vertical = 2
+texture = SubResource( 7 )
+expand = true
+
+[node name="Button" type="Button" parent="Layout/SidebarRight"]
+margin_top = 580.0
+margin_right = 200.0
+margin_bottom = 600.0
+text = "Export"
+
+[node name="Preview" type="Spatial" parent="."]
+
+[node name="CharacterDummy" parent="Preview" instance=ExtResource( 17 )]
+
+[node name="Player" parent="Preview/CharacterDummy" index="0"]
+editor/display_folded = true
+
+[node name="characterMedium" parent="Preview/CharacterDummy/Player/Root" index="0"]
+material/0 = SubResource( 6 )
+
+[node name="HeadAttachment" parent="Preview/CharacterDummy/Player/Root" index="1"]
+transform = Transform( 1, 8.91061e-10, 2.77293e-10, 1.19232e-08, -0.00497422, -0.999989, 2.3389e-10, 0.999987, -0.00497504, 0.000241195, 2.69849, 0.00875425 )
+
+[node name="Camera" parent="Preview/CharacterDummy/Player" index="4"]
+visible = false
+current = true
+
+[node name="Camera" type="Camera" parent="Preview"]
+transform = Transform( 1, 0, 0, 0, 0.98404, 0.177946, 0, -0.177946, 0.98404, 0.0321074, 1.54936, 2.58109 )
+current = true
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Preview"]
+transform = Transform( 1, 0, 0, 0, 0.809162, 0.587585, 0, -0.587585, 0.809162, 4.47134, 2.50307, 0 )
+light_color = Color( 0.984314, 0.964706, 0.72549, 1 )
+
+[node name="Viewport" type="Viewport" parent="."]
+arvr = true
+size = Vector2( 1024, 1024 )
+transparent_bg = true
+hdr = false
+disable_3d = true
+debug_draw = 3
+render_target_v_flip = true
+
+[node name="Sprite" type="TextureRect" parent="Viewport"]
+margin_right = 1024.0
+margin_bottom = 1024.0
+texture = ExtResource( 13 )
+[connection signal="pressed" from="Layout/PreviewControl/Button" to="." method="_update"]
+
+[editable path="Preview/CharacterDummy"]

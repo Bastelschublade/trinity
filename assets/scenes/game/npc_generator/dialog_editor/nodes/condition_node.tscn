@@ -1,16 +1,33 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/condition_node.gd" type="Script" id=1]
 [ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/node_header.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/conditions/node_condition_item.gd" type="Script" id=3]
-[ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/VBoxContainer.gd" type="Script" id=4]
-[ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/node_condition_stats.gd" type="Script" id=5]
+[ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/conditions/node_condition_grace.gd" type="Script" id=4]
+[ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/conditions/node_condition_quest.gd" type="Script" id=5]
+[ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/node_condition_stats.gd" type="Script" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+content_margin_left = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color( 0.184314, 0.176471, 0.192157, 1 )
+border_width_left = 2
+border_width_top = 24
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.133333, 0.729412, 0.0823529, 1 )
 
 [node name="ConditionNode" type="GraphNode"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -689.0
 margin_bottom = -418.0
+custom_styles/frame = SubResource( 1 )
+custom_styles/selectedframe = SubResource( 1 )
+custom_styles/position = SubResource( 1 )
+custom_styles/defaultfocus = SubResource( 1 )
+custom_styles/defaultframe = SubResource( 1 )
 title = "Bedingung"
 show_close = true
 resizable = true
@@ -65,15 +82,15 @@ slot/7/right_color = Color( 1, 1, 1, 1 )
 script = ExtResource( 1 )
 
 [node name="NodeHeader" parent="." instance=ExtResource( 2 )]
-margin_left = 16.0
+margin_left = 10.0
 margin_top = 24.0
-margin_right = 319.0
+margin_right = 325.0
 margin_bottom = 46.0
 
 [node name="ConditionSelect" type="HBoxContainer" parent="."]
-margin_left = 16.0
+margin_left = 10.0
 margin_top = 46.0
-margin_right = 319.0
+margin_right = 325.0
 margin_bottom = 66.0
 
 [node name="Label2" type="Label" parent="ConditionSelect"]
@@ -84,137 +101,134 @@ text = "Abfrage: "
 
 [node name="select" type="OptionButton" parent="ConditionSelect"]
 margin_left = 60.0
-margin_right = 303.0
+margin_right = 315.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="."]
-margin_left = 16.0
+margin_left = 10.0
 margin_top = 67.0
-margin_right = 319.0
+margin_right = 325.0
 margin_bottom = 81.0
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-editor/display_folded = true
-margin_left = 16.0
+[node name="Fullfilled" type="MarginContainer" parent="."]
+margin_left = 10.0
 margin_top = 82.0
-margin_right = 319.0
+margin_right = 325.0
 margin_bottom = 108.0
 custom_constants/margin_top = 12
 
-[node name="Label" type="Label" parent="MarginContainer"]
+[node name="Label" type="Label" parent="Fullfilled"]
 margin_top = 12.0
-margin_right = 303.0
+margin_right = 315.0
 margin_bottom = 26.0
 text = "Erfüllt"
 align = 2
 
-[node name="MarginContainer2" type="MarginContainer" parent="."]
+[node name="Input" type="MarginContainer" parent="."]
 editor/display_folded = true
-margin_left = 16.0
+margin_left = 10.0
 margin_top = 109.0
-margin_right = 319.0
+margin_right = 325.0
 margin_bottom = 123.0
 
-[node name="Label" type="Label" parent="MarginContainer2"]
-margin_right = 303.0
+[node name="Label" type="Label" parent="Input"]
+margin_right = 315.0
 margin_bottom = 14.0
 text = "Input"
 
-[node name="MarginContainer3" type="MarginContainer" parent="."]
+[node name="NotFullfilled" type="MarginContainer" parent="."]
 editor/display_folded = true
-margin_left = 16.0
+margin_left = 10.0
 margin_top = 124.0
-margin_right = 319.0
+margin_right = 325.0
 margin_bottom = 148.0
 custom_constants/margin_bottom = 10
 
-[node name="Label" type="Label" parent="MarginContainer3"]
-margin_right = 303.0
+[node name="Label" type="Label" parent="NotFullfilled"]
+margin_right = 315.0
 margin_bottom = 14.0
 text = "Nicht erfüllt"
 align = 2
 
 [node name="HSeparator" type="HSeparator" parent="."]
-margin_left = 16.0
+margin_left = 10.0
 margin_top = 149.0
-margin_right = 319.0
+margin_right = 325.0
 margin_bottom = 153.0
 
 [node name="Conditions" type="MarginContainer" parent="."]
-margin_left = 16.0
+margin_left = 10.0
 margin_top = 154.0
-margin_right = 319.0
+margin_right = 325.0
 margin_bottom = 216.0
 custom_constants/margin_top = 10
 
 [node name="has_items" type="VBoxContainer" parent="Conditions"]
 editor/display_folded = true
 margin_top = 10.0
-margin_right = 303.0
+margin_right = 315.0
 margin_bottom = 62.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource( 3 )
-condition_name = "Spieler hat Items"
 
 [node name="ItemAlias" type="HBoxContainer" parent="Conditions/has_items"]
 editor/display_folded = true
-margin_right = 303.0
+margin_right = 315.0
 margin_bottom = 24.0
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="Conditions/has_items/ItemAlias"]
 margin_top = 5.0
-margin_right = 149.0
+margin_right = 155.0
 margin_bottom = 19.0
 size_flags_horizontal = 3
 text = "Item Alias: "
 
 [node name="LineEdit" type="LineEdit" parent="Conditions/has_items/ItemAlias"]
-margin_left = 153.0
-margin_right = 303.0
+margin_left = 159.0
+margin_right = 315.0
 margin_bottom = 24.0
 size_flags_horizontal = 3
 
 [node name="ItemAmount" type="HBoxContainer" parent="Conditions/has_items"]
 margin_top = 28.0
-margin_right = 303.0
+margin_right = 315.0
 margin_bottom = 52.0
 
 [node name="Label" type="Label" parent="Conditions/has_items/ItemAmount"]
 margin_top = 5.0
-margin_right = 225.0
+margin_right = 237.0
 margin_bottom = 19.0
 size_flags_horizontal = 3
 text = "Mindeststückzahl:"
 
-[node name="LineEdit" type="SpinBox" parent="Conditions/has_items/ItemAmount"]
-margin_left = 229.0
-margin_right = 303.0
+[node name="Value" type="SpinBox" parent="Conditions/has_items/ItemAmount"]
+margin_left = 241.0
+margin_right = 315.0
 margin_bottom = 24.0
 
 [node name="has_grace" type="VBoxContainer" parent="Conditions"]
 editor/display_folded = true
 visible = false
 margin_top = 10.0
-margin_right = 303.0
+margin_right = 315.0
 margin_bottom = 62.0
-script = ExtResource( 3 )
-condition_name = "Gunst bei NPC"
+script = ExtResource( 4 )
 
-[node name="rep" type="HBoxContainer" parent="Conditions/has_grace"]
+[node name="Grace" type="HBoxContainer" parent="Conditions/has_grace"]
 margin_right = 303.0
 margin_bottom = 24.0
 
-[node name="Label" type="Label" parent="Conditions/has_grace/rep"]
+[node name="Label" type="Label" parent="Conditions/has_grace/Grace"]
 margin_top = 5.0
 margin_right = 225.0
 margin_bottom = 19.0
 size_flags_horizontal = 3
 text = "Mindestens Gunst: "
 
-[node name="SpinBox" type="SpinBox" parent="Conditions/has_grace/rep"]
+[node name="Value" type="SpinBox" parent="Conditions/has_grace/Grace"]
 margin_left = 229.0
 margin_right = 303.0
 margin_bottom = 24.0
@@ -223,10 +237,9 @@ margin_bottom = 24.0
 editor/display_folded = true
 visible = false
 margin_top = 10.0
-margin_right = 303.0
+margin_right = 315.0
 margin_bottom = 82.0
-script = ExtResource( 4 )
-condition_name = "Quest Status"
+script = ExtResource( 5 )
 
 [node name="quest" type="HBoxContainer" parent="Conditions/quest_state"]
 editor/display_folded = true
@@ -247,6 +260,7 @@ margin_bottom = 24.0
 size_flags_horizontal = 3
 
 [node name="state" type="HBoxContainer" parent="Conditions/quest_state"]
+editor/display_folded = true
 margin_top = 28.0
 margin_right = 303.0
 margin_bottom = 48.0
@@ -265,6 +279,7 @@ margin_bottom = 20.0
 size_flags_horizontal = 3
 
 [node name="check" type="HBoxContainer" parent="Conditions/quest_state"]
+editor/display_folded = true
 margin_top = 52.0
 margin_right = 303.0
 margin_bottom = 72.0
@@ -286,10 +301,9 @@ size_flags_horizontal = 3
 editor/display_folded = true
 visible = false
 margin_top = 10.0
-margin_right = 303.0
+margin_right = 315.0
 margin_bottom = 82.0
-script = ExtResource( 5 )
-condition_name = "Eigenschaftswert"
+script = ExtResource( 6 )
 
 [node name="stat" type="HBoxContainer" parent="Conditions/stat_check"]
 margin_right = 303.0
@@ -343,4 +357,5 @@ margin_left = 262.0
 margin_right = 303.0
 margin_bottom = 20.0
 [connection signal="close_request" from="." to="." method="_on_close_request"]
+[connection signal="resize_request" from="." to="." method="_on_resize_request"]
 [connection signal="item_selected" from="ConditionSelect/select" to="." method="_on_select_condition"]

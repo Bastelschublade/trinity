@@ -84,16 +84,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://assets/objects/GameObject.gd"
 }, {
-"base": "ResourceFormatLoader",
-"class": "HTerrainDataLoader",
-"language": "GDScript",
-"path": "res://addons/zylann.hterrain/hterrain_resource_loader.gd"
-}, {
-"base": "ResourceFormatSaver",
-"class": "HTerrainDataSaver",
-"language": "GDScript",
-"path": "res://addons/zylann.hterrain/hterrain_resource_saver.gd"
-}, {
 "base": "Node",
 "class": "Item",
 "language": "GDScript",
@@ -138,11 +128,6 @@ _global_script_classes=[ {
 "class": "NodeCondition",
 "language": "GDScript",
 "path": "res://assets/scenes/game/npc_generator/dialog_editor/nodes/conditions/node_condition.gd"
-}, {
-"base": "NodeCondition",
-"class": "NodeConditionGrace",
-"language": "GDScript",
-"path": "res://assets/scenes/game/npc_generator/dialog_editor/nodes/conditions/node_condition_item.gd"
 }, {
 "base": "Node",
 "class": "Note",
@@ -205,8 +190,6 @@ _global_script_class_icons={
 "FarmLand": "",
 "Food": "",
 "GameObject": "",
-"HTerrainDataLoader": "",
-"HTerrainDataSaver": "",
 "Item": "",
 "ItemBody": "",
 "ItemDB": "",
@@ -216,7 +199,6 @@ _global_script_class_icons={
 "MyGraphNode": "",
 "NPC": "",
 "NodeCondition": "",
-"NodeConditionGrace": "",
 "Note": "",
 "Player": "",
 "Seed": "",
@@ -243,7 +225,7 @@ ItemDB="*res://assets/items/ItemDB.tscn"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "dialog_graph", "zylann.hterrain" )
+enabled=PoolStringArray( "dialog_graph" )
 
 [input]
 

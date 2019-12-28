@@ -124,8 +124,8 @@ func die():
 
 func death():
 	print('Kreatur ist tot')
-	if self.loot_table:
-		print('loot...')
+	#if self.loot_table:
+	#	print('loot...')
 
 
 func interact():

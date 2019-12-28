@@ -63,7 +63,7 @@ func clear_right_node_connection(from, from_slot):
 			connections[from].erase(from_slot)
 			if connections[from].empty():
 				connections.erase(from)
-			
+				
 func _on_DialogGraph_connection_request(from, from_slot, to, to_slot):
 	if !is_node_connected(from, from_slot, to, to_slot):
 		clear_right_node_connection(from, from_slot)
@@ -77,6 +77,7 @@ func _on_DialogGraph_connection_request(from, from_slot, to, to_slot):
 		else:
 			connections[from][from_slot]["to"] = to
 			connections[from][from_slot]["to_slot"] = to_slot
+
 
 func _on_DialogGraph_disconnection_request(from, from_slot, to, to_slot):
 	disconnect_node(from, from_slot, to, to_slot)

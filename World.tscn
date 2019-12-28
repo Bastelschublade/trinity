@@ -1,4 +1,4 @@
-[gd_scene load_steps=82 format=2]
+[gd_scene load_steps=84 format=2]
 
 [ext_resource path="res://World.gd" type="Script" id=1]
 [ext_resource path="res://assets/ui/Ui.tscn" type="PackedScene" id=2]
@@ -78,6 +78,8 @@
 [ext_resource path="res://assets/objects/nature/flowers/flower_red.tscn" type="PackedScene" id=76]
 [ext_resource path="res://assets/objects/nature/flowers/flower_small_pink.tscn" type="PackedScene" id=77]
 [ext_resource path="res://assets/objects/nature/flowers/flower_wide_yellow.tscn" type="PackedScene" id=78]
+[ext_resource path="res://assets/creatures/npc/klabautermann_eno/KlabautermannEno.tscn" type="PackedScene" id=79]
+[ext_resource path="res://assets/items/bodies/woodenleg_eno.tscn" type="PackedScene" id=80]
 
 [sub_resource type="ArrayMesh" id=1]
 surfaces/0 = {
@@ -340,8 +342,7 @@ cubic_interp = false
 transform = Transform( -0.276154, 0, -0.961113, 0, 1, 0, 0.961113, 0, -0.276154, -0.0219421, -0.254144, -0.204518 )
 
 [node name="Spawn" type="Spatial" parent="."]
-editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 95.72, 10.2156, 64.702 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.8426, 14.3865, 13.2226 )
 
 [node name="Dice" parent="Spawn" instance=ExtResource( 28 )]
 transform = Transform( 1, 0, 0, 0, 0.35604, -0.934471, 0, 0.934471, 0.35604, 2.62844, 1.29625, 1.89843 )
@@ -617,3 +618,9 @@ transform = Transform( 0.996471, 0, 0.0839423, 0, 1, 0, -0.0839423, 0, 0.996471,
 
 [node name="FlowerWideYellow" parent="Forest/Plants" instance=ExtResource( 78 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.075, -50.5037 )
+
+[node name="KlabuatermannEno" parent="." instance=ExtResource( 79 )]
+transform = Transform( -0.0868712, 0, -0.492396, 0, 0.5, 0, 0.492396, 0, -0.0868712, 34.028, 12.2731, 22.1295 )
+
+[node name="WoodenLegEno" parent="." instance=ExtResource( 80 )]
+transform = Transform( 0.927574, 0.37223, 0.032431, -0.00737101, -0.0685507, 0.99762, 0.373568, -0.925605, -0.0608421, 15.6452, 11.9502, 49.5254 )

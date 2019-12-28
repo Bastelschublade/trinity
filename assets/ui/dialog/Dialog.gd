@@ -63,7 +63,7 @@ func check_conditions(conditions):
 			if each != c:
 				return c
 		elif key == 'has_item':
-			var c = player.inventory.has_items(conditions[key])
+			var c = player.inventory.has_item(conditions[key])
 			if each != c:
 				return c
 		elif key == 'rep_min':

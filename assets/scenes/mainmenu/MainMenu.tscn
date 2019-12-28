@@ -11,6 +11,7 @@ anchor_bottom = 1.0
 script = ExtResource( 1 )
 
 [node name="VBoxContainer" type="HBoxContainer" parent="."]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = SubResource( 1 )
@@ -73,6 +74,29 @@ anchor_bottom = 1.0
 text = "Beenden"
 align = 1
 valign = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Button" type="Button" parent="VBoxContainer2"]
+margin_right = 113.0
+margin_bottom = 20.0
+text = "Skin erstellen"
+
+[node name="ToolButton" type="Button" parent="VBoxContainer2"]
+margin_top = 24.0
+margin_right = 113.0
+margin_bottom = 44.0
+text = "Dialog erstellen"
+
+[node name="ToolButton2" type="Button" parent="VBoxContainer2"]
+margin_top = 48.0
+margin_right = 113.0
+margin_bottom = 68.0
+text = "Export ItemDB"
 [connection signal="pressed" from="VBoxContainer/VBoxContainer/NewButton" to="." method="_on_NewButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/VBoxContainer/TextureButton2" to="." method="_on_TextureButton2_pressed"]
 [connection signal="pressed" from="VBoxContainer/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="VBoxContainer2/ToolButton" to="." method="_on_create_dialog_pressed"]
+[connection signal="pressed" from="VBoxContainer2/ToolButton2" to="." method="_on_export_itemdb_pressed"]

@@ -1,0 +1,1 @@
+{"connections":[[0,0,2,0],[2,0,1,0]],"nodes":{"0":{"id":0,"offset":"(50, 350)","type":"start"},"1":{"exit":false,"id":1,"offset":"(492, 149)","text":"","type":"answer"},"2":{"id":2,"offset":"(130, 30)","text":"","type":"talk"}}}

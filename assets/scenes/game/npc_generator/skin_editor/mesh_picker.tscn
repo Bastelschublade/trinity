@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/ui/rpg/png/iconCross_blue.png" type="Texture" id=1]
+[ext_resource path="res://assets/ui/rpg/png/iconCross_grey.png" type="Texture" id=2]
+
+[node name="MeshSelector" type="VBoxContainer"]
+margin_right = 180.0
+margin_bottom = 44.0
+
+[node name="Mesh" type="OptionButton" parent="."]
+margin_right = 180.0
+margin_bottom = 20.0
+
+[node name="cols" type="HBoxContainer" parent="."]
+margin_top = 24.0
+margin_right = 180.0
+margin_bottom = 44.0
+
+[node name="Material" type="OptionButton" parent="cols"]
+margin_right = 160.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="cols"]
+margin_left = 164.0
+margin_right = 180.0
+margin_bottom = 20.0
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 2 )
+texture_focused = ExtResource( 2 )

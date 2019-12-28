@@ -23,6 +23,9 @@ margin_right = -771.143
 margin_bottom = -421.0
 theme = ExtResource( 1 )
 custom_styles/frame = SubResource( 1 )
+custom_styles/selectedframe = SubResource( 1 )
+custom_styles/position = SubResource( 1 )
+custom_styles/defaultfocus = SubResource( 1 )
 custom_styles/defaultframe = SubResource( 1 )
 title = "Antwort"
 show_close = true
@@ -54,7 +57,7 @@ slot/3/right_color = Color( 0.74902, 0, 0.803922, 1 )
 slot/4/left_enabled = false
 slot/4/left_type = 0
 slot/4/left_color = Color( 1, 1, 1, 1 )
-slot/4/right_enabled = false
+slot/4/right_enabled = true
 slot/4/right_type = 0
 slot/4/right_color = Color( 1, 1, 1, 1 )
 slot/5/left_enabled = false
@@ -69,6 +72,12 @@ slot/6/left_color = Color( 1, 1, 1, 1 )
 slot/6/right_enabled = false
 slot/6/right_type = 0
 slot/6/right_color = Color( 1, 1, 1, 1 )
+slot/7/left_enabled = false
+slot/7/left_type = 0
+slot/7/left_color = Color( 1, 1, 1, 1 )
+slot/7/right_enabled = false
+slot/7/right_type = 0
+slot/7/right_color = Color( 1, 1, 1, 1 )
 script = ExtResource( 2 )
 
 [node name="NodeHeader" parent="." instance=ExtResource( 3 )]
@@ -134,18 +143,40 @@ size_flags_horizontal = 3
 text = "Aktion"
 align = 2
 
-[node name="HSeparator" type="HSeparator" parent="."]
+[node name="MarginContainer3" type="MarginContainer" parent="."]
 margin_left = 10.0
 margin_top = 123.0
 margin_right = 241.0
-margin_bottom = 127.0
+margin_bottom = 155.0
+custom_constants/margin_top = 12
+custom_constants/margin_bottom = 6
+
+[node name="Condition" type="Label" parent="MarginContainer3"]
+visible = false
+margin_top = 12.0
+margin_right = 231.0
+margin_bottom = 26.0
+text = "Bedingung"
+
+[node name="Action" type="Label" parent="MarginContainer3"]
+margin_top = 12.0
+margin_right = 231.0
+margin_bottom = 26.0
+size_flags_horizontal = 3
+text = "Checkpoint (Neuer Dialog)"
+align = 2
+
+[node name="HSeparator" type="HSeparator" parent="."]
+margin_left = 10.0
+margin_top = 156.0
+margin_right = 241.0
+margin_bottom = 160.0
 
 [node name="ExitRow" type="HBoxContainer" parent="."]
-editor/display_folded = true
 margin_left = 10.0
-margin_top = 128.0
+margin_top = 161.0
 margin_right = 241.0
-margin_bottom = 152.0
+margin_bottom = 185.0
 
 [node name="close" type="Label" parent="ExitRow"]
 margin_top = 5.0
@@ -161,16 +192,16 @@ margin_bottom = 24.0
 
 [node name="SpecialRow" type="HBoxContainer" parent="."]
 margin_left = 10.0
-margin_top = 153.0
+margin_top = 186.0
 margin_right = 241.0
-margin_bottom = 173.0
+margin_bottom = 206.0
 
 [node name="special" type="Label" parent="SpecialRow"]
 margin_top = 3.0
 margin_right = 177.0
 margin_bottom = 17.0
 size_flags_horizontal = 3
-text = "Spezieller Typ:"
+text = "Antwort Icon:"
 
 [node name="select" type="OptionButton" parent="SpecialRow"]
 margin_left = 181.0
@@ -178,3 +209,4 @@ margin_right = 231.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 50, 0 )
 [connection signal="close_request" from="." to="." method="_on_close_request"]
+[connection signal="resize_request" from="." to="." method="_on_resize_request"]

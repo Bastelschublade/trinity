@@ -1,0 +1,67 @@
+{
+	"start":{
+		"text": "Arrr, $Player.
+Was treibt dich in dieses tiefe Gewässer? Lust einem alten Piraten einen Gefallen zu tun?",
+		"choices": [
+			{
+				"text": "Jarr, was brauchst du?",
+				"view":"holzbeinquest",
+				"next_view": "holzbeinquest",
+			},{
+				"text": "[Nö]",
+				"exit":true
+			}
+		]
+	},
+
+	"holzbeinquest":{
+		"text": "
+Mein Holzbein! Eine von diesen fiesen Spinnen hat vorhin mein Holzbein stibitzt! Wenn du es mir wiederbringen könntest...
+
+Belohnung:
+  8 Gunst bei Eno
+",
+		"choices": [
+      {
+        "text": "[!] Bin schon unterwegs.",
+        "exit": true,
+        "set_flag": "findingholzbein",
+        "next_view": "questactive",
+      },
+			{
+				"text": "[Weg gehen]",
+				"exit":true
+			}
+		]
+	},
+
+	"questactive":{
+		"text": "Hast du mein Bein schon gefunden?",
+		"choices": [
+      {
+        "text": "[?] Ja hier ist es.",
+				"view": "questfinish",
+        "next_view": "questfinish",
+				"condition": {"has_item": "woodenleg_eno"}
+      },{
+        "text": "Ich suhe noch",
+        "exit": true
+      },
+			{
+				"text": "[Weg gehen]",
+				"exit":true
+			}
+		]
+	},
+
+	"questfinish":{
+		"text": "Arrr, $Player.
+Ich bin dir wirklich sehr dankbarrr. Jetzt kann ich endlich wieder umherwandern und Leute ausbeuten. Harrharrharr.",
+		"choices": [
+			{
+				"text": "Bis dann..",
+				"exit":true
+			}
+		]
+	},
+}

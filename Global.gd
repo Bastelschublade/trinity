@@ -27,13 +27,6 @@ func _ready():
 	#loading_screen.set_visible(false)
 	loading_screen.name = 'LoadingScreen'
 	
-	#load item db
-	var item_db_res = "res://assets/items/itemdb.json"
-	var file = File.new()
-	assert file.file_exists(item_db_res)
-	file.open(item_db_res, file.READ)
-	print(validate_json(file.get_as_text()))
-	item_db = parse_json(file.get_as_text())
 	
 	#load settings
 	settings = {'debug': true}

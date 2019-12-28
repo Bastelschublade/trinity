@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=3 format=2]
 
-[ext_resource path="res://assets/creatures/npc/garan/skin_manAlternative.png" type="Texture" id=1]
+[ext_resource path="res://assets/creatures/character/skins/alienB.png" type="Texture" id=1]
 
 [sub_resource type="Shader" id=1]
 resource_name = "Shader Nodetree"

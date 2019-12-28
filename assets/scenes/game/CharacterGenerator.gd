@@ -31,53 +31,14 @@ onready var hair_slot = player.get_node('Root/HeadAttachment/Hair')
 onready var beard_slot = player.get_node('Root/HeadAttachment/Beard')
 onready var accessory_slot = player.get_node('Root/HeadAttachment/Accessory')
 onready var player_mesh = player.get_node('Root/characterMedium')#.get('surface_1/material')
-onready var shader = player_mesh.get('mesh').get('surface_1/material')
+#onready var shader = player_mesh.get('mesh').get('surface_1/material')
 
 
 func _ready():
 	#print('Player:', player.get_name())
-	update_hair()
+	pass
 
 
-func update_hair():
-	var model_res = hair_models[hair_models_i]
-	var color = hair_colors[hair_colors_i]
-	var beard_model_res = beard_models[beard_models_i]
-	
-	# update hair color in shader
-	
-
-	var col = Color(color.get('albedo_color'))
-	print(col)
-	print(shader.get('hair_color'))
-	shader.set('shader_param/hair_color', col)
-	
-	# remove old hair and beard
-	for c in hair_slot.get_children():
-		c.queue_free()
-	for c in beard_slot.get_children():
-		c.queue_free()
-	
-	# instance new hair/beard and assign material
-	if model_res:
-		var hair = model_res.instance()
-		var mesh = hair.get_child(0)  # NOTE fix this later
-		mesh.set('material/0', color)
-		hair_slot.add_child(hair)
-	if beard_model_res:
-		var beard = beard_model_res.instance()
-		var bmesh = beard.get_child(0)
-		bmesh.set('material/0', color)
-		beard_slot.add_child(beard)
-
-
-func update_accessory():
-	var model_res = accessory_models[accessory_models_i]
-	for c in accessory_slot.get_children():
-		c.queue_free()
-	if model_res:
-		var acc = model_res.instance()
-		accessory_slot.add_child(acc)
 
 
 func reset_index(i, vec):

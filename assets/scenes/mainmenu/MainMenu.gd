@@ -19,3 +19,12 @@ func _on_TextureButton2_pressed():
 	Global.player = player_res.instance()
 	Global.player.get_node('target/Camera').manually_init()
 	Global.goto_scene("res://World.tscn")
+
+
+func _on_create_dialog_pressed():
+	print('starting editor')
+	Global.goto_scene('res://assets/scenes/game/npc_generator/dialog_editor/dialog_editor.tscn')
+
+
+func _on_export_itemdb_pressed():
+	Global.itemdb._export()

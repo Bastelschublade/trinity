@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://assets/scenes/game/CharacterGenerator.gd" type="Script" id=1]
 [ext_resource path="res://assets/materials/BlackCharacter.material" type="Material" id=2]
@@ -9,61 +9,68 @@
 [ext_resource path="res://assets/creatures/character/accessories/head/hair_pig.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/creatures/character/accessories/head/hair_pony.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/creatures/character/accessories/head/hair_tail.tscn" type="PackedScene" id=9]
-[ext_resource path="res://assets/creatures/character/accessories/head/beard.tscn" type="PackedScene" id=10]
-[ext_resource path="res://assets/creatures/character/accessories/head/glasses.tscn" type="PackedScene" id=11]
-[ext_resource path="res://assets/creatures/character/accessories/head/glasses_fancy.tscn" type="PackedScene" id=12]
-[ext_resource path="res://assets/creatures/character/bases/base_01.png" type="Texture" id=13]
-[ext_resource path="res://assets/creatures/character/bases/base_02.png" type="Texture" id=14]
-[ext_resource path="res://assets/creatures/character/bases/base_03.png" type="Texture" id=15]
-[ext_resource path="res://assets/creatures/character/bases/base_04.png" type="Texture" id=16]
-[ext_resource path="res://assets/creatures/character/bases/base_05.png" type="Texture" id=17]
-[ext_resource path="res://assets/creatures/character/faces/face_01.png" type="Texture" id=18]
-[ext_resource path="res://assets/creatures/character/faces/face_02.png" type="Texture" id=19]
-[ext_resource path="res://assets/creatures/character/faces/face_03.png" type="Texture" id=20]
-[ext_resource path="res://assets/creatures/character/faces/face_04.png" type="Texture" id=21]
-[ext_resource path="res://assets/creatures/character/faces/face_05.png" type="Texture" id=22]
-[ext_resource path="res://assets/creatures/character/faces/face_06.png" type="Texture" id=23]
-[ext_resource path="res://assets/creatures/character/faces/face_07.png" type="Texture" id=24]
-[ext_resource path="res://assets/creatures/character/faces/face_08.png" type="Texture" id=25]
-[ext_resource path="res://assets/creatures/character/faces/face_09.png" type="Texture" id=26]
-[ext_resource path="res://assets/creatures/character/faces/face_11.png" type="Texture" id=27]
-[ext_resource path="res://assets/ui/trinity_theme.tres" type="Theme" id=28]
-[ext_resource path="res://assets/ui/icons/male.png" type="Texture" id=29]
-[ext_resource path="res://assets/ui/icons/female.png" type="Texture" id=30]
-[ext_resource path="res://assets/ui/rpg/png/arrowBrown_left.png" type="Texture" id=31]
-[ext_resource path="res://assets/ui/rpg/png/arrowBeige_left.png" type="Texture" id=32]
-[ext_resource path="res://assets/ui/rpg/png/arrowBlue_left.png" type="Texture" id=33]
-[ext_resource path="res://assets/ui/rpg/png/arrowBrown_right.png" type="Texture" id=34]
-[ext_resource path="res://assets/ui/rpg/png/arrowBeige_right.png" type="Texture" id=35]
-[ext_resource path="res://assets/ui/rpg/png/arrowBlue_right.png" type="Texture" id=36]
-[ext_resource path="res://assets/creatures/player/Player.tscn" type="PackedScene" id=37]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_iro_sideways.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_iro_small.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_iro_sideways_large.tscn" type="PackedScene" id=12]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_iro_anal.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_curl_single.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/creatures/character/accessories/head/beard.tscn" type="PackedScene" id=15]
+[ext_resource path="res://assets/creatures/character/accessories/head/glasses.tscn" type="PackedScene" id=16]
+[ext_resource path="res://assets/creatures/character/accessories/head/glasses_fancy.tscn" type="PackedScene" id=17]
+[ext_resource path="res://assets/creatures/character/bases/base_01.png" type="Texture" id=18]
+[ext_resource path="res://assets/creatures/character/bases/base_02.png" type="Texture" id=19]
+[ext_resource path="res://assets/creatures/character/bases/base_03.png" type="Texture" id=20]
+[ext_resource path="res://assets/creatures/character/bases/base_04.png" type="Texture" id=21]
+[ext_resource path="res://assets/creatures/character/bases/base_05.png" type="Texture" id=22]
+[ext_resource path="res://assets/creatures/character/faces/face_01.png" type="Texture" id=23]
+[ext_resource path="res://assets/creatures/character/faces/face_02.png" type="Texture" id=24]
+[ext_resource path="res://assets/creatures/character/faces/face_03.png" type="Texture" id=25]
+[ext_resource path="res://assets/creatures/character/faces/face_04.png" type="Texture" id=26]
+[ext_resource path="res://assets/creatures/character/faces/face_05.png" type="Texture" id=27]
+[ext_resource path="res://assets/creatures/character/faces/face_06.png" type="Texture" id=28]
+[ext_resource path="res://assets/creatures/character/faces/face_07.png" type="Texture" id=29]
+[ext_resource path="res://assets/creatures/character/faces/face_08.png" type="Texture" id=30]
+[ext_resource path="res://assets/creatures/character/faces/face_09.png" type="Texture" id=31]
+[ext_resource path="res://assets/creatures/character/faces/face_11.png" type="Texture" id=32]
+[ext_resource path="res://assets/ui/trinity_theme.tres" type="Theme" id=33]
+[ext_resource path="res://assets/ui/icons/male.png" type="Texture" id=34]
+[ext_resource path="res://assets/ui/icons/female.png" type="Texture" id=35]
+[ext_resource path="res://assets/ui/rpg/png/arrowBrown_left.png" type="Texture" id=36]
+[ext_resource path="res://assets/ui/rpg/png/arrowBeige_left.png" type="Texture" id=37]
+[ext_resource path="res://assets/ui/rpg/png/arrowBlue_left.png" type="Texture" id=38]
+[ext_resource path="res://assets/ui/rpg/png/arrowBrown_right.png" type="Texture" id=39]
+[ext_resource path="res://assets/ui/rpg/png/arrowBeige_right.png" type="Texture" id=40]
+[ext_resource path="res://assets/ui/rpg/png/arrowBlue_right.png" type="Texture" id=41]
+[ext_resource path="res://assets/creatures/player/Player.tscn" type="PackedScene" id=42]
 
 [node name="CharacterGenerator" type="Spatial"]
 script = ExtResource( 1 )
 player_node = NodePath("Preview/Player")
 hair_colors = [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ]
-hair_models = [ null, ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ]
-beard_models = [ null, ExtResource( 10 ) ]
-accessory_models = [ null, ExtResource( 11 ), ExtResource( 12 ) ]
-base_textures = [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ]
-face_textures = [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ]
+hair_models = [ null, ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ]
+beard_models = [ null, ExtResource( 15 ) ]
+accessory_models = [ null, ExtResource( 16 ), ExtResource( 17 ) ]
+base_textures = [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ) ]
+face_textures = [ ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ) ]
 
 [node name="Customizer" type="Control" parent="."]
 margin_right = 286.0
 margin_bottom = 600.0
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 
 [node name="Dialog" type="PanelContainer" parent="Customizer"]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 
 [node name="Panel" type="Panel" parent="Customizer/Dialog"]
+editor/display_folded = true
 margin_left = 10.0
 margin_top = 10.0
 margin_right = 276.0
 margin_bottom = 590.0
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 
 [node name="MarginContainer" type="MarginContainer" parent="Customizer/Dialog/Panel"]
 anchor_right = 1.0
@@ -115,7 +122,7 @@ margin_left = 34.0
 margin_right = 216.0
 margin_bottom = 30.0
 size_flags_horizontal = 3
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 text = "Player1"
 align = 1
 max_length = 12
@@ -127,8 +134,8 @@ margin_right = 250.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 30, 30 )
 toggle_mode = true
-texture_normal = ExtResource( 29 )
-texture_pressed = ExtResource( 30 )
+texture_normal = ExtResource( 34 )
+texture_pressed = ExtResource( 35 )
 expand = true
 stretch_mode = 5
 
@@ -151,10 +158,10 @@ margin_right = 71.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 0
-texture_normal = ExtResource( 31 )
-texture_pressed = ExtResource( 32 )
-texture_hover = ExtResource( 31 )
-texture_disabled = ExtResource( 33 )
+texture_normal = ExtResource( 36 )
+texture_pressed = ExtResource( 37 )
+texture_hover = ExtResource( 36 )
+texture_disabled = ExtResource( 38 )
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings/Face"]
@@ -164,7 +171,7 @@ margin_right = 175.0
 margin_bottom = 22.0
 rect_min_size = Vector2( 100, 0 )
 size_flags_horizontal = 0
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 text = "Gesicht"
 align = 1
 
@@ -174,10 +181,10 @@ margin_right = 201.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 0
-texture_normal = ExtResource( 34 )
-texture_pressed = ExtResource( 35 )
-texture_hover = ExtResource( 34 )
-texture_disabled = ExtResource( 36 )
+texture_normal = ExtResource( 39 )
+texture_pressed = ExtResource( 40 )
+texture_hover = ExtResource( 39 )
+texture_disabled = ExtResource( 41 )
 stretch_mode = 5
 
 [node name="Skincolor" type="HBoxContainer" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings"]
@@ -193,10 +200,10 @@ margin_right = 71.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 0
-texture_normal = ExtResource( 31 )
-texture_pressed = ExtResource( 32 )
-texture_hover = ExtResource( 31 )
-texture_disabled = ExtResource( 33 )
+texture_normal = ExtResource( 36 )
+texture_pressed = ExtResource( 37 )
+texture_hover = ExtResource( 36 )
+texture_disabled = ExtResource( 38 )
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings/Skincolor"]
@@ -206,7 +213,7 @@ margin_right = 175.0
 margin_bottom = 22.0
 rect_min_size = Vector2( 100, 0 )
 size_flags_horizontal = 0
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 text = "Hautfarbe"
 align = 1
 
@@ -216,10 +223,10 @@ margin_right = 201.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 0
-texture_normal = ExtResource( 34 )
-texture_pressed = ExtResource( 35 )
-texture_hover = ExtResource( 34 )
-texture_disabled = ExtResource( 36 )
+texture_normal = ExtResource( 39 )
+texture_pressed = ExtResource( 40 )
+texture_hover = ExtResource( 39 )
+texture_disabled = ExtResource( 41 )
 stretch_mode = 5
 
 [node name="Haircolor" type="HBoxContainer" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings"]
@@ -235,10 +242,10 @@ margin_right = 71.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 0
-texture_normal = ExtResource( 31 )
-texture_pressed = ExtResource( 32 )
-texture_hover = ExtResource( 31 )
-texture_disabled = ExtResource( 33 )
+texture_normal = ExtResource( 36 )
+texture_pressed = ExtResource( 37 )
+texture_hover = ExtResource( 36 )
+texture_disabled = ExtResource( 38 )
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings/Haircolor"]
@@ -248,7 +255,7 @@ margin_right = 175.0
 margin_bottom = 22.0
 rect_min_size = Vector2( 100, 0 )
 size_flags_horizontal = 0
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 text = "Haarfarbe"
 align = 1
 
@@ -258,10 +265,10 @@ margin_right = 201.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 0
-texture_normal = ExtResource( 34 )
-texture_pressed = ExtResource( 35 )
-texture_hover = ExtResource( 34 )
-texture_disabled = ExtResource( 36 )
+texture_normal = ExtResource( 39 )
+texture_pressed = ExtResource( 40 )
+texture_hover = ExtResource( 39 )
+texture_disabled = ExtResource( 41 )
 stretch_mode = 5
 
 [node name="Hairstyle" type="HBoxContainer" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings"]
@@ -283,10 +290,10 @@ margin_right = 71.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 0
-texture_normal = ExtResource( 31 )
-texture_pressed = ExtResource( 32 )
-texture_hover = ExtResource( 31 )
-texture_disabled = ExtResource( 33 )
+texture_normal = ExtResource( 36 )
+texture_pressed = ExtResource( 37 )
+texture_hover = ExtResource( 36 )
+texture_disabled = ExtResource( 38 )
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings/Hairstyle/Nav"]
@@ -296,7 +303,7 @@ margin_right = 175.0
 margin_bottom = 22.0
 rect_min_size = Vector2( 100, 0 )
 size_flags_horizontal = 0
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 text = "Frisur"
 align = 1
 
@@ -306,10 +313,10 @@ margin_right = 201.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 0
-texture_normal = ExtResource( 34 )
-texture_pressed = ExtResource( 35 )
-texture_hover = ExtResource( 34 )
-texture_disabled = ExtResource( 36 )
+texture_normal = ExtResource( 39 )
+texture_pressed = ExtResource( 40 )
+texture_hover = ExtResource( 39 )
+texture_disabled = ExtResource( 41 )
 stretch_mode = 5
 
 [node name="Beard" type="HBoxContainer" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings"]
@@ -325,10 +332,10 @@ margin_right = 71.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 0
-texture_normal = ExtResource( 31 )
-texture_pressed = ExtResource( 32 )
-texture_hover = ExtResource( 31 )
-texture_disabled = ExtResource( 33 )
+texture_normal = ExtResource( 36 )
+texture_pressed = ExtResource( 37 )
+texture_hover = ExtResource( 36 )
+texture_disabled = ExtResource( 38 )
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings/Beard"]
@@ -338,7 +345,7 @@ margin_right = 175.0
 margin_bottom = 22.0
 rect_min_size = Vector2( 100, 0 )
 size_flags_horizontal = 0
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 text = "Bart"
 align = 1
 
@@ -348,10 +355,10 @@ margin_right = 201.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 0
-texture_normal = ExtResource( 34 )
-texture_pressed = ExtResource( 35 )
-texture_hover = ExtResource( 34 )
-texture_disabled = ExtResource( 36 )
+texture_normal = ExtResource( 39 )
+texture_pressed = ExtResource( 40 )
+texture_hover = ExtResource( 39 )
+texture_disabled = ExtResource( 41 )
 stretch_mode = 5
 
 [node name="Accessory" type="HBoxContainer" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings"]
@@ -367,10 +374,10 @@ margin_right = 71.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 0
-texture_normal = ExtResource( 31 )
-texture_pressed = ExtResource( 32 )
-texture_hover = ExtResource( 31 )
-texture_disabled = ExtResource( 33 )
+texture_normal = ExtResource( 36 )
+texture_pressed = ExtResource( 37 )
+texture_hover = ExtResource( 36 )
+texture_disabled = ExtResource( 38 )
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings/Accessory"]
@@ -380,7 +387,7 @@ margin_right = 175.0
 margin_bottom = 22.0
 rect_min_size = Vector2( 100, 0 )
 size_flags_horizontal = 0
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 text = "Accessoir"
 align = 1
 
@@ -390,10 +397,10 @@ margin_right = 201.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 0
-texture_normal = ExtResource( 34 )
-texture_pressed = ExtResource( 35 )
-texture_hover = ExtResource( 34 )
-texture_disabled = ExtResource( 36 )
+texture_normal = ExtResource( 39 )
+texture_pressed = ExtResource( 40 )
+texture_hover = ExtResource( 39 )
+texture_disabled = ExtResource( 41 )
 stretch_mode = 5
 
 [node name="Cloths" type="HBoxContainer" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings"]
@@ -408,7 +415,7 @@ margin_top = 8.0
 margin_right = 59.0
 margin_bottom = 22.0
 size_flags_horizontal = 2
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 text = "Kleidung:"
 
 [node name="Nav2" type="HBoxContainer" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings/Cloths"]
@@ -425,10 +432,10 @@ margin_right = 40.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 6
-texture_normal = ExtResource( 31 )
-texture_pressed = ExtResource( 32 )
-texture_hover = ExtResource( 31 )
-texture_disabled = ExtResource( 33 )
+texture_normal = ExtResource( 36 )
+texture_pressed = ExtResource( 37 )
+texture_hover = ExtResource( 36 )
+texture_disabled = ExtResource( 38 )
 stretch_mode = 5
 
 [node name="TextureButton2" type="TextureButton" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings/Cloths/Nav2"]
@@ -437,10 +444,10 @@ margin_right = 104.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 6
-texture_normal = ExtResource( 34 )
-texture_pressed = ExtResource( 35 )
-texture_hover = ExtResource( 34 )
-texture_disabled = ExtResource( 36 )
+texture_normal = ExtResource( 39 )
+texture_pressed = ExtResource( 40 )
+texture_hover = ExtResource( 39 )
+texture_disabled = ExtResource( 41 )
 stretch_mode = 5
 
 [node name="Spacer" type="Label" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer"]
@@ -460,7 +467,7 @@ margin_left = 15.0
 margin_right = 108.0
 margin_bottom = 38.0
 size_flags_horizontal = 6
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 text = "Abbrechen"
 
 [node name="Start" type="Button" parent="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/MarginContainer"]
@@ -468,7 +475,7 @@ margin_left = 136.0
 margin_right = 240.0
 margin_bottom = 38.0
 size_flags_horizontal = 6
-theme = ExtResource( 28 )
+theme = ExtResource( 33 )
 text = "Spiel Starten"
 
 [node name="MarginContainer" type="HBoxContainer" parent="Customizer"]
@@ -485,10 +492,10 @@ margin_right = 82.0
 margin_bottom = 42.0
 rect_min_size = Vector2( 40, 40 )
 size_flags_horizontal = 6
-texture_normal = ExtResource( 31 )
-texture_pressed = ExtResource( 32 )
-texture_hover = ExtResource( 31 )
-texture_disabled = ExtResource( 33 )
+texture_normal = ExtResource( 36 )
+texture_pressed = ExtResource( 37 )
+texture_hover = ExtResource( 36 )
+texture_disabled = ExtResource( 38 )
 expand = true
 stretch_mode = 4
 
@@ -498,10 +505,10 @@ margin_right = 212.0
 margin_bottom = 42.0
 rect_min_size = Vector2( 40, 40 )
 size_flags_horizontal = 6
-texture_normal = ExtResource( 34 )
-texture_pressed = ExtResource( 35 )
-texture_hover = ExtResource( 34 )
-texture_disabled = ExtResource( 36 )
+texture_normal = ExtResource( 39 )
+texture_pressed = ExtResource( 40 )
+texture_hover = ExtResource( 39 )
+texture_disabled = ExtResource( 41 )
 expand = true
 stretch_mode = 4
 
@@ -512,7 +519,7 @@ transform = Transform( 0.992114, 0.0416592, -0.118212, 0, 0.943147, 0.332375, 0.
 current = true
 fov = 53.1172
 
-[node name="Player" parent="Preview" instance=ExtResource( 37 )]
+[node name="Player" parent="Preview" instance=ExtResource( 42 )]
 transform = Transform( 0.981749, 0, -0.190182, 0, 1, 0, 0.190182, 0, 0.981749, 1.21334e-07, -7.17972e-09, -6.83799e-08 )
 freeze = true
 

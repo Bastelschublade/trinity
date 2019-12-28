@@ -46,8 +46,20 @@ func create_body():
 	#body = body_res.instance()
 	pass
 
+
 func interact():
 	#print('item collect itself')
 	var inventory = get_node('/root/World/Ui/GameMenu/TabContainer/Inventar/Inventory')
 	inventory.add_item(self.item_id)
 	self.queue_free()
+
+
+func _export():
+	var data = {}
+	data['alias'] = self.name
+	data['name'] = self.item_name
+	data['weight'] = self.item_weight
+	data['price'] = self.item_price
+	data['stackable'] = self.item_stackable
+	data['text'] = self.item_text
+	return data

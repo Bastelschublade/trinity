@@ -41,7 +41,6 @@ tab_align = 0
 
 [node name="Menü" type="Tabs" parent="TabContainer"]
 editor/display_folded = true
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 59.0
@@ -219,6 +218,8 @@ margin_right = -14.0
 margin_bottom = -37.0
 
 [node name="Hilfe" type="Tabs" parent="TabContainer"]
+editor/display_folded = true
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 59.0
@@ -330,6 +331,15 @@ text = "Fortschritt:
 
 Nicht wirklich neue quests, aber neue skins, neue animationen (teilweise spackiger arm) und items. Am Hafen kleine Stände an der Farm ackerland wo man Gemüse pflanzen kann. Achtung, der Jörn lockt dich aufs Schiff, aber da kommste nichtmehr runter und buggst fest. 
 "
+
+[node name="Dev" type="Tabs" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 59.0
+margin_top = 59.0
+margin_right = -451.0
+margin_bottom = -367.0
 
 [node name="CloseButton" type="Control" parent="."]
 anchor_right = 1.0
