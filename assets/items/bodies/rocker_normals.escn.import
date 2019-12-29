@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/strawhat.escn-0b8c9db350749c9c96fd60f712b5640c.scn"
+path="res://.import/rocker_normals.escn-e28188561b29046e837813fee6bf1cad.scn"
 
 [deps]
 
-source_file="res://assets/items/bodies/strawhat.escn"
-dest_files=[ "res://.import/strawhat.escn-0b8c9db350749c9c96fd60f712b5640c.scn" ]
+source_file="res://assets/items/bodies/rocker_normals.escn"
+dest_files=[ "res://.import/rocker_normals.escn-e28188561b29046e837813fee6bf1cad.scn" ]
 
 [params]
 
