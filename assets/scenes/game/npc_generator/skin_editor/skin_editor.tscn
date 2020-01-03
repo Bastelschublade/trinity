@@ -1,24 +1,50 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=51 format=2]
 
 [ext_resource path="res://assets/scenes/game/npc_generator/skin_editor/skin_editor.gd" type="Script" id=1]
-[ext_resource path="res://assets/materials/BeigePug.material" type="Material" id=2]
+[ext_resource path="res://assets/materials/BlackCharacter.material" type="Material" id=2]
 [ext_resource path="res://assets/materials/BlondeCharacter.material" type="Material" id=3]
-[ext_resource path="res://assets/creatures/character/accessories/head/beard.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/creatures/character/accessories/head/cap.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/creatures/character/accessories/head/glasses.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/creatures/character/accessories/head/glasses_fancy.tscn" type="PackedScene" id=7]
-[ext_resource path="res://assets/creatures/character/accessories/head/hair_bob.tscn" type="PackedScene" id=8]
-[ext_resource path="res://assets/creatures/character/accessories/head/hair_curl_single.tscn" type="PackedScene" id=9]
-[ext_resource path="res://assets/creatures/character/accessories/head/hair_iro_anal.tscn" type="PackedScene" id=10]
-[ext_resource path="res://assets/creatures/character/accessories/head/hair_pony.tscn" type="PackedScene" id=11]
-[ext_resource path="res://assets/creatures/character/bases/base_01.png" type="Texture" id=12]
-[ext_resource path="res://assets/creatures/character/bases/base_02.png" type="Texture" id=13]
-[ext_resource path="res://assets/creatures/character/bases/base_cloth_02.png" type="Texture" id=14]
-[ext_resource path="res://assets/creatures/character/faces/face_04.png" type="Texture" id=15]
-[ext_resource path="res://assets/creatures/character/faces/face_06.png" type="Texture" id=16]
-[ext_resource path="res://assets/creatures/character/Dummy.tscn" type="PackedScene" id=17]
-
-[sub_resource type="SpatialMaterial" id=1]
+[ext_resource path="res://assets/materials/BrownCharacter2.material" type="Material" id=4]
+[ext_resource path="res://assets/materials/BrownCharacter3.material" type="Material" id=5]
+[ext_resource path="res://assets/materials/OrangeCharacter3.material" type="Material" id=6]
+[ext_resource path="res://assets/materials/SandPirate.material" type="Material" id=7]
+[ext_resource path="res://assets/creatures/character/accessories/head/beard.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/creatures/character/accessories/head/cap.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/creatures/character/accessories/head/glasses.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/creatures/character/accessories/head/glasses_fancy.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_bob.tscn" type="PackedScene" id=12]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_curl_single.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_iro_anal.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_pony.tscn" type="PackedScene" id=15]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_iro_sideways.tscn" type="PackedScene" id=16]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_iro_small.tscn" type="PackedScene" id=17]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_iro_sideways_large.tscn" type="PackedScene" id=18]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_pig.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair_tail.tscn" type="PackedScene" id=20]
+[ext_resource path="res://assets/creatures/character/bases/base_01.png" type="Texture" id=21]
+[ext_resource path="res://assets/creatures/character/bases/base_02.png" type="Texture" id=22]
+[ext_resource path="res://assets/creatures/character/bases/base_03.png" type="Texture" id=23]
+[ext_resource path="res://assets/creatures/character/bases/base_04.png" type="Texture" id=24]
+[ext_resource path="res://assets/creatures/character/bases/base_05.png" type="Texture" id=25]
+[ext_resource path="res://assets/creatures/character/faces/face_01.png" type="Texture" id=26]
+[ext_resource path="res://assets/creatures/character/faces/face_02.png" type="Texture" id=27]
+[ext_resource path="res://assets/creatures/character/faces/face_03.png" type="Texture" id=28]
+[ext_resource path="res://assets/creatures/character/faces/face_04.png" type="Texture" id=29]
+[ext_resource path="res://assets/creatures/character/faces/face_05.png" type="Texture" id=30]
+[ext_resource path="res://assets/creatures/character/faces/face_06.png" type="Texture" id=31]
+[ext_resource path="res://assets/creatures/character/faces/face_07.png" type="Texture" id=32]
+[ext_resource path="res://assets/creatures/character/faces/face_08.png" type="Texture" id=33]
+[ext_resource path="res://assets/creatures/character/faces/face_09.png" type="Texture" id=34]
+[ext_resource path="res://assets/creatures/character/faces/face_10.png" type="Texture" id=35]
+[ext_resource path="res://assets/creatures/character/faces/face_11.png" type="Texture" id=36]
+[ext_resource path="res://assets/creatures/character/hair/hair_black_1.png" type="Texture" id=37]
+[ext_resource path="res://assets/creatures/character/hair/hair_black_2.png" type="Texture" id=38]
+[ext_resource path="res://assets/creatures/character/hair/hair_blonde_1.png" type="Texture" id=39]
+[ext_resource path="res://assets/creatures/character/hair/hair_blonde_2.png" type="Texture" id=40]
+[ext_resource path="res://assets/creatures/character/hair/hair_brown_1.png" type="Texture" id=41]
+[ext_resource path="res://assets/creatures/character/hair/hair_brown_2.png" type="Texture" id=42]
+[ext_resource path="res://assets/creatures/character/hair/hair_red_1.png" type="Texture" id=43]
+[ext_resource path="res://assets/creatures/character/hair/hair_red_2.png" type="Texture" id=44]
+[ext_resource path="res://assets/creatures/character/Dummy.tscn" type="PackedScene" id=45]
 
 [sub_resource type="StyleBoxFlat" id=2]
 content_margin_left = 10.0
@@ -27,9 +53,9 @@ content_margin_top = 10.0
 content_margin_bottom = 10.0
 bg_color = Color( 0.262745, 0.262745, 0.262745, 1 )
 
-[sub_resource type="StyleBoxFlat" id=4]
+[sub_resource type="StyleBoxFlat" id=3]
 
-[sub_resource type="ViewportTexture" id=7]
+[sub_resource type="ViewportTexture" id=4]
 viewport_path = NodePath("Viewport")
 
 [sub_resource type="ViewportTexture" id=5]
@@ -41,9 +67,19 @@ albedo_texture = SubResource( 5 )
 
 [node name="SkinEditor" type="Node"]
 script = ExtResource( 1 )
-materials = [ SubResource( 1 ), ExtResource( 2 ), ExtResource( 3 ) ]
-models = [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ]
-textures = [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ]
+materials = [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ]
+models = [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ]
+textures = [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ) ]
+
+[node name="FileDialog" type="FileDialog" parent="."]
+margin_left = 350.929
+margin_top = 73.0306
+margin_right = 744.929
+margin_bottom = 464.031
+access = 2
+filters = PoolStringArray( "*.json" )
+current_dir = "/home/buki/projects/games/trinity"
+current_path = "/home/buki/projects/games/trinity/"
 
 [node name="Layout" type="HBoxContainer" parent="."]
 anchor_right = 1.0
@@ -84,7 +120,7 @@ text = "+ Layer 2D"
 margin_top = 63.0
 margin_right = 180.0
 margin_bottom = 73.0
-custom_styles/separator = SubResource( 4 )
+custom_styles/separator = SubResource( 3 )
 custom_constants/separation = 10
 
 [node name="Label3" type="Label" parent="Layout/Sidebar/Settings"]
@@ -116,7 +152,22 @@ margin_bottom = 600.0
 size_flags_horizontal = 3
 alignment = 1
 
-[node name="Button" type="Button" parent="Layout/PreviewControl"]
+[node name="Left" type="Button" parent="Layout/PreviewControl"]
+margin_left = 244.0
+margin_top = 580.0
+margin_right = 264.0
+margin_bottom = 600.0
+size_flags_vertical = 8
+text = "<"
+
+[node name="Label" type="Label" parent="Layout/PreviewControl"]
+margin_left = 268.0
+margin_top = 293.0
+margin_right = 276.0
+margin_bottom = 307.0
+text = "  "
+
+[node name="Update" type="Button" parent="Layout/PreviewControl"]
 margin_left = 280.0
 margin_top = 580.0
 margin_right = 336.0
@@ -124,6 +175,21 @@ margin_bottom = 600.0
 size_flags_horizontal = 0
 size_flags_vertical = 8
 text = "update"
+
+[node name="Label2" type="Label" parent="Layout/PreviewControl"]
+margin_left = 340.0
+margin_top = 293.0
+margin_right = 348.0
+margin_bottom = 307.0
+text = "  "
+
+[node name="Right" type="Button" parent="Layout/PreviewControl"]
+margin_left = 352.0
+margin_top = 580.0
+margin_right = 372.0
+margin_bottom = 600.0
+size_flags_vertical = 8
+text = ">"
 
 [node name="SidebarRight" type="VBoxContainer" parent="Layout"]
 margin_left = 824.0
@@ -136,21 +202,24 @@ margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
 size_flags_horizontal = 0
 size_flags_vertical = 2
-texture = SubResource( 7 )
+texture = SubResource( 4 )
 expand = true
 
-[node name="Button" type="Button" parent="Layout/SidebarRight"]
+[node name="Export" type="Button" parent="Layout/SidebarRight"]
+margin_top = 556.0
+margin_right = 200.0
+margin_bottom = 576.0
+text = "Export"
+
+[node name="Hauptmenu" type="Button" parent="Layout/SidebarRight"]
 margin_top = 580.0
 margin_right = 200.0
 margin_bottom = 600.0
-text = "Export"
+text = "Hauptmenu"
 
 [node name="Preview" type="Spatial" parent="."]
 
-[node name="CharacterDummy" parent="Preview" instance=ExtResource( 17 )]
-
-[node name="Player" parent="Preview/CharacterDummy" index="0"]
-editor/display_folded = true
+[node name="CharacterDummy" parent="Preview" instance=ExtResource( 45 )]
 
 [node name="characterMedium" parent="Preview/CharacterDummy/Player/Root" index="0"]
 material/0 = SubResource( 6 )
@@ -182,7 +251,14 @@ render_target_v_flip = true
 [node name="Sprite" type="TextureRect" parent="Viewport"]
 margin_right = 1024.0
 margin_bottom = 1024.0
-texture = ExtResource( 13 )
-[connection signal="pressed" from="Layout/PreviewControl/Button" to="." method="_update"]
+texture = ExtResource( 22 )
+[connection signal="confirmed" from="FileDialog" to="." method="_export_confirmed"]
+[connection signal="pressed" from="Layout/Sidebar/Settings/newskin" to="." method="_new_skin_picker"]
+[connection signal="pressed" from="Layout/Sidebar/Settings/newmesh" to="." method="_new_mesh_picker"]
+[connection signal="pressed" from="Layout/PreviewControl/Left" to="." method="_rotate" binds= [ -1 ]]
+[connection signal="pressed" from="Layout/PreviewControl/Update" to="." method="_update"]
+[connection signal="pressed" from="Layout/PreviewControl/Right" to="." method="_rotate" binds= [ 1 ]]
+[connection signal="pressed" from="Layout/SidebarRight/Export" to="." method="_export_pressed"]
+[connection signal="pressed" from="Layout/SidebarRight/Hauptmenu" to="." method="_main_menu_pressed"]
 
 [editable path="Preview/CharacterDummy"]

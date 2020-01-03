@@ -23,3 +23,4 @@ texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 3 )
 texture_focused = ExtResource( 3 )
 [connection signal="item_selected" from="OptionButton" to="." method="_on_OptionButton_item_selected"]
+[connection signal="pressed" from="Button" to="." method="_on_x_pressed"]

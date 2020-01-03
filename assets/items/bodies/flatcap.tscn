@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/materials/BrownCharacter2.material" type="Material" id=2]
 [ext_resource path="res://assets/materials/BrownCharacter3.material" type="Material" id=3]
 
-[sub_resource type="ArrayMesh" id=5]
+[sub_resource type="ArrayMesh" id=1]
 resource_name = "Sphere003"
 surfaces/0 = {
 "aabb": AABB( -0.528014, -0.127978, -0.600321, 1.05603, 0.577485, 1.24972 ),
@@ -51,7 +51,7 @@ script = ExtResource( 1 )
 item_alias = "farmercap"
 
 [node name="Mesh" type="MeshInstance" parent="."]
-mesh = SubResource( 5 )
+mesh = SubResource( 1 )
 material/0 = null
 material/1 = null
 material/2 = null

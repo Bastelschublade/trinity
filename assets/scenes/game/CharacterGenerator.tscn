@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://assets/scenes/game/CharacterGenerator.gd" type="Script" id=1]
 [ext_resource path="res://assets/materials/BlackCharacter.material" type="Material" id=2]
@@ -43,7 +43,15 @@
 [ext_resource path="res://assets/ui/rpg/png/arrowBlue_right.png" type="Texture" id=41]
 [ext_resource path="res://assets/creatures/player/Player.tscn" type="PackedScene" id=42]
 
+[sub_resource type="ViewportTexture" id=1]
+viewport_path = NodePath("Preview/Player/Skin")
+
+[sub_resource type="SpatialMaterial" id=2]
+resource_local_to_scene = true
+albedo_texture = SubResource( 1 )
+
 [node name="CharacterGenerator" type="Spatial"]
+editor/display_folded = true
 script = ExtResource( 1 )
 player_node = NodePath("Preview/Player")
 hair_colors = [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ]
@@ -59,13 +67,11 @@ margin_bottom = 600.0
 theme = ExtResource( 33 )
 
 [node name="Dialog" type="PanelContainer" parent="Customizer"]
-editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = ExtResource( 33 )
 
 [node name="Panel" type="Panel" parent="Customizer/Dialog"]
-editor/display_folded = true
 margin_left = 10.0
 margin_top = 10.0
 margin_right = 276.0
@@ -526,11 +532,11 @@ freeze = true
 [node name="Camera" parent="Preview/Player/target" index="0"]
 current = false
 
-[node name="HeadAttachment" parent="Preview/Player/Root" index="1"]
-transform = Transform( 1, 8.91061e-10, 2.77293e-10, 1.19232e-08, -0.00497422, -0.999989, 2.3389e-10, 0.999987, -0.00497504, 0.000241195, 2.69849, 0.00875425 )
+[node name="Root" parent="Preview/Player" index="4"]
+bones/18/bound_children = [ NodePath("HeadAttachment") ]
 
-[node name="Equipment" parent="Preview/Player/Root/HeadAttachment" index="2"]
-editor/display_folded = true
+[node name="characterMedium" parent="Preview/Player/Root" index="0"]
+material/0 = SubResource( 2 )
 [connection signal="pressed" from="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings/Face/prev" to="." method="_change_face" binds= [ -1 ]]
 [connection signal="pressed" from="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings/Face/next" to="." method="_change_face" binds= [ 1 ]]
 [connection signal="pressed" from="Customizer/Dialog/Panel/MarginContainer/VBoxContainer/ScrollContainer/Settings/Skincolor/prev" to="." method="_change_base" binds= [ -1 ]]

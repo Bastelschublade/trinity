@@ -11,7 +11,7 @@
 [ext_resource path="res://assets/creatures/animals/chick/Chick.tscn" type="PackedScene" id=9]
 [ext_resource path="res://assets/objects/fences/wood/WoodFenceDark.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/objects/fences/wood/WoodFenceGateDarkX.tscn" type="PackedScene" id=11]
-[ext_resource path="res://assets/objects/fences/wood/BreakableWoodFence.tscn" type="PackedScene" id=12]
+[ext_resource path="res://assets/objects/fences/wood/WoodFenceDarkBreakable.tscn" type="PackedScene" id=12]
 [ext_resource path="res://assets/deco/cart/CartHay.tscn" type="PackedScene" id=13]
 [ext_resource path="res://assets/creatures/npc/garan/garan.tscn" type="PackedScene" id=14]
 [ext_resource path="res://assets/objects/farm/FarmLandRow.tscn" type="PackedScene" id=15]
@@ -23,7 +23,7 @@
 [ext_resource path="res://assets/items/bodies/pumpkinlantern.tscn" type="PackedScene" id=21]
 [ext_resource path="res://assets/items/bodies/pumpkin.tscn" type="PackedScene" id=22]
 [ext_resource path="res://assets/creatures/npc/gustav/Gustav.tscn" type="PackedScene" id=23]
-[ext_resource path="res://assets/creatures/enemys/spider/Spider.tscn" type="PackedScene" id=24]
+[ext_resource path="res://assets/creatures/enemies/spider/Spider.tscn" type="PackedScene" id=24]
 [ext_resource path="res://assets/scenes/environment/terrain/IslandRough01.tscn" type="PackedScene" id=25]
 [ext_resource path="res://Route.gd" type="Script" id=26]
 [ext_resource path="res://assets/objects/vehicles/craftraft/CraftRaft.tscn" type="PackedScene" id=27]
@@ -80,6 +80,8 @@
 [ext_resource path="res://assets/objects/nature/flowers/flower_wide_yellow.tscn" type="PackedScene" id=78]
 [ext_resource path="res://assets/creatures/npc/klabautermann_eno/KlabautermannEno.tscn" type="PackedScene" id=79]
 [ext_resource path="res://assets/items/bodies/woodenleg_eno.tscn" type="PackedScene" id=80]
+
+
 
 [sub_resource type="ArrayMesh" id=1]
 surfaces/0 = {
@@ -145,11 +147,9 @@ directional_shadow_max_distance = 380.7
 [node name="Ui" parent="." instance=ExtResource( 2 )]
 
 [node name="Music" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Music"]
 stream = ExtResource( 3 )
-volume_db = -39.715
 autoplay = true
 
 [node name="Old_Island" type="Spatial" parent="."]
@@ -342,7 +342,7 @@ cubic_interp = false
 transform = Transform( -0.276154, 0, -0.961113, 0, 1, 0, 0.961113, 0, -0.276154, -0.0219421, -0.254144, -0.204518 )
 
 [node name="Spawn" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.8426, 14.3865, 13.2226 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.5993, 10.2271, 33.3581 )
 
 [node name="Dice" parent="Spawn" instance=ExtResource( 28 )]
 transform = Transform( 1, 0, 0, 0, 0.35604, -0.934471, 0, 0.934471, 0.35604, 2.62844, 1.29625, 1.89843 )
@@ -621,6 +621,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.075, -50.5037 )
 
 [node name="KlabuatermannEno" parent="." instance=ExtResource( 79 )]
 transform = Transform( -0.0868712, 0, -0.492396, 0, 0.5, 0, 0.492396, 0, -0.0868712, 34.028, 12.2731, 22.1295 )
+creature_name = "Klabauter Eno"
 
 [node name="WoodenLegEno" parent="." instance=ExtResource( 80 )]
 transform = Transform( 0.927574, 0.37223, 0.032431, -0.00737101, -0.0685507, 0.99762, 0.373568, -0.925605, -0.0608421, 15.6452, 11.9502, 49.5254 )

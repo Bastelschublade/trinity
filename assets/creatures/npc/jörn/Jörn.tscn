@@ -5,6 +5,8 @@
 [ext_resource path="res://assets/creatures/character/animations/death.tres" type="Animation" id=3]
 [ext_resource path="res://assets/creatures/character/animations/idle.tres" type="Animation" id=4]
 
+
+
 [sub_resource type="CylinderShape" id=1]
 radius = 0.344171
 height = 1.30872

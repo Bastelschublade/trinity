@@ -62,7 +62,7 @@ _global_script_classes=[ {
 "base": "Creature",
 "class": "Enemy",
 "language": "GDScript",
-"path": "res://assets/creatures/enemys/Enemy.gd"
+"path": "res://assets/creatures/enemies/Enemy.gd"
 }, {
 "base": "Node",
 "class": "Equip",
@@ -83,6 +83,11 @@ _global_script_classes=[ {
 "class": "GameObject",
 "language": "GDScript",
 "path": "res://assets/objects/GameObject.gd"
+}, {
+"base": "Spatial",
+"class": "Hair",
+"language": "GDScript",
+"path": "res://assets/creatures/character/accessories/head/hair.gd"
 }, {
 "base": "Node",
 "class": "Item",
@@ -189,11 +194,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://assets/items/types/Weapon.gd"
 }, {
-"base": "GameObject",
-"class": "door",
-"language": "GDScript",
-"path": "res://new_script.gd"
-}, {
 "base": "Node",
 "class": "material_res",
 "language": "GDScript",
@@ -220,6 +220,7 @@ _global_script_class_icons={
 "FarmLand": "",
 "Food": "",
 "GameObject": "",
+"Hair": "",
 "Item": "",
 "ItemBody": "",
 "ItemDB": "",
@@ -241,7 +242,6 @@ _global_script_class_icons={
 "Stats": "",
 "Textual": "",
 "Weapon": "",
-"door": "",
 "material_res": "",
 "vehicle": ""
 }
@@ -258,10 +258,6 @@ config/icon="res://icon.png"
 Global="*res://Global.gd"
 Events="*res://Events.gd"
 ItemDB="*res://assets/items/ItemDB.tscn"
-
-[editor_plugins]
-
-enabled=PoolStringArray( "dialog_graph" )
 
 [input]
 

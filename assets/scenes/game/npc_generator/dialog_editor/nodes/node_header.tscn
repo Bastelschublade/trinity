@@ -9,15 +9,15 @@ alignment = 2
 [node name="Label" type="Label" parent="."]
 visible = false
 margin_top = 5.0
-margin_right = 31.0
+margin_right = 88.0
 margin_bottom = 19.0
 size_flags_horizontal = 3
 text = "Alias"
 
 [node name="LineEdit" type="LineEdit" parent="."]
 visible = false
-margin_left = 35.0
-margin_right = 93.0
+margin_left = 30.0
+margin_right = 88.0
 margin_bottom = 24.0
 
 [node name="TextureButton" type="ToolButton" parent="."]
@@ -30,3 +30,15 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 toggle_mode = true
 text = "Minimieren"
+
+[node name="ResizeButton" type="ToolButton" parent="."]
+visible = false
+margin_left = 90.0
+margin_top = 1.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 20, 20 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+toggle_mode = true
+text = "Anzeigen"

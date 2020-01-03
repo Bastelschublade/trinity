@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/creatures/character/accessories/head/hair.gd" type="Script" id=1]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "Cube000"
@@ -14,8 +16,9 @@ surfaces/0 = {
 "vertex_count": 693
 }
 
-[node name="Scene Root" type="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.144, 0.472 )
+[node name="HairIroAnal" type="Spatial"]
+transform = Transform( -1, 8.19987e-08, 3.03143e-08, 0, 0.346756, -0.937956, -8.74228e-08, -0.937956, -0.346756, 0, 0.01, -0.886 )
+script = ExtResource( 1 )
 
 [node name="Cube002" type="MeshInstance" parent="."]
 transform = Transform( -4.01339e-07, 0, -1, 0, 1, 0, 1, 0, -4.01339e-07, -0.00372313, 0.608379, 0.0541171 )

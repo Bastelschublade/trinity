@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/creatures/npc/NPC.gd" type="Script" id=1]
-[ext_resource path="res://assets/creatures/character/fantasyMaleB.png" type="Texture" id=2]
+[ext_resource path="res://assets/creatures/character/skins/fantasyMaleB.png" type="Texture" id=2]
 [ext_resource path="res://assets/creatures/character/animations/death.tres" type="Animation" id=3]
 [ext_resource path="res://assets/creatures/character/animations/idle.tres" type="Animation" id=4]
 

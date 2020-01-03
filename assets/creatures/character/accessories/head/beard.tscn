@@ -18,6 +18,7 @@ surfaces/0 = {
 }
 
 [node name="Beard" type="Spatial"]
+transform = Transform( -1, -1.0139e-07, -1.74646e-07, 1.73628e-07, 0.00994817, -0.999951, 1.03122e-07, -0.999951, -0.00994817, 0, -0.36, -0.255 )
 
 [node name="beard" type="MeshInstance" parent="."]
 mesh = SubResource( 1 )

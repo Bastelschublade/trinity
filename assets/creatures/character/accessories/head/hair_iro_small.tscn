@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/creatures/character/accessories/head/hair.gd" type="Script" id=1]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "Cube000"
@@ -15,7 +17,8 @@ surfaces/0 = {
 }
 
 [node name="IroSmall" type="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1.053, 0, 0.164, 0.456 )
+transform = Transform( -1, -8.32275e-08, -2.81748e-08, 0, 0.306061, -1.00247, 8.74228e-08, -0.952012, -0.322282, 0, 0.058, -0.893 )
+script = ExtResource( 1 )
 
 [node name="Cube002" type="MeshInstance" parent="."]
 transform = Transform( -4.01339e-07, 0, -1, 0, 1, 0, 1, 0, -4.01339e-07, -0.00372313, 0.608379, 0.0541171 )

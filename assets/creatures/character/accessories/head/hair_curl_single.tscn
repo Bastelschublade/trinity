@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://assets/creatures/character/accessories/head/Tan 1.material" type="Material" id=1]
+[ext_resource path="res://assets/creatures/character/accessories/head/hair.gd" type="Script" id=1]
+[ext_resource path="res://assets/creatures/character/accessories/head/Tan 1.material" type="Material" id=2]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "Cube002"
@@ -11,14 +12,15 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97539,
 "index_count": 468,
-"material": ExtResource( 1 ),
+"material": ExtResource( 2 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 448
 }
 
 [node name="Curl" type="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, 0.3 )
+transform = Transform( -0.888, -8.25271e-08, 0, 7.84496e-10, -0.00953949, -0.97495, 7.76275e-08, -0.943952, 0.00985276, -0.019, 0.184, -0.768 )
+script = ExtResource( 1 )
 
 [node name="Mesh" type="MeshInstance" parent="."]
 transform = Transform( -0.015, -2.26494e-09, 9.90035e-17, 0, -6.55671e-10, -0.015, 2.26494e-09, -0.015, 6.55671e-10, 0.0401763, -0.199191, -0.0157818 )

@@ -47,6 +47,8 @@ func interact():
 	start_dialog()
 
 
+func trigger(data):
+	pass
 
 
 func _ready():

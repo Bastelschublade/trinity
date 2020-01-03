@@ -28,3 +28,7 @@ func _on_create_dialog_pressed():
 
 func _on_export_itemdb_pressed():
 	Global.itemdb._export()
+
+
+func _on_skin_editor_pressed():
+	Global.goto_scene('res://assets/scenes/game/npc_generator/skin_editor/skin_editor.tscn')

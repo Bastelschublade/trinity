@@ -87,6 +87,7 @@ margin_right = 241.0
 margin_bottom = 46.0
 
 [node name="TextRow" type="HBoxContainer" parent="."]
+editor/display_folded = true
 margin_left = 10.0
 margin_top = 46.0
 margin_right = 241.0
@@ -121,6 +122,7 @@ text = "Nächster NPC Text"
 align = 2
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]
+editor/display_folded = true
 margin_left = 10.0
 margin_top = 90.0
 margin_right = 241.0
@@ -144,6 +146,7 @@ text = "Aktion"
 align = 2
 
 [node name="MarginContainer3" type="MarginContainer" parent="."]
+editor/display_folded = true
 margin_left = 10.0
 margin_top = 123.0
 margin_right = 241.0
@@ -173,6 +176,7 @@ margin_right = 241.0
 margin_bottom = 160.0
 
 [node name="ExitRow" type="HBoxContainer" parent="."]
+editor/display_folded = true
 margin_left = 10.0
 margin_top = 161.0
 margin_right = 241.0
@@ -191,6 +195,7 @@ margin_right = 231.0
 margin_bottom = 24.0
 
 [node name="SpecialRow" type="HBoxContainer" parent="."]
+editor/display_folded = true
 margin_left = 10.0
 margin_top = 186.0
 margin_right = 241.0

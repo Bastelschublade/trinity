@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/creatures/character/accessories/head/White.material" type="Material" id=2]
 [ext_resource path="res://assets/creatures/character/accessories/head/Tan 2.material" type="Material" id=3]
 
-[sub_resource type="ArrayMesh" id=2]
+[sub_resource type="ArrayMesh" id=1]
 resource_name = "Cube015"
 surfaces/0 = {
 "aabb": AABB( -49.7457, -45.2746, -65.7804, 99.4914, 137.2, 92.0032 ),
@@ -44,11 +44,11 @@ surfaces/2 = {
 }
 
 [node name="Cap" type="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.023, 0.556 )
+transform = Transform( -1, -8.74228e-08, 0, 8.69696e-10, -0.00994817, -0.999951, 8.74184e-08, -0.999951, 0.00994817, 0, 0.006, -0.885 )
 
 [node name="Mesh" type="MeshInstance" parent="."]
 transform = Transform( -0.01, -8.74228e-10, 0, 0, -1.62921e-09, -0.01, 8.74228e-10, -0.01, 1.62921e-09, 0, -0.198682, 0 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = null
 material/1 = null
 material/2 = null

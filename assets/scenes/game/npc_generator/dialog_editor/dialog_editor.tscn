@@ -159,16 +159,22 @@ text = "Quest"
 flat = false
 
 [node name="Label2" type="Label" parent="Container/Sidebar/ScrollContainer/MarginContainer/VBoxContainer"]
-margin_top = 400.0
+margin_top = 385.0
 margin_right = 131.0
-margin_bottom = 414.0
+margin_bottom = 399.0
 size_flags_vertical = 6
 
 [node name="Export" type="Button" parent="Container/Sidebar/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 530.0
+margin_right = 131.0
+margin_bottom = 550.0
+text = "Export"
+
+[node name="Hauptmenu" type="Button" parent="Container/Sidebar/ScrollContainer/MarginContainer/VBoxContainer"]
 margin_top = 560.0
 margin_right = 131.0
 margin_bottom = 580.0
-text = "Export"
+text = "Hauptmenu"
 
 [node name="GraphEdit" type="GraphEdit" parent="Container"]
 margin_left = 154.0
@@ -247,6 +253,7 @@ current_path = "/home/buki/projects/games/trinity/"
 [connection signal="pressed" from="Container/Sidebar/ScrollContainer/MarginContainer/VBoxContainer/Condition" to="." method="_on_create_node_pressed" binds= [ "condition" ]]
 [connection signal="pressed" from="Container/Sidebar/ScrollContainer/MarginContainer/VBoxContainer/Quest" to="." method="_on_create_node_pressed" binds= [ "quest" ]]
 [connection signal="pressed" from="Container/Sidebar/ScrollContainer/MarginContainer/VBoxContainer/Export" to="." method="_on_export_pressed"]
+[connection signal="pressed" from="Container/Sidebar/ScrollContainer/MarginContainer/VBoxContainer/Hauptmenu" to="." method="_on_main_menu_pressed"]
 [connection signal="connection_request" from="Container/GraphEdit" to="." method="_on_GraphEdit_connection_request"]
 [connection signal="disconnection_request" from="Container/GraphEdit" to="." method="_on_disconnection_request"]
 [connection signal="confirmed" from="SaveWindow" to="." method="_on_SaveWindow_confirmed"]

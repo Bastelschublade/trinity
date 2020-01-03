@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/action_node.gd" type="Script" id=1]
 [ext_resource path="res://assets/scenes/game/npc_generator/dialog_editor/nodes/node_header.tscn" type="PackedScene" id=2]
-[ext_resource path="res://give_items.gd" type="Script" id=3]
 
 [sub_resource type="StyleBoxFlat" id=1]
 content_margin_left = 10.0
@@ -120,8 +119,6 @@ margin_bottom = 154.0
 margin_right = 309.0
 margin_bottom = 52.0
 size_flags_horizontal = 3
-script = ExtResource( 3 )
-action_name = "items"
 
 [node name="Item" type="HBoxContainer" parent="Actions/give_items"]
 margin_right = 309.0
@@ -163,13 +160,9 @@ value = 1.0
 [node name="remove_items" type="VBoxContainer" parent="Actions"]
 margin_right = 309.0
 margin_bottom = 52.0
-script = ExtResource( 3 )
-action_name = "items"
 
 [node name="change_grace" type="VBoxContainer" parent="Actions"]
 margin_right = 309.0
 margin_bottom = 52.0
-script = ExtResource( 3 )
-action_name = "items"
 [connection signal="close_request" from="." to="." method="_on_close_request"]
 [connection signal="resize_request" from="." to="." method="_on_resize_request"]

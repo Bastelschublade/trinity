@@ -12,6 +12,7 @@ var blocking = false
 var block_timer
 var flags = []
 var buffs = []
+var base_dmg = 10  #2 no weapon
 
 export(float) var RUN_SPEED = 13
 export(bool) var freeze = false
@@ -185,8 +186,8 @@ func finish_attack():
 	# calc dmg
 	var dmg
 	if not gear["mainhand"].get('item', false):
-		print('no weapon')
-		dmg = 2
+		#print('no weapon')
+		dmg = base_dmg
 	else:
 		print('weapon')
 		var weapon = gear["mainhand"]["item"]
@@ -292,3 +293,20 @@ func get_hit(dmg):
 func die():
 	anim_player.play('death')
 	self.dead = true
+
+
+func load_from_data(data):
+	print('loading from data')
+	#print('old face: ', $Skin.get_node('Face').get('texture')
+	var texs = data['player']['skin']['textures']
+	if texs['base']:
+		$Skin.get_node('Base').set('texture', load(texs['base']))
+	if texs['face']:
+		$Skin.get_node('Face').set('texture', load(texs['face']))
+	if texs['hair']:
+		$Skin.get_node('Hair').set('texture', load(texs['hair']))
+	var mods = data['player']['skin']['objects']
+	if 'hair' in mods:
+		var hair = load(mods['hair']['res']).instance()
+		hair.get_child(0).set('material/0', load(mods['hair']['mat']))
+		$Root/HeadAttachment/Skin.add_child(hair)

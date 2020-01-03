@@ -47,6 +47,8 @@ func answer(choice):
 		var events = get_node('/root/Events')
 		print('emit signal in world')
 		events.emit_signal(choice['emit_signal']['signal'], [choice['emit_signal']['data']])
+	if 'trigger' in choice:
+		npc.trigger(choice['trigger'])
 	if 'exit' in choice:
 		queue_free()
 

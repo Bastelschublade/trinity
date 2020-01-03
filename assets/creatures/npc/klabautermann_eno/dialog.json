@@ -41,6 +41,7 @@ Belohnung:
       {
         "text": "[?] Ja hier ist es.",
 				"view": "questfinish",
+				"trigger": "show_leg", 
         "next_view": "questfinish",
 				"condition": {"has_item": "woodenleg_eno"}
       },{

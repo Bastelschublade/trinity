@@ -30,6 +30,7 @@ surfaces/1 = {
 }
 
 [node name="glassesfancy" type="Spatial"]
+transform = Transform( -1, -8.74228e-08, 3.82137e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, 0, -0.561, -0.457 )
 
 [node name="glassesRetro" type="MeshInstance" parent="."]
 mesh = SubResource( 1 )

@@ -108,3 +108,7 @@ func remove_node(node):
 	connections = keep_connections
 	nodes.erase(node.id)
 	node.queue_free()
+
+
+func _on_main_menu_pressed():
+	Global.goto_scene('res://assets/scenes/mainmenu/MainMenu.tscn')
